@@ -1,6 +1,6 @@
 # About
 
-An open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch!
+An open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
 
 Distributed under the terms of the GNU Public license version 3.
 
@@ -63,20 +63,22 @@ No reason not to! But focussing on audio output keeps it simple for now.
 
 As above..but there are lots of great things that do this already, and this was the focus of the accompanying AMT Arduino library.
 
-## Objects/abstractions
+## Objects/abstractions in current demo
 
-| Name                         | Vanilla? |
-| ---------------------------- | -------- |
-| im.generatescale             | n        |
-| im.input                     | y        |
-| im.key                       | y        |
-| im.midiin                    | y        |
-| im.output                    | y        |
-| im.reverb                    | n        |
-| im.sample                    | n        |
-| im.scala & scala2 (internal) | n        |
-| im.sensor                    | y        |
-| im.tuning                    | n        |
+| Name                         | Vanilla? | Needs (easy fixes in italics)                                |
+| ---------------------------- | -------- | ------------------------------------------------------------ |
+| im.generatescale             | n        | zl: *iter*, *rot*, *reg*, *len*, *group*                     |
+| im.input                     | y        |                                                              |
+| im.key                       | y        |                                                              |
+| im.midiin                    | y        |                                                              |
+| im.output                    | y        |                                                              |
+| im.reverb                    | n        | freeverb~                                                    |
+| im.sample                    | y        | -                                                            |
+| im.scala & scala2 (internal) | n        | *counter*, *gate*, *tosymbol*, *fromsymbol*, zl: *iter*, *group*, *len*, *join*, sect, *reg*, *rev* |
+| im.scale                     | n        | zl: *reg*, *len*, *lookup*                                   |
+| im.sensor                    | y        |                                                              |
+| im.tunedperc                 | n        | rampsmooth~                                                  |
+| im.tuning                    | n        |                                                              |
 
 ## Tuning/Scala
 
@@ -84,24 +86,31 @@ The framework uses the Scala format to retrieve tuning systems, and may be used 
 
 Tuning is transferred to a table accessible at audio rate with interpolation if needed.
 
-## Pd geeks: reliance on Cyclone library/todo list
+## Reliance on Cyclone library/todo list
 
 I would like to make this available to work on Pd Vanilla, to simplify the installation procedure and ensure compatibility with libpd-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the Cyclone library as this makes Pd a lot more accessible to me coming from a Max background.  
 
-I'm looking for ways to recreate the following objects using Vanilla.  Since the addition of new list functionality, some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now. I guess it could be useful for Max heads in the future. (*note— need to check which version of pdlib is incorporated into MobMuPlat, as list store etc are new objects*).
+I'm looking for ways to recreate the following objects using Vanilla.  Since the addition of new list functionality, some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now. I guess it could form part of a useful resource for Max heads in the future. 
 
 - **zl**: I'm pretty sure that all of the below can be handled with the generic list object, but some of these operations desperately need encapsulating
-  - **zl reg**: more specifically, I use this to retrieve a symbol-based argument within an abstraction. Looks like list can take an argument in the same way.
+  - I've created a `[for]` object (with argument ++ or --), which takes in a list or integer to create a for loop based on the input/length..this makes patching a bit nicer and a bit more like text-oriented code
+  - **zl reg**: more specifically, I use this to retrieve a symbol-based argument within an abstraction. Works fine with `[list store]`
+  - **zl group**: just `[append]` and bang
   - **zl join**: `[list append]` or `[list prepend]`
-  - **zl lookup**: like list store, with a get message
+  - **zl lookup**: like `[list store]`, with a `get $ 1` message
   - **zl len**: `[list length]`
-  - **zl sect**: `[list split]`?
+  - **zl sect**: `[list split]`? — not quite, need to compare..this is the sort of thing that gets really complicated/frustrating in Pd.
   - **zl iter**: recursive `[list split]` with `[until]`? — see serialization example (3) in the help file
+    - solved by creating `[list.iter]` - takes argument ++ or -- to iterate up or down through the list (only one entry at a time at present)
   - **zl rev**: probably a combination of `[list split]` and `[list prepend]` as above with iter
+    - solved by creating `[list.rev]`
   - **zl rot**: as above
-- **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? switching types in Pd has been a thorn in my side..
-- **fromsymbol**: this one is tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd.
+    - solved by creating `[list.rot]`
+- **gate** and **switch**: with arguments for multiple inlets/outlets..should be ok but might need to establish a reasonable maximum number.
+- **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Switching between types in Pd has been a thorn in my side..
+- **fromsymbol**: this one is tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
 - **counter**: should be easy enough, certainly the way I use it here.
+- **rampsmooth~**: ugh..this one will be tough to live without, maybe look at source code and use `[expr~]`?
 
 Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
 
