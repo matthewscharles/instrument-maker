@@ -20,9 +20,11 @@ An accompanying hardware component is in development to add crocodile clip acces
 
 ### Pure Data?
 
-Free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  Boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound that eventually gets sent out to speakers.
+Pure Data is a free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  Boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound that eventually gets sent out to speakers.
 
-It's not a million miles away from the "blocks"-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch, getting caught up in spiders' webs on day one.
+It's not a million miles away from the "blocks"-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch, getting caught up in spiders' webs on day one — which is the experience I often observe when teaching this.
+
+Pure Data has an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
 
 ## Background
 
@@ -61,19 +63,47 @@ No reason not to! But focussing on audio output keeps it simple for now.
 
 As above..but there are lots of great things that do this already, and this was the focus of the accompanying AMT Arduino library.
 
+## Objects/abstractions
+
+| Name                         | Vanilla? |
+| ---------------------------- | -------- |
+| im.generatescale             | n        |
+| im.input                     | y        |
+| im.key                       | y        |
+| im.midiin                    | y        |
+| im.output                    | y        |
+| im.reverb                    | n        |
+| im.sample                    | n        |
+| im.scala & scala2 (internal) | n        |
+| im.sensor                    | y        |
+| im.tuning                    | n        |
+
+## Tuning/Scala
+
+The framework uses the Scala format to retrieve tuning systems, and may be used for storing scales as well.  This could fit into JSON as described below.
+
+Tuning is transferred to a table accessible at audio rate with interpolation if needed.
+
 ## Pd geeks: reliance on Cyclone library/todo list
 
-I would like to make this available to work on Pd Vanilla, to simplify the installation procedure and ensure compatibility with libpd-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the Cyclone library as this makes Pd a lot more accessible to me coming from a Max background.  I'm looking for ways to recreate the following objects using Vanilla. Some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now; could be useful for Max heads in the future.
+I would like to make this available to work on Pd Vanilla, to simplify the installation procedure and ensure compatibility with libpd-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the Cyclone library as this makes Pd a lot more accessible to me coming from a Max background.  
+
+I'm looking for ways to recreate the following objects using Vanilla.  Since the addition of new list functionality, some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now. I guess it could be useful for Max heads in the future. (*note— need to check which version of pdlib is incorporated into MobMuPlat, as list store etc are new objects*).
 
 - **zl**: I'm pretty sure that all of the below can be handled with the generic list object, but some of these operations desperately need encapsulating
   - **zl reg**: more specifically, I use this to retrieve a symbol-based argument within an abstraction. Looks like list can take an argument in the same way.
   - **zl join**: `[list append]` or `[list prepend]`
+  - **zl lookup**: like list store, with a get message
   - **zl len**: `[list length]`
   - **zl sect**: `[list split]`?
-  - **zl iter**: recursive `[list split]` with `[until]`?
+  - **zl iter**: recursive `[list split]` with `[until]`? — see serialization example (3) in the help file
   - **zl rev**: probably a combination of `[list split]` and `[list prepend]` as above with iter
+  - **zl rot**: as above
 - **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? switching types in Pd has been a thorn in my side..
+- **fromsymbol**: this one is tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd.
 - **counter**: should be easy enough, certainly the way I use it here.
+
+Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
 
 ## JSON file format
 
