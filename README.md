@@ -1,14 +1,14 @@
-# About
+# About Instrument Maker
 
-An open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
+This is an open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
 
 Distributed under the terms of the GNU Public license version 3.
 
-This version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstactions if you are familiar with Pure Data.
+The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstactions if you are familiar with Pure Data.
 
 ## How does it work?
 
-Within Pure Data, create objects with the im. prefix to access building blocks: inputs, outputs, tuning systems. Upload to Bela, or Raspberry Pi with an Arduino device connected.  With Bela, this is simply a case of drag and drop into a browser.
+Within Pure Data, create objects with the im. prefix to access building blocks: inputs, outputs, tuning systems. Upload to Bela, or Raspberry Pi with an Arduino device connected.  With Bela, this should be a case of drag and drop into a browser; files can exist as "presets", no need to edit or look at the code unless desired.
 
 Video demo (code): https://youtu.be/8AJMJq2P8Ko
 
@@ -28,7 +28,9 @@ Pure Data has an active online community with [forums](https://forum.pdpatchrepo
 
 ## Background
 
-My intention is to help find a different entry point to instrument creation using sensors. I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract.  But that's certainly a context in which some of this project's output will fit.
+My intention is to help find a different entry point to instrument creation using sensors. I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract.  But that's certainly a context in which some of this project's output will fit. Access or accessibility tend to rely upon openness, and benefit from opportunities for input at every stage of the design process.
+
+So, ideally, this should provide an opportunity/context for someone to approach the problem of creating an instrument, rather than (necessarily) learning a programming language. Conversely, it shouldn't remove access to the underlying code..whether that's through a nicely packaged GUI, or a closed source back end. That's not necessarily the easiest problem to solve!  We're starting to see a bit more of this appearing in commercial software; Max for Live is a good example.
 
 A few considerations:
 
@@ -39,19 +41,19 @@ A few considerations:
 - integrate a variety of tuning systems
 - expand access through ability to modify and create derivatives.
 
-Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output (Light Recorders and Augmented Gamelan). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the Planted Symphony installation.  I'm excited that this might become the basis of much wider collaboration.
+I'm not a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the Planted Symphony installation.  I'm excited to think that this might form the basis for some much wider collaboration.
 
-Versions of this code for Max/MSP can be made available on request; it's a bit much to develop in parallel at the moment.  This sits alongside a couple of other projects that live in other repositories: the Light Recorder Deck (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
+Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the Light Recorder Deck (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
 
 # Technical notes
 
 At present, I anticipate that in order to use this framework effectively, you'll need to download an SD card image for a Bela or Raspberry Pi (available soon). This is in part due to reliance on external libraries, which would need better documentation to install from scratch. Furthermore, on the Raspberry Pi, we need to set everything to boot directly to the software.
 
-For the time being, the "source code" is available here.  If you want a disk image to test, just let me know.
+For the time being, the "source code" is available here.  If you want a disk image to test, just let me know.  Version tracking is kind of limited due to the nature of Pd files, but I'm trying to break it down enough that we can observe changes in units/abstractions.
 
 ## Interaction with sensors
 
-Pure Data in Bela is a thing of beauty: sensor inputs are treated as audio information.  Analog inputs are accessed through the `[im.input]` abstraction (with an argument matching the analog input), and connected directly to a virtual instrument.
+Pure Data running on Bela is a thing of beauty: sensor inputs are treated as audio information.  Analog inputs are accessed through the `[im.input]` abstraction (with an argument matching the analog input), and connected directly to a virtual instrument.
 
 At present, the most flexible way to recreate this experience with a Raspberry Pi (also a thing of beauty, in its own way, and a bit cheaper) appears to be through an affordable Arduino board running Firmata. In practical terms, this requires dropping in an `[im.firmata]` object, which tells the `[im.input]`objects to look at Arduino inputs rather than the Bela's audio ADC.
 
@@ -82,11 +84,13 @@ As above..but there are lots of great things that do this already, and this was 
 
 ## Tuning/Scala
 
-The framework uses the Scala format to retrieve tuning systems, and may be used for storing scales as well.  This could fit into JSON as described below.
+The framework uses the [Scala](http://www.huygens-fokker.org/scala/) format to retrieve tuning systems, which may be useful for storing scales as well.  This could fit into (or replace) JSON as described below.
 
-Tuning is transferred to a table accessible at audio rate with interpolation if needed.
+Please note: if you got as far as reading this section, there's a possibility that I don't care about microtuning as intensely as you do.  I can dig that. Think I'm mishandling this stuff? Let me know :)
 
-## Reliance on Cyclone library/todo list
+Tuning is transferred to a table accessible at audio rate with interpolation if needed (I think this has potential for some freaky modulation sources).
+
+## Reliance on Cyclone library/ current todo list
 
 I would like to make this available to work on Pd Vanilla, to simplify the installation procedure and ensure compatibility with libpd-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the Cyclone library as this makes Pd a lot more accessible to me coming from a Max background.  
 
@@ -107,16 +111,16 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
   - **zl rot**: as above
     - solved by creating `[list.rot]`
 - **gate** and **switch**: with arguments for multiple inlets/outlets..should be ok but might need to establish a reasonable maximum number.
-- **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Switching between types in Pd has been a thorn in my side..
-- **fromsymbol**: this one is tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
-- **counter**: should be easy enough, certainly the way I use it here.
-- **rampsmooth~**: ugh..this one will be tough to live without, maybe look at source code and use `[expr~]`?
+- **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Or is this stuff actually useful after all? Switching between types in Pd has been a thorn in my side..
+- **fromsymbol**: this one is potentially tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
+- **counter**: should be easy enough, certainly the way I use it here. Pd 101 with added arguments.
+- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use `[expr~]`?
 
 Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
 
 ## JSON file format
 
-I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well? Suggestions gratefully received.
+I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well? Suggestions gratefully received.
 
-Fairly major issue with this approach: Pd's native `[textfile]` object treats commas as carriage returns. Should probably report this as an issue.
+Note: Pd's native `[textfile]` object treats commas as carriage returns. This was a pain working with .scl files that had commas in the comments, but at as long as I disallow that in this context, maybe it'd actually be an advantage for processing the arrays?
 
