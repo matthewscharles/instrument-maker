@@ -1,0 +1,13 @@
+#N canvas 336 387 183 202 10;
+#X obj 23 39 t a a, f 12;
+#X obj 23 12 inlet;
+#X obj 23 125 list store, f 12;
+#X obj 23 151 outlet;
+#X msg 23 97 get \$1 1;
+#X obj 23 69 for \$1;
+#X connect 0 0 5 0;
+#X connect 0 1 2 1;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 0;
+#X connect 5 0 4 0;

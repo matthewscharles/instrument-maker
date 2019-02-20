@@ -1,0 +1,16 @@
+#N canvas 178 117 857 586 10;
+#X obj 44 238 im.output;
+#X obj 44 37 im.multitouch x octaves 2;
+#X obj 44 219 im.acid, f 24;
+#X obj 56 101 im.multitouch y 0 3;
+#X obj 56 168 im.output;
+#X obj 56 147 im.fizzy;
+#X obj 56 126 im.triads 4 I IV V VI;
+#X obj 44 55 im.scale G minor 4, f 23;
+#X connect 1 0 7 0;
+#X connect 2 0 0 0;
+#X connect 3 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
+#X connect 7 2 6 3;
