@@ -1,4 +1,4 @@
-#N canvas 118 94 1150 591 10;
+#N canvas 517 187 1150 591 10;
 #X obj 525 41 sig~ 1;
 #X obj 525 71 -~, f 8;
 #X obj 515 165 dac~;
@@ -42,6 +42,10 @@
 #X obj 118 425 im.tunedperc main;
 #X obj 116 354 im.tuning main 250 selisir6.scl;
 #X obj 190 455 im.reverb short;
+#X obj 439 380 im.count 12;
+#X obj 425 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 439 402 5 0 0 0 - - -;
 #X connect 0 0 1 0;
 #X connect 1 0 8 1;
 #X connect 5 0 3 0;
@@ -71,3 +75,5 @@
 #X connect 38 0 39 0;
 #X connect 39 0 37 0;
 #X connect 39 0 41 0;
+#X connect 42 0 44 0;
+#X connect 43 0 42 0;
