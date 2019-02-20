@@ -130,4 +130,4 @@ Interested in using some Max-style attributes…some potentially useful info [he
 
 I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well?  
 
-Update: yes, turns out that the `[text]` object is great for this!! Haven't tried it with nested structures yet but I don't see why it should be a problem.
+Update: yes, turns out that the `[text]` object is great for this!! Nested structures now working in read mode (still a bit hacky), haven't attempted to format and write a JSON file yet.  The search function looks like it could be quite powerful.

@@ -18,12 +18,10 @@
 #X obj 127 147 sel 1;
 #X obj 139 85 - 2;
 #X msg 138 14 1 2;
-#X obj 63 106 print for;
 #X connect 0 0 6 0;
 #X connect 1 0 13 0;
 #X connect 3 0 1 0;
 #X connect 4 0 10 0;
-#X connect 4 0 18 0;
 #X connect 6 0 4 0;
 #X connect 6 1 1 1;
 #X connect 6 2 7 0;
