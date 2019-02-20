@@ -1,16 +1,8 @@
 {
-	"notes" : 0.38,
-	"volume" : 1.93,
-	"scale" : 	{
-		"low" : 0,
-		"high" : 189
-	}
-,
-	"accel" : 	{
-		"y" : 		{
-			"mult" : 0,
-			"thresh" : 0
-		}
-
+	"key" : "C",
+	"mode" : "dorian",
+	"synth" : 	{
+		"cutoff" : 1000,
+		"resonance" : 3
 	}
 }
