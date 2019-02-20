@@ -36,6 +36,8 @@ So, ideally, this should provide an opportunity/context for someone to approach 
 
 A few considerations:
 
+
+
 - remove obligation to code, but with opportunities to learn and dismantle 
 - offer ways to create objects that feel like instruments, rather than controllers: devices that have a direct, local connection between physical input and output, without mediation from a keyboard and mouse (and added costs on that front)
 - retain ability to make complex, difficult-to-master instruments
@@ -126,7 +128,6 @@ Interested in using some Max-style attributes…some potentially useful info [he
 
 ## JSON file format
 
-I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well? Suggestions gratefully received.
+I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well?  
 
-Note: Pd's native `[textfile]` object treats commas as carriage returns. This was a pain working with .scl files that had commas in the comments, but at as long as I disallow that in this context, maybe it'd actually be an advantage for processing the arrays?
-
+Update: yes, turns out that the `[text]` object is great for this!! Haven't tried it with nested structures yet but I don't see why it should be a problem.
