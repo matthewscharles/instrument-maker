@@ -4,7 +4,7 @@ This is an open source framework for digital instrument building with sensors, w
 
 Distributed under the terms of the GNU Public license version 3.
 
-The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data.
+The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data..but I recommend waiting a little while until everything's more coherent.
 
 ## How does it work?
 
@@ -12,11 +12,11 @@ Within Pure Data, create objects with the im. prefix to access building blocks: 
 
 Video demo (code): https://youtu.be/8AJMJq2P8Ko
 
+Video demo (mobile): https://www.youtube.com/watch?v=jl020N0MZxk
+
 Video demo (play): https://www.youtube.com/watch?v=ywEX0N6TpEA
 
-(non-gamelan examples coming soon ;)
-
-An accompanying hardware component is in development to add crocodile clip access to the Bela platform.
+An accompanying hardware component is in development, which adds crocodile clip access to the Bela platform.
 
 ### What's Pure Data, why use it this way?
 
@@ -41,7 +41,7 @@ A few considerations:
 - integrate a variety of tuning systems
 - expand access through ability to modify and create derivatives.
 
-I'm not a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the Planted Symphony installation.  I'm excited to think that this might form the basis for some much wider collaboration.
+I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the Planted Symphony installation.  I'm excited to think that this might form the basis for some much wider collaboration.
 
 Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the Light Recorder Deck (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
 
