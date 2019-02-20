@@ -2,9 +2,11 @@
 
 This is an open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
 
-Distributed under the terms of the GNU Public license version 3.
+Distributed under the terms of the GNU Public license version 3 (for now  / not sure how appropriate / need to read up on this).
 
-The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data..but I recommend waiting a little while until everything's more coherent.
+This is one of my first public repos and will definitely be messy for a little while.  The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data..but I recommend waiting a little while until everything's more coherent.
+
+
 
 ## How does it work?
 
