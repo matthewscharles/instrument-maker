@@ -4,11 +4,11 @@ This is an open source framework for digital instrument building with sensors, w
 
 Distributed under the terms of the GNU Public license version 3.
 
-The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstactions if you are familiar with Pure Data.
+The current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data.
 
 ## How does it work?
 
-Within Pure Data, create objects with the im. prefix to access building blocks: inputs, outputs, tuning systems. Upload to Bela, or Raspberry Pi with an Arduino device connected.  With Bela, this should be a case of drag and drop into a browser; files can exist as "presets", no need to edit or look at the code unless desired.
+Within Pure Data, create objects with the im. prefix to access building blocks: inputs, outputs, tuning systems. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  With Bela, choosing a setup should be a case of dragging and dropping into a browser; files can exist as "presets", no need to edit or look at the code unless desired.
 
 Video demo (code): https://youtu.be/8AJMJq2P8Ko
 
@@ -18,11 +18,11 @@ Video demo (play): https://www.youtube.com/watch?v=ywEX0N6TpEA
 
 An accompanying hardware component is in development to add crocodile clip access to the Bela platform.
 
-### Pure Data?
+### What's Pure Data, why use it this way?
 
 Pure Data is a free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  Boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound that eventually gets sent out to speakers.
 
-It's not a million miles away from the "blocks"-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch, getting caught up in spiders' webs on day one — which is the experience I often observe when teaching this.
+It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one — which are the experiences I often observe when teaching this.
 
 Pure Data has an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
 
@@ -69,17 +69,17 @@ As above..but there are lots of great things that do this already, and this was 
 
 | Name                         | Vanilla? | Needs (easy fixes in italics)                                |
 | ---------------------------- | -------- | ------------------------------------------------------------ |
-| im.generatescale             | n        | zl: *iter*, *rot*, *reg*, *len*, *group*                     |
+| im.generatescale             | y        |                                                              |
 | im.input                     | y        |                                                              |
 | im.key                       | y        |                                                              |
 | im.midiin                    | y        |                                                              |
 | im.output                    | y        |                                                              |
-| im.reverb                    | n        | freeverb~                                                    |
+| im.reverb                    | n        | freeverb~ (yeah, I cheated)                                  |
 | im.sample                    | y        | -                                                            |
 | im.scala & scala2 (internal) | n        | *counter*, *gate*, *tosymbol*, *fromsymbol*, zl: *iter*, *group*, *len*, *join*, sect, *reg*, *rev* |
 | im.scale                     | n        | zl: *reg*, *len*, *lookup*                                   |
 | im.sensor                    | y        |                                                              |
-| im.tunedperc                 | n        | rampsmooth~                                                  |
+| im.tunedperc                 | n        |                                                              |
 | im.tuning                    | n        |                                                              |
 
 ## Tuning/Scala
@@ -88,7 +88,7 @@ The framework uses the [Scala](http://www.huygens-fokker.org/scala/) format to r
 
 Please note: if you got as far as reading this section, there's a possibility that I don't care about microtuning as intensely as you do.  I can dig that. Think I'm mishandling this stuff? Let me know :)
 
-Tuning is transferred to a table accessible at audio rate with interpolation if needed (I think this has potential for some freaky modulation sources).
+Tuning is transferred to a table accessible at audio rate with interpolation if needed (I think this has potential for some subtley freaky modulation sources).
 
 ## Reliance on Cyclone library/ current todo list
 
@@ -99,11 +99,12 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
 - **zl**: I'm pretty sure that all of the below can be handled with the generic list object, but some of these operations desperately need encapsulating
   - I've created a `[for]` object (with argument ++ or --), which takes in a list or integer to create a for loop based on the input/length..this makes patching a bit nicer and a bit more like text-oriented code
   - **zl reg**: more specifically, I use this to retrieve a symbol-based argument within an abstraction. Works fine with `[list store]`
-  - **zl group**: just `[append]` and bang
+  - **zl group**: (a bit more than) just `[append]` and bang
+    - fixed by creating `[list.group]`
   - **zl join**: `[list append]` or `[list prepend]`
   - **zl lookup**: like `[list store]`, with a `get $ 1` message
   - **zl len**: `[list length]`
-  - **zl sect**: `[list split]`? — not quite, need to compare..this is the sort of thing that gets really complicated/frustrating in Pd.
+  - **zl sect**: `[list split]`? — not quite, need to compare..this is the sort of thing that usually gets quite complicated/frustrating in Pd.
   - **zl iter**: recursive `[list split]` with `[until]`? — see serialization example (3) in the help file
     - solved by creating `[list.iter]` - takes argument ++ or -- to iterate up or down through the list (only one entry at a time at present)
   - **zl rev**: probably a combination of `[list split]` and `[list prepend]` as above with iter
@@ -114,7 +115,10 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
 - **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Or is this stuff actually useful after all? Switching between types in Pd has been a thorn in my side..
 - **fromsymbol**: this one is potentially tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
 - **counter**: should be easy enough, certainly the way I use it here. Pd 101 with added arguments.
-- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use `[expr~]`?
+- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[expr~]`? Maybe there's another way.
+- **svf~**: unfortunately this is an easy way to make filters with audio modulation that will be similarly difficult to let go.
+- **scale**: I think this should be `[expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4]` 
+  - created `[im.map]` using the above.
 
 Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
 
