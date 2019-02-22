@@ -119,7 +119,7 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
 - **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Or is this stuff actually useful after all? Switching between types in Pd has been a thorn in my side..
 - **fromsymbol**: this one is potentially tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
 - **counter**: should be easy enough, certainly the way I use it here. Pd 101 with added arguments.
-- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[expr~]`? Maybe there's another way.
+- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[fexpr~]`? Maybe there's another way.
 - **svf~**: unfortunately this is an easy way to make filters with audio modulation that will be similarly difficult to let go.
 - **scale**: I think this should be `[expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4]` 
   - created `[im.map]` using the above.

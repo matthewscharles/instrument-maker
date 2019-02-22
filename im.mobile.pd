@@ -1,0 +1,11 @@
+#N canvas 611 35 450 300 10;
+#X obj 254 139 send im.source;
+#X obj 254 53 metro 1000;
+#X msg 254 97 osc;
+#X obj 254 9 loadbang;
+#X obj 254 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
