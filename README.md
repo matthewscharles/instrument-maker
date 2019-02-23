@@ -20,11 +20,13 @@ Video demo (play): https://www.youtube.com/watch?v=ywEX0N6TpEA
 
 An accompanying hardware component is in development, which adds crocodile clip access to the Bela platform.
 
+![](documentation/im-chords.png)
+
 ### What's Pure Data, why use it this way?
 
 Pure Data is a free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  Boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound that eventually gets sent out to speakers.
 
-It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one — which are the experiences I often observe when teaching this.
+It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one, or feeling turned away by assumed knowledge of maths etc. — which are the experiences I often observe when teaching this, and reflect my own first steps.
 
 Pure Data has an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
 
@@ -43,7 +45,7 @@ A few considerations:
 - integrate a variety of tuning systems
 - expand access through ability to modify and create derivatives.
 
-I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/).  I'm excited to think that this might form the basis for some much wider collaboration.
+I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)).  I'm excited to think that this might form the basis for some much wider collaboration.  Portions of this work were developed with the support of [Drake Music](https://www.drakemusic.org/): [the Kellycaster](https://rockinpaddy.wordpress.com/), [DMLab innovation challenges](http://music.britishcouncil.org/news-and-features/2016-10-20/embracing-music-technology-the-dm-lab-challenge), and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/). 
 
 Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
 
@@ -57,11 +59,11 @@ For the time being, the "source code" is available here.  If you want a disk ima
 
 Pure Data running on Bela is a thing of beauty: sensor inputs are treated as audio information.  Analog inputs are accessed through the `[im.input]` abstraction (with an argument matching the analog input), and connected directly to a virtual instrument.
 
-At present, the most flexible way to recreate this experience with a Raspberry Pi (also a thing of beauty, in its own way, and a bit cheaper) appears to be through an affordable Arduino board running Firmata. In practical terms, this requires dropping in an `[im.firmata]` object, which tells the `[im.input]`objects to look at Arduino inputs rather than the Bela's audio ADC.
+At present, the most flexible way to recreate this experience with a Raspberry Pi (also a thing of beauty, in its own way, and a bit cheaper) appears to be through an affordable Arduino board running [Firmata](https://www.arduino.cc/en/reference/firmata). In practical terms, this requires dropping in an `[im.firmata]` object, which tells the `[im.input]`objects to look at Arduino inputs rather than the Bela's audio ADC.
 
 ### Interaction with actuators?
 
-No reason not to, and my initial attempt included a lot of this! But focussing on audio output keeps it simple for now.  
+No reason not to, and my initial attempts included a lot of this! But focussing on audio output keeps it simple, sort of, for now.  
 
 ### MIDI output/what if I just want to make a controller?
 
@@ -94,9 +96,9 @@ Tuning is transferred to a table accessible at audio rate with interpolation if 
 
 ## Reliance on Cyclone library/ current todo list
 
-I would like to make this available to work on Pd Vanilla, to simplify the installation procedure and ensure compatibility with libpd-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the Cyclone library as this makes Pd a lot more accessible to me coming from a Max background.  
+I would like to make this available to work on [Pd Vanilla](https://stackoverflow.com/questions/14793956/is-there-any-reason-to-use-vanilla-pure-data-instead-of-pd-extended), to simplify the installation procedure and ensure compatibility with [libpd](https://github.com/libpd)-based contexts, e.g. [MobMuPlat](http://danieliglesia.com/mobmuplat/). At present, I use the [Cyclone](https://github.com/porres/pd-cyclone/) library as this makes Pd a lot more accessible to me coming from a Max background.  
 
-I'm looking for ways to recreate the following objects using Vanilla.  Since the addition of new list functionality, some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now. I guess it could form part of a useful resource for Max heads in the future. 
+I'm looking for ways to recreate the following objects using Vanilla.  Since the addition of new list functionality, some of this is more about breaking out of old habits, so I'll include this as something of a todo list for now.  *Can probably move a couple of the remaining tasks into issues.* I guess it could form part of a useful resource for Max heads in the future. 
 
 - **zl**: I'm pretty sure that all of the below can be handled with the generic list object, but some of these operations desperately need encapsulating
   - I've created a `[for]` object (with argument ++ or --), which takes in a list or integer to create a for loop based on the input/length..this makes patching a bit nicer and a bit more like text-oriented code
@@ -113,13 +115,13 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
     - solved by creating `[list.rev]`
   - **zl rot**: as above
     - solved by creating `[list.rot]`
-- **gate** and **switch**: with arguments for multiple inlets/outlets..should be ok but might need to establish a reasonable maximum number.
+- **gate** and **switch**: with arguments for multiple inlets/outlets..and that'll mean a bit of scripting. should be ok (I did this loads in Max some time ago, how hard can it be?) but might need to establish a reasonable maximum number.
 - **tosymbol**: is it really just a case of `[list prepend symbol] -> [list trim]`? Or is this stuff actually useful after all? Switching between types in Pd has been a thorn in my side..
 - **fromsymbol**: this one is potentially tougher..maybe I don't yet understand how symbols and lists are processed differently in Pd yet.
-- **counter**: should be easy enough, certainly the way I use it here. Pd 101 with added arguments.
-- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[fexpr~]`? Maybe there's another way.
+- **counter**: should be easy enough, certainly the way I use it here..in fact I'm starting to prefer the old-skool float and plus. Pd 101 with added arguments. Also created `[for]` which takes care of a fair bit of the non-realtime counting I need.
+- **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[fexpr~]`? I've got as far as some if statements with `$x1[-1`], love it so far.
 - **svf~**: unfortunately this is an easy way to make filters with audio modulation that will be similarly difficult to let go.
-- **scale**: I think this should be `[expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4]` 
+- **scale**: I think this should be `[expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4]` but it doesn't handle negative numbers. There was an abstraction included within pd-extended that I'd like to check out.
   - created `[im.map]` using the above.
 
 Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
