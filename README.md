@@ -1,6 +1,6 @@
 # About Instrument Maker
 
-This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Bela](http://bela.io) / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
+This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Bela](http://bela.io) / Raspberry Pi.  Code currently developed by [Charles Matthews](http://ardisson.net/) through a series of collaborations (details soon, for now this page is written from a personal perspective) - get in touch if you would like to contribute!
 
 Distributed under the terms of the GNU Public license version 3 (for now  / not sure how appropriate / need to read up on this).
 
@@ -22,6 +22,29 @@ An accompanying hardware component is in development, which adds crocodile clip 
 
 ![](documentation/im-chords.png)
 
+## Background
+
+My intention is to help find a different entry point to instrument creation using sensors.  Access to this is not currently good enough.  Not just in a Disability context, but that's where the focus sits with this project. 
+
+I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract (I hope this will form a move toward Disabled artist-led music technology: essentially the same idea, but implies a different power relationship).  But that's certainly a context in which some of this project's output will fit. Access or accessibility tend to rely upon openness, and benefit from opportunities for input at every stage of the design process.
+
+So, ideally, this should provide an opportunity/context for someone to approach the problem of creating an instrument, rather than (necessarily) learning a programming language. Conversely, it shouldn't remove access to the underlying code..whether that's through a nicely packaged GUI, or a closed source back end. That's not necessarily the easiest problem to solve!  We're starting to see a bit more of this approach appearing in commercial software; [Max for Live](https://www.ableton.com/en/live/max-for-live/) is a good example.
+
+A few considerations:
+
+- remove obligation to code, but with opportunities to learn and dismantle 
+- offer ways to create objects that feel like instruments, rather than controllers: devices that have a direct, local connection between physical input and output, without mediation from a keyboard and mouse (and added costs on that front)
+- retain ability to make complex, difficult-to-master instruments
+- options for expression beyond pitch, duration, and loudness by default; music is about more than playing notes and chords (obvious maybe, but AMT doesn't always look beyond this)
+- integrate a variety of tuning systems
+- expand access through ability to modify and create derivatives.
+
+About me: I don't identify as a coder, much in the same way that I sometimes don't feel entitled to identify as a musician (I don't know wtf it is I do tbh), but I care enough about this kind of stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go.  I know that most of what I make could be used by other people, but it's been lacking some sort of unifying practice and documentation. I'm tired of saying "it'll be open source down the line". I have engaged in [openwashing](http://openwashing.org/) in the past, and almost certainly still do without realising it. 
+
+Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)).  I'm excited to think that this might form the basis for some much wider collaboration.  Portions of this work were developed with the support of [Drake Music](https://www.drakemusic.org/): e.g. [the Kellycaster](https://rockinpaddy.wordpress.com/) with John Kelly, Gawain Hewitt and others, [DMLab innovation challenges](http://music.britishcouncil.org/news-and-features/2016-10-20/embracing-music-technology-the-dm-lab-challenge), and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/). 
+
+Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
+
 ### What's Pure Data, why use it this way?
 
 Pure Data is a free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  Boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound that eventually gets sent out to speakers.  For musicians, this can fit neatly with familiar notions of arranging mixers and effects pedals, or throwing objects at a drummer to negotiate tempo.
@@ -36,24 +59,36 @@ Pure Data has an active online community with [forums](https://forum.pdpatchrepo
 
 My own experience of working with similar frameworks (such as the excellent BEAP and Vizzie collections for Max) has been mixed. They tend to be a little idiosyncratic and difficult to mix with more generic approaches in teaching environments, due to a need for standardised ins/outs and ranges..I can certainly see this as a problem here.
 
-## Background
+One of the advantages of working with Pure Data, or similar languages, is that the graphical interface can automatically be part of the code. Many of the interfaces we are used to now are more abstract versions of this; see, for example, the drag-and-drop plugin chaining and non-timeline-based interactions that were popularised through Ableton Live, which was ~~[originally prototyped in](http://www.roberthenke.com/technology/ableton_live.html)~~ partly inspired by Max.
 
-My intention is to help find a different entry point to instrument creation using sensors. I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract (I hope this will form a move toward Disabled artist-led music technology: essentially the same idea, but implies a different power relationship).  But that's certainly a context in which some of this project's output will fit. Access or accessibility tend to rely upon openness, and benefit from opportunities for input at every stage of the design process.
+In this proposed framework, in a way, we leave that idea behind; we might test the ideas on screen, with a mouse or keyboard, but that affords certain sorts of interactions..and the act of trying to create a useable interface in itself often leads us back into those spiders' webs..screen time…in a way, at this point at least I guess this is less about the playful exploration through code that we might associate with this kind of dataflow/visually oriented setup - but I believe it can lead to more play at the instrument end.  Having said that, you may notice some similarities between these objects and the kind of abstractions found in live coding environments like Tidal Cycles..there could be an interesting live-patching spinoff to explore.
 
-So, ideally, this should provide an opportunity/context for someone to approach the problem of creating an instrument, rather than (necessarily) learning a programming language. Conversely, it shouldn't remove access to the underlying code..whether that's through a nicely packaged GUI, or a closed source back end. That's not necessarily the easiest problem to solve!  We're starting to see a bit more of this appearing in commercial software; Max for Live is a good example.
+### How will people get to access this?
 
-A few considerations:
+It's taking time to package this up in a way that is immediately accessible. I am working with a few collaborators on example projects, and posting video updates when I can.  
 
-- remove obligation to code, but with opportunities to learn and dismantle 
-- offer ways to create objects that feel like instruments, rather than controllers: devices that have a direct, local connection between physical input and output, without mediation from a keyboard and mouse (and added costs on that front)
-- retain ability to make complex, difficult-to-master instruments
-- options for expression beyond pitch, duration, and loudness by default; music is about more than playing notes and chords (obvious maybe, but AMT doesn't always look beyond this)
-- integrate a variety of tuning systems
-- expand access through ability to modify and create derivatives.
+This has been tested in some shape or form through workshops and lectures for the last five years, and this is the most obvious way to try ideas and get direct feedback. 
 
-I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)).  I'm excited to think that this might form the basis for some much wider collaboration.  Portions of this work were developed with the support of [Drake Music](https://www.drakemusic.org/): [the Kellycaster](https://rockinpaddy.wordpress.com/), [DMLab innovation challenges](http://music.britishcouncil.org/news-and-features/2016-10-20/embracing-music-technology-the-dm-lab-challenge), and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/). 
+Once the framework is stable, I will start releasing some packaged examples, video tutorials and "worksheets". At this point it may be possible to make a more open call for collaboration.
 
-Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
+I also have plans to release paid some paid apps to support development of the project, which will not require access to the code, but should be recreatable with the resources I put online.
+
+### Are there other projects like this?
+
+Yes! Not all dedicated to creating standalone instruments in this way, but you might like to check out some of these different angles on similar issues:
+
+- http://automatonism.com/
+- https://tidalcycles.org/
+- https://www.ableton.com/en/blog/beap-powerful-modules-max-live/
+- https://github.com/dktr0/estuary
+- https://www.drakemusic.org/blog/becky-morris-knight/making-instruments-in-the-classroom/
+- https://www.chrisballprojects.co.uk/sensilo-2/
+- https://sonic-pi.net/
+- http://instrumentslab.org/research/accessible-instruments.html
+- https://www.bareconductive.com/shop/touch-board/
+- and of course http://blog.bela.io/
+
+(By no means intended to be exchaustive).
 
 # Technical notes
 
@@ -74,6 +109,10 @@ No reason not to, and my initial attempts included a lot of this! But focussing 
 ### MIDI output/what if I just want to make a controller?
 
 As above..but there are lots of great things that do this already, and this was the focus of the accompanying AMT Arduino library.
+
+### What about output to my modular or similar CV/gate synth?
+
+[Ok, I'll make an exception](https://twitter.com/matthewscharles/status/1096605603579990016) ;) since this is all running at audio rate, this can integrate quite nicely. People do this with Pure Data (and Bela) already.
 
 ## Objects/abstractions in current demo
 
