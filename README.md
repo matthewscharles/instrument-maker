@@ -1,6 +1,6 @@
 # About Instrument Maker
 
-This is an open source framework for digital instrument building with sensors, with improving access in mind. For Bela / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
+This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Bela](http://bela.io) / Raspberry Pi.  Currently developed by Charles Matthews through a series of collaborations - get in touch if you would like to contribute!
 
 Distributed under the terms of the GNU Public license version 3 (for now  / not sure how appropriate / need to read up on this).
 
@@ -30,13 +30,11 @@ Pure Data has an active online community with [forums](https://forum.pdpatchrepo
 
 ## Background
 
-My intention is to help find a different entry point to instrument creation using sensors. I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract.  But that's certainly a context in which some of this project's output will fit. Access or accessibility tend to rely upon openness, and benefit from opportunities for input at every stage of the design process.
+My intention is to help find a different entry point to instrument creation using sensors. I'm reluctant to use the term "accessible music technology" to describe this; while I respect others that do, I don't currently think it's all that helpful a term in abstract (I hope this will form a move toward Disabled artist-led music technology: essentially the same idea, but implies a different power relationship).  But that's certainly a context in which some of this project's output will fit. Access or accessibility tend to rely upon openness, and benefit from opportunities for input at every stage of the design process.
 
 So, ideally, this should provide an opportunity/context for someone to approach the problem of creating an instrument, rather than (necessarily) learning a programming language. Conversely, it shouldn't remove access to the underlying code..whether that's through a nicely packaged GUI, or a closed source back end. That's not necessarily the easiest problem to solve!  We're starting to see a bit more of this appearing in commercial software; Max for Live is a good example.
 
 A few considerations:
-
-
 
 - remove obligation to code, but with opportunities to learn and dismantle 
 - offer ways to create objects that feel like instruments, rather than controllers: devices that have a direct, local connection between physical input and output, without mediation from a keyboard and mouse (and added costs on that front)
@@ -45,13 +43,13 @@ A few considerations:
 - integrate a variety of tuning systems
 - expand access through ability to modify and create derivatives.
 
-I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the Planted Symphony installation.  I'm excited to think that this might form the basis for some much wider collaboration.
+I don't identify as a coder, but I care enough about this stuff to want to make it. Plus I have pretty intense ADHD and find it difficult to let things go. Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output ([Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)). Portions of this work were developed with the support of Drake Music: the Kellycaster, DMLab innovation challenges, and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/).  I'm excited to think that this might form the basis for some much wider collaboration.
 
-Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the Light Recorder Deck (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
+Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for DMX light control), and Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
 
 # Technical notes
 
-At present, I anticipate that in order to use this framework effectively, you'll need to download an SD card image for a Bela or Raspberry Pi (available soon). This is in part due to reliance on external libraries, which would need better documentation to install from scratch. Furthermore, on the Raspberry Pi, we need to set everything to boot directly to the software.
+At present, I anticipate that in order to use this framework effectively, you'll need to download an SD card image for a Bela or Raspberry Pi (available soon). This is in part due to reliance on external libraries, which would need better documentation to install from scratch. Furthermore, on the Raspberry Pi, we need instructions to boot directly to the software.
 
 For the time being, the "source code" is available here.  If you want a disk image to test, just let me know.  Version tracking is kind of limited due to the nature of Pd files, but I'm trying to break it down enough that we can observe changes in units/abstractions.
 
@@ -63,7 +61,7 @@ At present, the most flexible way to recreate this experience with a Raspberry P
 
 ### Interaction with actuators?
 
-No reason not to! But focussing on audio output keeps it simple for now.  
+No reason not to, and my initial attempt included a lot of this! But focussing on audio output keeps it simple for now.  
 
 ### MIDI output/what if I just want to make a controller?
 
@@ -78,7 +76,7 @@ As above..but there are lots of great things that do this already, and this was 
 | im.key                       | y        |                                                              |
 | im.midiin                    | y        |                                                              |
 | im.output                    | y        |                                                              |
-| im.reverb                    | n        | freeverb~ (yeah, I cheated)                                  |
+| im.reverb                    | n        | freeverb~ (yeah, I cheated for now)                          |
 | im.sample                    | y        | -                                                            |
 | im.scala & scala2 (internal) | n        | *counter*, *gate*, *tosymbol*, *fromsymbol*, zl: *iter*, *group*, *len*, *join*, sect, *reg*, *rev* |
 | im.scale                     | n        | zl: *reg*, *len*, *lookup*                                   |
@@ -131,3 +129,11 @@ Interested in using some Max-style attributes…some potentially useful info [he
 I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well?  
 
 Update: yes, turns out that the `[text]` object is great for this!! Nested structures now working in read mode (still a bit hacky), haven't attempted to format and write a JSON file yet.  The search function looks like it could be quite powerful.
+
+## Accessibility/misc documentation
+
+-Some instructions involving the help browser could be useful, as could Henri Bisognini's autocomplete plugin
+
+-How do we make this screen reader compatible?
+
+-How could we make a symbol-based version?
