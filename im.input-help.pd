@@ -1,0 +1,12 @@
+#N canvas 642 210 450 300 10;
+#X obj 48 57 im.input 1;
+#X text 118 57 Select an input by choosing a number;
+#X obj 288 122 im.input 1 octaves 2;
+#X text 91 83 By default this will output a number between 0 and 1
+;
+#X text 85 123 Modify the output using octaves;
+#X text 76 202 Modify the output using divisions;
+#X obj 289 202 im.input 1 divisions 2;
+#X text 175 156 connect to scale;
+#X obj 288 157 im.scale C major 2;
+#X connect 2 0 8 0;

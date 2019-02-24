@@ -1,6 +1,6 @@
 # About Instrument Maker
 
-This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  Code currently developed by [Charles Matthews](http://ardisson.net/) through a series of collaborations in the UK and Canada (details soon, but for now this page is written from a personal perspective) - get in touch if you would like to contribute!
+This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  Code developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/) and more in the pipeline.  Get in touch if you would like to contribute!
 
 Distributed under the terms of the **GNU Public license version 3** (for now  / not sure how appropriate to this project / need to read up on this).
 
@@ -12,7 +12,7 @@ The current version is not ready for public consumption (see the technical notes
 
 ## How does it work?
 
-Within Pure Data, create objects with the `im.` prefix to access building blocks: inputs, outputs, tuning systems, and synthesisers. Alternatively, download an example from the repository. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  
+Within Pure Data, create objects with the `im.` prefix to access building blocks: e.h. inputs, outputs, tuning systems, and synthesisers. Alternatively, download an example from the repository. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  
 
 With Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
@@ -53,13 +53,15 @@ Some of this code was originally developed for Max/MSP, and can possibly be made
 
 ### What's Pure Data, why use it this way?
 
-Pure Data is a free, open source, visually oriented programming language. Otherwise known as dataflow ("the flowchart is the program").  On-screen boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound, which eventually gets sent out to speakers or other things in the physical world.  For musicians, this can fit neatly with familiar notions of arranging mixers, modular synths, and effects pedals, or throwing objects at a drummer to negotiate tempo.
+Pure Data is a free, open source, visually oriented programming language. This is also known as dataflow ("the flowchart is the program"): on-screen boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound, which eventually gets sent out to speakers or other things in the physical world.  For musicians, this can fit neatly with familiar notions of arranging mixers, modular synths, and effects pedals, or throwing objects at a drummer to negotiate tempo.
 
 It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education, either. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one, or feeling turned away by assumed knowledge of maths etc. — which are the experiences I often observe when teaching this, and reflect my own first steps. 
 
-The idea that we need to identify as technically-minded to access these resources can tacitly reinforce power structures, including but not limited to those formed around gender, impairment, and Disability. Not to suggest that everyone wants to access creation on this level either..but why mention this here? Well, among the many options for creating bespoke software, even compared to some text-based languages, Pure Data arguably falls within the more "technical" camp.  With less emphasis on graphics than something like Max, it's a bit more like moving code around than re-plugging guitar pedals.  And it pushes the user into more "code-like" thinking. That's a good thing in my opinion, but not always at the start.  There are less ready-made options to use as a starting point..but once we can find or create the right ones, the experience, the underlying principles, the learning curves, are mostly the same.  Much like learning a musical instrument.
+The idea that we need to identify as technically-minded to access these resources can tacitly reinforce power structures, including but not limited to those formed around gender, impairment, and Disability. Not to suggest that everyone wants to access creation on this level either..but why mention this here? Well, among the many options for creating bespoke software, even compared to some text-based languages, Pure Data arguably falls within the more "technical" camp.  With less emphasis on graphics than something like Max, it's a bit more like moving code around than re-plugging guitar pedals.  And it pushes the user into more "code-like" thinking. That's a good thing in my opinion, but not always at the start.  There are less ready-made options to use as a starting point..but once we can find or create the right ones, the experience, the underlying principles, the learning curves, are mostly the same.  Much like finding ways to teach and learn a musical instrument.
 
-Pure Data has an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
+You can find a way to run Pure Data on pretty much anything, within reason: as well as current versions of Linux/Raspbian, Windows, and Mac OS, the most recent version (apparently) still supports Windows XP and Power PC Macintoshes. Libpd and Heavy provide ways to embed it in mobile apps and the web. Not to mention platforms like Bela, which have seen a shift from developing controllers to affordable, portable sensor-based instruments with low latency, and localised sound.
+
+There is an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
 
 ### Where are the problems with this approach?
 
@@ -78,6 +80,13 @@ The code has been tested in some shape or form through workshops and lectures fo
 Once the framework is stable, I will start releasing some packaged examples, video tutorials and "worksheets". At this point it may be possible to make a more open call for collaboration on the underlying framework.
 
 I also have plans to release paid some paid apps to support development of the project, which will not require editing of the code in the same way, but which should ideally be re-creatable with the resources we put online.
+
+#### Where can I learn Pure Data?
+
+Just to clarify: *you don't need to know how to use Pure Data in order to use this framework*. But here are some good resources:
+
+- http://www.pd-tutorial.com/
+- http://aspress.co.uk/ds/pdf/pd_intro.pdf
 
 ### Are there other projects like this?
 
@@ -109,6 +118,18 @@ For the time being, the "source code" is available here.  If you want a disk ima
 Pure Data running on Bela is a thing of beauty: sensor inputs are treated as audio information.  Analog inputs are accessed through the `[im.input]` abstraction (with an argument matching the analog input), and connected directly to a virtual instrument.
 
 At present, the most flexible way to recreate this experience with a Raspberry Pi (also a thing of beauty, in its own way, and a bit cheaper) appears to be through an affordable Arduino board running [Firmata](https://www.arduino.cc/en/reference/firmata). In practical terms, this requires dropping in an `[im.firmata]` object, which tells the `[im.input]`objects to look at Arduino inputs rather than the Bela's audio ADC.
+
+I have code hidden away somewhere that works with the [Bare Conductive Pi Cap](https://www.bareconductive.com/shop/pi-cap/), and the Touch Board is a great way to get MIDI in quickly and easily.
+
+Otherwise, the [kviky](https://www.kickstarter.com/projects/18932239/quickstarter-kviky-easy-audio-prototyping-for-rasp?ref=ksr_email_backer_survey_confirmation) also looks like an interesting solution (hoping to test this when I receive mine next month).
+
+### What about sensors that communicate over I2C, the HSR-04 etc?
+
+I don't understand how to do this natively with Bela yet, but maybe that's something to work out down the line.  Going through an Arduino would be fine. Unsure about Firmata here, my preference is usually to work with an ATmega32U4-based board and send MIDI over USB, which we can guarantee to pick up in Pd Vanilla.
+
+### Can it process audio input and sample?
+
+Yes, but not yet in the examples I have uploaded so far.
 
 ### Interaction with actuators?
 

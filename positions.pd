@@ -1,0 +1,5 @@
+
+#N canvas 60 90 640 570 10;
+#X toggle 100, 50;
+#X obj 100, 100 metro 100;
+#X connect 1 0 2 0;

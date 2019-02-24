@@ -1,4 +1,4 @@
-#N canvas 118 94 1150 591 10;
+#N canvas 346 69 1150 591 10;
 #X obj 525 41 sig~ 1;
 #X obj 525 71 -~, f 8;
 #X obj 515 165 dac~;
@@ -42,6 +42,13 @@
 #X obj 118 425 im.tunedperc main;
 #X obj 116 354 im.tuning main 250 selisir6.scl;
 #X obj 190 455 im.reverb short;
+#X obj 213 157 im.triads 4 I IV V VI, f 24;
+#X obj 111 191 im.acid;
+#X obj 213 187 im.fizzy;
+#X obj 111 94 im.scale C dorian 5, f 41;
+#X obj 111 62 im.input 1 octaves 2;
+#X obj 111 228 im.output;
+#X obj 213 130 im.input 2 divisions 4;
 #X connect 0 0 1 0;
 #X connect 1 0 8 1;
 #X connect 5 0 3 0;
@@ -71,3 +78,10 @@
 #X connect 38 0 39 0;
 #X connect 39 0 37 0;
 #X connect 39 0 41 0;
+#X connect 42 0 44 0;
+#X connect 43 0 47 0;
+#X connect 44 0 47 0;
+#X connect 45 0 43 0;
+#X connect 45 2 42 3;
+#X connect 46 0 45 0;
+#X connect 48 0 42 0;
