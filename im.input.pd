@@ -13,7 +13,7 @@
 #X obj 533 301 expr 1 - $f1;
 #X text 163 270 let's convert all our control rate stuff here in one
 go;
-#X obj 533 330 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 533 330 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 386 355 r fromGUI;
 #N canvas 474 355 450 300 route-set-optional-slash 0;
@@ -113,7 +113,7 @@ pduino help file);
 #X obj 236 407 spigot;
 #X text 161 467 osc-style addresses could be nice;
 #X obj 386 385 spigot, f 7;
-#N canvas 0 182 665 481 bela_firmata_osc 1;
+#N canvas 139 161 665 481 bela_firmata_osc 0;
 #X obj 35 392 outlet;
 #X obj 150 391 outlet;
 #X obj 279 390 outlet;
@@ -125,7 +125,7 @@ pduino help file);
 #X obj 261 255 delay 1500;
 #X obj 230 228 t b b, f 6;
 #X msg 260 274 0;
-#X obj 231 290 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 231 290 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 330 255 loadbang;
 #X obj 79 311 expr $f1 == 0 && $f2 == 0;
@@ -139,7 +139,7 @@ pduino help file);
 1;
 #X obj 170 250 loadbang;
 #X text 103 329 default to bela;
-#X obj 39 342 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 39 342 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 101 345 (using expr here will make more sense with more options)
 ;
@@ -176,13 +176,16 @@ to signify OSC but that wouldn't help us with arduino;
 #X connect 23 0 12 0;
 #X connect 23 1 12 1;
 #X connect 23 2 2 0;
-#X restore 135 87 pd bela_firmata_osc;
+#X restore 133 201 pd bela_firmata_osc;
 #X f 54;
-#X obj 135 116 t f f;
-#X obj 449 355 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 133 230 t f f;
+#X obj 449 355 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 269 385 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X obj 100 118 cnv 15 85 20 empty empty empty 20 12 0 14 -258113 -66577
+0;
+#X text 100 125 Out;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 2 0 1 1;
@@ -233,3 +236,4 @@ to signify OSC but that wouldn't help us with arduino;
 #X connect 56 1 11 0;
 #X connect 57 0 54 1;
 #X connect 58 0 52 1;
+#X coords 0 -1 1 1 85 40 1 100 100;

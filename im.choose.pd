@@ -1,0 +1,19 @@
+#N canvas 301 305 554 196 10;
+#X msg 77 93 get \$1 1;
+#X obj 77 117 list store \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9;
+#X text 180 9 awkward for bela? we'll need to choose;
+#X text 180 24 what if an input object sent out a bang on change \,
+asking any list-type objects to poll;
+#X obj 77 19 inlet~;
+#X obj 77 52 snapshot~;
+#X obj 123 19 bang~;
+#X text 88 73 [change] would be calming here unless we need it to trigger
+;
+#X obj 77 141 outlet;
+#X text 132 142 do we need to convert back to audio? no \, bc some
+output will be symbols.;
+#X connect 0 0 1 0;
+#X connect 1 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
