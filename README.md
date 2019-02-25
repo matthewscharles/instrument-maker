@@ -14,7 +14,7 @@ About the code: the current version is not ready for public consumption (see the
 
 ## How does it work?
 
-Within Pure Data, create objects with the `im.` prefix to access building blocks: e.h. inputs, outputs, tuning systems, and synthesisers. Alternatively, download an example from the repository. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  
+Within Pure Data (pictured below), create objects with the `im.` prefix to access building blocks: e.h. inputs, outputs, tuning systems, and synthesisers. Alternatively, download an example from the repository. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  
 
 With Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
@@ -48,11 +48,13 @@ Here are a few that I can think of - would love to have more conversations aroun
 - Physical access: assumption of appropriateness of specific interfaces
 - Ways to access information
   - Limited formats (e.g. absence of text, screen reader compatibility/audio description, or symbol-based option, pacing of information)
-  - Assumption of prior knowledge, access to education or cognition
+  - Assumption of prior knowledge, cognition, access to education 
 - Diversity in the representation of creators and artists
 - Unstable systems (e.g. operating systems that herald new accessibility features but break music software when updated)
 
-What so much of this boils down to: lack of options, lack of openness, *the lack of ability to change things and lack of appropriate pathways to learn how*.  This applies as much to the creation of resources as it does to the consumption; in fact, making a distinction between these acts might be considered problematic in this respect.
+What so much of this boils down to: lack of options, lack of openness, *the lack of ability to change things and lack of appropriate pathways to learn how*.  
+
+I believe this applies as much to the creation of resources as it does to consumption. In fact, making a distinction between these acts might be considered problematic in this context.
 
 ### A few considerations in the initial development
 
