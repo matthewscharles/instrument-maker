@@ -65,14 +65,6 @@ Would everyone like to make their own instrument? Does everyone need to? Is it a
 - integrate a variety of tuning systems
 - expand access through ability to modify and create derivatives.
 
-### About [me](https://twitter.com/matthewscharles) 
-
-I don't identify as a coder, much in the same way that I sometimes don't feel entitled to identify as a musician (I don't know wtf it is I do tbh), but I care enough about this kind of stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go.  I know that most of what I make could be used by other people, but it's been lacking some sort of unifying practice and documentation. I have engaged in [openwashing](http://openwashing.org/) in the past, and almost certainly still do so, consciously or otherwise. As terrifying and perhaps unneccessary as the process of making everything open early on might be, I'm equally tired of saying "it'll be open source down the line/when it's tidier/when I know that I can support it". That latter part could be problematic. But that's what reaching out to a community is about, right?
-
-Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output (e.g. [Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)).  I'm excited to think that this might form the basis for some much wider collaboration.  Portions of this work were developed with the support of [Drake Music](https://www.drakemusic.org/): e.g. [the Kellycaster](https://rockinpaddy.wordpress.com/) with John Kelly, Gawain Hewitt and others, [DMLab innovation challenges](http://music.britishcouncil.org/news-and-features/2016-10-20/embracing-music-technology-the-dm-lab-challenge), and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/). Also [instrument building](https://www.youtube.com/watch?v=u2jbe-UZWwo) projects at [Wac Arts](https://www.youtube.com/watch?v=khgLvs59AlU).
-
-Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for affordable [DMX light control](https://twitter.com/Josonia7/status/1093481504372654080)), and an Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
-
 ### What's Pure Data, why use it this way?
 
 Pure Data is a free, open source, visually oriented programming language. This is also known as dataflow ("the diagram is the program"): on-screen boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound, which eventually gets sent out to speakers or other things in the physical world.  For musicians, this can fit neatly with familiar notions of arranging mixers, modular synths, and effects pedals, or throwing objects at a drummer to negotiate tempo.
@@ -85,13 +77,23 @@ You can find a way to run Pure Data on pretty much anything, within reason: as w
 
 There is an active online community with [forums](https://forum.pdpatchrepo.info/) and a [Facebook group](https://www.facebook.com/groups/4729684494/), where it's possible to discuss problems and ideas.
 
+### About [me](https://twitter.com/matthewscharles) 
+
+I don't identify as a coder, much in the same way that I sometimes don't feel entitled to identify as a musician (I don't know wtf it is I do tbh) but I care enough about this kind of stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go.  My way into coding was through Max, and later Pd.  I jumped into teaching with these resources quite early on, and failed hard quite a lot before learning the importance of dialog and a solid framework. 
+
+I know that most of what I make could be used by other people, but it's been lacking some sort of unifying practice and documentation. I have certainyl engaged in [openwashing](http://openwashing.org/) in the past, and probably still do so, consciously or otherwise. Not that I believe everyone should be forced to do this...as terrifying and perhaps unneccessary as the idea of making a process like this open, before it's properly organised, might be, I'm tired of hiding projects away, of worrying about competition. I'm equally tired of saying "it'll be open source down the line/when it's tidier/when I know that I can support it". That latter part could be problematic. But that's what reaching out to a community is about, right?
+
+Instrument Maker pulls together material from around fifteen years of lectures, collaborative projects, and artistic output (e.g. [Light Recorders](http://ardisson.net/a/?page_id=440) and [Augmented Gamelan](http://augmentedgamelan.com)).  I'm excited to think that this might form the basis for some much wider collaboration.  Portions of this work were developed with the support of [Drake Music](https://www.drakemusic.org/): e.g. [the Kellycaster](https://rockinpaddy.wordpress.com/) with John Kelly, Gawain Hewitt and others, [DMLab innovation challenges](http://music.britishcouncil.org/news-and-features/2016-10-20/embracing-music-technology-the-dm-lab-challenge), and the [Planted Symphony installation](http://www.drakemusic.org/our-work/artistic-development/projects-commissions/planted-symphony/). Also [instrument building](https://www.youtube.com/watch?v=u2jbe-UZWwo) projects at [Wac Arts](https://www.youtube.com/watch?v=khgLvs59AlU).
+
+Some of this code was originally developed for Max/MSP, and can possibly be made available on request; it's a bit much to develop on the two platforms in parallel right now.  This sits alongside a couple of other projects that live in other repositories: the [Light Recorder Deck](https://github.com/matthewscharles/Light-Recorder-Deck) (for affordable [DMX light control](https://twitter.com/Josonia7/status/1093481504372654080)), and an Accessible Music Technology Framework (an Arduino library with similar aims, currently on hold).  
+
 ### Where are the problems with this approach?
 
-This kind of situation can be restrictive, some might say patronising.
+This kind of situation can be restrictive, presumptuous, perhaps even patronising. Is this an attempt to define other people's access? 
 
-My own experience of working with similar frameworks (such as the excellent BEAP and Vizzie collections for Max) has been mixed. They tend to be a little idiosyncratic and difficult to mix with more generic approaches in teaching environments, due to a need for standardised ins/outs and ranges..I can certainly see this as a problem here.
+One of the advantages of working with Pure Data, or similar languages, is that the graphical interface can automatically be part of the code. Many of the musical interfaces we are used to now are more abstract versions of this; see, for example, the drag-and-drop plugin chaining and less-linear-timeline-based interactions that were popularised through [Reason](https://www.propellerheads.com/en/reason) and [Ableton Live](https://www.ableton.com/en/), the latter of which was ~~[originally prototyped in](http://www.roberthenke.com/technology/ableton_live.html)~~ partly inspired by Max.
 
-One of the advantages of working with Pure Data, or similar languages, is that the graphical interface can automatically be part of the code. Many of the musical interfaces we are used to now are more abstract versions of this; see, for example, the drag-and-drop plugin chaining and less-linear-timeline-based interactions that were popularised through Reason and Ableton Live, the latter of which was ~~[originally prototyped in](http://www.roberthenke.com/technology/ableton_live.html)~~ partly inspired by Max.
+On a practical level, my own experience of working with similar frameworks (such as the excellent [BEAP](https://www.ableton.com/en/blog/beap-powerful-modules-max-live/) and [Vizzie](https://cycling74.com/articles/introducing-vizzie) collections for Max) has been mixed. They tend to be a little idiosyncratic and difficult to mix with more generic approaches in teaching environments, due to a need for standardised ins/outs and ranges..I can certainly see this as a problem here.
 
 In this proposed framework, in a way, we leave that idea behind; we might test the ideas on screen, with a mouse or keyboard, but that affords certain sorts of interactions..and the act of trying to create a useable interface in itself often leads us back into those spiders' webs.."screen time"..in a way, at this point at least I guess this is less about the playful exploration through code that we might associate with this kind of dataflow/visually oriented setup - but I believe it can lead to more play at the instrument end.  Of course, you may notice some similarities between these objects and the kind of abstractions found in live coding environments like [Tidal Cycles](https://tidalcycles.org/)..there could be an interesting live-patching spinoff to explore.
 
@@ -119,7 +121,9 @@ As a longer term goal, I hope to find ways to make a smooth transition from usin
 - [More general definition](https://www.youtube.com/watch?v=L1-zCdrx8Lk)
 - [What this means in Pure Data and similar dataflow situations](https://guitarextended.wordpress.com/2012/01/12/tip-use-abstractions-and-sub-patches/)
 
-I tend to use these words interchangeably..and it's a nice way to explain the more general situation once the idea "clicks". We're not coding objects in C here, and it's nice that each of the boxes can be opened up, modified, and used to learn.
+I tend to use these words interchangeably..and it's a nice way to explain the more general situation once the idea "clicks". 
+
+For more experienced Pure Data users: we're not coding objects in C here, I'm trying to keep it as Vanilla as possible (although that means a lot of rewriting, as below), and it's nice that each of the boxes can be opened up, modified, and used to learn.
 
 ### Are there other projects like this?
 
@@ -142,7 +146,7 @@ Not all dedicated to creating standalone instruments in this way (and by no mean
 
 At present, I anticipate that in order to use this framework effectively, you'll need to download an SD card image for a Bela or Raspberry Pi (available soon). This is in part due to reliance on external libraries, which would need better documentation to install from scratch. Furthermore, on the Raspberry Pi, we'll need to set up instructions to boot directly to the software.
 
-For the time being, the "source code" is available here.  If you want a disk image to test, just let me know.  Version tracking is kind of limited due to the nature of Pd files, but I'm trying to break it down enough that we can observe changes in units/abstractions.
+For the time being, the "source code" is available here.  If you want a disk image to test, just let me know.  Version control is kind of limited due to the nature of Pd files, but I'm trying to break it down enough that we can observe changes in units/abstractions.
 
 ## Interaction with sensors
 
