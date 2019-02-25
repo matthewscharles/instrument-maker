@@ -49,12 +49,14 @@ Here are a few that I can think of - would love to have more conversations aroun
 - Ways to access information
   - Limited formats (e.g. absence of text, screen reader compatibility/audio description, or symbol-based option, pacing of information)
   - Assumption of prior knowledge, cognition, access to education 
+- Noise! Long, abstract steps to set up, menus that distract from interactions, the lure of multifunction devices or software
 - Diversity in the representation of creators and artists
 - Unstable systems (e.g. operating systems that herald new accessibility features but break music software when updated)
+- Lack of compatibility with other frameworks that provide access
 
 What so much of this boils down to: lack of options, lack of openness, *the lack of ability to change things and lack of appropriate pathways to learn how*.  
 
-I believe this applies as much to the creation of resources as it does to consumption. In fact, making a distinction between these acts might be considered problematic in this context.
+I believe that most of the above applies as much to the creation of resources as it does to consumption. In fact, making a distinction between these acts might be considered problematic in this context.
 
 ### A few considerations in the initial development
 
@@ -71,7 +73,7 @@ Would everyone like to make their own instrument? Does everyone need to? Is it a
 
 Pure Data is a free, open source, visually oriented programming language. This is also known as dataflow ("the diagram is the program"): on-screen boxes that serve particular functions are joined together, sending messages back and forth, some of which can be sound, which eventually gets sent out to speakers or other things in the physical world.  For musicians, this can fit neatly with familiar notions of arranging mixers, modular synths, and effects pedals, or throwing objects at a drummer to negotiate tempo.
 
-It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education, either. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one, or feeling turned away by assumed knowledge of maths etc. — which are the experiences I often observe when teaching this, and reflect my own first steps. 
+It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education, either. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one, or feeling turned away by assumed knowledge of maths etc. — which are the experiences I often observe when teaching this, and reflect my own first steps. One of the beautiful things about Pure Data and similar environments is that they facilitate an exploratory, "let's see what happens when I plug this thing into this other thing" approach.  But we need a good way into that. 
 
 The idea that we need to identify as technically-minded to access these resources can tacitly reinforce power structures, including but not limited to those formed around gender, impairment, and Disability. Not to suggest that everyone wants to access creation on this level either..but why mention this here? Well, among the many options for creating bespoke software, even compared to some text-based languages, Pure Data arguably falls within the more "technical" camp.  With less emphasis on graphics than something like Max, it's a bit more like moving code around than re-plugging guitar pedals.  And it pushes the user into more "code-like" thinking. That's a good thing in my opinion, but not always at the start.  There are less ready-made options to use as a starting point..but once we can find or create the right ones, the experience, the underlying principles, the learning curves, are mostly the same.  Much like finding ways to teach and learn a musical instrument.
 
@@ -118,14 +120,21 @@ Just to clarify: *you don't need to know how to use Pure Data in order to use th
 
 As a longer term goal, I hope to find ways to make a smooth transition from using the framework by itself to unpacking some of the boxes and working more independently (or combining them with existing, more generic approaches).
 
-#### What's an abstraction? Why not just say "object"?
+#### What's an abstraction? And why not just say "object"?
 
-- [More general definition](https://www.youtube.com/watch?v=L1-zCdrx8Lk)
+In simple terms: something that performs a certain function, that is enclosed in a way that frees us up from thinking about how it works. 
+
+This thing has certain parameters that we can play with, so when we make one, rather than opening it up to mess with the insides, we can give it some information to determine how it responds to our interactions.
+
+- [A general definition for computing](https://www.youtube.com/watch?v=L1-zCdrx8Lk)
+
 - [What this means in Pure Data and similar dataflow situations](https://guitarextended.wordpress.com/2012/01/12/tip-use-abstractions-and-sub-patches/)
 
-I tend to use these words interchangeably..and it's a nice way to explain the more general situation once the idea "clicks". 
+We could make an analogy with a guitar here. We don't need to know exactly how it works if we just want to pick it up and strum it for the first time.  We don't need to know the physics of how the strings vibrate to tune it and make a chord (well, maybe that's a personal choice, but growing up, I was more interested in how the sound made me feel).
 
-For more experienced Pure Data users: we're not coding objects in C here, I'm trying to keep it as Vanilla as possible (although that means a lot of rewriting, as below), and it's nice that each of the boxes can be opened up, modified, and used to learn.
+When we set the guitar up, we need to give it some information, e.g. by turning the tuning pegs to a certain set of notes.  We probably only need to do that once.  That affects how we play down the line (the fretting, picking, or messages that we send in, all in relation to what we expect to come out).  In Pure Data, the way we set up those tuning pegs might be called "arguments".
+
+The difference between abstractions and objects? In practical terms within Pure Data…*abstractions* are made from re-combining visual code, so that they can be opened up, modified, and studied by anyone within the main program, and *objects* are coded in C, in which case we're probably going to need an afternoon and a strong drink of some description to get started.  They can be treated in roughly the same way, but using external *objects* gets messy when we try to move between platforms (for example, trying to run the same setup on a Bela Board or an iPhone).
 
 ### Are there other projects like this?
 
@@ -180,7 +189,7 @@ As above..but there are lots of great things that do this already, and this was 
 
 [Ok, I'll make an exception](https://twitter.com/matthewscharles/status/1096605603579990016) ;) since this is all running at audio rate, this can integrate quite nicely. People do this with Pure Data (and Bela) already.
 
-## Pd: example objects/abstractions in current demo
+## Pd: example objects/abstractions in first demo
 
 | Name                             | Vanilla? | Needs (easy fixes in italics)                                |
 | -------------------------------- | -------- | ------------------------------------------------------------ |
@@ -199,9 +208,9 @@ As above..but there are lots of great things that do this already, and this was 
 
 ## Tuning/Scala
 
-The framework uses the [Scala](http://www.huygens-fokker.org/scala/) format to retrieve tuning systems, which may be useful for storing scales as well.  This could fit into (or replace) JSON as described below.
+*Please note: if you got as far as reading this section, there's a possibility that I don't care about microtuning as intensely as you do.  I can dig that. Think I'm mishandling this stuff? Let me know :)*
 
-Please note: if you got as far as reading this section, there's a possibility that I don't care about microtuning as intensely as you do.  I can dig that. Think I'm mishandling this stuff? Let me know :)
+The framework uses the [Scala](http://www.huygens-fokker.org/scala/) format to retrieve tuning systems, which may be useful for storing scales as well.  This could fit into (or replace) JSON as described below.
 
 Tuning is transferred to a table accessible at audio rate with interpolation if needed (I think this has potential for some subtley freaky modulation sources).
 
