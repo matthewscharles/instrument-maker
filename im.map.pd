@@ -1,6 +1,6 @@
 #N canvas 125 82 450 300 10;
 #X floatatom 21 152 5 0 0 0 - - -;
-#X floatatom 23 237 5 0 0 0 - - -;
+#X floatatom 22 226 5 0 0 0 - - -;
 #X floatatom 88 150 5 0 0 0 - - -;
 #X floatatom 150 148 5 0 0 0 - - -;
 #X floatatom 222 147 5 0 0 0 - - -;
@@ -16,8 +16,9 @@
 #X obj 283 14 loadbang;
 #X obj 283 36 t b b b b;
 #X obj 21 126 inlet;
-#X obj 24 261 outlet;
-#X obj 22 191 expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4;
+#X obj 22 249 outlet;
+#X obj 22 191 expr ($f1-$f2)*($f4-$f5)/($f2-$f3)+$f4;
+#X text 35 209 borrowed from jamoma;
 #X connect 0 0 18 0;
 #X connect 1 0 17 0;
 #X connect 2 0 18 1;

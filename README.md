@@ -1,4 +1,4 @@
-# About Instrument Maker
+# Instrument Maker
 
 This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  Code developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/) and more in the pipeline.  Get in touch if you would like to contribute!
 
@@ -75,7 +75,7 @@ Pure Data is a free, open source, visually oriented programming language. This i
 
 It's not a million miles away from the ["blocks"](https://en.wikipedia.org/wiki/Block_(programming))-type programming currently popular in education, either. I'm interested in how Pure Data can be used in a similar way, but without the complexity of trying to make everything from scratch: getting caught up in "spiders' webs" or a blank screen on day one, or feeling turned away by assumed knowledge of maths etc. — which are the experiences I often observe when teaching this, and reflect my own first steps. One of the beautiful things about Pure Data and similar environments is that they facilitate an exploratory, "let's see what happens when I plug this thing into this other thing" approach.  But we need a good way into that. 
 
-*This is where it gets a bit ranty, so please bear with me:* the idea that we need to identify as "technically-minded" to access these materials can tacitly reinforce power structures, including but not limited to those formed around Disability. I don't mean to suggest that this is a status or identity that cannot be occupied, but rather that to be labelled as "technically-minded" (or not) often implies access to resources and education from which many people are excluded - in contrast to an inherent aptitude. Not to suggest that everyone wants to create music or instruments at this level either..but why mention this here? 
+*This is where it gets a bit ranty and controversial, so please bear with me:* the idea that we need to identify as "technically-minded" to access these materials can tacitly reinforce power structures, including but not limited to those formed around Disability. I don't mean to suggest that this is a status or identity that cannot be occupied, but rather that to be labelled as "technically-minded" (or not) often implies access to resources and education from which many people are excluded - in contrast to an inherent aptitude. Not to suggest that everyone wants to create music or instruments at this level either..but why mention this here? 
 
 Among the many options for creating bespoke software, even compared to some text-based languages, Pure Data arguably falls within the more "technical" camp.  With less emphasis on graphics than software like Max, it's a bit more like moving code around than re-plugging guitar pedals.  And it pushes the user into more "code-like" thinking. That's a positive thing in my opinion, but not always the most inviting situation at the start for someone who has hitherto been excluded from these situations.  Furthermore, by engaging with this situation, there is a common problem in that assuming a lack of engagement with technology often implies a need for simplification.  Although there are less ready-made options with tangible musical outcomes to use as a starting point.. once we can find or create the right ones, the experience, the underlying principles, the learning curves, can be similar to other more "accessible" forms of code.  Much like finding ways to teach and learn a musical instrument.
 
@@ -85,7 +85,7 @@ There is an active online community with [forums](https://forum.pdpatchrepo.info
 
 ### About [me](https://twitter.com/matthewscharles) 
 
-I don't identify as a coder, much in the same way that I sometimes don't feel entitled to identify as a musician (I don't know wtf it is I do tbh) but I care enough about this kind of stuff to want to make it. Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363) and find it difficult to let things go.  My way into coding was through Max, and later Pd.  I jumped into teaching with these resources quite early on, and failed hard quite a lot before learning the importance of dialog and a solid framework. 
+I don't identify as a coder, much in the same way that I sometimes don't feel entitled to identify as a musician (I don't know wtf it is I do tbh) but I care enough about this kind of stuff to want to make it.   Plus I have [pretty intense ADHD](http://ardisson.net/a/?p=363)/executive function issues, and find it difficult to let things go.  I wasn't able to complete a secondary school education, and I had to abandon maths and physics, I think mostly due to a lack of concrete context. I had to bash my head against the wall a lot to break into writing code, and still feel like I am missing some fundamental knowledge.  My way into coding was through Max, and later Pd, not because of a desire to engage with technology for its own sake (ok, perhaps if a love of weird noises counts), but because I was dissatisfied with the mainstream tools available, and consistently met people who felt the same way.  I jumped into teaching with these resources quite early on; I failed hard quite a lot before learning the importance of dialog and a solid framework to work through. Through all of this, technology became an invaluable tool to communicate. 
 
 I know that most of what I make could be used by other people, but it's been lacking some sort of unifying practice and documentation. I have certainyl engaged in [openwashing](http://openwashing.org/) in the past, and probably still do so, consciously or otherwise. Not that I believe everyone should be forced to do this...as terrifying and perhaps unneccessary as the idea of making a process like this open, before it's properly organised, might be, I'm tired of hiding projects away, of worrying about competition. I'm equally tired of saying "it'll be open source down the line/when it's tidier/when I know that I can support it". That latter part could be problematic. But that's what reaching out to a community is about, right?
 
@@ -95,7 +95,7 @@ Some of this code was originally developed for Max/MSP, and can possibly be made
 
 ### Where are the problems with this approach?
 
-This kind of situation can be restrictive, presumptuous, perhaps even patronising. Is this an attempt to define other people's access? 
+This kind of situation can be restrictive, presumptuous, perhaps even patronising. Is this an attempt to define other people's access? An unnecessary simplification?
 
 One of the advantages of working with Pure Data, or similar languages, is that the graphical interface can automatically be part of the code. Many of the musical interfaces we are used to now are more abstract versions of this; see, for example, the drag-and-drop plugin chaining and less-linear-timeline-based interactions that were popularised through [Reason](https://www.propellerheads.com/en/reason) and [Ableton Live](https://www.ableton.com/en/), the latter of which was ~~[originally prototyped in](http://www.roberthenke.com/technology/ableton_live.html)~~ partly inspired by Max.
 
@@ -145,6 +145,7 @@ Yes! I am definitely not the first person to do something like this. I'm drawing
 Not all dedicated to creating standalone instruments in this way (and by no means intended to be exhaustive), but you might like to check out some of these different angles on similar issues within the open source community:
 
 - http://automatonism.com/
+- http://www.jamoma.org/pd/
 - https://tidalcycles.org/
 - https://www.ableton.com/en/blog/beap-powerful-modules-max-live/
 - https://github.com/dktr0/estuary
@@ -246,6 +247,7 @@ I'm looking for ways to recreate the following objects using Vanilla.  Since the
 - **rampsmooth~**: ugh..this one will be tough to live without, I use this for everything. Maybe look at [source code](https://github.com/porres/pd-cyclone/blob/master/cyclone_objects/binaries/audio/rampsmooth.c) and use something like `[fexpr~]`? I've got as far as some if statements with `$x1[-1`], love it so far.
 - **svf~**: unfortunately this is an easy way to make filters with audio modulation inputs that will be similarly difficult to let go.
 - **scale**: I think this should be `[expr ($f1 * (($f5 - $f4) / ($f3 - $f2))) + $f4]` but it doesn't handle negative numbers. There was an abstraction included within pd-extended that I'd like to check out.
+  - the abstraction was actually from jamoma: `expr ($f1-$f2)*($f4-$f5)/($f2-$f3)+$f4` - this handles negative numbers ok.
   - created `[im.map]` using the above.
 
 Interested in using some Max-style attributes…some potentially useful info [here](https://forum.pdpatchrepo.info/topic/10892/collect-all-arguments-as-a-list/7).
@@ -255,6 +257,18 @@ Interested in using some Max-style attributes…some potentially useful info [he
 I'm keen for this to use the JSON format to promote compatibility with other platforms. I use the PuRestJson external available for Pd, which works OK. Considering writing a parser with Vanilla objects, but really, is that going to end well?  
 
 Update: yes, turns out that the `[text]` object is great for this!! Nested structures now working in read mode (still a bit hacky), haven't attempted to format and write a JSON file yet.  The search function looks like it could be quite powerful.
+
+## Message format
+
+This is one of the hardest aspects of this project.  Do we use a mixture of audio and control-rate objects, or try to go exclusively down one of these paths?
+
+My preference is to use as much audio as possible. Using tables helps this a lot.
+
+The main problem is that symbols are important to access (e.g. having the option to put in note names, chords, etc. the way they would usually be written in the outside world).  In designing for the glorious audio-rate sensor inputs available via Bela, we sometimes have to do a bit of conversion across to control rate, in order to access things like arrays of symbols, or if restricted to audio, have a division on a touchscreen fader re-trigger a specific chord.   My experience is that can cause problems - but I don't really understand mode switches yet, for example.
+
+I'm curious as to how other people have approached this situation..perhaps a question to put to the Bela team.
+
+*Note to self - maybe the mobile-compatible objects could briefly drop to a negative signal to signify "change"*
 
 ## Accessibility/misc documentation
 
@@ -274,7 +288,7 @@ To use or not? Maybe I should fork and try it..
 - Can address some access concerns around contrast, possible colour coding if possible to work out an appropriate panel-like GUI oject.
 - Less confusion around differentiation from built-in objects
 - Will not open accidentally on click
-- Can label outlets (*big* advantage here)
+- Can label outlets and display input meters (*big* advantages here)
 - Customisable colour scheme from a central file on load
 
 **Cons:**
