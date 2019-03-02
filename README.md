@@ -64,6 +64,16 @@ In my experience, teaching environments, including less formal workshops, are of
 
 So how could we make the resources more visible, and collaborative? Although environments like Pure Data might be an ideal way in to audio programming, they do rely quite heavily on focused attention on a screen, and moving between keyboard and mouse. This feels quite jarring compared to contemporary standards of touch-screen based activity (including smartboards).  Furthermore, with a single fixed method of user input, many people without access to these interfaces are excluded.  
 
+### Feedback from early tests
+
+Excluding generic positive feedback: a couple of things that have jumped out so far from the initial demos and videos:
+
+**Feb 2019**
+
+- I think I get a bit intimidated by the form, I often feel like, "how am I supposed to remember all these names?" also the scales and stuff scared me. But that would make more sense to a musical crowd.
+- how would I save all the presets?
+- at the start that you were effortlessly editing it and I was struck that I wouldn't know what to do. But this is common to max and pd tutorials. So not specific to you. It's what has generally scared me off. Just not knowing the language and not seeing easy ways to get to grips with it, I mean it might be naive of me but when looking at code written out the meaning has always seemed more accessible. You can get a sense of what each part is doing to each other.
+
 ### A few considerations in the initial development
 
 Would everyone like to make their own instrument? Does everyone need to? Is it a good use of time?  It's up to the individual to make an informed decision.  But the options should be on the table.  With this in mind, here were a few considerations as I put the first demos together:
@@ -312,9 +322,3 @@ To use or not? Maybe I should fork and try it..
 ### Other useful stuff
 
 - https://forum.pdpatchrepo.info/topic/10258/loading-a-pure-data-patch-pd-file-within-a-pure-data-patch-pd-file/16
-
-1. <div id="text"></div>
-2.  
-3. <script>
-4. document.getElementById("text").innerHTML = "Text added by JavaScript code";
-5. </script>
