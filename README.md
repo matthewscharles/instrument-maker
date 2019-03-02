@@ -58,6 +58,12 @@ What so much of this boils down to: lack of options, lack of openness, *the lack
 
 I believe that most of the above applies as much to the creation of resources as it does to consumption. In fact, making a distinction between these acts might be considered problematic in this context.
 
+### Access in workshop settings
+
+In my experience, teaching environments, including less formal workshops, are often quite polarising environments when it comes to expectations of screen-based activity.  A room with a set of consoles can be a welcoming space for some people, but excluding for others. Throw some audio into the mix, and it becomes very difficult for a facilitator to keep track of the different levels of progress in the room.
+
+So how could we make the resources more visible, and collaborative? Although environments like Pure Data might be an ideal way in to audio programming, they do rely quite heavily on focused attention on a screen, and moving between keyboard and mouse. This feels quite jarring compared to contemporary standards of touch-screen based activity (including smartboards).  Furthermore, with a single fixed method of user input, many people without access to these interfaces are excluded.  
+
 ### A few considerations in the initial development
 
 Would everyone like to make their own instrument? Does everyone need to? Is it a good use of time?  It's up to the individual to make an informed decision.  But the options should be on the table.  With this in mind, here were a few considerations as I put the first demos together:
@@ -303,3 +309,12 @@ To use or not? Maybe I should fork and try it..
 - Harder to represent on Bela's web-based interface etc.
 - Possible conflict with font sizes?
 
+### Other useful stuff
+
+- https://forum.pdpatchrepo.info/topic/10258/loading-a-pure-data-patch-pd-file-within-a-pure-data-patch-pd-file/16
+
+1. <div id="text"></div>
+2.  
+3. <script>
+4. document.getElementById("text").innerHTML = "Text added by JavaScript code";
+5. </script>
