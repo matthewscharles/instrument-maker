@@ -20,11 +20,11 @@ With Bela, choosing a setup should be a case of dragging and dropping into a bro
 
 ![This is a screenshot of the Instrument Maker objects in Pure Data. It shows a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, octaves, scale, triads, and there are two instruments: acid and fizzy. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/im-chords.png)
 
-Video demo (code): https://youtu.be/8AJMJq2P8Ko
+Video demo (code): [https://youtu.be/8AJMJq2P8Ko](https://youtu.be/8AJMJq2P8Ko)
 
-Video demo (mobile): https://www.youtube.com/watch?v=jl020N0MZxk
+Video demo (mobile): [https://www.youtube.com/watch?v=jl020N0MZxk](https://www.youtube.com/watch?v=jl020N0MZxk)
 
-Video demo (play): https://www.youtube.com/watch?v=ywEX0N6TpEA
+Video demo (play): [https://www.youtube.com/watch?v=ywEX0N6TpEA](https://www.youtube.com/watch?v=ywEX0N6TpEA)
 
 An accompanying hardware component is in development, which adds crocodile clip access to the Bela platform.
 
