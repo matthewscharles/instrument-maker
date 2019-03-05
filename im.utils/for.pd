@@ -38,6 +38,8 @@
 #X msg 193 289 0;
 #X obj 188 386 expr $f1 < $f2;
 #X obj 188 412 sel 0;
+#X text 10 470 Charles Matthews 2019 https://github.com/matthewscharles/instrument-maker
+;
 #X connect 0 0 8 0;
 #X connect 1 0 27 0;
 #X connect 2 0 4 0;

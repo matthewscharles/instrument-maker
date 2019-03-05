@@ -1,14 +1,14 @@
-#N canvas 244 348 295 283 10;
+#N canvas 520 220 295 283 10;
 #X obj 23 12 inlet;
 #X obj 33 166 list store, f 12;
 #X obj 57 214 outlet;
 #X msg 32 137 get \$1 1;
 #X obj 23 69 for \$1;
-#X text 150 200 done;
-#X obj 23 39 t a a a, f 12;
-#X obj 116 60 list length;
+#X text 168 165 done;
+#X obj 23 39 t a a a, f 21;
+#X obj 143 76 list length;
 #X obj 128 121 ==;
-#X obj 104 199 outlet;
+#X obj 127 167 outlet;
 #X obj 23 91 t f f;
 #X obj 7 165 f;
 #X text 23 244 perhaps unnecessarily complex due to debug;
@@ -16,8 +16,7 @@
 #X text 23 259 (don't yet trust the order of the done outlet on for)
 ;
 #X obj 127 147 sel 1;
-#X obj 139 85 - 2;
-#X msg 138 14 1 2;
+#X obj 143 97 - 2;
 #X connect 0 0 6 0;
 #X connect 1 0 13 0;
 #X connect 3 0 1 0;
@@ -34,4 +33,3 @@
 #X connect 13 1 2 0;
 #X connect 15 0 9 0;
 #X connect 16 0 8 1;
-#X connect 17 0 6 0;
