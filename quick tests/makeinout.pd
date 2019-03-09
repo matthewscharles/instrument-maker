@@ -1,0 +1,7 @@
+#N canvas 642 334 450 300 10;
+#X obj 279 66 namecanvas mycanvasname;
+#X obj 145 117 s mycanvasname;
+#X obj 141 54 loadbang;
+#X msg 145 97 obj 20 20 inlet \, obj 20 40 outlet;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;

@@ -1,0 +1,28 @@
+#N canvas 244 58 450 300 10;
+#X obj 111 133 route bang float;
+#X obj 113 165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 228 135 route bang float;
+#X obj 228 166 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 113 211 line~;
+#X msg 113 186 \$1 10;
+#X obj 113 235 outlet~;
+#X obj 229 214 line~;
+#X msg 229 189 \$1 10;
+#X obj 229 238 outlet~;
+#X obj 112 89 route 1 2, f 40;
+#X obj 110 56 r micro;
+#X connect 0 0 1 0;
+#X connect 0 1 1 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 2 1 3 0;
+#X connect 3 0 8 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 10 0 0 0;
+#X connect 10 1 2 0;
+#X connect 11 0 10 0;
