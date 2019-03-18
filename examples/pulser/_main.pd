@@ -1,0 +1,6 @@
+#N canvas 548 67 450 300 10;
+#X obj 69 172 im.tunedperc;
+#X obj 69 203 im.output;
+#X obj 68 46 im.pulser 2;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;

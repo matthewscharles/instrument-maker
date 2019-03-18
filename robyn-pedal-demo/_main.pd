@@ -1,0 +1,18 @@
+#N canvas 0 0 1280 778 10;
+#X obj 524 153 im.input 1;
+#X obj 279 406 im.output;
+#X obj 286 194 im.linein 1;
+#X obj 303 342 im.chorus;
+#X obj 305 311 im.volume;
+#X obj 420 202 im.buttons;
+#X obj 463 299 im.volume;
+#X obj 462 335 im.echo 3000 50%;
+#X connect 2 0 1 0;
+#X connect 2 0 4 0;
+#X connect 2 0 6 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 1;
+#X connect 5 1 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
