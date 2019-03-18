@@ -6,7 +6,7 @@ For now, these instructions require transferring all the Instrument Maker files 
 
 - First, plug your Bela board into your computer. Wait one minute for the Bela to start, then open a web browser, and go to [http://bela.local/](http://bela.local/). You should see the following screen:
 
-  ![bela-ide.png](bela-ide.png)
+  <img src="bela-ide.png" width="50%">
 
   - Macintosh users: if this does not work, you may need to install The HoRNDIS driver: [http://joshuawise.com/downloads/HoRNDIS-rel7.pkg](http://joshuawise.com/downloads/HoRNDIS-rel7.pkg)
   - If you see a mostly blank screen, and the menu on the right-hand-side only gives an option "Choose a project from your board" repeat the process by unplugging the USB cable, plugging it back in, and refreshing the browser.
@@ -18,8 +18,7 @@ This stage involves dragging files from finder into the web browser; you might l
 - Open a new browser window or tab, and go to the releases section of the GitHub repository: [https://github.com/matthewscharles/instrument-maker/releases](https://github.com/matthewscharles/instrument-maker/releases)
 
   - Download the **latest** version of `im-bela.zip` from this page.
-
-    ![](bela-download.png)
+  - <img src= "bela-download.png" width="50%">
 
 - Open `Finder`. Look for the .zip file, and extract the contents (usually double-click).
 
@@ -27,13 +26,17 @@ This stage involves dragging files from finder into the web browser; you might l
 
 - Go back to [http://bela.local](http://bela.local) in the web browser.
 
-  - Click the folder on the right-hand side to open the project explorer, and click the `New project` button to create a new project.![](open-create.png)
+  - Click the folder on the right-hand side to open the project explorer, and click the `New project` button to create a new project.
+
+    <img src= "open-create.png" width="50%">
 
   - Set the new project to `Pure Data`, and give it a name (e.g. Instrument Maker).
 
-    ![](new-project.png)
+    <img src=new-project.png width="50%">
 
-  - Return to the Finder window, and drag the contents of the folder into the IDE window (making sure that all the files are selected). You should receive a message asking if you would like to overwrite `_main.pd` — click `Overwrite`. ![](drag-document.png)
+  - Return to the Finder window, and drag the contents of the folder into the IDE window (making sure that all the files are selected). You should receive a message asking if you would like to overwrite `_main.pd` — click `Overwrite`. 
+
+    <img src=drag-document.png width=50%>
 
   - You should see a lot of activity in the main window; once this has finished, restart the project using the circle icon toward the bottom-left of the screen. You should now hear the demo patch.
 
@@ -41,10 +44,10 @@ This stage involves dragging files from finder into the web browser; you might l
 
   - Go to the settings page by clicking on the cog-style icon, and set `Run project on boot` to the name of your file.
 
-  ![](startup-project.png)
+    <img src=startup-project.png width=50%>
 
   ## Upload a different example
 
   - Create a project as above, making sure all the files from the `im-bela` folder have been transferred to the folder.  Download the example folders — these generally consist of one file named `_main.pd` — and drag the file(s)` into your project. When prompted, select Overwrite.
 
-    ![](drag.png)
+    <img src=drag.png width=50%>
