@@ -11,7 +11,7 @@ For now, these instructions require transferring all the Instrument Maker files 
   - Macintosh users: if this does not work, you may need to install The HoRNDIS driver: [http://joshuawise.com/downloads/HoRNDIS-rel7.pkg](http://joshuawise.com/downloads/HoRNDIS-rel7.pkg)
   - If you see a mostly blank screen, and the menu on the right-hand-side only gives an option "Choose a project from your board" repeat the process by unplugging the USB cable, plugging it back in, and refreshing the browser.
 
-## Download and create an instrument maker project
+## Download and create an **instrument maker** project
 
 This stage involves dragging files from finder into the web browser; you might like to read through all the steps to get a sense of what needs to happen.
 
@@ -40,14 +40,22 @@ This stage involves dragging files from finder into the web browser; you might l
 
   - You should see a lot of activity in the main window; once this has finished, restart the project using the circle icon toward the bottom-left of the screen. You should now hear the demo patch.
 
-  ### Set the startup project
+### Set the startup project
 
-  - Go to the settings page by clicking on the cog-style icon, and set `Run project on boot` to the name of your file.
+- Go to the settings page by clicking on the cog-style icon, and set `Run project on boot` to the name of your file.
 
-    <img src=startup-project.png width=50%>
+  <img src=startup-project.png width=50%>
 
-  ## Upload a different example
+## Upload a different example
 
-  - Create a project as above, making sure all the files from the `im-bela` folder have been transferred to the folder.  Download the example folders — these generally consist of one file named `_main.pd` — and drag the file(s)` into your project. When prompted, select Overwrite.
+- Create a project as above, making sure all the files from the `im-bela` folder have been transferred to the folder.  
 
-    <img src=drag.png width=50%>
+  ![](examples-download.png)
+
+- Download the example folders — these generally consist of one file named `_main.pd` — and drag the file(s)` into your project. When prompted, select Overwrite.
+
+  <img src=drag.png width=50%>
+
+## Setting up the board
+
+![](example.png)
