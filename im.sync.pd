@@ -1,0 +1,6 @@
+#N canvas 0 22 139 157 10;
+#X obj 9 50 metro 1000;
+#X obj 9 23 loadbang;
+#X obj 9 75 send im.1s;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
