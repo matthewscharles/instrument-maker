@@ -1,0 +1,626 @@
+{
+  "_main.pd": {
+    "name": "_main",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.buttons.pd": {
+    "name": "im.buttons",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.choose.pd": {
+    "name": "im.choose",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.clock.pd": {
+    "name": "im.clock",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.generatescale.pd": {
+    "name": "im.generatescale",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.grainunit.pd": {
+    "name": "im.grainunit",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.input-help.pd": {
+    "name": "im.input-help",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.input.pd": {
+    "name": "im.input",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.key.pd": {
+    "name": "im.key",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.linein.pd": {
+    "name": "im.linein",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.loop.pd": {
+    "name": "im.loop",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.map.pd": {
+    "name": "im.map",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.output.pd": {
+    "name": "im.output",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.player.pd": {
+    "name": "im.player",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.ramp.pd": {
+    "name": "im.ramp",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.scala.pd": {
+    "name": "im.scala",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.scala2.pd": {
+    "name": "im.scala2",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.scale.pd": {
+    "name": "im.scale",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.sequence.pd": {
+    "name": "im.sequence",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.set.pd": {
+    "name": "im.set",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.sinewave.pd": {
+    "name": "im.sinewave",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.sync.pd": {
+    "name": "im.sync",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.triads.pd": {
+    "name": "im.triads",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.tuning.pd": {
+    "name": "im.tuning",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.volume.pd": {
+    "name": "im.volume",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.chorus.pd": {
+    "name": "im.chorus",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.delay.pd": {
+    "name": "im.delay",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.distort.pd": {
+    "name": "im.distort",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.echo.pd": {
+    "name": "im.echo",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.reverb.pd": {
+    "name": "im.reverb",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.sampler.pd": {
+    "name": "im.sampler",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.effects",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.acid.pd": {
+    "name": "im.acid",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.cold.pd": {
+    "name": "im.cold",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.fizzy.pd": {
+    "name": "im.fizzy",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.grains.pd": {
+    "name": "im.grains",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.pwm.pd": {
+    "name": "im.pwm",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.tunedperc.pd": {
+    "name": "im.tunedperc",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.warm.pd": {
+    "name": "im.warm",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.instruments",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.midiin.pd": {
+    "name": "im.midiin",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.midi",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.notein.pd": {
+    "name": "im.notein",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.midi",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "for.pd": {
+    "name": "for",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.count.pd": {
+    "name": "im.count",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.degrees.pd": {
+    "name": "im.degrees",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.percent.pd": {
+    "name": "im.percent",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "list.group.pd": {
+    "name": "list.group",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "list.iter.pd": {
+    "name": "list.iter",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "list.rev.pd": {
+    "name": "list.rev",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "list.rot.pd": {
+    "name": "list.rot",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "list.sect.pd": {
+    "name": "list.sect",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "stof.pd": {
+    "name": "stof",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.utils",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.pulser.pd": {
+    "name": "im.pulser",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.modulation",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.sawtooth.pd": {
+    "name": "im.sawtooth",
+    "description": {
+      "short": "",
+      "long": ""
+    },
+    "tags": "im.modulation",
+    "packages": "im-bela",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  }
+}
