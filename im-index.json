@@ -2,7 +2,7 @@
   "_main.pd": {
     "name": "_main",
     "description": {
-      "short": "",
+      "short": "Example patch",
       "long": "",
       "easy": ""
     },
@@ -25,7 +25,7 @@
       "easy": ""
     },
     "level": 0,
-    "tags": "arduino, microbit",
+    "tags": "arduino, microbit, serial",
     "packages": [
       "im-bela",
       "im-mobile",
@@ -33,13 +33,14 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
-    "symbol": ""
+    "stable": false,
+    "symbol": "arcade_button"
   },
   "im.choose.pd": {
     "name": "im.choose",
     "description": {
       "short": "",
-      "long": "",
+      "long": "like [select] but takes audio input, could be used as a sequencer.",
       "easy": ""
     },
     "level": 0,
@@ -56,7 +57,7 @@
   "im.clock.pd": {
     "name": "im.clock",
     "description": {
-      "short": "",
+      "short": "A repeating ramp from 0 to 1",
       "long": "",
       "easy": ""
     },
@@ -69,7 +70,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "clock"
   },
   "im.generatescale.pd": {
     "name": "im.generatescale",
@@ -249,6 +250,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
+    "stable": false,
     "symbol": ""
   },
   "im.scala.pd": {
@@ -267,8 +269,8 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
-    "stable": false,
-    "symbol": ""
+    "symbol": "",
+    "stable": false
   },
   "im.scala2.pd": {
     "name": "im.scala2",
@@ -286,8 +288,8 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
-    "stable": false,
-    "symbol": ""
+    "symbol": "",
+    "stable": false
   },
   "im.scale.pd": {
     "name": "im.scale",
@@ -364,7 +366,7 @@
   "im.sync.pd": {
     "name": "im.sync",
     "description": {
-      "short": "",
+      "short": "Temporary module to synchronise clocks.",
       "long": "",
       "easy": ""
     },
@@ -377,17 +379,17 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "sync"
   },
   "im.triads.pd": {
     "name": "im.triads",
     "description": {
-      "short": "play selections of chords",
-      "long": "",
+      "short": "Play selections of chords",
+      "long": "Use intervals e.g. I II IV",
       "easy": ""
     },
     "level": 0,
-    "tags": "",
+    "tags": "notes",
     "packages": [
       "im-bela",
       "im-mobile",
@@ -395,12 +397,13 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "stable": false,
+    "symbol": "smart_chords"
   },
   "im.tuning.pd": {
     "name": "im.tuning",
     "description": {
-      "short": "",
+      "short": "Choose a tuning system",
       "long": "",
       "easy": ""
     },
@@ -412,13 +415,14 @@
       "im-vanilla"
     ],
     "author": "Charles Matthews",
-    "vanilla": true,
-    "symbol": ""
+    "vanilla": false,
+    "stable": false,
+    "symbol": "tuning_system"
   },
   "im.volume.pd": {
     "name": "im.volume",
     "description": {
-      "short": "",
+      "short": "Change volume with a percentage or input",
       "long": "",
       "easy": ""
     },
@@ -431,12 +435,12 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "volume"
   },
   "im.chorus.pd": {
     "name": "im.chorus",
     "description": {
-      "short": "",
+      "short": "extreme chorus effect",
       "long": "",
       "easy": ""
     },
@@ -449,12 +453,12 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "chorus"
   },
   "im.delay.pd": {
     "name": "im.delay",
     "description": {
-      "short": "",
+      "short": "work in progress: filter delay with fixed values",
       "long": "",
       "easy": ""
     },
@@ -467,7 +471,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "echo"
   },
   "im.distort.pd": {
     "name": "im.distort",
@@ -485,13 +489,13 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "distortion"
   },
   "im.echo.pd": {
     "name": "im.echo",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "Echo unit with feedback",
+      "long": "Set delay time in ms, feedback as percentage, e.g. 50%",
       "easy": ""
     },
     "level": 0,
@@ -503,13 +507,13 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "echo"
   },
   "im.reverb.pd": {
     "name": "im.reverb",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "Classic reverb",
+      "long": "Wrapper for freeverb~",
       "easy": ""
     },
     "level": 0,
@@ -520,13 +524,13 @@
       "im-vanilla"
     ],
     "author": "Charles Matthews",
-    "vanilla": true,
+    "vanilla": false,
     "symbol": ""
   },
   "im.sampler.pd": {
     "name": "im.sampler",
     "description": {
-      "short": "",
+      "short": "Work in progress granular sampler - not ready for use.",
       "long": "",
       "easy": ""
     },
@@ -538,14 +542,15 @@
       "im-vanilla"
     ],
     "author": "Charles Matthews",
-    "vanilla": true,
+    "vanilla": false,
+    "stable": false,
     "symbol": ""
   },
   "im.acid.pd": {
     "name": "im.acid",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "acid-style synth",
+      "long": "monophonic synth with resonant filter",
       "easy": ""
     },
     "level": 0,
@@ -580,8 +585,8 @@
   "im.fizzy.pd": {
     "name": "im.fizzy",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "An 80s style synthesiser",
+      "long": "Polyphonic synth with pwm tones",
       "easy": ""
     },
     "level": 0,
@@ -593,13 +598,13 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "fizzy"
   },
   "im.grains.pd": {
     "name": "im.grains",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "Create textures from samples",
+      "long": "A granular synthesiser with audio-rate controls.",
       "easy": ""
     },
     "level": 0,
@@ -611,7 +616,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "grains"
   },
   "im.pwm.pd": {
     "name": "im.pwm",
@@ -629,13 +634,13 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "pwm"
   },
   "im.tunedperc.pd": {
     "name": "im.tunedperc",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "small synthesised gongs",
+      "long": "polyphonic (3 voice) percussion in style of a Javanese bonang",
       "easy": ""
     },
     "level": 0,
@@ -647,7 +652,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "bonang"
   },
   "im.warm.pd": {
     "name": "im.warm",
@@ -724,7 +729,7 @@
   "im.count.pd": {
     "name": "im.count",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
@@ -742,11 +747,11 @@
   "im.degrees.pd": {
     "name": "im.degrees",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -778,11 +783,11 @@
   "list.group.pd": {
     "name": "list.group",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -796,11 +801,11 @@
   "list.iter.pd": {
     "name": "list.iter",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -814,11 +819,11 @@
   "list.rev.pd": {
     "name": "list.rev",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -832,11 +837,11 @@
   "list.rot.pd": {
     "name": "list.rot",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -850,11 +855,11 @@
   "list.sect.pd": {
     "name": "list.sect",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -868,11 +873,11 @@
   "stof.pd": {
     "name": "stof",
     "description": {
-      "short": "",
+      "short": "internal utility - doesn't make sound",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -904,8 +909,8 @@
   "im.sawtooth.pd": {
     "name": "im.sawtooth",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "??",
+      "long": "wrapper for phasor~",
       "easy": ""
     },
     "level": 0,
@@ -922,7 +927,7 @@
   "im.mobile.pd": {
     "name": "im.mobile",
     "description": {
-      "short": "",
+      "short": "Include this object to enable a mobile connection.",
       "long": "",
       "easy": ""
     },
@@ -931,13 +936,13 @@
     "packages": "im-mobile",
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "mobile"
   },
   "im.multitouch.pd": {
     "name": "im.multitouch",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "use multitouch input as a fader",
+      "long": "use multitouch input as a fader: also indicates a note change whenever input is received",
       "easy": ""
     },
     "level": 0,
@@ -945,12 +950,12 @@
     "packages": "im-mobile",
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "multi_touch"
   },
   "im.tilt.pd": {
     "name": "im.tilt",
     "description": {
-      "short": "",
+      "short": "for use with mobile devices: measure tilt",
       "long": "",
       "easy": ""
     },
@@ -959,6 +964,6 @@
     "packages": "im-mobile",
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "tilt"
   }
 }
