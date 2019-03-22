@@ -92,7 +92,7 @@
   "im.grainunit.pd": {
     "name": "im.grainunit",
     "description": {
-      "short": "",
+      "short": "unit for use in im.grains",
       "long": "",
       "easy": ""
     },
@@ -107,28 +107,10 @@
     "vanilla": true,
     "symbol": ""
   },
-  "im.input-help.pd": {
-    "name": "im.input-help",
-    "description": {
-      "short": "",
-      "long": "",
-      "easy": ""
-    },
-    "level": 0,
-    "tags": "",
-    "packages": [
-      "im-bela",
-      "im-mobile",
-      "im-vanilla"
-    ],
-    "author": "Charles Matthews",
-    "vanilla": true,
-    "symbol": ""
-  },
   "im.input.pd": {
     "name": "im.input",
     "description": {
-      "short": "",
+      "short": "access a sensor input",
       "long": "",
       "easy": ""
     },
@@ -164,7 +146,7 @@
   "im.linein.pd": {
     "name": "im.linein",
     "description": {
-      "short": "",
+      "short": "access a microphone or line input",
       "long": "",
       "easy": ""
     },
@@ -236,9 +218,9 @@
   "im.player.pd": {
     "name": "im.player",
     "description": {
-      "short": "",
+      "short": "retrigger a sound file from the start",
       "long": "",
-      "easy": ""
+      "easy": "play a sound"
     },
     "level": 0,
     "tags": "",
@@ -272,7 +254,7 @@
   "im.scala.pd": {
     "name": "im.scala",
     "description": {
-      "short": "",
+      "short": "import a scale based on the scala tuning convention",
       "long": "",
       "easy": ""
     },
@@ -285,16 +267,17 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
+    "stable": false,
     "symbol": ""
   },
   "im.scala2.pd": {
     "name": "im.scala2",
     "description": {
-      "short": "",
+      "short": "temporary file needed for scala",
       "long": "",
       "easy": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "",
     "packages": [
       "im-bela",
@@ -303,13 +286,14 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
+    "stable": false,
     "symbol": ""
   },
   "im.scale.pd": {
     "name": "im.scale",
     "description": {
-      "short": "",
-      "long": "",
+      "short": "choose a 7 interval scale based on equal temperament",
+      "long": "choose a 7 interval scale based on equal temperament",
       "easy": ""
     },
     "level": 0,
@@ -321,7 +305,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "scale"
   },
   "im.sequence.pd": {
     "name": "im.sequence",
@@ -339,7 +323,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "sequence"
   },
   "im.set.pd": {
     "name": "im.set",
@@ -398,7 +382,7 @@
   "im.triads.pd": {
     "name": "im.triads",
     "description": {
-      "short": "",
+      "short": "play selections of chords",
       "long": "",
       "easy": ""
     },
