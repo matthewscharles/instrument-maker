@@ -3,10 +3,16 @@
     "name": "_main",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -14,23 +20,35 @@
   "im.buttons.pd": {
     "name": "im.buttons",
     "description": {
-      "short": "",
-      "long": ""
+      "short": "Reads two buttons from an external device",
+      "long": "",
+      "easy": ""
     },
-    "tags": "",
-    "packages": "im-bela",
+    "level": 0,
+    "tags": "arduino, microbit",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
-    "vanilla": true,
+    "vanilla": false,
     "symbol": ""
   },
   "im.choose.pd": {
     "name": "im.choose",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -39,10 +57,16 @@
     "name": "im.clock",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -51,10 +75,16 @@
     "name": "im.generatescale",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -63,10 +93,16 @@
     "name": "im.grainunit",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
-    "tags": "",
-    "packages": "im-bela",
+    "level": 1,
+    "tags": "synthesis",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -75,10 +111,16 @@
     "name": "im.input-help",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -87,10 +129,16 @@
     "name": "im.input",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -99,10 +147,16 @@
     "name": "im.key",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -111,10 +165,16 @@
     "name": "im.linein",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -123,10 +183,16 @@
     "name": "im.loop",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -135,10 +201,16 @@
     "name": "im.map",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -147,10 +219,16 @@
     "name": "im.output",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -159,10 +237,16 @@
     "name": "im.player",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -171,10 +255,16 @@
     "name": "im.ramp",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -183,34 +273,52 @@
     "name": "im.scala",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
-    "vanilla": true,
+    "vanilla": false,
     "symbol": ""
   },
   "im.scala2.pd": {
     "name": "im.scala2",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
-    "vanilla": true,
+    "vanilla": false,
     "symbol": ""
   },
   "im.scale.pd": {
     "name": "im.scale",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -219,10 +327,16 @@
     "name": "im.sequence",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -231,10 +345,16 @@
     "name": "im.set",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -243,10 +363,16 @@
     "name": "im.sinewave",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -255,10 +381,16 @@
     "name": "im.sync",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -267,10 +399,16 @@
     "name": "im.triads",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -279,10 +417,16 @@
     "name": "im.tuning",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -291,10 +435,16 @@
     "name": "im.volume",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -303,10 +453,16 @@
     "name": "im.chorus",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -315,10 +471,16 @@
     "name": "im.delay",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -327,10 +489,16 @@
     "name": "im.distort",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -339,10 +507,16 @@
     "name": "im.echo",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -351,10 +525,16 @@
     "name": "im.reverb",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -363,10 +543,16 @@
     "name": "im.sampler",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.effects",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -375,10 +561,16 @@
     "name": "im.acid",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -387,10 +579,16 @@
     "name": "im.cold",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -399,10 +597,16 @@
     "name": "im.fizzy",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -411,10 +615,16 @@
     "name": "im.grains",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -423,10 +633,16 @@
     "name": "im.pwm",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -435,10 +651,16 @@
     "name": "im.tunedperc",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -447,10 +669,16 @@
     "name": "im.warm",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.instruments",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -459,10 +687,16 @@
     "name": "im.midiin",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.midi",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -471,10 +705,16 @@
     "name": "im.notein",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.midi",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -483,10 +723,16 @@
     "name": "for",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -495,10 +741,16 @@
     "name": "im.count",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -507,10 +759,16 @@
     "name": "im.degrees",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -519,10 +777,16 @@
     "name": "im.percent",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -531,10 +795,16 @@
     "name": "list.group",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -543,10 +813,16 @@
     "name": "list.iter",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -555,10 +831,16 @@
     "name": "list.rev",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -567,10 +849,16 @@
     "name": "list.rot",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -579,10 +867,16 @@
     "name": "list.sect",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -591,10 +885,16 @@
     "name": "stof",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.utils",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -603,10 +903,16 @@
     "name": "im.pulser",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.modulation",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
@@ -615,10 +921,58 @@
     "name": "im.sawtooth",
     "description": {
       "short": "",
-      "long": ""
+      "long": "",
+      "easy": ""
     },
+    "level": 0,
     "tags": "im.modulation",
-    "packages": "im-bela",
+    "packages": [
+      "im-bela",
+      "im-mobile",
+      "im-vanilla"
+    ],
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.mobile.pd": {
+    "name": "im.mobile",
+    "description": {
+      "short": "",
+      "long": "",
+      "easy": ""
+    },
+    "level": 0,
+    "tags": "im.mobile",
+    "packages": "im-mobile",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.multitouch.pd": {
+    "name": "im.multitouch",
+    "description": {
+      "short": "",
+      "long": "",
+      "easy": ""
+    },
+    "level": 0,
+    "tags": "im.mobile",
+    "packages": "im-mobile",
+    "author": "Charles Matthews",
+    "vanilla": true,
+    "symbol": ""
+  },
+  "im.tilt.pd": {
+    "name": "im.tilt",
+    "description": {
+      "short": "",
+      "long": "",
+      "easy": ""
+    },
+    "level": 0,
+    "tags": "im.mobile",
+    "packages": "im-mobile",
     "author": "Charles Matthews",
     "vanilla": true,
     "symbol": ""
