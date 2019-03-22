@@ -1,0 +1,3 @@
+[submodule "symbols"]
+	path = instrument-maker-symbols
+	url = https://github.com/matthewscharles/instrument-maker-symbols
