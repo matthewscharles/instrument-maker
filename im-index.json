@@ -124,7 +124,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "input"
   },
   "im.key.pd": {
     "name": "im.key",
@@ -160,12 +160,12 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "microphone"
   },
   "im.loop.pd": {
     "name": "im.loop",
     "description": {
-      "short": "",
+      "short": "Play a sound back in a loop.",
       "long": "",
       "easy": ""
     },
@@ -178,7 +178,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "loop"
   },
   "im.map.pd": {
     "name": "im.map",
@@ -196,7 +196,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "map"
   },
   "im.output.pd": {
     "name": "im.output",
@@ -214,7 +214,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "output"
   },
   "im.player.pd": {
     "name": "im.player",
@@ -232,7 +232,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "play"
   },
   "im.ramp.pd": {
     "name": "im.ramp",
@@ -251,7 +251,7 @@
     "author": "Charles Matthews",
     "vanilla": true,
     "stable": false,
-    "symbol": ""
+    "symbol": "ramp"
   },
   "im.scala.pd": {
     "name": "im.scala",
@@ -361,7 +361,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": "sine"
+    "symbol": "sine_wave"
   },
   "im.sync.pd": {
     "name": "im.sync",
@@ -398,7 +398,7 @@
     "author": "Charles Matthews",
     "vanilla": true,
     "stable": false,
-    "symbol": "smart_chords"
+    "symbol": ""
   },
   "im.tuning.pd": {
     "name": "im.tuning",
