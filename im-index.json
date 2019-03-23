@@ -361,7 +361,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "sine"
   },
   "im.sync.pd": {
     "name": "im.sync",
@@ -525,7 +525,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
-    "symbol": ""
+    "symbol": "reverb"
   },
   "im.sampler.pd": {
     "name": "im.sampler",
@@ -544,7 +544,7 @@
     "author": "Charles Matthews",
     "vanilla": false,
     "stable": false,
-    "symbol": ""
+    "symbol": "grains"
   },
   "im.acid.pd": {
     "name": "im.acid",
@@ -562,7 +562,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "synthesiser"
   },
   "im.cold.pd": {
     "name": "im.cold",
@@ -580,7 +580,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "cold"
   },
   "im.fizzy.pd": {
     "name": "im.fizzy",
