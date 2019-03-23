@@ -57,7 +57,7 @@
   "im.clock.pd": {
     "name": "im.clock",
     "description": {
-      "short": "A repeating ramp from 0 to 1",
+      "short": "This object sends out a repeating ramp, which can be used in place of a sensor input.",
       "long": "",
       "easy": ""
     },
@@ -111,7 +111,7 @@
   "im.input.pd": {
     "name": "im.input",
     "description": {
-      "short": "access a sensor input",
+      "short": "Use this object to access a sensor input. The information will be sent with a range of 0 to 1.",
       "long": "",
       "easy": ""
     },
@@ -567,7 +567,7 @@
   "im.cold.pd": {
     "name": "im.cold",
     "description": {
-      "short": "",
+      "short": "A synthesiser with a cold texture.",
       "long": "",
       "easy": ""
     },
