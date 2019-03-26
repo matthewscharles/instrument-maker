@@ -1,20 +1,20 @@
-#N canvas 601 0 1280 775 10;
-#X obj 23 580 sig~ 1;
-#X obj 23 603 -~, f 8;
-#X obj 72 860 outlet~;
-#X obj 25 712 *~, f 15;
-#X text 179 516 insert firmata receive here;
-#X obj 173 746 *~, f 5;
-#X obj 112 652 line~;
-#X msg 112 630 \$1 10;
-#X obj 471 659 line~;
-#X msg 471 637 \$1 10;
-#X obj 471 595 expr 1 - $f1;
-#X text 163 491 let's convert all our control rate stuff here in one
+#N canvas 300 348 1280 549 10;
+#X obj 23 354 sig~ 1;
+#X obj 23 377 -~, f 8;
+#X obj 72 634 outlet~;
+#X obj 25 486 *~, f 15;
+#X text 179 290 insert firmata receive here;
+#X obj 173 520 *~, f 5;
+#X obj 112 426 line~;
+#X msg 112 404 \$1 10;
+#X obj 471 433 line~;
+#X msg 471 411 \$1 10;
+#X obj 471 369 expr 1 - $f1;
+#X text 163 265 let's convert all our control rate stuff here in one
 go;
-#X obj 471 617 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 471 391 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 390 563 r fromGUI;
+#X obj 390 337 r fromGUI;
 #N canvas 474 355 450 300 route-set-optional-slash 0;
 #X obj 32 80 list store \$1;
 #X obj 32 102 route symbol;
@@ -52,39 +52,39 @@ go;
 #X connect 12 0 3 0;
 #X connect 13 0 15 0;
 #X connect 14 0 0 0;
-#X restore 869 841 pd route-set-optional-slash;
-#X obj 390 640 route \$1;
-#X obj 390 616 list trim;
-#X obj 747 170 loadbang;
-#X obj 852 535 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X restore 869 615 pd route-set-optional-slash;
+#X obj 390 414 route \$1;
+#X obj 390 390 list trim;
+#X obj 747 -56 loadbang;
+#X obj 852 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 790 437 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 790 211 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 789 490 route float;
-#X obj 903 596 \$3;
-#X obj 789 516 t f b;
-#X obj 790 462 list store \$2;
-#X obj 852 512 sel octaves divisions, f 30;
-#X obj 940 544 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 789 264 route float;
+#X obj 903 370 \$3;
+#X obj 789 290 t f b;
+#X obj 790 236 list store \$2;
+#X obj 852 286 sel octaves divisions, f 30;
+#X obj 940 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 940 568 \$3;
-#X obj 941 594 - 1;
-#X obj 72 836 *~, f 37;
-#X obj 815 537 1;
-#X obj 850 582 0;
-#X obj 290 791 +~, f 30;
-#X obj 851 562 t b b, f 9;
-#X obj 903 622 * 8;
-#X text 734 619 this is potentially tricky;
-#X text 662 637 unless we take the number of intervals;
-#X text 770 653 from the main tuning;
-#X obj 173 767 +~;
-#X text 445 691 bit rough about the edges;
-#X text 444 708 (not quite hitting them);
-#X text 433 723 ..how to offset divisions for centre rather than edge??
+#X obj 940 342 \$3;
+#X obj 941 368 - 1;
+#X obj 72 610 *~, f 37;
+#X obj 815 311 1;
+#X obj 850 356 0;
+#X obj 290 565 +~, f 30;
+#X obj 851 336 t b b, f 9;
+#X obj 903 396 * 8;
+#X text 734 393 this is potentially tricky;
+#X text 662 411 unless we take the number of intervals;
+#X text 770 427 from the main tuning;
+#X obj 173 541 +~;
+#X text 445 465 bit rough about the edges;
+#X text 444 482 (not quite hitting them);
+#X text 433 497 ..how to offset divisions for centre rather than edge??
 ;
-#X text 369 754 how about (max* numdivisions + 1) - 0.5;
-#X text 869 861 won't work \, but keeping just in case.;
+#X text 369 528 how about (max* numdivisions + 1) - 0.5;
+#X text 869 635 won't work \, but keeping just in case.;
 #N canvas 0 22 199 247 tweak 0;
 #X text 65 115 unnecessary?;
 #X obj 23 130 line~;
@@ -100,16 +100,16 @@ go;
 #X connect 4 0 2 0;
 #X connect 5 0 3 0;
 #X connect 6 0 5 0;
-#X restore 390 665 pd tweak;
-#X obj 174 578 r \$0-arduino-out;
-#X text 177 532 (this localised receive won't work - placeholder from
+#X restore 390 439 pd tweak;
+#X obj 174 352 r \$0-arduino-out;
+#X text 177 306 (this localised receive won't work - placeholder from
 pduino help file);
-#X text 179 553 note comment on grounding unused inputs;
-#X obj 174 646 route analog;
-#X obj 174 667 route \$1;
-#X obj 174 625 spigot;
-#X text 182 683 osc-style addresses could be nice;
-#X obj 390 593 spigot, f 11;
+#X text 179 327 note comment on grounding unused inputs;
+#X obj 174 420 route analog;
+#X obj 174 441 route \$1;
+#X obj 174 399 spigot;
+#X text 182 457 osc-style addresses could be nice;
+#X obj 390 367 spigot, f 11;
 #N canvas 615 297 665 481 bela_firmata_osc 0;
 #X obj 34 432 outlet;
 #X obj 160 440 outlet;
@@ -121,7 +121,7 @@ pduino help file);
 #X obj 357 259 delay 1500;
 #X obj 326 232 t b b, f 6;
 #X msg 356 278 0;
-#X obj 329 294 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 329 294 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 426 259 loadbang;
 #X obj 70 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -134,7 +134,7 @@ pduino help file);
 1;
 #X obj 170 250 loadbang;
 #X text 103 329 default to bela;
-#X obj 38 382 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 38 382 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 101 345 (using expr here will make more sense with more options)
 ;
@@ -200,52 +200,54 @@ to signify OSC but that wouldn't help us with arduino;
 #X connect 37 2 4 0;
 #X connect 37 3 38 0;
 #X connect 38 0 28 0;
-#X restore 242 431 pd bela_firmata_osc;
+#X restore 242 205 pd bela_firmata_osc;
 #X f 54;
-#X obj 242 460 t f f;
-#X obj 453 563 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 242 234 t f f;
+#X obj 453 337 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 207 603 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 207 377 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 611 587 spigot, f 9;
-#X obj 662 556 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 611 361 spigot, f 9;
+#X obj 662 330 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 611 556 notein;
-#X obj 612 609 im.map 0 127 0 1;
-#X text 605 539 ignores velocity;
-#X msg 173 701 \$1 10;
-#X obj 288 770 sig~;
-#X obj 173 722 line~;
-#X text 245 410 add a receiver here as well;
-#X obj 242 384 list store \$1;
-#X obj 747 191 t b b b b;
-#X obj 242 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 611 330 notein;
+#X obj 612 383 im.map 0 127 0 1;
+#X text 605 313 ignores velocity;
+#X msg 173 475 \$1 10;
+#X obj 288 544 sig~;
+#X obj 173 496 line~;
+#X text 245 184 add a receiver here as well;
+#X obj 242 158 list store \$1;
+#X obj 747 -35 t b b b b;
+#X obj 242 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 242 306 metro 1000;
-#X obj 216 237 loadbang;
-#X obj 242 285 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 242 80 metro 1000;
+#X obj 216 11 loadbang;
+#X obj 242 59 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X text 270 339 quick hack here..;
-#X obj 597 310 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 262 359 symbol left;
-#X obj 596 257 list trim;
-#X obj 639 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 595 328 1;
-#X msg 637 328 2;
-#X obj 596 283 route left right float;
-#X obj 641 368 list prepend set;
-#X obj 80 563 adc~ \$1;
-#X obj 217 259 t b b;
-#X obj 645 391 list trim;
-#X obj 646 416 print ts;
-#X obj 596 232 list store \$1;
-#X obj 682 317 + 2;
-#X obj 25 653 clip~ 0 1;
-#X obj 24 627 -~ \$4;
-#X text 336 356 leave this out for now;
-#X obj 71 228 inlet~ testInlet;
+#X text 270 113 quick hack here..;
+#X obj 597 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 262 133 symbol left;
+#X obj 596 31 list trim;
+#X obj 639 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 595 102 1;
+#X msg 637 102 2;
+#X obj 596 57 route left right float;
+#X obj 641 142 list prepend set;
+#X obj 80 337 adc~ \$1;
+#X obj 217 33 t b b;
+#X obj 645 165 list trim;
+#X obj 646 190 print ts;
+#X obj 596 6 list store \$1;
+#X obj 682 91 + 2;
+#X obj 25 427 clip~ 0 1;
+#X obj 24 401 -~ \$4;
+#X text 336 130 leave this out for now;
+#X obj 71 2 inlet~ testInlet;
+#X floatatom 362 488 5 0 0 0 - - -;
+#X obj 973 518 number~;
 #X connect 0 0 1 0;
 #X connect 1 0 87 0;
 #X connect 3 0 28 0;
@@ -258,6 +260,7 @@ to signify OSC but that wouldn't help us with arduino;
 #X connect 12 0 9 0;
 #X connect 13 0 51 0;
 #X connect 15 0 43 0;
+#X connect 15 0 90 0;
 #X connect 16 0 15 0;
 #X connect 17 0 66 0;
 #X connect 18 0 32 0;
@@ -327,5 +330,5 @@ to signify OSC but that wouldn't help us with arduino;
 #X connect 85 0 79 0;
 #X connect 86 0 3 0;
 #X connect 87 0 86 0;
-#X connect 89 0 1 1;
-#X coords 0 775 1 774 89 39 0;
+#X connect 89 0 87 0;
+#X coords 0 549 1 548 89 39 0;

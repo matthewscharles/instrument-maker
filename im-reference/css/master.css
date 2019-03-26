@@ -1,0 +1,53 @@
+body {
+      background-color: #CEB934;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #000000;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+#footer {
+      background-color: #CEB934;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #000000;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+#demo {
+    background: #CEB934;
+    background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    }
+.card {
+    background: #CEB934;
+    background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    border: 2px solid;
+    padding: 5px;
+    }
+.caption {
+    font-size: 15px;
+    text-align: center;
+    }
+table {
+    border-spacing:30px;
+}
+h1 {
+    background: #CEB934;
+    background: -webkit-linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
+    background: -o-linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
+    background: linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
+    }
