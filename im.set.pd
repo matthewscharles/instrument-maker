@@ -1,4 +1,4 @@
-#N canvas 351 58 932 683 10;
+#N canvas 322 42 932 683 10;
 #X obj 71 583 pack f f;
 #X obj 71 610 line~;
 #X floatatom 117 558 5 0 0 0 - - -;
@@ -41,7 +41,6 @@ for octaves defined within the symbol argument :);
 #X obj 170 452 +;
 #X obj 240 479 print midinote;
 #X obj 99 119 route midi;
-#X obj 605 135 text;
 #X obj 594 505 text define -k nToI;
 #A set C 0 \; C# 1 \; Db 2 \;;
 #X connect 0 0 1 0;

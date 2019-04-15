@@ -4,7 +4,10 @@
     "description": {
       "short": "Example patch",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -20,9 +23,12 @@
   "im.buttons.pd": {
     "name": "im.buttons",
     "description": {
-      "short": "Reads two buttons from an external device",
+      "short": "Reads two buttons from an external device, e.g. Arduino or Micro:Bit. Set your device to send serial information at 9600.  Button 1: send 1 off, 2, on. Button 2: send 3 off, 4 on.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "arduino, microbit, serial",
@@ -40,8 +46,11 @@
     "name": "im.choose",
     "description": {
       "short": "",
-      "long": "like [select] but takes audio input, could be used as a sequencer.",
-      "easy": ""
+      "long": "like [select] but takes audio input, could be used as a sequencer.  Currently requires 8 steps from 0 to 11",
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -59,7 +68,10 @@
     "description": {
       "short": "This object sends out a repeating ramp, which can be used in place of a sensor input.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -77,7 +89,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -95,7 +110,10 @@
     "description": {
       "short": "unit for use in im.grains",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "synthesis",
@@ -113,7 +131,10 @@
     "description": {
       "short": "Use this object to access a sensor input. The information will be sent with a range of 0 to 1.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -131,7 +152,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -149,7 +173,10 @@
     "description": {
       "short": "access a microphone or line input",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -165,9 +192,12 @@
   "im.loop.pd": {
     "name": "im.loop",
     "description": {
-      "short": "Play a sound back in a loop.",
+      "short": "Play a pre-recorded sound file as a loop.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "Sound file",
+      "inlets": "1: play sound",
+      "outlets": "1: connect to sound output"
     },
     "level": 0,
     "tags": "",
@@ -185,7 +215,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -203,7 +236,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -237,9 +273,12 @@
   "im.ramp.pd": {
     "name": "im.ramp",
     "description": {
-      "short": "",
+      "short": "This object is still in development -- nothing to see here!",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -256,9 +295,12 @@
   "im.scala.pd": {
     "name": "im.scala",
     "description": {
-      "short": "import a scale based on the scala tuning convention",
+      "short": "Import a scale based on the scala tuning convention (still under development)",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -269,15 +311,18 @@
     ],
     "author": "Charles Matthews",
     "vanilla": false,
-    "symbol": "",
+    "symbol": "tuning_system",
     "stable": false
   },
   "im.scala2.pd": {
     "name": "im.scala2",
     "description": {
-      "short": "temporary file needed for scala",
+      "short": "temporary file needed for scala (still under development)",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "",
@@ -296,7 +341,10 @@
     "description": {
       "short": "choose a 7 interval scale based on equal temperament",
       "long": "choose a 7 interval scale based on equal temperament",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -314,7 +362,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -332,7 +383,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -350,7 +404,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -366,9 +423,12 @@
   "im.sync.pd": {
     "name": "im.sync",
     "description": {
-      "short": "Temporary module to synchronise clocks.",
+      "short": "Temporary module created to synchronise clocks.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -385,8 +445,11 @@
     "name": "im.triads",
     "description": {
       "short": "Play selections of chords",
-      "long": "Use intervals e.g. I II IV",
-      "easy": ""
+      "long": "",
+      "easy": "",
+      "arguments": "Use intervals e.g. I II IV",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "notes",
@@ -403,9 +466,12 @@
   "im.tuning.pd": {
     "name": "im.tuning",
     "description": {
-      "short": "Choose a tuning system",
+      "short": "Choose a tuning system using the Scala format (still in development)",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -422,9 +488,12 @@
   "im.volume.pd": {
     "name": "im.volume",
     "description": {
-      "short": "Change volume with a percentage or input",
+      "short": "Change volume with a percentage, or using an input.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "",
@@ -442,7 +511,10 @@
     "description": {
       "short": "extreme chorus effect",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -460,7 +532,10 @@
     "description": {
       "short": "work in progress: filter delay with fixed values",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -478,7 +553,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -496,7 +574,10 @@
     "description": {
       "short": "Echo unit with feedback",
       "long": "Set delay time in ms, feedback as percentage, e.g. 50%",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -514,7 +595,10 @@
     "description": {
       "short": "Classic reverb",
       "long": "Wrapper for freeverb~",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -532,7 +616,10 @@
     "description": {
       "short": "Work in progress granular sampler - not ready for use.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.effects",
@@ -551,7 +638,10 @@
     "description": {
       "short": "acid-style synth",
       "long": "monophonic synth with resonant filter",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -569,7 +659,10 @@
     "description": {
       "short": "A synthesiser with a cold texture.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -587,7 +680,10 @@
     "description": {
       "short": "An 80s style synthesiser",
       "long": "Polyphonic synth with pwm tones",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -605,7 +701,10 @@
     "description": {
       "short": "Create textures from samples",
       "long": "A granular synthesiser with audio-rate controls.",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -623,7 +722,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -641,7 +743,10 @@
     "description": {
       "short": "small synthesised gongs",
       "long": "polyphonic (3 voice) percussion in style of a Javanese bonang",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -659,7 +764,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.instruments",
@@ -677,7 +785,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.midi",
@@ -695,7 +806,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.midi",
@@ -713,7 +827,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.utils",
@@ -731,7 +848,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.utils",
@@ -749,7 +869,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -767,7 +890,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.utils",
@@ -785,7 +911,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -803,7 +932,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -821,7 +953,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -839,7 +974,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -857,7 +995,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -875,7 +1016,10 @@
     "description": {
       "short": "internal utility - doesn't make sound",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 1,
     "tags": "im.utils",
@@ -893,7 +1037,10 @@
     "description": {
       "short": "",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.modulation",
@@ -911,7 +1058,10 @@
     "description": {
       "short": "??",
       "long": "wrapper for phasor~",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.modulation",
@@ -929,7 +1079,10 @@
     "description": {
       "short": "Include this object to enable a mobile connection.",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.mobile",
@@ -943,7 +1096,10 @@
     "description": {
       "short": "use multitouch input as a fader",
       "long": "use multitouch input as a fader: also indicates a note change whenever input is received",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.mobile",
@@ -957,7 +1113,10 @@
     "description": {
       "short": "for use with mobile devices: measure tilt",
       "long": "",
-      "easy": ""
+      "easy": "",
+      "arguments": "",
+      "inlets": "",
+      "outlets": ""
     },
     "level": 0,
     "tags": "im.mobile",

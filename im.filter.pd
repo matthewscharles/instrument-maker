@@ -1,0 +1,18 @@
+#N canvas 0 22 450 300 10;
+#X obj 109 90 inlet~;
+#X obj 108 151 bob~, f 19;
+#X obj 109 187 outlet~;
+#X obj 179 16 inlet~ cutoff;
+#X obj 284 92 inlet~ resonance;
+#X obj 177 122 mtof~;
+#X obj 175 84 *~ 127;
+#X obj 276 129 *~ 2;
+#X obj 201 49 *~ 0.8;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 8 0;
+#X connect 4 0 7 0;
+#X connect 5 0 1 1;
+#X connect 6 0 5 0;
+#X connect 7 0 1 2;
+#X connect 8 0 6 0;

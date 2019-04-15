@@ -1,8 +1,40 @@
-#N canvas 406 289 450 300 10;
+#N canvas 442 68 733 478 10;
 #X obj 118 57 inlet~;
-#X obj 118 84 *~;
-#X obj 118 112 outlet~;
+#X obj 132 272 *~;
+#X obj 105 370 outlet~;
 #X obj 169 56 inlet~;
+#X obj 233 82 route float;
+#X obj 296 125 im.percent;
+#X floatatom 296 147 5 0 0 0 - - -;
+#X obj 234 53 list store \$1;
+#X obj 296 169 sig~;
+#X obj 221 17 loadbang;
+#X obj 187 158 snapshot~;
+#X obj 245 126 bang~;
+#X obj 174 292 *~ 1;
+#X obj 186 207 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 186 184 == 0;
+#X text 268 363 this gives us the orignal Pd behaviour (but do we want
+it?);
+#X obj 269 294 audio.argument;
+#X obj 242 271 change;
+#X text 271 241 all of this should be the abstraction called audio.argument..
+;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 3 0 1 1;
+#X connect 3 0 10 0;
+#X connect 4 1 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 8 0 12 0;
+#X connect 9 0 7 0;
+#X connect 10 0 14 0;
+#X connect 11 0 10 0;
+#X connect 12 0 1 1;
+#X connect 13 0 17 0;
+#X connect 14 0 13 0;
+#X connect 16 0 12 1;
+#X connect 17 0 16 0;
