@@ -1,13 +1,13 @@
-{
+  {
   "_main.pd": {
     "name": "_main",
     "description": {
-      "short": "Example patch",
+      "short": "_main is the name of the file needed by Bela to load.",
       "long": "",
       "easy": "",
-      "arguments": "",
-      "inlets": "",
-      "outlets": ""
+      "arguments": "N/A",
+      "inlets": "N/A",
+      "outlets": "N/A"
     },
     "level": 0,
     "tags": "",
@@ -166,7 +166,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "key"
   },
   "im.linein.pd": {
     "name": "im.linein",
@@ -317,7 +317,7 @@
   "im.scala2.pd": {
     "name": "im.scala2",
     "description": {
-      "short": "temporary file needed for scala (still under development)",
+      "short": "Temporary file needed for scala (still under development)",
       "long": "",
       "easy": "",
       "arguments": "",
@@ -397,7 +397,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "set"
   },
   "im.sinewave.pd": {
     "name": "im.sinewave",
@@ -461,7 +461,7 @@
     "author": "Charles Matthews",
     "vanilla": true,
     "stable": false,
-    "symbol": ""
+    "symbol": "chords"
   },
   "im.tuning.pd": {
     "name": "im.tuning",
@@ -509,7 +509,7 @@
   "im.chorus.pd": {
     "name": "im.chorus",
     "description": {
-      "short": "extreme chorus effect",
+      "short": "An extreme chorus effect.",
       "long": "",
       "easy": "",
       "arguments": "",
@@ -778,7 +778,7 @@
     ],
     "author": "Charles Matthews",
     "vanilla": true,
-    "symbol": ""
+    "symbol": "warm"
   },
   "im.midiin.pd": {
     "name": "im.midiin",
@@ -832,7 +832,7 @@
       "inlets": "",
       "outlets": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -853,7 +853,7 @@
       "inlets": "",
       "outlets": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",
@@ -895,7 +895,7 @@
       "inlets": "",
       "outlets": ""
     },
-    "level": 0,
+    "level": 1,
     "tags": "im.utils",
     "packages": [
       "im-bela",

@@ -11,6 +11,11 @@ body {
       font-variant: normal;
       text-transform: none;
       }
+#fieldName {
+
+      font-weight: bold;
+
+      }
 #footer {
       background-color: #CEB934;
       font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +28,10 @@ body {
       font-style: normal;
       font-variant: normal;
       text-transform: none;
+      background: #CEB934;
+      background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+      background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+      background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
       }
 #demo {
     background: #CEB934;
@@ -30,6 +39,7 @@ body {
     background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
     background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
     }
+
 .card {
     background: #CEB934;
     background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
