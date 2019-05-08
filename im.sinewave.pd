@@ -1,4 +1,4 @@
-#N canvas 544 32 618 474 10;
+#N canvas 544 32 648 694 10;
 #X obj 150 104 osc~;
 #X obj 150 71 mtof~;
 #X obj 150 157 outlet~;
@@ -21,6 +21,11 @@
 #X obj 345 201 print result;
 #X obj 345 35 t b b b, f 53;
 #X text 7 11 must add Hz control;
+#X text 793 20 attributes:;
+#X text 873 19 note;
+#X text 873 38 octave;
+#X text 871 54 frequency;
+#X text 872 70 amp;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 3 0 1 0;
