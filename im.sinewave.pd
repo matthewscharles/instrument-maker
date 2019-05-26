@@ -9,11 +9,11 @@
 #X obj 346 89 list store \$1, f 15;
 #X obj 576 140 list store \$2;
 #X obj 346 114 route float, f 17;
-#X obj 444 195 +, f 22;
+#X obj 444 223 +, f 22;
 #X obj 445 141 text search \$0-notes;
 #X obj 346 4 loadbang;
-#X obj 444 216 sig~;
-#X text 442 236 But let's just add for now.;
+#X obj 444 244 sig~;
+#X text 441 273 But let's just add for now.;
 #X msg 672 115 read im.nToI.txt;
 #X obj 672 141 text define \$0-notes;
 #X text 669 158 Come on \, do we need to define one of these each time
@@ -26,6 +26,8 @@
 #X text 873 38 octave;
 #X text 871 54 frequency;
 #X text 872 70 amp;
+#X msg 470 113 symbol D;
+#X obj 449 169 text get \$0-notes 1;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 3 0 1 0;
@@ -36,11 +38,13 @@
 #X connect 8 0 6 0;
 #X connect 9 1 11 0;
 #X connect 10 0 13 0;
-#X connect 11 0 10 0;
 #X connect 11 0 18 0;
+#X connect 11 0 27 0;
 #X connect 12 0 19 0;
 #X connect 13 0 1 0;
 #X connect 15 0 16 0;
 #X connect 19 0 7 0;
 #X connect 19 1 8 0;
 #X connect 19 2 15 0;
+#X connect 26 0 11 0;
+#X connect 27 0 10 0;
