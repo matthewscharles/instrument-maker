@@ -32,7 +32,7 @@ Video demo (play): [https://www.youtube.com/watch?v=ywEX0N6TpEA](https://www.you
 
 An accompanying hardware component is in development, which adds crocodile clip access to the Bela platform.
 
-![Two Bela mini devices with shields attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/bela-addons.png)
+![A Bela mini device with shield attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/dmlab-im.png)
 
 
 
