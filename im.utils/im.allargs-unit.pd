@@ -1,0 +1,21 @@
+#N canvas 0 22 450 300 10;
+#X obj 13 108 list fromsymbol;
+#X obj 13 139 list split 1;
+#X obj 13 84 symbol \$1n;
+#X obj 13 165 sel 36;
+#X obj 46 188 t b;
+#X obj 46 209 list store \$1;
+#X obj 13 59 loadbang;
+#X obj 13 263 outlet;
+#X obj 46 235 outlet;
+#X text 8 31 Charles Matthews 2019 for instrumentmaker.org;
+#X text 10 3 Only ever used as part of im.allargs \, but doesn't appear
+to function at present;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 7 0;
+#X connect 3 1 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 8 0;
+#X connect 6 0 2 0;
