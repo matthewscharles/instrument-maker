@@ -1,4 +1,4 @@
-#N canvas 67 66 906 712 10;
+#N canvas 143 23 906 712 10;
 #X obj 162 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 162 140 t b 1, f 34;
@@ -42,6 +42,7 @@ use tools like for etc.;
 #X obj 237 507 list.iter;
 #X obj 323 555 f;
 #X obj 350 555 + 1;
+#X obj 163 92 inlet testbang;
 #X connect 0 0 1 0;
 #X connect 1 0 17 0;
 #X connect 1 1 37 1;
@@ -81,3 +82,4 @@ use tools like for etc.;
 #X connect 37 0 38 0;
 #X connect 37 0 19 1;
 #X connect 38 0 37 1;
+#X connect 39 0 0 0;
