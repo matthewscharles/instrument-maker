@@ -7,10 +7,10 @@
 #X obj 390 428 sel, f 12;
 #X obj 237 404 t f f, f 26;
 #X msg 391 449 0;
-#X obj 242 294 metro 100;
+#X obj 279 295 metro 100;
 #X floatatom 237 425 5 0 0 0 - - -;
-#X obj 239 268 t 1 a b, f 20;
-#X msg 356 293 0;
+#X obj 276 269 t 1 a b, f 20;
+#X msg 393 294 0;
 #X floatatom 412 579 5 0 0 0 - - -;
 #X floatatom 459 405 5 0 0 0 - - -;
 #X text 454 646 middle note;
