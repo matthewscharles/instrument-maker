@@ -1,14 +1,14 @@
 #N canvas 0 23 450 516 10;
-#X obj 23 283 list append;
-#X obj 120 163 t a a;
-#X obj 26 127 route bang;
-#X obj 24 243 list store;
-#X obj 81 212 list;
-#X obj 81 190 t a b;
-#X obj 23 306 outlet;
-#X obj 26 103 inlet;
-#X obj 193 100 inlet;
-#X text 20 17 replace zl join .. haven't added argument for current
+#X obj 19 235 list append;
+#X obj 79 101 t a a;
+#X obj 22 79 route bang;
+#X obj 20 190 list store, f 30;
+#X obj 196 169 list;
+#X obj 196 147 t a b;
+#X obj 19 258 outlet;
+#X obj 22 55 inlet;
+#X obj 81 215 inlet;
+#X text 20 17 replaces zl join .. haven't added argument for current
 purposes as this will default to 0;
 #X connect 0 0 6 0;
 #X connect 1 0 3 1;
