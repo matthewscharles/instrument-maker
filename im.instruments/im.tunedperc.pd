@@ -1,11 +1,11 @@
-#N canvas 423 126 464 652 10;
+#N canvas 705 159 464 652 10;
 #X obj 120 389 outlet~;
-#X floatatom 146 102 5 0 0 0 - - -;
-#X obj 146 76 tabread \$1;
-#X obj 146 48 + 29;
+#X floatatom 111 151 5 0 0 0 - - -;
+#X obj 111 125 tabread \$1;
+#X obj 292 65 + 29;
 #X obj 314 10 r \$1-middle;
 #X floatatom 314 31 5 0 0 0 - - -;
-#X obj 111 132 makenote 1 10;
+#X obj 111 172 makenote 1 10;
 #N canvas 273 231 450 300 pencon 0;
 #X obj 81 129 osc~;
 #X obj 81 150 *~ 0.2;
@@ -31,8 +31,8 @@
 #X connect 9 0 2 1;
 #X connect 10 0 9 0;
 #X restore 114 311 pd pencon;
-#X obj 113 206 pack f f;
-#X obj 111 162 poly 3 1;
+#X obj 113 246 pack f f;
+#X obj 111 202 poly 3 1;
 #X obj 114 284 route 1 2 3, f 40;
 #N canvas 273 231 450 300 pencon 0;
 #X obj 81 129 osc~;
@@ -90,19 +90,19 @@
 #X obj 195 57 spigot;
 #X obj 50 -76 loadbang;
 #X obj 50 -33 select 0;
-#X text 148 -65 switch between mtof and table-based scale;
+#X text 331 -62 switch between mtof and table-based scale;
 #X obj 46 74 mtof;
-#X obj 154 -28 inlet~;
-#X obj 154 -5 snapshot~;
-#X obj 199 -28 bang~;
-#X obj 154 16 change;
-#X obj 225 33 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 157 -66 inlet~;
+#X obj 157 -43 snapshot~;
+#X obj 202 -66 bang~;
+#X obj 157 -22 change;
+#X obj 225 33 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 50 -55 list store \$1;
 #X obj 335 55 change;
 #X obj 334 80 abs;
 #X obj 46 28 abs;
-#X obj 103 -5 t b;
+#X obj 225 11 t b;
 #X connect 1 0 6 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
