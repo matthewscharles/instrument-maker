@@ -22,7 +22,7 @@ To program: within Pure Data (pictured below), create objects with the `im.` pre
 
 Using Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
-![This is a screenshot of the Instrument Maker objects in Pure Data. It shows a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, octaves, scale, triads, and there are two instruments: acid and fizzy. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/im-chords.png)
+![This is a screenshot of the Instrument Maker objects in Pure Data. It shows a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/im-scale.png)
 
 Video demo (code): [https://youtu.be/8AJMJq2P8Ko](https://youtu.be/8AJMJq2P8Ko)
 
