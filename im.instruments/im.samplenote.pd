@@ -1,7 +1,7 @@
 #N canvas 39 30 1010 734 10;
 #X obj 775 428 sigmund~ -hop 4096 notes;
 #X obj 638 219 soundfiler;
-#X obj 295 207 array define \$0_sound;
+#X obj 261 230 array define \$0_sound;
 #X obj 638 160 pack s \$0;
 #X msg 731 126 gender-a-1.aif;
 #X msg 638 185 read -resize \$1 \$2_sound;
