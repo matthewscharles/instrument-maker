@@ -1,4 +1,4 @@
-#N canvas 134 95 998 683 10;
+#N canvas 230 83 998 683 10;
 #X obj 71 537 change;
 #X obj 71 583 pack f f;
 #X obj 71 610 line~;
@@ -454,7 +454,9 @@ at present no need to mess about with generating this dynamically)
 #X obj 71 662 outlet~ audio;
 #X obj 133 583 outlet message;
 #X obj 633 396 outlet root;
-#X obj 630 615 outlet scaleList;
+#X obj 562 581 outlet scaleList;
+#X text 661 582 check list length: why is this doubled?;
+#X text 565 600 role of first number: offset?;
 #X connect 0 0 1 0;
 #X connect 0 0 112 0;
 #X connect 1 0 2 0;
