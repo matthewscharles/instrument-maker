@@ -42,6 +42,7 @@
 #X obj 416 16 + 9000;
 #X obj 416 -5 * 9000;
 #X obj 382 -28 t f f f;
+#X obj 518 68 * 2000;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -90,6 +91,7 @@
 #X connect 38 0 25 0;
 #X connect 39 0 26 1;
 #X connect 40 0 39 0;
-#X connect 40 0 35 0;
 #X connect 41 0 4 0;
 #X connect 41 1 40 0;
+#X connect 41 2 42 0;
+#X connect 42 0 35 0;
