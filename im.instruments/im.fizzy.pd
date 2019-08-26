@@ -1,4 +1,4 @@
-#N canvas 816 126 464 652 10;
+#N canvas 631 62 631 704 10;
 #X obj 120 389 outlet~;
 #X floatatom 114 160 5 0 0 0 - - -;
 #X obj 114 134 tabread \$1;
@@ -9,17 +9,16 @@
 #X obj 115 252 pack f f;
 #X obj 114 221 poly 3 1;
 #X obj 114 284 route 1 2 3, f 40;
-#X obj 41 96 spigot;
-#X obj 70 4 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 64 107 spigot;
+#X obj 44 4 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 96 47 spigot;
 #X obj 50 -76 loadbang;
-#X obj 50 -55 \$1;
 #X obj 50 -33 select 0;
-#X text 79 -57 switch between mtof and table-based scale;
-#X obj 41 121 mtof;
-#X obj 127 4 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
+#X text 139 -59 switch between mtof and table-based scale;
+#X obj 64 132 mtof;
+#X obj 129 23 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
 #N canvas 273 231 450 300 fizz 0;
 #X obj 81 150 *~ 0.2;
 #X obj 81 197 *~, f 10;
@@ -110,11 +109,13 @@
 #X obj 154 11 snapshot~;
 #X obj 198 -26 bang~;
 #X obj 154 -28 inlet~;
-#X text 89 -47 switch between mtof and table-based scale;
+#X text 149 -49 switch between mtof and table-based scale;
 #X text 110 -74 determine note onset with brief switch to negative
 number;
 #X obj 154 36 change;
 #X obj 153 61 abs;
+#X obj 94 -8 t b;
+#X obj 50 -55 list store \$1;
 #X connect 1 0 6 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
@@ -125,22 +126,25 @@ number;
 #X connect 7 0 9 0;
 #X connect 8 0 7 0;
 #X connect 8 1 7 1;
-#X connect 9 0 19 0;
-#X connect 9 1 20 0;
-#X connect 9 2 21 0;
-#X connect 10 0 17 0;
+#X connect 9 0 18 0;
+#X connect 9 1 19 0;
+#X connect 9 2 20 0;
+#X connect 10 0 16 0;
 #X connect 11 0 10 1;
 #X connect 12 0 2 0;
-#X connect 13 0 14 0;
-#X connect 14 0 15 0;
-#X connect 15 0 11 0;
-#X connect 17 0 6 0;
-#X connect 18 0 12 1;
+#X connect 13 0 29 0;
+#X connect 14 0 11 0;
+#X connect 14 1 28 0;
+#X connect 16 0 6 0;
+#X connect 17 0 12 1;
+#X connect 18 0 0 0;
 #X connect 19 0 0 0;
 #X connect 20 0 0 0;
-#X connect 21 0 0 0;
-#X connect 22 0 27 0;
-#X connect 23 0 22 0;
-#X connect 24 0 22 0;
-#X connect 27 0 28 0;
-#X connect 28 0 10 0;
+#X connect 21 0 26 0;
+#X connect 22 0 21 0;
+#X connect 23 0 21 0;
+#X connect 26 0 27 0;
+#X connect 27 0 10 0;
+#X connect 27 0 12 0;
+#X connect 28 0 17 0;
+#X connect 29 0 14 0;
