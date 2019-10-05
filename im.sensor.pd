@@ -1,4 +1,4 @@
-#N canvas 684 92 452 453 10;
+#N canvas 650 74 452 453 10;
 #X obj 52 67 ctlin;
 #X floatatom 61 115 5 0 0 0 - - -;
 #X floatatom 97 116 5 0 0 0 - - -;
@@ -18,7 +18,9 @@ the MIDI Interface Generic sketch);
 #X obj 22 217 / 127;
 #X text 137 201 count from 1 because this is im;
 #X obj 96 198 - 1;
+#X floatatom 94 137 5 0 0 0 - - -;
 #X connect 0 0 5 0;
+#X connect 0 0 17 0;
 #X connect 0 1 1 0;
 #X connect 0 1 5 1;
 #X connect 0 2 2 0;
