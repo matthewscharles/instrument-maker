@@ -1,10 +1,12 @@
 # Instrument Maker
 
-This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  Code developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/) and more in the pipeline.  Get in touch if you would like to contribute!
+This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  Code developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/) and more in the pipeline through our new project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  
 
 An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
 
-Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>
+Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.
+
+Read about the philosophy behind this framework at the Bela.io blog: <https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/>
 
 This document in itself is a work in progress, and an invitation to conversation.  [**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
 
@@ -26,13 +28,7 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 ![This is a screenshot of the Instrument Maker objects in Pure Data. It shows a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/im-scale.png)
 
-Video demo (code): [https://youtu.be/8AJMJq2P8Ko](https://youtu.be/8AJMJq2P8Ko)
-
-Video demo (mobile): [https://www.youtube.com/watch?v=jl020N0MZxk](https://www.youtube.com/watch?v=jl020N0MZxk)
-
-Video demo (play): [https://www.youtube.com/watch?v=ywEX0N6TpEA](https://www.youtube.com/watch?v=ywEX0N6TpEA)
-
-An accompanying hardware component is in development, which adds crocodile clip access to the Bela platform.
+An accompanying hardware component is currently under development, which adds crocodile clip access to the Bela platform.
 
 ![A Bela mini device with shield attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/dmlab-im.jpg)
 
