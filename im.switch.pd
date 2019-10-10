@@ -2,12 +2,13 @@
 #X obj 120 184 *~;
 #X obj 187 185 *~;
 #X obj 203 127 expr~ $v1 \; 1 - $v1;
-#X obj 122 252 outlet~;
 #X obj 114 58 inlet~ signal;
 #X obj 203 92 inlet~ selector;
-#X connect 0 0 3 0;
-#X connect 1 0 3 0;
+#X obj 71 252 outlet~ option1;
+#X obj 190 251 outlet~ option2;
+#X connect 0 0 5 0;
+#X connect 1 0 6 0;
 #X connect 2 0 0 1;
 #X connect 2 1 1 1;
-#X connect 4 0 0 0;
-#X connect 5 0 2 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
