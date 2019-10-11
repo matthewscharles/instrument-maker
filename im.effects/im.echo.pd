@@ -1,7 +1,7 @@
-#N canvas -28 56 1280 606 10;
+#N canvas 0 56 1280 606 10;
 #X obj 224 666 outlet~;
 #X obj 224 641 vd~ \$0-imecho;
-#X obj 210 182 delwrite~ \$0-imecho 10000;
+#X obj 82 189 delwrite~ \$0-imecho 10000;
 #X obj 334 308 line~;
 #X msg 334 284 \$1 10;
 #X obj 431 249 list store \$1;
@@ -13,7 +13,7 @@
 #X obj 486 291 loadbang;
 #X obj 363 610 *~;
 #X text 12 40 Charles Matthews 2019 for instrumentmaker.org;
-#X obj 224 148 inlet~ signal;
+#X obj 96 155 inlet~ signal;
 #X obj 609 428 inlet~ delayTime (signal);
 #X obj 930 140 loadbang;
 #X obj 1179 201 text define \$0-args;
@@ -392,14 +392,17 @@ the inlet order if editing this file.;
 #X msg 939 423 clear \, obj 11 99 s \\\$0-attributes \, obj 11 39 r
 im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 1 0 2 0 \, connect 2 0 3 0 \, connect 3 0 0 0;
-#X obj 223 255 clip~ -1 1;
+#X obj 188 155 clip~ -1 1;
 #X obj 352 487 clip~ -1 1;
 #X text 304 228 !! inlet delay;
 #X text 403 308 !! inlet feedback;
 #X text 311 246 (placed left for order);
 #X obj 473 563 +~;
 #X obj 474 536 clip~ 0 0.99;
-#X obj 558 536 inlet~ feedback;
+#X obj 825 527 inlet~ feedback;
+#X obj 205 330 bob~;
+#X obj 234 297 sig~ 0.9;
+#X obj 201 282 sig~ 500;
 #X connect 1 0 0 0;
 #X connect 1 0 56 0;
 #X connect 3 0 1 0;
@@ -411,7 +414,7 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X connect 8 0 7 0;
 #X connect 9 0 10 0;
 #X connect 10 0 61 0;
-#X connect 12 0 55 0;
+#X connect 12 0 63 0;
 #X connect 14 0 2 0;
 #X connect 15 0 1 0;
 #X connect 16 0 22 0;
@@ -447,3 +450,6 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X connect 60 0 12 1;
 #X connect 61 0 60 0;
 #X connect 62 0 60 1;
+#X connect 63 0 55 0;
+#X connect 64 0 63 2;
+#X connect 65 0 63 1;
