@@ -59,3 +59,10 @@ This stage involves dragging files from finder into the web browser; you might l
 ## Setting up the board
 
 ![](example.png)
+
+
+
+# Using Pd with Instrument Maker
+
+There is no need to "lock" the patch when using these objects. 
+
