@@ -1,0 +1,14 @@
+#N canvas 392 353 450 300 10;
+#X obj 126 67 inlet~ mic;
+#X obj 126 96 env~;
+#X obj 126 152 line~;
+#X obj 126 196 clip~ 0 1;
+#X obj 126 175 expr~ ($v1 - 50) / 80;
+#X msg 125 127 \$1 50;
+#X obj 126 220 outlet~ envelope0-1;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 2 0 4 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
