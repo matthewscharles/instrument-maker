@@ -2,7 +2,7 @@
 
 Notes by Robyn Steward 22/11/19
 
-***Common Terms*** 
+***Common Terms and information*** 
 
 **Tone** is used instead of thee word sound as sound implies you can hear it however instrument maker supports other ways of sensing the output of audio.
 
@@ -11,6 +11,8 @@ Notes by Robyn Steward 22/11/19
 **when you write a programme  it will save as a .pd file** 
 
  **a programme is code to tell a computer what too do**
+
+a pin is 
 
 Anything that start im. Is called a object in this  context
 
@@ -21,6 +23,8 @@ When you create a object it will have inlets and inlets  this is so yu can  conn
 ##  
 
 ## **Inputs**
+
+Every input-type object needs a number to tell it which pin to take information from. For example, im.sensor 1 will read information from pin number 1.
 
 **im.microphone** = line in or mic in NOT sensors
 
