@@ -8,7 +8,7 @@
 #X obj 195 84 > 50;
 #X obj 29 15 inlet~ mic;
 #X obj 103 203 outlet~ rawPitch;
-#X obj 29 83 moses -1500 0;
+#X obj 29 83 moses 0;
 #X connect 0 0 9 0;
 #X connect 1 0 6 0;
 #X connect 2 0 0 0;
