@@ -4,7 +4,11 @@ These are the objects currently in use for tutorials and demos (November 2019).
 
 Compiled by Charles Matthews and Robyn Steward, with thanks to #MilieuxMake/Houda Jawhar for getting this into a simplified format for now!
 
+
+
 ## **Inputs**
+
+<img src="../../instrument-maker-symbols/EN/input.svg" width="10" height="10">
 
 - im.microphone
 - im.linein
