@@ -8,8 +8,6 @@ Compiled by Charles Matthews and Robyn Steward, with thanks to #MilieuxMake/Houd
 
 ## **Inputs**
 
-<img src="../../instrument-maker-symbols/EN/input.svg" width="20" height="20">
-
 - im.microphone
 - im.linein
 - im.sensor
