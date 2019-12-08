@@ -4,17 +4,17 @@ Notes by Robyn Steward 22/11/19
 
 ***Common Terms and information*** 
 
-**Tone** is used instead of thee word sound as sound implies you can hear it however instrument maker supports other ways of sensing the output of audio.
+**Tone** is used instead of the word sound, as sound implies you can hear it however instrument maker supports other ways of sensing the output.
 
-**Instrument maker is** a more user friendly way of accessing a  compute programming language called **pure data,** 
+**Instrument maker is** a more user friendly way of accessing a  computer programming language called **Pure Data,** 
 
 **when you write a programme  it will save as a .pd file** 
 
- **a programme is code to tell a computer what too do**
+ **a programme is code to tell a computer what to do**
 
-a pin is 
+a pin is ...
 
-Anything that start im. Is called a object in this  context
+Anything that start im. is called a object in this context
 
 To make a new object click put object or CTRL + 1 
 
