@@ -114,8 +114,9 @@ Depending on interest of the user, the following are recommended starting points
 
 ## Glossary
 
-- Amplitude
-- Arduino
+- **Amplitude** — the strength of a signal (often equivalent to volume)
+- **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.
+- **Bela** — 
 - Chord
 - Circuit
 - Crossfade
@@ -143,6 +144,7 @@ Depending on interest of the user, the following are recommended starting points
 - Mixer
 - Mode
 - Object
+- Open source
 - Noise
 - Physical modelling
 - Pitch
