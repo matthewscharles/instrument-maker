@@ -6,15 +6,20 @@
 
 Pure Data (PD for short) is a free, open source [dataflow](https://en.wikipedia.org/wiki/Dataflow_programming) programming language. 
 
-- Connect objects on-screen.
+- Create and connect objects on-screen, rather than writing lines of text code.
 - Pure Data is friendly to many musicians because it can feel similar to connecting instruments and effect pedals.
-  - By changing the order in which the pedals are connected, we can change the sound produced.
+  - By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
+  - Sometimes this way of organising information can lead to a more playful approach.
 
 Pure Data is open source, meaning that members of the community can edit the code and create their own versions of the software.
 
+#### Why use Pure Data?
+
+Pure Data code can be used in a variety of things, including audio apps and embedded computers like the Raspberry Pi and Bela.
+
 ### What is Instrument Maker?
 
-Instrument Maker is a set of objects that have been designed as an introduction to Pure Data. 
+Instrument Maker is a toolkit for making music quickly with sensors.  This includes a library: a set of objects that have been designed as an introduction to audio coding. 
 
 The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of meaningfully making sound as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
@@ -28,15 +33,27 @@ Instrument Maker objects can be used alongside regular Pure Data objects, so tha
 
 ## Anatomy of a Pure Data object
 
-Each object has inlets and outlets, a name, and arguments.
+Each object has a **name**, **arguments**, **inlets**, and **outlets**.
+
+<!--Name-->
+
+<!--Arguments-->
+
+<!--Inlets-->
+
+<!--Outlets-->
 
 Information flows one way (downwards). Inlets can only be connected to outlets.
 
-Different objects have different numbers of inlets and outlets.  Some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
+All objects must have a name.  But not all objects have inlets or outlets.  Different objects have different numbers of inlets and outlets.  Some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
 
 Multiple objects can be connected to each other.
 
-## Instrument elements
+## Key concepts
+
+### Signal flow
+
+### Instrument elements
 
 - Note/velocity vs. continuous controls
   - Flute
@@ -119,6 +136,7 @@ Depending on interest of the user, the following are recommended starting points
 - **Bela** — 
 - Chord
 - Circuit
+- Controller
 - Crossfade
 - Dataflow
 - Distortion
@@ -147,12 +165,15 @@ Depending on interest of the user, the following are recommended starting points
 - Open source
 - Noise
 - Physical modelling
+- Patch
 - Pitch
 - Pitch tracker
+- Plugin
 - Reverb
 - Sampler
 - Sawtooth wave
 - Sensor
+- Signal flow
 - Sine wave
 - Speaker
 - Scale
