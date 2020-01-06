@@ -11,11 +11,12 @@ Pure Data (PD for short) is a free, open source [dataflow](https://en.wikipedia.
   - By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
   - Sometimes this way of organising information can lead to a more playful approach.
 
-Pure Data is open source, meaning that members of the community can edit the code and create their own versions of the software.
 
 #### Why use Pure Data?
 
-Pure Data code can be used in a variety of things, including audio apps and embedded computers like the Raspberry Pi and Bela.
+Pure Data is free and open source, meaning that members of the community can edit the code and create their own versions of the software.
+
+Pure Data code can be applied in a variety of music making contexts, including the web, audio apps for Android and iOS, and running on embedded computers like the Raspberry Pi and Bela.
 
 ### What is Instrument Maker?
 
@@ -32,6 +33,9 @@ At present, the code functions best with the following items:
 - Arduino (made easier with an Instrument Maker shield)
 - Touch Board
 - Bela
+- Raspberry Pi
+
+Although these resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio (whether you prefer to think of this as vibration, sound, or music). Therefore any connection mentioned below, other than a speaker output, can be assumed to be an input. 
 
 ## Anatomy of a Pure Data object
 
