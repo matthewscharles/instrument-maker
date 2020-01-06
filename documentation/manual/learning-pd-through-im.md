@@ -27,7 +27,9 @@ Instrument Maker objects can be used alongside regular Pure Data objects, so tha
 
 ## Resources
 
-- Arduino with Instrument Maker shield
+At present, the code functions best with the following items:
+
+- Arduino (made easier with an Instrument Maker shield)
 - Touch Board
 - Bela
 
@@ -43,11 +45,13 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**.
 
 <!--Outlets-->
 
-Information flows one way (downwards). Inlets can only be connected to outlets.
+Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. 
 
-All objects must have a name.  But not all objects have inlets or outlets.  Different objects have different numbers of inlets and outlets.  Some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
+All objects must have a name. Objects from the Instrument Maker library start with the letters im.
 
-Multiple objects can be connected to each other.
+Not all objects have the same numbers of inlets or outlets. Furthermore, some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
+
+Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
 
 ## Key concepts
 
@@ -164,6 +168,7 @@ Depending on interest of the user, the following are recommended starting points
 - **Object** —
 - **Open source** —
 - **Noise** —
+- **Parameter** --
 - **Physical modelling** —
 - **Patch** —
 - **Pitch** —
