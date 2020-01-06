@@ -134,55 +134,55 @@ Depending on interest of the user, the following are recommended starting points
 - **Amplitude** — the strength of a signal (often equivalent to volume)
 - **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.
 - **Bela** — 
-- Chord
-- Circuit
-- Controller
-- Crossfade
-- Dataflow
-- Distortion
-- Echo
-- Effect
-- Electrode
-- Envelope
-- Envelope follower
-- Fader
-- Feedback
-- Frequency
-- Filter
-- Granular synthesis
-- Inlet
-- Interval
-- Key
-- Loop
-- Looper
-- Major
-- Milliseconds
-- Minor
-- MIDI
-- Mixer
-- Mode
-- Object
-- Open source
-- Noise
-- Physical modelling
-- Patch
-- Pitch
-- Pitch tracker
-- Plugin
-- Reverb
-- Sampler
-- Sawtooth wave
-- Sensor
-- Signal flow
-- Sine wave
-- Speaker
-- Scale
-- Theremin
-- Touch Board
-- Triad
-- White noise
-- Velocity
-- Volume
+- **Chord** —
+- **Circuit** —
+- **Controller** —
+- **Crossfade** —
+- **Dataflow** —
+- **Distortion** —
+- **Echo** —
+- **Effect** —
+- **Electrode** —
+- **Envelope** —
+- **Envelope follower** —
+- **Fader** —
+- **Feedback** —
+- **Frequency** —
+- **Filter** —
+- **Granular synthesis** —
+- **Inlet** —
+- **Interval** —
+- **Key** —
+- **Loop** —
+- **Looper** —
+- **Major** —
+- **Milliseconds** —
+- **Minor** —
+- **MIDI** —Musical Instrument Digital Interface
+- **Mixer** —
+- **Mode** —
+- **Object** —
+- **Open source** —
+- **Noise** —
+- **Physical modelling** —
+- **Patch** —
+- **Pitch** —
+- **Pitch tracker** —
+- **Plugin** —
+- **Reverb** —
+- **Sampler** —
+- **Sawtooth wave** —
+- **Sensor** —
+- **Signal flow** —
+- **Sine wave** —
+- **Speaker** —
+- **Scale** —
+- **Theremin** —
+- **Touch Board** —
+- **Triad** —a chord consisting of three notes.
+- **White noise** —
+- **Velocity** —
+- **Volume** —
 
 ## References/learning resources
 
