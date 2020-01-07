@@ -75,6 +75,12 @@ Multiple objects can be connected to each other -- so, for example, a single sen
 
 ### Signal flow
 
+The order in which objects are connected affects their sound and/or behaviour. 
+
+#### Aux sends
+
+An auxiliary or aux send involves a signal being duplicated, with an effect applied. 
+
 ### Instrument elements
 
 - Note/velocity vs. continuous controls
@@ -103,7 +109,7 @@ Create a microphone object (im.microphone)
 
 Create a speaker object (im.speaker)
 
-Join the microphone and speaker with a cable
+Join the microphone and speaker with a cable.
 
 ## Key objects
 
@@ -155,6 +161,8 @@ Depending on interest of the user, the following are recommended starting points
 
 - **Amplitude** — the strength of a signal (often equivalent to volume)
 - **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.
+- **Arduino** -- 
+- **Aux** -- 
 - **Bela** — 
 - **Chord** —
 - **Circuit** —
@@ -162,49 +170,62 @@ Depending on interest of the user, the following are recommended starting points
 - **Crossfade** —
 - **Dataflow** —
 - **Distortion** —
+- **Dry (signal)** -- a signal without an effect (in contrast to wet, leading to description of "dry/wet" balance). 
 - **Echo** —
 - **Effect** —
 - **Electrode** —
 - **Envelope** —
 - **Envelope follower** —
+- **Fade** --
 - **Fader** —
 - **Feedback** —
 - **Frequency** —
 - **Filter** —
-- **Granular synthesis** —
+- **FM synthesis** --
+- **Granular synthesis** — a technique used to create textures by slicing sounds into small pieces, repeating and recombining them.
+- **Hz** -- a unit of measurement for frequencies: cycles per second. 
 - **Inlet** —
+- **Insert effect** --
 - **Interval** —
-- **Key** —
-- **Loop** —
-- **Looper** —
+- **Key (musical)** —
+- **Loop** — a repeated sound or pattern
+- **Looper** — a device or object that records a live sound and plays it back repeatedly (often to provide a background texture). 
+- **LFO** -- Low frequency oscillator
 - **Major** —
-- **Milliseconds** —
+- **Milliseconds** — a unit of time most commonly used in processing: a thousandth of a second.
 - **Minor** —
 - **MIDI** —Musical Instrument Digital Interface
-- **Mixer** —
-- **Mode** —
+- **Mixer** — a device used to blend sounds by changing their individual volumes or tone, usually using sets of faders or dials
+- **Mode** — a scale starting on a different key to the usual root note, so that intervals have different weighting. 
 - **Object** —
 - **Open source** —
+- **Oscillator** --
 - **Noise** —
 - **Parameter** --
 - **Physical modelling** —
 - **Patch** —
 - **Pitch** —
 - **Pitch tracker** —
-- **Plugin** —
-- **Reverb** —
+- **Plugin** — a smaller piece of software that is added on to expand a music program (for example, adding a certain instrument or effect). Plugins often work with many different pieces of software. 
+- **Reverb** — short for reverberation: the reflections of an acoustic space (often simulated digitally), which can give sounds longer tails proportional to the size of the room. 
+- **Resistor** --
+- **Root (note)** --
+- **Sample** --
 - **Sampler** —
-- **Sawtooth wave** —
+- **Sawtooth (wave)** —
+- **Send effect** --
 - **Sensor** —
 - **Signal flow** —
-- **Sine wave** —
+- **Sine (wave)** — a "pure" tone: air moves like semicircles. 
 - **Speaker** —
-- **Scale** —
+- **Scale (musical)** —
 - **Theremin** —
 - **Touch Board** —
 - **Triad** —a chord consisting of three notes.
-- **White noise** —
+- **Wet (signal)** -- a sound with an effect (in contrast to dry, without the effect). 
+- **White noise** — all frequencies at equal loudness. 
 - **Velocity** —
+- **Vibrotactile** --
 - **Volume** —
 
 ## References/learning resources
