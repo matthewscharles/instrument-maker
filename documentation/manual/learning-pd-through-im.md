@@ -20,22 +20,25 @@ Pure Data code can be applied in a variety of music making contexts, including t
 
 ### What is Instrument Maker?
 
-Instrument Maker is a toolkit for making music quickly with sensors.  This includes a library: a set of objects that have been designed as an introduction to audio coding. 
+Instrument Maker is a toolkit for making music quickly with sensors.  This includes a library for Pure Data: a set of objects that have been designed as an introduction to audio coding. 
 
-The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of meaningfully making sound as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
+The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
 Instrument Maker objects can be used alongside regular Pure Data objects, so that the transition to usual Pure Data objects can take place gradually.
 
-## Resources
+## Hardware resources
 
-At present, the code functions best with the following items:
+At present, the Instrument Maker code functions best with the following items:
 
 - Arduino (made easier with an Instrument Maker shield)
 - Touch Board
 - Bela
 - Raspberry Pi
 
-Although these resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio (whether you prefer to think of this as vibration, sound, or music). Therefore any connection mentioned below, other than a speaker output, can be assumed to be an input. 
+Although these resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
+
+Therefore, apart from microphones and speakers any external connection mentioned below can be assumed to be a sensor input. 
+
 
 ## Anatomy of a Pure Data object
 
@@ -49,9 +52,20 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**.
 
 <!--Outlets-->
 
-Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. 
-
 All objects must have a name. Objects from the Instrument Maker library start with the letters im.
+
+For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
+
+name(argument, argument) 
+
+or, more concretely: 
+
+sensor(1, 12)
+scale(C, major)
+
+Unlike contemporary languages like Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference.  
+
+Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. 
 
 Not all objects have the same numbers of inlets or outlets. Furthermore, some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
 
@@ -73,7 +87,7 @@ Multiple objects can be connected to each other -- so, for example, a single sen
 
 ### Creating and connecting objects 
 
-Make a new object
+Make a new object:
 
 Press **ctrl** and **1** on the computer keyboard, or go to the **put** menu at the top of the window and choose **object**.
 
@@ -85,9 +99,9 @@ Click outside the object to finish the box, or press **ctrl** and **1** to creat
 
 ### Basics: connecting a microphone
 
-Create a microphone
+Create a microphone object (im.microphone)
 
-Create a speaker
+Create a speaker object (im.speaker)
 
 Join the microphone and speaker with a cable
 
@@ -101,14 +115,14 @@ Join the microphone and speaker with a cable
 
 **Arguments:**
 
-1. number of the input to read
+1. the name or number of the input to read from
 2. multiplier
 
-The multiplier can be used to set the 
+The multiplier can be used to set how many notes are played (when combined with im.scale)
 
 ### im.speaker
 
-**Inlet:** sound to go to the speaker
+**Inlet:** the signal to go to the speaker
 
 **Outlet:** no outlet
 
