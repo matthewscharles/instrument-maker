@@ -52,20 +52,28 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**.
 
 <!--Outlets-->
 
-All objects must have a name. Objects from the Instrument Maker library start with the letters im.
+### Name
+
+All objects must have a name. Objects from the Instrument Maker library start with the letters **im.**
+
+### Arguments
 
 For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
 
-name(argument, argument) 
+**name(argument, argument)**
 
 or, more concretely: 
 
-sensor(1, 12)
-scale(C, major)
+**sensor(1, 12)** -- read the sensor connected to pin 1, and multiply the output by 12
+**scale(C, major, 3)** -- set a scale with root note C, using a major key, starting at octave number 3
 
 Unlike contemporary languages like Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference.  
 
-Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. 
+### Inlets and outlets
+
+Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. When clicking and dragging to create connections, it's necessary to click and drag from the outlet.
+
+<!--- parentheses example --->
 
 Not all objects have the same numbers of inlets or outlets. Furthermore, some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
 
@@ -77,9 +85,9 @@ Multiple objects can be connected to each other -- so, for example, a single sen
 
 The order in which objects are connected affects their sound and/or behaviour. 
 
-#### Aux sends
+#### Sends
 
-An auxiliary or aux send involves a signal being duplicated, with an effect applied. 
+A "send" (also known as an auxiliary or aux send) involves a signal being duplicated, with an effect applied. 
 
 ### Instrument elements
 
@@ -111,7 +119,7 @@ Create a speaker object (im.speaker)
 
 Join the microphone and speaker with a cable.
 
-## Key objects
+## Key im objects
 
 ### im.sensor
 
@@ -192,12 +200,13 @@ Depending on interest of the user, the following are recommended starting points
 - **Looper** — a device or object that records a live sound and plays it back repeatedly (often to provide a background texture). 
 - **LFO** -- Low frequency oscillator
 - **Major** —
-- **Milliseconds** — a unit of time most commonly used in processing: a thousandth of a second.
+- **Milliseconds (ms)** — a unit of time most commonly used in processing: a thousandth of a second.
 - **Minor** —
 - **MIDI** —Musical Instrument Digital Interface
 - **Mixer** — a device used to blend sounds by changing their individual volumes or tone, usually using sets of faders or dials
 - **Mode** — a scale starting on a different key to the usual root note, so that intervals have different weighting. 
 - **Object** —
+- **Octave** --
 - **Open source** —
 - **Oscillator** --
 - **Noise** —
