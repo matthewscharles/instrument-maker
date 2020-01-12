@@ -1,5 +1,9 @@
 **Learning PD with Instrument Maker**
 
+[TOC]
+
+
+
 # Disclaimer
 
 The Instrument Maker library is very much a work in progress and a labour of love — so please don't be surprised if things change around! Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly.
@@ -75,7 +79,13 @@ Unlike contemporary languages like Swift, the names of arguments are not written
 
 ## Inlets and outlets
 
-Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. When clicking and dragging to create connections, the connection must always be started from the outlet.
+<a name="inlets+outlets"></a>
+
+Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. When clicking and dragging t
+
+
+
+o create connections, the connection must always be started from the outlet.
 
 <!--- parentheses example --->
 
