@@ -203,6 +203,8 @@ Depending on interest of the user, the following are recommended starting points
 
 # Glossary
 
+The following rough definitions are simplified and adapted to context.
+
 - **Abstraction** — a Pure Data patch that has been saved and loaded as an object.
 - **Amplitude** — the strength of a signal (often equivalent to volume)
 - **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.
@@ -215,8 +217,8 @@ Depending on interest of the user, the following are recommended starting points
 - **Crossfade** —
 - **Dataflow** —
 - **Distortion** —
-- **Dry (signal)** -- a signal without an effect (in contrast to wet, leading to description of "dry/wet" balance). 
-- **Echo** —
+- **Dry (signal)** — a signal without an effect (in contrast to wet, leading to description of "dry/wet" balance). 
+- **Echo** — an effect based on the repetition of a sound, often more than once if the sound is fed back onto itself.
 - **Effect** —
 - **Electrode** —
 - **Envelope** —
@@ -237,22 +239,29 @@ Depending on interest of the user, the following are recommended starting points
 - **Loop** — a repeated sound or pattern
 - **Looper** — a device or object that records a live sound and plays it back repeatedly (often to provide a background texture). 
 - **LFO** -- Low frequency oscillator
-- **Major** **(scale)** —
+- **Major** **(scale)** — a common scale (the same as the ionan mode).
 - **Milliseconds (ms)** — a unit of time most commonly used in processing: a thousandth of a second.
-- **Minor** —
+- **Minor** — a common scale (the same as the aeolian mode, kind of..)
 - **MIDI** —Musical Instrument Digital Interface
 - **Mixer** — a device used to blend sounds by changing their individual volumes or tone, usually using sets of faders or dials
-- **Mode** — a scale starting on a different key to the usual root note, so that intervals have different weighting. 
+- **Mode** **(musical)** — a scale that starts on a different key to the usual root note, so that intervals have different weighting. Common modes — included in the IM library — are:
+  - ionian (major)
+  - dorian
+  - phrygian
+  - lydian
+  - mixolydian
+  - aeolian
+  - locrian
 - **Object** —
 - **Octave** --
 - **Open source** —
 - **Oscillator** --
 - **Outlet** — the part of an object that sends data out, sitting at the bottom of the object.  Different types of objects have different numbers of outlets — some have none!
-- **Noise** —
+- **Noise** — a sound without a clear sense of pitch.
 - **Parameter** --
 - **Physical modelling** —
-- **Patch** —
-- **Pitch** —
+- **Patch** — a program written in Pure Data.
+- **Pitch** — how "low" or "high" a sound is, usually associated with frequency.
 - **Pitch tracker** —
 - **Plugin** — a smaller piece of software that is added on to expand a music program (for example, adding a certain instrument or effect). Plugins often work with many different pieces of software. 
 - **Reverb** — short for *reverberation*: the reflections of an acoustic space (often simulated digitally), which can give sounds longer tails proportional to the size of the room. 
