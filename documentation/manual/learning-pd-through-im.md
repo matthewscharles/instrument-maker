@@ -207,38 +207,38 @@ The following rough definitions are simplified and adapted to context.
 
 - **Abstraction** — a Pure Data patch that has been saved and loaded as an object.
 - **Amplitude** — the strength of a signal (often equivalent to volume)
-- **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.
+- **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.  Arduino boards are designed for education, e.g. not to catch fire if you accidentally create a short circuit.
 - **Arduino** — a type of open source hardware board with inputs and outputs that can be connected to a computer (also refers to the accompanying software and the company that makes it).
 - **Aux** — another word for send effect 
 - **Bela** — a type of open source hardware board, with inputs and outputs, that can run Pure Data with very low latency.
-- **Chord** —
-- **Circuit** —
-- **Controller** —
-- **Crossfade** —
-- **Dataflow** —
-- **Distortion** —
+- **Chord** — a combination of pitched sounds.
+- **Circuit** — a phsyical path through which electricity passes, connecting various components.
+- **Controller** — a physical device that affects parameters of sound, e.g. on a computer or synthesiser, but does not produce sound itself.
+- **Crossfade** — to change the amplitude of two signals in inverse proportion to each other (i.e. one moves up when the other is moved down).
+- **Dataflow** — a style of programming that uses the visual metaphor of a signal flow chart to connect blocks of code together.
+- **Distortion** — a kind of squashing of a sound, which often makes it appear louder, and perhaps rougher in quality.
 - **Dry (signal)** — a signal without an effect (in contrast to wet, leading to description of "dry/wet" balance). 
 - **Echo** — an effect based on the repetition of a sound, often more than once if the sound is fed back onto itself.
-- **Effect** —
-- **Electrode** —
+- **Effect** — something that changes the quality of a sound, e.g. echo, reverb, or distortion
+- **Electrode** — a conductive material that serves as an entry or exit point for electricity in a circuit — in this context, the twelve touch points on a Touch Board.
 - **Envelope** —
 - **Envelope follower** —
-- **Fade** --
-- **Fader** —
-- **Feedback** —
-- **Frequency** —
-- **Filter** —
-- **FM synthesis** --
+- **Fade** — to bring volume (or another parameter) up or down
+- **Fader** — a control that turns something up and down, most commonly found in the volume controls for each channel on a mixing desk. 
+- **Feedback** — placing a sound back onto itself, like holding a microphone to a speaker into which it is plugged.
+- **Frequency** — how fast something repeats — higher frequencies are perceived as pitches, while lower frequencies are perceived as rhythmic movements.
+- **Filter** — a process that removes certain qualities of a sound (e.g. high or low frequencies).
+- **FM synthesis** — 
 - **Granular synthesis** — a technique used to create textures by slicing sounds into small pieces, repeating and recombining them.
 - **Hz** — a unit of measurement for frequencies: cycles per second. 
 - **Inlet** — the part of an object that takes data in, sitting at the top of the object.  Different types of objects have different numbers of inlets — some have none!
-- **Insert effect** --
+- **Insert effect** — a way of adding effects by cutting directly into the signal, replacing the original "dry" sound.
 - **Interval** —
 - **Key (musical)** — see scale.
 - **Latency** — the amount of time it takes to process a sound (e.g. the time it takes for a sound to be triggered when a button is pushed).  Latency changes depending on how fast or efficient a computer is at handling audio.
 - **Loop** — a repeated sound or pattern
 - **Looper** — a device or object that records a live sound and plays it back repeatedly (often to provide a background texture). 
-- **LFO** -- Low frequency oscillator
+- **LFO** **(Low Frequency Oscillator)** — an oscillator with a frequency so slow/low that it is perceived more in terms of rhythm than pitch, usually used to modulate parameters of other sounds.
 - **Major** **(scale)** — a common scale (the same as the ionan mode).
 - **Milliseconds (ms)** — a unit of time most commonly used in processing: a thousandth of a second.
 - **Minor** — a common scale (the same as the aeolian mode, kind of..)
@@ -252,28 +252,27 @@ The following rough definitions are simplified and adapted to context.
   - mixolydian
   - aeolian
   - locrian
-- **Object** —
-- **Octave** --
-- **Open source** —
-- **Oscillator** --
+- **Object** — a block of code represented as a box 
+- **Octave** — an interval of twice a given frequency or pitch.
+- **Oscillator** — something that moves back and forth to produce a regular wave
 - **Outlet** — the part of an object that sends data out, sitting at the bottom of the object.  Different types of objects have different numbers of outlets — some have none!
 - **Noise** — a sound without a clear sense of pitch.
-- **Parameter** --
-- **Physical modelling** —
+- **Parameter** — something that can be measured and/or altered to express the quality of a sound or process
+- **Physical modelling** — a type of synthesis in which real-world acoustic qualities of a sound or instrument are mimicked using combinations of electronic processes
 - **Patch** — a program written in Pure Data.
 - **Pitch** — how "low" or "high" a sound is, usually associated with frequency.
 - **Pitch tracker** —
 - **Plugin** — a smaller piece of software that is added on to expand a music program (for example, adding a certain instrument or effect). Plugins often work with many different pieces of software. 
 - **Reverb** — short for *reverberation*: the reflections of an acoustic space (often simulated digitally), which can give sounds longer tails proportional to the size of the room. 
-- **Resistor** —
-- **Root (note)** —
-- **Sample** —
-- **Sampler** —
-- **Sawtooth (wave)** —
+- **Resistor** — a component that causes resistance in a circuit and thus lowers the voltage at a given point.
+- **Root (note)** — the first note of a scale
+- **Sample** — a recorded sound
+- **Sampler** — a device that records and/or plays sound 
+- **Sawtooth (wave)** — a wave shaped like a saw — unfiltered, this produces a buzzing sound or vibration
 - **Send effect** — an effect that takes a copy of a sound, leaving the original sound intact (see aux send)
 - **Sensor** — a material that measures something in its surroundings (e.g. light, sound, temperature), which can be transferred to the computer by reading its voltage.
 - **Signal flow** — the path that an audio signal takes from its input (e.g. 
-- **Sine (wave)** — a "pure" tone: air moves like semicircles. 
+- **Sine (wave)** — a "pure" tone: air moves like semicircles.  This produces a smooth sound like a flute or recorder. 
 - **Speaker** — a device that converts electronic signals into sound waves, usually by pushing a cone back and forth to make the air around it vibrate.
 - **Sub-patch** — a patch within a patch — it's possible to create your own objects with inlets and outlets, consisting of Pure Data code.
 - **Scale (musical)** — a set of notes (e.g. major, minor, blues).
@@ -285,6 +284,7 @@ The following rough definitions are simplified and adapted to context.
 - **Velocity** — the force with which a note is played (usually linked to the loudness)
 - **Vibrotactile** — something that transmits vibrations through touch
 - **Volume** — a measure of how loud and/or intense a sound is.
+- **Voltage divider** — a circuit used to measure the voltage by taking a reading between two resistors.
 
 # References/learning resources
 
