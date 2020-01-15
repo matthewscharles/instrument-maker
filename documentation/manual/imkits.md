@@ -4,6 +4,22 @@
 
 ![board_resource](board_resource.png)
 
+The pins are laid out as follows:
+
+![voltage-divider](voltage-divider.jpg)
+
+Sensor 1: A0
+
+Sensor 2: A1
+
+Sensor 3: A2
+
+Sensor 4: A3
+
+Sensor 5: A4
+
+Sensor 6: A5
+
 ## Initial setup
 
 ### Cloning the Raspberry Pi disk image
@@ -26,7 +42,7 @@ Load [Balena Etcher](https://www.balena.io/etcher/) to flash a new SD card.  The
 
 Once the prepared SD card is inserted, plug the Raspberry Pi into a keyboard, mouse, and monitor to set it up.
 
-Go to `Preferences -> Raspberry Pi Configuration` from the Raspberry Pi menu
+Go to `Preferences -> Raspberry Pi Configuration` from the Raspberry Pi menu.
 
 Change the hostname to something unique (I have used im1, im2 etc. so far to distinguish between the different kits).  Write this down!
 
@@ -76,13 +92,25 @@ Now create the rest of your patch according to the tutorials.  The `im.pi` objec
 
 # Troubleshooting
 
-Questions here..
+- There is no sound
+  - Try connecting `im.microphone` to `im.speaker`, and make sure the microphone and speaker connections are still the right way around. 
+  - Does the speaker still have batteries?  Is it switched on?
+- The speaker is making an annoying beeping (telephone-style) noise! I didn't program that!
+  - This means the speaker is running out of batteries.  You can charge it from the USB port, and I think it can still be used while it's charging.
+- I clicked on an object, and now I have a page with more confusing networks of objects on it!
+  - Oops - this means you were in performance mode rather than edit mode.  Close the window and press `ctrl` and `1` to create a new object, which automatically switches into edit mode.
 
 # FAQ
 
+**Can I use an Arduino board without the IM shield — i.e. with a breadboard?**
+
+Yes, you just need to plug stuff in that works with the analog inputs for now, and make your own voltage divider circuit if necessary.
+
 **Will the SD card work on other types of Raspberry Pi, e.g. the 3B+ with more USB ports?**
 
-Yes! But we still need to use the same USB audio device, as it's written into the startup script.  This is a problem with running the devices headless, but it's worth it..
+Yes! I'm using the A+ model because it's so affordable..
+
+But we still need to use the same USB audio device, as it's written into the startup script.  This is a problem with running the devices headless (otherwise we need to go in to set the audio card every time), but it's worth the hassle to have a self-contained instrument..
 
 **Why not use the built-in audio output on the Raspberry Pi?**
 
@@ -95,3 +123,7 @@ That's the size I used at first, as I had planned to add some sample libraries, 
 **Is it possible to connect to the Raspberry Pi with its own Ad Hoc WiFi?**
 
 Working on it..but not yet.
+
+**Can I use this with Firmata or a different Arduino sketch?**
+
+Yes, in the near future.  This was the original plan, but I found it more stable to work with MIDI the way I have been so far.

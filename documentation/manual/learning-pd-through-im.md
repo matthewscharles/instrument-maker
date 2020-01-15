@@ -323,6 +323,8 @@ Objects in the Instrument Maker library are almost exclusively based on audio co
 
 There are only two elements available: objects and cables.  This reinforces a deliberate separation of interface and code. Users are not encouraged to use GUI objects (including messages) in the initial stages, which might feel counter-intuitive to some people!
 
+This also means that we can stay in edit mode 100% of the time..avoiding opening the abstractions by accident.
+
 Instrument Maker objects are created in Vanilla for maximum compatibility — they are all abstractions!
 
 Input is roughly equivalent to "pin" on an Arduino or Bela board.
