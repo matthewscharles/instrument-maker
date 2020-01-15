@@ -133,25 +133,29 @@ If there is a problem with the object, the box will appear with a dotted outline
 - there are capital letters somewhere in the object name — almost all object names are lower case
 - there are spaces missing between the object name and arguments
 
-#### Shortcuts
-
-Instead of clicking on the background, press **`ctrl`** and **`1`** while the box is still highlighted to create another object — the next object will be connected automatically.
-
-Instead of creating a new object, you might wish to select an object and press **`ctrl`** and **`d`** to duplicate it.  This can be useful if you are creating similar chains of objects.  
-
 ### Editing an object
 
 Click on the object to place the text cursor, and type your changes in.  Click outside the object to close the box.
 
 Resize the object by moving the mouse pointer over the object's right-hand border, and dragging.
 
-Move objects by dragging on them with the mouse (don't click on them first — the software will think that you are trying to edit the text!).  Move the objects around to make space for your objects on screen — try not to cram them in too tightly!
+Move objects by dragging on them with the mouse (don't click on them first — the software will think that you are trying to edit the text!).  
 
 ### Connecting objects
 
 Click and hold the mouse cursor over an outlet to start the connection. As you move the mouse over the outlet, the pointer should turn into a circle.
 
 Keep holding the mouse button down while you drag onto the inlet of a second object.  You should see a black line extending, and the mouse pointer will turn back into an arrow.  When the pointer is over a compatible inlet, it will turn back into a circle, and you can let go.
+
+### Shortcuts and tips
+
+Instead of clicking on the background, press **`ctrl`** and **`1`** while the box is still highlighted to create another object — the next object will be connected automatically.
+
+Instead of creating a new object, you might wish to select an object and press **`ctrl`** and **`d`** to duplicate it.  This can be useful if you are creating similar chains of objects.  
+
+Move the objects around to make space for your objects on screen — try not to cram them in too tightly!
+
+![example-tidy](example-tidy.png)
 
 ## Basics: connecting a microphone
 
