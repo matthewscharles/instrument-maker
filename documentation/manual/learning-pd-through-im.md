@@ -1,4 +1,4 @@
-**Learning PD with Instrument Maker** (work in progress)
+**Learning PD with Instrument Maker** 
 
 Charles Matthews 2020
 
@@ -11,9 +11,11 @@ Incorporating contributions from:
 
 And with thanks to countless others (for now, you know who you are…)
 
-# Disclaimer and bugs
+# Disclaimer and important info
 
-The Instrument Maker library is very much a work in progress and a labour of love — so please don't be surprised if things change around! Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly.
+The Instrument Maker library is very much a work in progress and a labour of love — so please don't be surprised if things change around! 
+
+Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  Since you're reading this, chances are you have one the Instrument Maker kits — you might also find this documentation useful: <https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md>
 
 If you have any issues with the software, including requests for clarity or additions to this documentation, please use the issues forum: <https://github.com/matthewscharles/instrument-maker/issues>.
 
@@ -49,14 +51,14 @@ Instrument Maker objects can be used alongside regular Pure Data objects, so tha
 
 At present, the Instrument Maker code functions best with the following items:
 
-- Bela
-- Raspberry Pi
-- Arduino (made easier with an Instrument Maker shield)
-- Touch Board
+- Bela (Instrument Maker shield available)
+- Raspberry Pi, connected to:
+  - Arduino (Instrument Maker shield available)
+  - Touch Board (Instrument Maker shield available)
 
 Although these resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
 
-Therefore, apart from microphones and speakers any external connection mentioned below are sensor inputs. 
+Therefore, it's safe to assume that any external connections mentioned below (apart from microphones and speakers) are sensor inputs. 
 
 
 # Anatomy of a Pure Data object
@@ -147,7 +149,9 @@ Move objects by dragging on them with the mouse (don't click on them first — t
 
 ### Connecting objects
 
-Click on the object to place the text cursor, and type your changes in.  Click outside the object to close the box.
+Click and hold the mouse cursor over an outlet to start the connection. As you move the mouse over the outlet, the pointer should turn into a circle.
+
+Keep holding the mouse button down while you drag onto the inlet of a second object.  You should see a black line extending, and the mouse pointer will turn back into an arrow.  When the pointer is over a compatible inlet, it will turn back into a circle, and you can let go.
 
 ## Basics: connecting a microphone
 
