@@ -1,5 +1,9 @@
 # IM Kits: basics
 
+## Kit layout
+
+![board_resource](board_resource.png)
+
 ## Initial setup
 
 Load Balena Etcher to flash an SD card.  The SD card must be 32GB or larger.
@@ -16,33 +20,41 @@ If at all possible, these kits should be used wirelessly by setting up a persona
 
 Once connected, your wireless hotspot password should be stored; you may now disconnect the keyboard and mouse to edit your patch.
 
-### VNC Viewer
+Connect VNC Viewer to `im4.local` (replacing `im4` with the hostname you set in the initial setup) to access the desktop remotely.   
 
-Download VNC Viewer onto your desktop computer/laptop from this website: https://www.realvnc.com/en/connect/download/viewer/
+![vnc-login](vnc-login.png)
 
-Make sure you are on the same wireless network as the Raspberry Pi.
-
-Connect VNC Viewer to `im4.local` (if applicable, replacing im4 with the hostname you set in the initial setup) to access the desktop remotely.   
-
-**username**: `pi` **password**: `im.possibl3`
+Press `connect`, and when prompted, input: **username**: `pi` **password**: `im.possibl3`
 
 You should now see the Raspberry Pi's screen as a window on your computer, and be able to edit the code.
 
 ## Updating the Instrument Maker library
 
-The Instrument Maker library is kept on GitHub, and should be pre-loaded on the Raspberry Pi.  To update the library to its latest version, load a terminal, and type the following:
+The Instrument Maker library is kept on GitHub, and should be pre-loaded on the Raspberry Pi.  To update the library to its latest version, load a terminal on the Raspberry Pi, and type the following:
 
 `$ cd instrument-maker`
 
 `$ git pull`
 
-The library should be updated to the most recent version.
+The library should now be updated to the most recent version. 
+
+*Please note that this might fail if using one of the earlier versions of the kits — if so, go back to initial setup.*
 
 ## Files for autoload on boot
 
-Pure Data will load automatically upon booting the Raspberry Pi.
+Pure Data will load automatically upon booting the Raspberry Pi, regardless of whether or not a screen is plugged in.  This allows the Raspberry Pi to function as an embedded instrument.
 
 Save your file as `test.pd` on the Desktop to make your patch load when the instrument boots up.
+
+### Starting a fresh file
+
+For the time being, it's best to keep working on `test.pd` — to start from scratch:
+
+- press `ctrl` - `a` to select everything, and press `delete`.
+- create a new object by pressing `ctrl` - `1`
+  - type `im.pi` and click outside the box
+
+Now create the rest of your patch according to the tutorials.  The `im.pi` object tells Pure Data to look for the Arduino board and use it as a MIDI controller.
 
 
 
