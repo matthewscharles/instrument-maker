@@ -100,30 +100,6 @@ Not all objects have the same numbers of inlets or outlets. Furthermore, some mi
 
 Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
 
-# Key concepts
-
-## Signal flow
-
-The order in which objects are connected affects their sound and/or behaviour. 
-
-Unlike a physical circuit, the information flows in a linear fashion from the top to the bottom of the screen, and does not need to return to its start point.
-
-### Effects: inserts and sends
-
-Effects can be thought of as being inserted in series or parallel with their original sound.
-
-An "insert" replaces a signal with its effected version ("in series"). 
-
-A "send" (also known as an auxiliary or aux send) involves a signal being duplicated, with an effect applied ("in parallel"). 
-
-## Instrument elements
-
-- *Placeholder: note/velocity vs. continuous controls*
-  - Flute
-  - Piano
-  - Theremin
-  - Gamelan
-
 # First steps in Pure Data 
 
 This tutorial assumes you are running Pd v0.49 upward on a Raspberry Pi.  
@@ -176,6 +152,26 @@ Create an echo (im.echo), with delay time in milliseconds and feedback amount.
 
 Connect the echo as a send effect:make a second cable from the im.microphone object, and connect it to the input of the echo (the left side).  Connect the output of the echo directly to the speaker.
 
+# Examples
+
+Depending on interest of the user, the following are recommended starting points for using Instrument Maker:
+
+- **"Theremin style"**![example-theremin1](example-theremin1.png)
+
+  ![example-theremin1](example-theremin2.png)
+
+- **Envelope follower**
+
+  ![example-envelope-follower](example-envelope-follower.png)
+
+- **Pitch tracker**
+
+  ![example-pitch-tracker](example-pitch-tracker.png)
+
+- **Loop pedal**
+
+  ![example-looper](example-looper.png)
+
 # Key im objects
 
 ## im.sensor
@@ -201,16 +197,29 @@ The multiplier can be used to set how many notes are played (when combined with 
 
 No 
 
+# Key concepts
 
+## Signal flow
 
-# Examples
+The order in which objects are connected affects their sound and/or behaviour. 
 
-Depending on interest of the user, the following are recommended starting points for using Instrument Maker:
+Unlike a physical circuit, the information flows in a linear fashion from the top to the bottom of the screen, and does not need to return to its start point.
 
-- "Theremin mode"
-- Envelope follower
-- Pitch tracker
-- Loop pedal
+### Effects: inserts and sends
+
+Effects can be thought of as being inserted in series or parallel with their original sound.
+
+An "insert" replaces a signal with its effected version ("in series"). 
+
+A "send" (also known as an auxiliary or aux send) involves a signal being duplicated, with an effect applied ("in parallel"). 
+
+## Instrument elements
+
+- *Placeholder: note/velocity vs. continuous controls*
+  - Flute
+  - Piano
+  - Theremin
+  - Gamelan
 
 # Making the transition from Instrument Maker
 
