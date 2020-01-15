@@ -16,6 +16,12 @@ If at all possible, these kits should be used wirelessly by setting up a persona
 
 Once connected, your wireless hotspot password should be stored; you may now disconnect the keyboard and mouse to edit your patch.
 
+### VNC Viewer
+
+Download VNC Viewer onto your desktop computer/laptop from this website: https://www.realvnc.com/en/connect/download/viewer/
+
+Make sure you are on the same wireless network as the Raspberry Pi.
+
 Connect VNC Viewer to `im4.local` (if applicable, replacing im4 with the hostname you set in the initial setup) to access the desktop remotely.   
 
 **username**: `pi` **password**: `im.possibl3`
