@@ -63,23 +63,21 @@ Therefore, it's safe to assume that any external connections mentioned below (ap
 
 # Anatomy of a Pure Data object
 
-Each object has a **name**, **arguments**, **inlets**, and **outlets**.
+Each object has a **name**, **arguments**, **inlets**, and **outlets**:
 
-<!--Name-->
-
-<!--Arguments-->
-
-<!--Inlets-->
-
-<!--Outlets-->
+![example-anatomy](example-anatomy.png)
 
 ## Name
 
-All objects must have a name. Objects from the Instrument Maker library start with the letters **im.**
+All objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **im.**
 
 ## Arguments
 
-Arguments in Pure Data are written with spaces after the name of the object.  Each argument affects a different parameter.  The arguments must be written in the correct order.
+Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. For example, having named an `im.echo` object, we can also set its time (how short or long the echo is), and the amount of feedback (affecting how many times the echo repeats). 
+
+Arguments in Pure Data are written after the name of the object, and separated with spaces.
+
+Each argument affects a different parameter.  The arguments must be written in the correct order.
 
 ### Comparison with other languages
 
@@ -87,11 +85,9 @@ Unlike contemporary languages like Swift, the names of arguments are not written
 
 `name(argument, argument)`
 
-or, more concretely: 
+Therefore, more concretely: `sensor 1 12` would be equivalent to `sensor(1, 12)` in a text based language — *read the sensor connected to pin 1, and multiply the output by 12*.
 
-Therefore:`sensor 1 12` is equivalent to `sensor(1, 12)` — read the sensor connected to pin 1, and multiply the output by 12
-
-`scale C major 3` is equivalent to `scale(C, major, 3)` — set a scale with root note C, using a major key, starting at octave number 3
+`scale C major 3` would be equivalent to `scale(C, major, 3)` — *process the incoming signal as a scale with root note C, using a major key, starting at octave number 3*.
 
 
 
@@ -105,7 +101,11 @@ Information flows one way in Pure Data: downwards. Inlets can only be connected 
 
 Not all objects have the same numbers of inlets or outlets. Furthermore, some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
 
+In general, the left-most inlet is the most important — this is where the primary signal to process should be sent through.  Other inlets 
+
 Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
+
+*Note: since the Instrument Maker library is a work in progress, some of the inlets and outlets don't have an obvious function — they've been left in for testing purposes or for future features.  For example, the scale object only really handles information in its main inlet and outlet.*
 
 # First steps in Pure Data 
 
