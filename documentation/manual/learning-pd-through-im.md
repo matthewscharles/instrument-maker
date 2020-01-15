@@ -1,12 +1,21 @@
-**Learning PD with Instrument Maker**
+**Learning PD with Instrument Maker** (work in progress)
 
+Charles Matthews 2020
 
+Incorporating contributions from:
 
+- Robyn Steward
+- Houda Jawhar
+- Ann-Louise Davidson
+- Gift Tshuma
 
+And with thanks to countless others (for now, you know who you are…)
 
-# Disclaimer
+# Disclaimer and bugs
 
 The Instrument Maker library is very much a work in progress and a labour of love — so please don't be surprised if things change around! Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly.
+
+If you have any issues with the software, including requests for clarity or additions to this documentation, please use the issues forum: <https://github.com/matthewscharles/instrument-maker/issues>.
 
 # Introduction
 
