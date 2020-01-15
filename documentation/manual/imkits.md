@@ -6,7 +6,23 @@
 
 ## Initial setup
 
-Load Balena Etcher to flash an SD card.  The SD card must be 32GB or larger.
+### Cloning the Raspberry Pi disk image
+
+Transfer the master SD card to a .img file, using these instructions:
+
+Insert the SD card into a mac, and open a terminal window
+
+Type `$ diskutil list`
+
+Look for the name of the SD card (it should be `/dev/disk2` or `/dev/disk3`).  Enter the following, changing the name of `disk2` if necessary
+
+`$ sudo dd if=/dev/disk2 of= ~/Desktop/pi.img bs=1m`
+
+*This can take up to roughly two and a half hours, and does not show a progress bar!*
+
+Load [Balena Etcher](https://www.balena.io/etcher/) to flash a new SD card.  The SD card must be 32GB or larger.
+
+### Changing the hostname
 
 Once the prepared SD card is inserted, plug the Raspberry Pi into a keyboard, mouse, and monitor to set it up.
 
@@ -59,6 +75,8 @@ Now create the rest of your patch according to the tutorials.  The `im.pi` objec
 
 
 # Troubleshooting
+
+Questions here..
 
 # FAQ
 
