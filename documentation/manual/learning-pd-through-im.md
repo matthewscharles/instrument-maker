@@ -77,16 +77,21 @@ All objects must have a name. Objects from the Instrument Maker library start wi
 
 ## Arguments
 
-For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
+Arguments in Pure Data are written with spaces after the name of the object.  Each argument affects a different parameter.  The arguments must be written in the correct order.
+
+### Comparison with other languages
+
+Unlike contemporary languages like Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
 
 `name(argument, argument)`
 
 or, more concretely: 
 
-`sensor(1, 12)` -- read the sensor connected to pin 1, and multiply the output by 12
-`scale(C, major, 3)` -- set a scale with root note C, using a major key, starting at octave number 3
+Therefore:`sensor 1 12` is equivalent to `sensor(1, 12)` — read the sensor connected to pin 1, and multiply the output by 12
 
-Unlike contemporary languages like Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference.  
+`scale C major 3` is equivalent to `scale(C, major, 3)` — set a scale with root note C, using a major key, starting at octave number 3
+
+
 
 ## Inlets and outlets
 
@@ -136,7 +141,13 @@ Instead of creating a new object, you might wish to select an object and press *
 
 Click on the object to place the text cursor, and type your changes in.  Click outside the object to close the box.
 
+Resize the object by moving the mouse pointer over the object's right-hand border, and dragging.
+
 Move objects by dragging on them with the mouse (don't click on them first — the software will think that you are trying to edit the text!).  Move the objects around to make space for your objects on screen — try not to cram them in too tightly!
+
+### Connecting objects
+
+Click on the object to place the text cursor, and type your changes in.  Click outside the object to close the box.
 
 ## Basics: connecting a microphone
 
@@ -148,7 +159,9 @@ Join the microphone and speaker with a cable: click and drag from the outlet on 
 
 ### Adding an effect
 
-Create an echo (im.echo), with delay time in milliseconds and feedback amount.
+![example-microphone-echo](example-microphone-echo.png)
+
+Create an `im.echo` object, with delay time in milliseconds and feedback amount.
 
 Connect the echo as a send effect:make a second cable from the im.microphone object, and connect it to the input of the echo (the left side).  Connect the output of the echo directly to the speaker.
 
@@ -174,6 +187,8 @@ Depending on interest of the user, the following are recommended starting points
 
 # Key im objects
 
+Placeholder — work in progress!
+
 ## im.sensor
 
 ***No inlet***
@@ -198,6 +213,8 @@ The multiplier can be used to set how many notes are played (when combined with 
 No 
 
 # Key concepts
+
+Placeholder — work in progress!
 
 ## Signal flow
 
@@ -328,7 +345,7 @@ Please note that it may be confusing to jump back and forth between this documen
 
 # Notes for experienced PD users
 
-Objects in the Instrument Maker library are almost exclusively based on audio connections.
+Objects in the Instrument Maker library are based on audio connections — at present, there aren't really any traditional messages in use.
 
 There are only two elements available: objects and cables.  This reinforces a deliberate separation of interface and code. Users are not encouraged to use GUI objects (including messages) in the initial stages, which might feel counter-intuitive to some people!
 
