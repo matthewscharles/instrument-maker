@@ -81,15 +81,13 @@ Each argument affects a different parameter.  The arguments must be written in t
 
 ### Comparison with other languages
 
-Unlike contemporary languages like Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
+Unlike more contemporary languages such as Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
 
 `name(argument, argument)`
 
 Therefore, more concretely: `sensor 1 12` would be equivalent to `sensor(1, 12)` in a text based language — *read the sensor connected to pin 1, and multiply the output by 12*.
 
 `scale C major 3` would be equivalent to `scale(C, major, 3)` — *process the incoming signal as a scale with root note C, using a major key, starting at octave number 3*.
-
-
 
 ## Inlets and outlets
 
@@ -129,7 +127,7 @@ Click on the background (anywhere outside the object) to finish the box.
 
 If there is a problem with the object, the box will appear with a dotted outline.  There are a few likely reasons for this:
 
-- there is no object with the name you used (make sure the im library is installed, and that you have spelled it correctly)
+- there is no object with the name you used (make sure the Instrument Maker library is installed, and that you have spelled it correctly)
 - there are capital letters somewhere in the object name — almost all object names are lower case
 - there are spaces missing between the object name and arguments
 
@@ -145,7 +143,9 @@ Move objects by dragging on them with the mouse (don't click on them first — t
 
 Click and hold the mouse cursor over an outlet to start the connection. As you move the mouse over the outlet, the pointer should turn into a circle.
 
-Keep holding the mouse button down while you drag onto the inlet of a second object.  You should see a black line extending, and the mouse pointer will turn back into an arrow.  When the pointer is over a compatible inlet, it will turn back into a circle, and you can let go.
+Keep holding the mouse button down while you drag onto the inlet of a second object.  You should see a black line extending, and the mouse pointer will turn into a finger.  When the pointer is over a compatible inlet, it will turn back into a circle, and you can let go.
+
+![connections](connections.png)
 
 ### Shortcuts and tips
 
@@ -240,11 +240,13 @@ A "send" (also known as an auxiliary or aux send) involves a signal being duplic
 
 ## Instrument elements
 
-- *Placeholder: note/velocity vs. continuous controls*
-  - Flute
-  - Piano
-  - Theremin
-  - Gamelan
+Interactions with live instruments can often be divided up into controlling **pitch** and **intensity/loudness**.  These two parameters make a good starting point when designing an electronic instrument.  For example:
+
+![example-instruments](example-instruments.png)
+
+
+
+<!--MIDI (pitch/velocity) here-->
 
 # Making the transition from Instrument Maker
 
@@ -252,7 +254,10 @@ Placeholder — work in progress!
 
 ## Pure Data
 
+So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`
+
 - Sequencer
+- Stereo with dac~
 
 ## Arduino and physical circuits
 
