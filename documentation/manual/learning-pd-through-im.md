@@ -2,14 +2,7 @@
 
 Charles Matthews 2020
 
-Incorporating contributions from:
-
-- Robyn Steward
-- Houda Jawhar
-- Ann-Louise Davidson
-- Gift Tshuma
-
-And with thanks to countless others (for now, you know who you are…)
+Incorporating contributions from Robyn Steward, Houda Jawhar, Ann-Louise Davidson, Gift Tshuma, and with thanks to countless others (for now, you know who you are…)
 
 # Disclaimer and important info
 
@@ -23,9 +16,9 @@ If you have any issues with the software, including requests for clarity or addi
 
 ## What is PD (Pure Data)?
 
-Pure Data (PD for short) is a free, open source [dataflow](https://en.wikipedia.org/wiki/Dataflow_programming) programming language. 
+[Pure Data](http://puredata.info/) (PD for short) is a free, open source [dataflow](https://en.wikipedia.org/wiki/Dataflow_programming) programming language. 
 
-- Create and connect objects on-screen, rather than writing lines of text code.
+- Create and connect graphic objects on-screen, rather than writing lines of text code.
 - Pure Data is friendly to many musicians because it can feel similar to connecting instruments and effect pedals.
   - By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
   - Sometimes this way of organising information can lead to a more playful approach.
@@ -35,28 +28,28 @@ Pure Data (PD for short) is a free, open source [dataflow](https://en.wikipedia.
 
 Pure Data is free and open source, meaning that members of the community can edit the code and create their own versions of the software.
 
-Pure Data code can be applied in a variety of music making contexts, including the web, audio apps for Android and iOS, and running on embedded computers like the Raspberry Pi and Bela.
+Pure Data code can be applied in a variety of music making contexts, including [the web](https://github.com/sebpiq/WebPd), [audio apps for Android and iOS](http://danieliglesia.com/mobmuplat/), and running on embedded computers like the [Raspberry Pi](https://puredata.info/docs/raspberry-pi) and Bela.
 
 ## What is Instrument Maker?
 
 Instrument Maker is a toolkit for making music quickly with sensors.  This includes a library for Pure Data: a set of objects that have been designed as an introduction to audio coding. 
 
-Instrument maker is intended to be used purely as the back end of a program, separating the graphical interface from the code.  This might be counter intuitive to experienced PD users!
+The Instrument Maker library is intended to be used purely in the back end of a program, separating the graphical interface from the code.  This might be counter intuitive to experienced PD users!
 
 The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
 Instrument Maker objects can be used alongside regular Pure Data objects, so that the transition to usual Pure Data objects can take place gradually.
 
+Alongside this code resource, we hope to add other functionality to address the absence of screenreader support, switch access to to the software etc.
+
 # Hardware resources
 
 At present, the Instrument Maker code functions best with the following items:
 
-- Bela (Instrument Maker shield available)
-- Raspberry Pi, connected to:
-  - Arduino (Instrument Maker shield available)
-  - Touch Board (Instrument Maker shield available)
+- [Bela](https://bela.io/) 
+- [Raspberry Pi](https://www.raspberrypi.org/), connected to [Arduino](http://arduino.cc/) (best support with Leonardo, [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/), or other 32u4 based board for [native USB MIDI](https://www.arduino.cc/en/Tutorial/MidiDevice)) or [Micro:Bit](https://microbit.org/) (resources currently in development)
 
-Although these resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
+Although these hardware resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
 
 Therefore, it's safe to assume that any external connections mentioned below (apart from microphones and speakers) are sensor inputs. 
 
@@ -258,6 +251,7 @@ So far, the objects we have been using from the Instrument Maker library have al
 
 - Sequencer
 - Stereo with dac~
+- MIDI control
 
 ## Arduino and physical circuits
 
@@ -319,6 +313,7 @@ The following rough definitions are simplified and adapted to context.
 - **Octave** — an interval of twice a given frequency or pitch.
 - **Oscillator** — something that moves back and forth to produce a regular wave
 - **Outlet** — the part of an object that sends data out, sitting at the bottom of the object.  Different types of objects have different numbers of outlets — some have none!
+- **Native USB MIDI** — a quality of a device that enables it to appear as an instrument input on the computer without another program needed to mediate the connection.
 - **Noise** — a sound without a clear sense of pitch.
 - **Parameter** — something that can be measured and/or altered to express the quality of a sound or process
 - **Physical modelling** — a type of synthesis in which real-world acoustic qualities of a sound or instrument are mimicked using combinations of electronic processes
@@ -343,7 +338,7 @@ The following rough definitions are simplified and adapted to context.
 - **Touch Board** — a type of Arduino board (made by Bare Conductive), which enables easy capacitive sensing
 - **Triad** —a chord consisting of three notes.
 - **Wet (signal)** -- a sound with an effect (in contrast to dry, without the effect). 
-- **White noise** — all frequencies at equal loudness. 
+- **White noise** — a sound presenting all frequencies at equal loudness. 
 - **Velocity** — the force with which a note is played (usually linked to the loudness)
 - **Vibrotactile** — something that transmits vibrations through touch
 - **Volume** — a measure of how loud and/or intense a sound is.
@@ -355,10 +350,13 @@ Please note that it may be confusing to jump back and forth between this documen
 
 - [Programming electronic music in Pd](http://www.pd-tutorial.com/) (Johannes Kreidler)
 - [Designing Sound](https://mitpress.mit.edu/books/designing-sound) (Andy Farnell) — tutorial PDF [here](http://aspress.co.uk/ds/pdf/pd_intro.pdf)
+- [Pure Data and Bela](https://blog.bela.io/2019/03/06/pure-data-and-bela/) (Robert Jack)
 
 # Notes for experienced PD users
 
 Objects in the Instrument Maker library are based on audio connections — at present, there aren't really any traditional messages in use.
+
+The im.sensor inputs are actually MIDI CC inputs converted to audio!  This is intended to create continuity between working with the Raspberry Pi and Bela (which presents sensor inputs as audio).
 
 There are only two elements available: objects and cables.  This reinforces a deliberate separation of interface and code. Users are not encouraged to use GUI objects (including messages) in the initial stages, which might feel counter-intuitive to some people!
 
