@@ -1,8 +1,8 @@
-**Learning PD with Instrument Maker** 
+**Draft manual: Learning PD with Instrument Maker** 
 
 Charles Matthews 2020
 
-Incorporating contributions from Robyn Steward, Houda Jawhar, Ann-Louise Davidson, Gift Tshuma, and with thanks to countless others (for now, you know who you are…)
+Incorporating contributions from Robyn Steward, Houda Jawhar, Ann-Louise Davidson (#MilieuxMake), Gift Tshuma (Blurring the Boundaries), and with thanks to countless others.  For now, you know who you are…(thank you)...
 
 # Disclaimer and important info
 
@@ -11,6 +11,8 @@ The Instrument Maker library is very much a work in progress and a labour of lov
 Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  Since you're reading this, chances are you have one the Instrument Maker kits — you might also find this documentation useful: <https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md>
 
 If you have any issues with the software, including requests for clarity or additions to this documentation, please use the issues forum: <https://github.com/matthewscharles/instrument-maker/issues>.
+
+This manual is currently presented a raw MarkDown document.  As a result, the images vary wildly in size and quality, as does the general layout.  Please bear with this for now!   [Experimental  documentation/help files](https://instrumentmaker.org/im-reference/) generated automatically from JSON is also in progress, but will take time to finish up.
 
 # Introduction
 
@@ -28,19 +30,23 @@ If you have any issues with the software, including requests for clarity or addi
 
 Pure Data is free and open source, meaning that members of the community can edit the code and create their own versions of the software.
 
-Pure Data code can be applied in a variety of music making contexts, including [the web](https://github.com/sebpiq/WebPd), [audio apps for Android and iOS](http://danieliglesia.com/mobmuplat/), and running on embedded computers like the [Raspberry Pi](https://puredata.info/docs/raspberry-pi) and Bela.
+Pure Data code can be applied in a variety of music making contexts, including [the web](https://github.com/sebpiq/WebPd), [audio apps for Android and iOS](http://danieliglesia.com/mobmuplat/), and running on embedded computers like the [Raspberry Pi](https://puredata.info/docs/raspberry-pi) and [Bela](http://bela.io/).
 
 ## What is Instrument Maker?
 
-Instrument Maker is a toolkit for making music quickly with sensors.  This includes a library for Pure Data: a set of objects that have been designed as an introduction to audio coding. 
-
-The Instrument Maker library is intended to be used purely in the back end of a program, separating the graphical interface from the code.  This might be counter intuitive to experienced PD users!
+Instrument Maker is a toolkit designed for making music quickly with sensors.  This includes a library for Pure Data: a set of objects that have been designed as an introduction to audio coding. 
 
 The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
-Instrument Maker objects can be used alongside regular Pure Data objects, so that the transition to usual Pure Data objects can take place gradually.
+Here's an image comparing the Instrument Maker library with objects that come with Pure Data "out of the box".  Both patches perform the same function:
 
-Alongside this code resource, we hope to add other functionality to address the absence of screenreader support, switch access to to the software etc.
+![example-comparison](example-comparison.png)
+
+Instrument Maker objects can be used alongside regular Pure Data objects, so that the transition to usual Pure Data objects can take place gradually. In the future, there will be a section dedicated to this toward the end of this document.  
+
+By itself, the Instrument Maker library is intended to be used purely in the "back end" of a program, separating the graphical interface from the code.  This idea might be counter intuitive to experienced PD users and teachers!
+
+There are also Instrument Maker boards available to simplify the hardware construction process in a similar manner.  If you're reading this document, you probably have one of these boards. Alongside these resources, we hope to add other functionality to address the absence of screenreader support, switch access to to the software etc.
 
 # Hardware resources
 
@@ -53,6 +59,10 @@ Although these hardware resources can be used to control motors, lights, and oth
 
 Therefore, it's safe to assume that any external connections mentioned below (apart from microphones and speakers) are sensor inputs. 
 
+## Operating without the Instrument Maker hardware
+
+*Example Arduino code coming soon — link to end of document.*
+
 
 # Anatomy of a Pure Data object
 
@@ -60,11 +70,11 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**:
 
 ![example-anatomy](example-anatomy.png)
 
-## Name
+## Object name
 
 All objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **im.**
 
-## Arguments
+## Object arguments
 
 Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. For example, having named an `im.echo` object, we can also set its time (how short or long the echo is), and the amount of feedback (affecting how many times the echo repeats). 
 
@@ -157,6 +167,8 @@ Create a microphone object (`im.microphone`)
 Create a speaker object (`im.speaker`)
 
 Join the microphone and speaker with a cable: click and drag from the outlet on the bottom of the microphone object, and connect it to the inlet at the top of the microphone object.
+
+![example-microphone](example-microphone.png)
 
 ### Adding an effect
 
