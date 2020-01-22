@@ -1,10 +1,28 @@
 # IM Kits: basics
 
-## Kit layout
+## Getting started/kit layout
+
+The kits should "just work" (if not, please refer to the notes I sent via Google, and swap out the Arduino board/SD card).  Once USB power and a speaker have been connected, attaching a light sensor or arcade button to each sensor pair will result in a different note from the C major scale being played.  There shouldn't be any need to plug into a screen to hear the results.
+
+If the SD card has been updated to the latest version, the output will be a bit different — try the first two sensors to make sound.
 
 ![board_resource](board_resource.png)
 
-The pins are laid out as follows:
+### "Sensor pair"? What's that?
+
+The board is divided into six input areas:  
+
+![kits-sensors](kits-sensors.png)
+
+This is currently quite unclear on the current version, but will be replaced with something with higher contrast in the next batch!
+
+Connect the crocodile clips like so:
+
+![kits-croc](kits-croc.JPG)
+
+If you don't have a sensor (or a flashlight) to hand, a simple switch can be tested by touching the ends of the crocodile clips together.  If the board is equipped with LEDs, the corresponding light should flash on when the clips connect.
+
+For anyone that wants to know more, the pins are laid out as follows:
 
 ![voltage-divider](voltage-divider.jpg)
 
