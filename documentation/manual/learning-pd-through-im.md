@@ -251,7 +251,21 @@ Interactions with live instruments can often be divided up into controlling **pi
 
 
 
-<!--MIDI (pitch/velocity) here-->
+The main difference in these examples can be found in percussion instruments (like the gamelan example above, or playing a piano-style keyboard): in these cases, each note is a fixed in a specific place, and so the player changes the volume by striking it.
+
+![example-pitch-intensity-percussion](example-pitch-intensity-percussion.png)
+
+All of these interactions can be approximated through a combination of sensors; the controls can even be shared to create a collaborative instrument that must be played by two people (one person taking pitch, the other taking volume/intensity.  
+
+Other examples include:
+
+- "pitch and velocity pairs" in MIDI instruments
+- bowing a string instrument while changing pitch on its neck
+- scratching a record on a turntable while changing volume with the crossfader 
+
+
+
+*Placeholder: flute example*
 
 # Making the transition from Instrument Maker
 
