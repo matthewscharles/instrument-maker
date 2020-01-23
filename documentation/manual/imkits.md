@@ -50,11 +50,15 @@ Type `$ diskutil list`
 
 Look for the name of the SD card (it should be `/dev/disk2` or `/dev/disk3`).  Enter the following, changing the name of `disk2` if necessary
 
-`$ sudo dd if=/dev/disk2 of= ~/Desktop/pi.img bs=1m`
+`$ sudo dd if=/dev/disk2 of= ~/Desktop/imJanuary.img bs=1m`
 
 *This can take up to roughly two and a half hours, and does not show a progress bar!*
 
-Load [Balena Etcher](https://www.balena.io/etcher/) to flash a new SD card.  The SD card must be 32GB or larger.
+Load [Balena Etcher](https://www.balena.io/etcher/) to flash a new SD card (at MilieuxMake this is installed on the iMac).  For this iteration, the SD card must be 32GB or larger.
+
+The screen looks like this (choose imJanuary.img by clicking the Change button or dragging the icon from the desktop):
+
+![kits-etcher](/Users/cm/Documents/GitHub/instrument-maker/documentation/manual/kits-etcher.png)
 
 ### Changing the hostname
 
