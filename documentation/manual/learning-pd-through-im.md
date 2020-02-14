@@ -314,6 +314,7 @@ The following rough definitions are simplified and adapted to context.
 - **FM synthesis** — a type of synthesis that uses frequency modulation to create new textures.
 - **Granular synthesis** — a technique used to create textures by slicing sounds into small pieces, repeating and recombining them.
 - **Hz** — a unit of measurement for frequencies: cycles per second. 
+- **Initialisation argument —** the situation found in Pd, in which arguments do not change on screen despite changes via the inlet.
 - **Inlet** — the part of an object that takes data in, sitting at the top of the object.  Different types of objects have different numbers of inlets — some have none!
 - **Insert effect** — a way of adding effects by cutting directly into the signal, replacing the original "dry" sound.
 - **Interval** — the distance between two points — in musical programming, we often need to think of intervals in terms of rhythm (how long between two events, perhaps as a whole note, quarter note etc.) or in terms of pitch (how many notes fit between two notes in a scale).
