@@ -72,7 +72,7 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**:
 
 ## Object name
 
-All objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **im.**
+The objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **im.**
 
 ## Object arguments
 
