@@ -1,0 +1,32 @@
+#N canvas 0 23 1170 630 10;
+#X obj 104 34 im.sensor 1 12;
+#X obj 105 152 im.sawtooth;
+#X obj 104 370 im.speaker;
+#X text 230 92 choose root note major \, minor \, or the name of a
+mode starting octave;
+#X text 199 32 choose the sensor input number and the number of notes
+;
+#X text 186 152 play a sawtooth wave;
+#X text 177 369 send it through the speaker;
+#X obj 104 332 im.filter, f 17;
+#X text 223 333 the right-hand inlets to im.filter are the cutoff and
+resonance, f 83;
+#X obj 204 309 im.sensor 2;
+#X text 285 312 sensor number 2 now controls resonance, f 83;
+#X text 256 286 two arguments: speed and shape;
+#X text 465 287 speed can be: slow \, fast;
+#X text 684 286 shape can be: sine \, square \, sawtooth;
+#X obj 105 100 im.scale A minor 3;
+#X obj 154 208 im.sensor 1 3;
+#X obj 153 286 im.lfo fast sine;
+#X text 243 205 we can use the same sensor simultaneously for different
+purposes. here I have added a multiplier of 3 instead of 12 \, so that
+the same sensor controls both the oscillator pitch and the rate of
+the LFO!;
+#X connect 0 0 14 0;
+#X connect 1 0 7 0;
+#X connect 7 0 2 0;
+#X connect 9 0 7 2;
+#X connect 14 0 1 0;
+#X connect 15 0 16 0;
+#X connect 16 0 7 1;

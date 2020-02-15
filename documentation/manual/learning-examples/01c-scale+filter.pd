@@ -1,0 +1,25 @@
+#N canvas 0 23 1170 630 10;
+#X obj 104 34 im.sensor 1 12;
+#X obj 105 100 im.scale C minor 3;
+#X obj 105 152 im.sawtooth;
+#X obj 104 275 im.speaker;
+#X text 219 92 choose root note major \, minor \, or the name of a
+mode starting octave;
+#X text 199 32 choose the sensor input number and the number of notes
+;
+#X text 186 152 play a sawtooth wave;
+#X text 177 274 send it through the speaker;
+#X obj 153 176 im.sensor 2;
+#X obj 104 237 im.filter, f 17;
+#X text 228 176 choose the sensor input number;
+#X obj 202 210 sig~ 1;
+#X text 223 238 the right-hand inlets to im.filter are the cutoff and
+resonance, f 83;
+#X text 247 203 this is a "normal" pd object used to set the resonance
+to 1 try 0.5 instead \, or replace it with [im.sensor 3];
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 9 0;
+#X connect 8 0 9 1;
+#X connect 9 0 3 0;
+#X connect 11 0 9 2;

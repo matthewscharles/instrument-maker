@@ -1,0 +1,26 @@
+#N canvas 0 23 1170 630 10;
+#X obj 104 34 im.sensor 1 12;
+#X obj 105 152 im.sawtooth;
+#X obj 104 275 im.speaker;
+#X text 230 92 choose root note major \, minor \, or the name of a
+mode starting octave;
+#X text 199 32 choose the sensor input number and the number of notes
+;
+#X text 186 152 play a sawtooth wave;
+#X text 177 274 send it through the speaker;
+#X obj 104 237 im.filter, f 17;
+#X text 223 238 the right-hand inlets to im.filter are the cutoff and
+resonance, f 83;
+#X obj 204 214 im.sensor 2;
+#X obj 105 100 im.scale D dorian 3;
+#X obj 153 191 im.lfo slow sine;
+#X text 285 217 sensor number 2 now controls resonance, f 83;
+#X text 256 191 two arguments: speed and shape;
+#X text 465 192 speed can be: slow \, fast;
+#X text 684 191 shape can be: sine \, square \, sawtooth;
+#X connect 0 0 10 0;
+#X connect 1 0 7 0;
+#X connect 7 0 2 0;
+#X connect 9 0 7 2;
+#X connect 10 0 1 0;
+#X connect 11 0 7 1;

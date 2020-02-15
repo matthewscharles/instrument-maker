@@ -1,0 +1,21 @@
+#N canvas 0 23 1170 630 10;
+#X obj 104 34 im.sensor 1 12;
+#X obj 105 100 im.scale C minor 3;
+#X obj 105 152 im.sawtooth;
+#X obj 104 275 im.speaker;
+#X text 219 92 choose root note major \, minor \, or the name of a
+mode starting octave;
+#X text 199 32 choose the sensor input number and the number of notes
+;
+#X text 186 152 play a sawtooth wave;
+#X text 177 274 send it through the speaker;
+#X obj 104 237 im.fader;
+#X obj 150 204 im.sensor 2;
+#X text 224 199 choose the sensor input number no need for a second
+number here!;
+#X text 162 235 move the volume fader using the sensor value;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 8 0;
+#X connect 8 0 3 0;
+#X connect 9 0 8 1;
