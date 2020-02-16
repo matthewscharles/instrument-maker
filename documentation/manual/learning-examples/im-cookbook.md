@@ -131,6 +131,8 @@ Add a dial or light sensor to **sensor 3** to change the pitch.  Since the pitch
 
 ## looper + extremepitch
 
+02c-looper+extremepitch.pd
+
 **Inputs:** 
 
 1. button
@@ -139,7 +141,7 @@ Add a dial or light sensor to **sensor 3** to change the pitch.  Since the pitch
 
 **Objects**:[ `im.sensor`](im-objects.md#imsensor), im.microphone, im.looper, im.speaker
 
-This time, using the second argument (multiplier), the changes in pitch should be quite extreme! What 
+This time, using the second argument (multiplier) on `im.sensor 3`, the changes in pitch should be quite extreme!  In this version, the pitch dial is multiplied by . Try replacing this with higher or lower numbers.
 
 ------
 
