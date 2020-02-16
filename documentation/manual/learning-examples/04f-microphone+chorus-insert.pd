@@ -1,0 +1,9 @@
+#N canvas 0 23 716 491 10;
+#X obj 116 107 im.microphone;
+#X obj 116 278 im.speaker;
+#X obj 116 192 im.chorus;
+#X text 216 112 don't try this directly on a laptop mic unless you
+like feedback;
+#X text 196 187 insert effect;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;

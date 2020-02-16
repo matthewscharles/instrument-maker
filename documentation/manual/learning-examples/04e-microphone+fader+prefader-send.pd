@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 10;
+#N canvas 0 23 496 491 10;
 #X obj 116 107 im.microphone;
 #X obj 116 278 im.speaker;
 #X obj 116 220 im.fader;
