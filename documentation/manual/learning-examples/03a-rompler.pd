@@ -1,0 +1,11 @@
+#N canvas 0 23 787 300 10;
+#X obj 16 96 im.player rush.aif;
+#X obj 15 132 im.speaker;
+#X obj 17 65 im.sensor 1;
+#X text 138 61 retriggers sample;
+#X text 143 99 save your sample in the main instrument-maker folder
+for now;
+#X text 148 112 or add your sample folder to the search path in preferences
+;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;

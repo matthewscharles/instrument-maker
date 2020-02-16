@@ -1,3 +1,9 @@
+Thanks to Robyn Steward for creating this list of currently used IM objects:
+
+
+
+Explanations will be added below as time goes on.
+
 # `im.sensor`
 
 `im.sensor` reads data from the analog inputs on our control board.
