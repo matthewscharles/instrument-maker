@@ -94,9 +94,11 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 
 # Looper
 
-Make sure a microphone or line is plugged in for these examples!
+Make sure a microphone or line input is plugged in for these examples!
 
 ## plain looper
+
+02b-looper.pd
 
 **Inputs:** 
 
@@ -114,6 +116,8 @@ For "glitchy" loop effects, try pressing button 1 while button 2 is held down!
 
 
 ## looper + pitch
+
+02b-looper+pitch.pd
 
 **Inputs:** 
 
@@ -144,4 +148,25 @@ Add a dial or light sensor to **sensor 3** to change the pitch.  Since the pitch
 This time, using the second argument (multiplier) on `im.sensor 3`, the changes in pitch should be quite extreme!  In this version, the pitch dial is multiplied by . Try replacing this with higher or lower numbers.
 
 ------
+
+## looper + pitch + sensitivity (advanced)
+
+02d-looper+pitch+sensitivity.pd
+
+**Inputs:** 
+
+1. button
+2. button
+3. continuous control (dial or light sensor)
+4. continuous control (dial)
+
+**Objects**:[ `im.sensor`](im-objects.md#imsensor), im.microphone, im.looper, im.speaker, im.fader
+
+This is another way to change the sensitivity of the pitch control.  This time, a fourth sensor controls how much information comes out of `im.sensor 3`, by using im.fader in-between, controlled by `im.sensor 4`.  
+
+This is an advanced option to be explained properly in a later version of this tutorial, so don't worry if it doesn't make sense for now.
+
+------
+
+
 
