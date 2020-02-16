@@ -27,7 +27,7 @@ The sawtooth object must be connected to `im.speaker` to produce a sound.
 
 **Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.volume`,`im.speaker`
 
-By placing an `im.volume` object in-between `im.sawtooth` and `im.speaker`, we can use the sensor input to turn the intensity of the sound up or down.
+By placing an `im.volume` object in-between `im.sawtooth` and `im.speaker`, we can use a second sensor input to turn the intensity of the sound up or down.
 
 If we use a button, the sound will be turned on or off (like pressing a key on a piano).  With a continuous control like a light sensor, the sound will turn up and down smoothly (like a theremin).
 
