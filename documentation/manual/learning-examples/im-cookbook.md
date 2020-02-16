@@ -1,6 +1,6 @@
 This file describes the set of PD examples found in this folder.
 
-[Synthesiser](#Synthesiser)
+[Link to Synthesiser](#Synthesiser)
 
 # Synthesiser
 
