@@ -14,7 +14,7 @@ This file describes the set of PD examples found in this folder.
 
 1. continuous control (light sensor or dial)
 
-Objects:[ `im.sensor`](im-objects.md#im.sensor),`im.scale`, `im.sawtooth`, `im.speaker`
+Objects:[ `im.sensor`](im-objects.md#im.sensor),[`im.scale`](im-objects.md#im.scale), `im.sawtooth`, `im.speaker`
 
 `im.sensor` reads data from the analog inputs on our control board (in this case sensor number 1).
 
