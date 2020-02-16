@@ -1,0 +1,5 @@
+#N canvas 0 23 450 300 10;
+#X obj 113 107 im.microphone;
+#X obj 113 158 im.speaker;
+#X text 206 107 watch your volume!;
+#X connect 0 0 1 0;
