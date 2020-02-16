@@ -1,0 +1,8 @@
+#N canvas 0 23 716 491 10;
+#X obj 116 107 im.microphone;
+#X obj 116 278 im.speaker;
+#X obj 117 163 im.pitchtracker;
+#X obj 117 184 im.sinewave;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
