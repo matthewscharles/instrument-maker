@@ -1,6 +1,8 @@
 This file describes the set of PD examples found in this folder.
 
-[Link to Synthesiser](#Synthesiser)
+[Synthesiser](#Synthesiser)
+
+For all examples, buttons can be substituted with outputs from `im.keypress` or `im.makeymakey`
 
 # Synthesiser
 
@@ -106,3 +108,38 @@ Make sure a microphone or line is plugged in for these examples!
 This example sends a microphone into the looper to record. Press and hold the button attached to **sensor 1** to record, and press and hold the button attached to **sensor 2** to play back.  These buttons will record and play back for amount of time they are held down.
 
 For "glitchy" loop effects, try pressing button 1 while button 2 is held down!
+
+------
+
+
+
+## looper + pitch
+
+**Inputs:** 
+
+1. button
+2. button
+3. continuous control (dial or light sensor)
+
+**Objects**:[ `im.sensor`](im-objects.md#imsensor), im.microphone, im.looper, im.speaker
+
+Add a dial or light sensor to **sensor 3** to change the pitch.  Since the pitch starts at 0, the sound will not be audible until the sensor receives some information.
+
+* note - the pitch control might be quite slow, only reaching about half speed — try the next example to speed it up!
+
+------
+
+## looper + extremepitch
+
+**Inputs:** 
+
+1. button
+2. button
+3. continuous control (dial or light sensor)
+
+**Objects**:[ `im.sensor`](im-objects.md#imsensor), im.microphone, im.looper, im.speaker
+
+This time, using the second argument (multiplier), the changes in pitch should be quite extreme! What 
+
+------
+
