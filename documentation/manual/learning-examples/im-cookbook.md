@@ -16,7 +16,7 @@ This file describes the set of PD examples found in this folder.
 
 Objects:[ `im.sensor`](im-objects.md#imsensor),[`im.scale`](im-objects.md#imscale), `im.sawtooth`, `im.speaker`
 
-`im.sensor` reads data from the analog inputs on our control board (in this case sensor number 1).
+`im.sensor` reads data from the analog inputs on our control board (in this case **sensor 1**).
 
 Use the `im.scale` object to output a set of notes within a particular key and/or [musical mode](https://blog.landr.com/music-modes/).
 
@@ -35,7 +35,7 @@ ___
 1. continuous control (light sensor or dial)
 2. continuous control or button
 
-**Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.volume`,`im.speaker`
+**Objects**: [ `im.sensor`](im-objects.md#imsensor),[`im.scale`](im-objects.md#imscale), `im.sawtooth`, `im.volume`,`im.speaker`
 
 By placing an `im.volume` object in-between `im.sawtooth` and `im.speaker`, we can use a second sensor input to turn the intensity of the sound up or down.
 
@@ -52,7 +52,7 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 1. continuous control (light sensor or dial)
 2. continuous control or button
 
-**Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `sig~`
+**Objects**: [ `im.sensor`](im-objects.md#imsensor),[`im.scale`](im-objects.md#imscale), `im.sawtooth`, `im.filter`,`im.speaker`, `sig~`
 
 ------
 
@@ -65,7 +65,7 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 1. continuous control (light sensor or dial)
 2. continuous control or button
 
-**Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
+**Objects**: [ `im.sensor`](im-objects.md#imsensor),[`im.scale`](im-objects.md#imscale), `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
 
 ------
 
@@ -78,7 +78,7 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 1. continuous control (light sensor or dial)
 2. continuous control or button
 
-**Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
+**Objects**:[ `im.sensor`](im-objects.md#imsensor),[`im.scale`](im-objects.md#imscale), `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
 
 ------
 
@@ -91,3 +91,18 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 
 
 # Looper
+
+Make sure a microphone or line is plugged in for these examples!
+
+## plain looper
+
+**Inputs:** 
+
+1. button
+2. button
+
+**Objects**:[ `im.sensor`](im-objects.md#imsensor), im.microphone, im.looper, im.speaker
+
+This example sends a microphone into the looper to record. Press and hold the button attached to **sensor 1** to record, and press and hold the button attached to **sensor 2** to play back.  These buttons will record and play back for amount of time they are held down.
+
+For "glitchy" loop effects, try pressing button 1 while button 2 is held down!
