@@ -1,6 +1,12 @@
 This file describes the set of PD examples found in this folder.
 
+[Synthesiser](#Synthesiser)
+
 # Synthesiser
+
+---
+
+
 
 ## scale
 
@@ -18,6 +24,10 @@ The `im.sawtooth` object creates a sawtooth oscillator: a constant, buzzing tone
 
 The sawtooth object must be connected to `im.speaker` to produce a sound.
 
+___
+
+
+
 ## scale + volume
 
 **Inputs**: 
@@ -31,6 +41,10 @@ By placing an `im.volume` object in-between `im.sawtooth` and `im.speaker`, we c
 
 If we use a button, the sound will be turned on or off (like pressing a key on a piano).  With a continuous control like a light sensor, the sound will turn up and down smoothly (like a theremin).
 
+------
+
+
+
 ## scale + filter
 
 **Inputs**: 
@@ -39,6 +53,10 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 2. continuous control or button
 
 **Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `sig~`
+
+------
+
+
 
 ## scale + filter + lfo
 
@@ -49,6 +67,10 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 
 **Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
 
+------
+
+
+
 ## scale + filter + lfo + controls
 
 **Inputs:** 
@@ -57,3 +79,15 @@ If we use a button, the sound will be turned on or off (like pressing a key on a
 2. continuous control or button
 
 **Objects**: `im.sensor`,`im.scale`, `im.sawtooth`, `im.filter`,`im.speaker`, `im.lfo`
+
+------
+
+
+
+## (coming soon: envelopes)
+
+------
+
+
+
+# Looper
