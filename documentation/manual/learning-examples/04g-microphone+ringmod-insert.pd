@@ -1,16 +1,18 @@
 #N canvas 0 23 716 491 10;
 #X obj 116 107 im.microphone;
-#X obj 116 278 im.speaker;
+#X obj 117 324 im.speaker;
 #X text 216 112 don't try this directly on a laptop mic unless you
 like feedback;
-#X obj 116 192 im.fader;
 #X obj 161 157 im.sinewave C 4;
-#X text 146 218 this time we use a fader with a sine wave as an input
-;
 #X text 274 156 here we see that a sine wave can be created with a
 note name and octave..;
-#X text 148 239 we've just made a simple ring modulator \, aka dalek!
+#X text 147 238 we've just made a simple ring modulator \, aka dalek!
 ;
-#X connect 0 0 3 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 1;
+#X obj 116 192 im.multiply;
+#X text 146 218 this time we multiply the microphone signal by the
+sine wave;
+#X text 148 256 im.multiply is exactly the same as the im.volume and
+im.fader objects, f 72;
+#X connect 0 0 6 0;
+#X connect 3 0 6 1;
+#X connect 6 0 1 0;

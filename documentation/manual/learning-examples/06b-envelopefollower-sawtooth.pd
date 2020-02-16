@@ -1,0 +1,10 @@
+#N canvas 0 23 716 491 10;
+#X obj 177 169 im.microphone;
+#X obj 102 255 im.speaker;
+#X obj 177 198 im.envelopefollower;
+#X obj 102 223 im.fader, f 13;
+#X obj 102 132 im.sawtooth E 5;
+#X connect 0 0 2 0;
+#X connect 2 0 3 1;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
