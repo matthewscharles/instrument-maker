@@ -11,6 +11,7 @@
 #X obj 37 183 pack 1 \$1;
 #X obj 167 183 pack 0 \$2;
 #X obj 37 264 outlet~;
+#X text 104 98 debounce?;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
