@@ -28,7 +28,7 @@
 #X msg 470 113 symbol D;
 #X obj 449 169 text get \$0-notes 1;
 #X obj 150 104 phasor~;
-#X obj 153 143 expr~ $v1 > 0.5;
+#X obj 150 147 expr~ $v1 > 0.5;
 #X connect 0 0 27 0;
 #X connect 2 0 0 0;
 #X connect 3 0 1 0;
