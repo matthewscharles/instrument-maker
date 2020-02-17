@@ -1,6 +1,60 @@
 Thanks to Robyn Steward for creating this list of currently used IM objects:
 
+## **Inputs**
 
+- im.microphone
+- im.linein
+- im.sensor
+- im.electrode
+
+## **Outputs**
+
+- im.output
+- im.speaker
+- im.belt
+- im.strap
+
+## **Sound generators**
+
+- im.noise
+- im.whitenoise
+- im.sinewave
+- im.sawtooth
+
+## **Complex sound sources**
+
+- im.hollow
+- im.grains
+
+## **Instrument maker synthesisers**
+
+- im.fizzy
+- im.tunedperc
+- im.acid
+
+## **Signal processors**
+
+- im.filter
+- im.echo
+- im.fader
+- im.volume
+- im.distort
+- im.chorus
+- im.crossfade
+
+## **Audio triggers (work in progress)**
+
+- im.envelopefollower
+- im.pitchtracker
+
+## **Samplers**
+
+- im.looper
+- im.player
+
+## **Note generators**
+
+- im.scale
 
 Explanations will be added below as time goes on.
 
