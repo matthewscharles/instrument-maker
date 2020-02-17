@@ -1,0 +1,10 @@
+#N canvas 768 412 450 300 10;
+#X obj 97 121 im.makeymakey, f 42;
+#X obj 97 255 im.speaker;
+#X obj 97 225 im.player sn.wav;
+#X obj 159 192 im.speaker;
+#X obj 159 162 im.player string.aif;
+#X connect 0 0 2 0;
+#X connect 0 1 4 0;
+#X connect 2 0 1 0;
+#X connect 4 0 3 0;
