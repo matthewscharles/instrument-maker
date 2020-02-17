@@ -4,7 +4,9 @@ This is an open source framework for digital instrument building with sensors, w
 
 An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
 
-Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.
+<!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
+
+Introductory document (work in progress): <https://instrumentmaker.org/documentation/manual/learning-pd-through-im.html>
 
 Read about the philosophy behind this framework at the Bela.io blog: <https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/>
 
@@ -28,9 +30,9 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 ![This is a screenshot of the Instrument Maker objects in Pure Data. It shows a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/im-scale.png)
 
-An accompanying hardware component is currently under development, which adds crocodile clip access to the Bela platform.
+<!--An accompanying hardware component is currently under development, which adds crocodile clip access to the Bela platform.-->
 
-![A Bela mini device with shield attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/dmlab-im.jpg)
+<!--![A Bela mini device with shield attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/dmlab-im.jpg)-->
 
 
 
