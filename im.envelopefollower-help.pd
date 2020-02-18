@@ -1,0 +1,43 @@
+#N canvas 186 87 774 557 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.envelopefollower 20 22 0
+30 -1 -196864 0;
+#X text 22 110 Charles Matthews 2019;
+#X text 22 190 Arguments: none;
+#X obj 120 381 im.speaker;
+#X text 22 210 Inlets: microphone input;
+#X text 22 230 Outlets: pitches to send to an oscillator;
+#X obj 118 257 im.microphone;
+#X obj 119 346 im.fader, f 25;
+#X obj 258 313 im.keypress Space;
+#X text 22 140 Track the volume of the microphone input to create an
+envelope;
+#X obj 119 288 im.envelopefollower;
+#X text 260 254 Hold down the space bar and blow into the microphone
+to change the volume of white noise., f 36;
+#X obj 25 287 im.whitenoise;
+#X obj 25 308 im.fader, f 16;
+#X obj 359 514 im.speaker;
+#X obj 358 342 im.microphone;
+#X obj 358 479 im.fader, f 25;
+#X obj 359 373 im.envelopefollower;
+#X obj 497 434 im.keypress Up;
+#X text 468 338 Hold down the 'up' key and blow into the microphone
+to hear pitches change, f 41;
+#X obj 356 402 im.multiply 16;
+#X obj 355 427 im.scale C dorian 5;
+#X obj 355 451 im.pulsewave;
+#X connect 7 0 11 0;
+#X connect 8 0 4 0;
+#X connect 9 0 8 1;
+#X connect 11 0 14 1;
+#X connect 13 0 14 0;
+#X connect 14 0 8 0;
+#X connect 16 0 18 0;
+#X connect 17 0 15 0;
+#X connect 18 0 21 0;
+#X connect 19 0 17 1;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 17 0;
