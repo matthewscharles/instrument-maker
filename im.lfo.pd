@@ -1,4 +1,4 @@
-#N canvas 451 171 720 563 10;
+#N canvas 514 123 720 563 10;
 #X obj 64 189 osc~;
 #X obj 66 376 *~, f 16;
 #X obj 66 423 outlet~;
@@ -31,7 +31,7 @@
 #X obj 172 18 list store \$1;
 #X msg 117 96 0.4;
 #X obj 267 48 list store \$2;
-#X obj 158 328 +~ 0.5;
+#X obj 158 328 +~ 1;
 #X connect 0 0 5 0;
 #X connect 1 0 2 0;
 #X connect 3 0 24 0;
