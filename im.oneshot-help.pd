@@ -1,0 +1,27 @@
+#N canvas 186 87 546 478 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.oneshot 20 22 0 30 -1 -196864
+0;
+#X text 21 268 Outlets: none;
+#X text 22 110 Charles Matthews 2020;
+#X text 22 140 Record like im.looper \, but play as a oneshot sample.
+, f 80;
+#X text 21 228 Arguments: name of audio file;
+#X obj 65 308 im.microphone;
+#X obj 131 415 im.speaker;
+#X text 21 248 Inlets: audio in 2 play 3 record;
+#X text 165 281 record;
+#X text 318 283 play;
+#X obj 137 374 im.oneshot test.wav;
+#X obj 171 304 im.keypress a;
+#X obj 310 300 im.keypress s;
+#X text 20 158 Sounds are saved with the name you give them \, so that
+you can come back to load them in a future session*. Make sure you
+copy them before you record over them though!, f 80;
+#X text 24 445 *work in progress. samples not guaranteed to store for
+next time \, just yet, f 80;
+#X connect 6 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 11 1;
+#X connect 13 0 11 2;
