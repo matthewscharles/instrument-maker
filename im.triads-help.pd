@@ -1,4 +1,11 @@
 #N canvas 186 87 546 478 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
-#X obj 22 60 cnv 15 478 40 empty empty im.triads 20 22 0 30 -1 -16711936 0;#X text 22 110 Charles Matthews 2019;#X text 22 140 Play selections of chords;#X text 22 190 Arguments: Use intervals e.g. I II IV;#X text 22 210 Inlets: ;#X text 22 230 Outlets: ;
+#X obj 22 60 cnv 15 478 40 empty empty im.triads 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2019;
+#X text 22 190 Arguments: Use intervals e.g. I II IV;
+#X text 22 210 Inlets:;
+#X text 22 230 Outlets:;
+#X text 22 140 Play selections of chords. This is work in progress
+and should not be used yet.;
