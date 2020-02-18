@@ -1,0 +1,52 @@
+#N canvas 245 23 593 630 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.makeymakey 20 22 0 30 -1
+-196864 0;
+#X text 22 110 Charles Matthews 2020;
+#X text 22 210 Inlets: none;
+#X obj 28 514 im.speaker;
+#X text 34 554 im.player does not pay attention to when the key is
+released., f 72;
+#X text 22 140 im.makeymakey is a collection of the im.keystroke objects
+used for the crocodile clip points on a MakeyMakey board \, in a convenient
+package (one outlet per key)., f 80;
+#X obj 71 271 im.makeymakey, f 75;
+#X obj 28 369 im.fader;
+#X obj 26 343 im.sinewave C 7;
+#X obj 138 371 im.fader;
+#X obj 136 345 im.sinewave G 6;
+#X obj 249 369 im.fader;
+#X obj 247 343 im.sinewave Eb 6;
+#X obj 365 369 im.fader;
+#X obj 363 343 im.sinewave C 6;
+#X obj 407 431 im.fader;
+#X obj 407 453 im.echo 500 50%;
+#X text 21 310 Play the notes of a chord using the Up \, Down \, Left
+\, Right inputs, f 68;
+#X text 290 487 Hold down the space input to apply echo;
+#X text 182 510 (this would be difficult with a computer keyboard \,
+because of the way the keys are connected);
+#X text 22 190 Arguments: none, f 77;
+#X text 22 230 Outlets: on/off signal for each key (0-1);
+#X text 19 598 Use the im.keypress object to access the w a s d f g
+keys available on the headers., f 88;
+#X connect 7 0 8 1;
+#X connect 7 1 10 1;
+#X connect 7 2 12 1;
+#X connect 7 3 14 1;
+#X connect 7 4 16 1;
+#X connect 8 0 4 0;
+#X connect 8 0 16 0;
+#X connect 9 0 8 0;
+#X connect 10 0 4 0;
+#X connect 10 0 16 0;
+#X connect 11 0 10 0;
+#X connect 12 0 4 0;
+#X connect 12 0 16 0;
+#X connect 13 0 12 0;
+#X connect 14 0 4 0;
+#X connect 14 0 16 0;
+#X connect 15 0 14 0;
+#X connect 16 0 17 0;
+#X connect 17 0 4 0;
