@@ -1,0 +1,18 @@
+#N canvas 512 76 546 478 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.electrode 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2020;
+#X text 22 210 Inlets: none;
+#X obj 30 425 im.speaker;
+#X obj 30 404 im.fader;
+#X obj 30 283 im.whitenoise;
+#X text 22 140 Not currently in use! im.electrode will be updated to
+work with the Bare Conductive Touch Board soon., f 80;
+#X obj 75 321 im.electrode 1;
+#X text 22 190 Arguments: number of electrode to use, f 77;
+#X text 22 230 Outlets: control signal (0-1);
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 8 0 5 1;
