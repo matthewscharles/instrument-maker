@@ -1,4 +1,21 @@
-#N canvas 186 87 546 478 10;
+#N canvas 574 91 546 478 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
-#X obj 22 60 cnv 15 478 40 empty empty im.chorus 20 22 0 30 -1 -16711936 0;#X text 22 110 Charles Matthews 2019;#X text 22 140 An extreme chorus effect.;#X text 22 190 Arguments: ;#X text 22 210 Inlets: ;#X text 22 230 Outlets: ;
+#X obj 22 60 cnv 15 478 40 empty empty im.chorus 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2019;
+#X text 22 140 An extreme chorus effect.;
+#X text 22 190 Arguments: none;
+#X text 22 210 Inlets: signal to process;
+#X text 22 230 Outlets: processed signal;
+#X obj 157 275 im.microphone;
+#X obj 157 339 im.fader;
+#X obj 157 360 im.chorus;
+#X obj 157 381 im.speaker;
+#X obj 205 310 im.keypress Space;
+#X text 275 260 Hold down the space bar to hear some chorus on the
+microphone. Beware of feedback!, f 32;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 11 0 8 1;
