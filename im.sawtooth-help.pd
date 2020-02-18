@@ -15,8 +15,6 @@
 #X text 22 139 Generate a sine wave (often thought of as a 'pure' tone
 \, like an ocarina or smooth rumbling sensation at lower frequencies).
 , f 77;
-#X text 129 262 Hold down the space bar on your computer or connect
-sensor 1 to hear a sine wave at pitch A (octave 5)., f 32;
 #X obj 373 420 im.speaker;
 #X obj 373 399 im.fader;
 #X obj 373 268 im.scale C major 4;
@@ -24,20 +22,22 @@ sensor 1 to hear a sine wave at pitch A (octave 5)., f 32;
 #X obj 373 246 im.multiply 8;
 #X obj 429 349 im.sensor 2;
 #X obj 418 317 im.keypress Up;
-#X text 500 257 hold down the 'Up' key or connect sensor 2 to hear
-a sine wave ascending through the C major scale., f 26;
 #X text 28 450 Please note: im.sinewave accepts pitches \, but does
 not currently recognise raw frequencies in Hz.., f 138;
 #X obj 30 283 im.sawtooth A 5;
 #X obj 373 290 im.sawtooth;
+#X text 500 257 hold down the 'Up' key or connect sensor 2 to hear
+a sawtooth ascending through the C major scale., f 26;
+#X text 129 262 Hold down the space bar on your computer or connect
+sensor 1 to hear a sawtooth at pitch A (octave 5)., f 32;
 #X connect 4 0 3 0;
 #X connect 5 0 4 1;
 #X connect 6 0 4 1;
-#X connect 13 0 12 0;
-#X connect 14 0 22 0;
-#X connect 15 0 16 0;
-#X connect 16 0 14 0;
-#X connect 17 0 13 1;
-#X connect 18 0 13 1;
-#X connect 21 0 4 0;
-#X connect 22 0 13 0;
+#X connect 12 0 11 0;
+#X connect 13 0 20 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 12 1;
+#X connect 17 0 12 1;
+#X connect 19 0 4 0;
+#X connect 20 0 12 0;
