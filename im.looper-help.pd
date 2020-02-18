@@ -20,6 +20,8 @@ pitch, f 69;
 #X obj 430 289 im.keypress e;
 #X text 22 140 Sample and loop an audio signal. im.looper can also
 be used to loop control data from a sensor!, f 80;
+#X text 26 451 Want to record and play back a oneshot sample? Try im.oneshot
+instead., f 77;
 #X connect 6 0 7 0;
 #X connect 7 0 3 0;
 #X connect 8 0 7 1;
