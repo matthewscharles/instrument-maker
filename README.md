@@ -8,6 +8,19 @@ An accompanying set of communication symbols can be found [here](https://instrum
 
 Introductory document (work in progress): <https://instrumentmaker.org/documentation/manual/learning-pd-through-im.html>
 
+For anyone interested in trying the desktop/Raspberry Pi demo:
+
+- clone the repo to a local folder
+- add the instrument-maker folder to the search path in Pure Data
+- look for im-current-objects.pd in the learning-examples folder
+- right-click on the objects found here to open help files.  make sure you press ctrl-E to enter edit mode!
+
+![list of current objects](documentation/current-objects-pd.png)
+
+
+
+---
+
 Read about the philosophy behind this framework at the Bela.io blog: <https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/>
 
 This document in itself is a work in progress, and an invitation to conversation.  [**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  

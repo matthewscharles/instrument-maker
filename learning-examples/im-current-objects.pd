@@ -1,4 +1,4 @@
-#N canvas 650 45 582 665 10;
+#N canvas 362 92 582 665 10;
 #X obj 13 15 cnv 15 300 150 empty empty inputs 25 15 0 30 -203904 -66577
 0;
 #X obj 53 68 im.sensor;
@@ -45,3 +45,5 @@
 #X obj 186 343 im.looper;
 #X text 338 10 right-click on these objects to access help files,
 f 35;
+#X obj 126 131 im.keypress;
+#X obj 212 134 im.makeymakey;
