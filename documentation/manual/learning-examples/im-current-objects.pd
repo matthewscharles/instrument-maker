@@ -1,0 +1,47 @@
+#N canvas 650 45 582 665 10;
+#X obj 13 15 cnv 15 300 150 empty empty inputs 25 15 0 30 -203904 -66577
+0;
+#X obj 53 68 im.sensor;
+#X obj 147 59 im.microphone;
+#X obj 56 116 im.linein;
+#X obj 131 99 im.electrode;
+#X obj 11 177 cnv 15 300 150 empty empty basic_sound_sources 25 15
+0 20 -204786 -66577 0;
+#X obj 51 229 im.noise;
+#X obj 108 229 im.whitenoise;
+#X obj 30 262 im.sinewave;
+#X obj 106 261 im.sawtooth;
+#X obj 14 388 cnv 15 300 150 empty empty signal_processors 25 15 0
+20 -261234 -66577 0;
+#X obj 255 484 cnv 15 300 100 empty empty outputs 25 15 0 30 -203904
+-66577 0;
+#X obj 392 556 im.speaker;
+#X obj 306 555 im.output;
+#X obj 271 45 cnv 15 300 75 empty empty note_generators 25 15 0 20
+-4032 -66577 0;
+#X obj 311 97 im.scale;
+#X text 373 97 im.triads currently unavailable;
+#X obj 283 175 cnv 15 275 150 empty empty audio_triggers 25 15 0 20
+-261234 -66577 0;
+#X obj 323 227 im.envelopefollower;
+#X obj 450 226 im.pitchtracker;
+#X obj 378 259 im.audiotrigger;
+#X obj 54 440 im.echo;
+#X obj 132 438 im.distort;
+#X obj 33 473 im.chorus;
+#X obj 119 471 im.fader;
+#X obj 180 471 im.volume;
+#X obj 74 508 im.filter;
+#X obj 282 333 cnv 15 275 75 empty empty misc_control 25 15 0 20 -262130
+-66577 0;
+#X obj 315 376 im.lfo;
+#X obj 466 373 im.debounce;
+#X obj 375 366 im.sequence;
+#X obj 407 388 im.step;
+#X obj 2 303 cnv 15 275 75 empty empty samplers 25 15 0 20 -262130
+-66577 0;
+#X obj 35 346 im.player;
+#X obj 95 336 im.oneshot;
+#X obj 186 343 im.looper;
+#X text 338 10 right-click on these objects to access help files,
+f 35;
