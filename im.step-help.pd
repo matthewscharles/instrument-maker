@@ -1,4 +1,4 @@
-#N canvas 7 107 525 493 10;
+#N canvas 636 111 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.step 20 22 0 30 -1 -196864
@@ -11,33 +11,32 @@
 #X text 105 217 on/off trigger (e.g. im.sensor or im.keypress);
 #X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
 -66577 0;
-#X text 21 171, f 81;
+#X text 21 171 comment, f 81;
 #X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
 0;
 #X text 106 241 divisions based on the number input;
 #X text 16 142 Use im.step 8 with im.sequence., f 81;
 #X obj 86 309 im.keypress a;
 #X obj 86 333 im.step 8;
-#X obj 83 403 im.tunedperc;
-#X obj 83 424 im.speaker;
-#X obj 83 382 im.scale C dorian 6;
-#X obj 284 421 im.tunedperc;
-#X obj 284 442 im.speaker;
-#X obj 285 361 im.sequence 0 1 2 3 4 3 2 7;
-#X obj 284 400 im.scale C dorian 6;
-#X obj 286 336 im.step 8 random;
-#X obj 286 312 im.keypress s;
-#X obj 85 358 im.sequence 0 1 2 3 4 3 2 7;
-#X text 275 461 not sure why there's an occasional rest;
+#X obj 86 403 im.tunedperc;
+#X obj 86 424 im.speaker;
+#X obj 284 404 im.tunedperc;
+#X obj 284 425 im.speaker;
+#X obj 284 336 im.step 8 random;
+#X obj 284 312 im.keypress s;
 #X text 400 339 added random arg;
 #X text 105 195 1 number of steps 2 random (optional), f 64;
+#X obj 86 382 im.scale C dorian 5;
+#X obj 284 383 im.scale C dorian 5;
+#X obj 86 358 im.sequence 0 1 4 3 4 5 2 7;
+#X obj 284 361 im.sequence 0 1 4 3 4 5 2 7;
 #X connect 11 0 12 0;
-#X connect 12 0 22 0;
+#X connect 12 0 23 0;
 #X connect 13 0 14 0;
-#X connect 15 0 13 0;
-#X connect 16 0 17 0;
-#X connect 18 0 19 0;
-#X connect 19 0 16 0;
-#X connect 20 0 18 0;
-#X connect 21 0 20 0;
+#X connect 15 0 16 0;
+#X connect 17 0 24 0;
+#X connect 18 0 17 0;
+#X connect 21 0 13 0;
 #X connect 22 0 15 0;
+#X connect 23 0 21 0;
+#X connect 24 0 22 0;
