@@ -12,7 +12,6 @@
 #X obj 131 415 im.speaker;
 #X text 21 248 Inlets: audio in 2 play 3 record;
 #X text 165 281 record;
-#X text 318 283 play;
 #X obj 137 374 im.oneshot test.wav;
 #X obj 171 304 im.keypress a;
 #X obj 310 300 im.keypress s;
@@ -21,7 +20,8 @@ you can come back to load them in a future session*. Make sure you
 copy them before you record over them though!, f 80;
 #X text 24 445 *work in progress. samples not guaranteed to store for
 next time \, just yet, f 80;
-#X connect 6 0 11 0;
-#X connect 11 0 7 0;
-#X connect 12 0 11 1;
-#X connect 13 0 11 2;
+#X text 318 283 play (tap \, don't hold);
+#X connect 6 0 10 0;
+#X connect 10 0 7 0;
+#X connect 11 0 10 1;
+#X connect 12 0 10 2;
