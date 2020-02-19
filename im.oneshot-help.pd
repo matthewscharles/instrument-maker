@@ -9,19 +9,22 @@
 , f 80;
 #X text 21 228 Arguments: name of audio file;
 #X obj 65 308 im.microphone;
-#X obj 131 415 im.speaker;
-#X text 21 248 Inlets: audio in 2 play 3 record;
-#X text 165 281 record;
-#X obj 137 374 im.oneshot test.wav;
+#X obj 59 413 im.speaker, f 11;
+#X obj 59 387 im.oneshot test.wav, f 50;
 #X obj 171 304 im.keypress a;
-#X obj 310 300 im.keypress s;
+#X obj 356 336 im.keypress s;
 #X text 20 158 Sounds are saved with the name you give them \, so that
 you can come back to load them in a future session*. Make sure you
 copy them before you record over them though!, f 80;
 #X text 24 445 *work in progress. samples not guaranteed to store for
 next time \, just yet, f 80;
-#X text 318 283 play (tap \, don't hold);
-#X connect 6 0 10 0;
-#X connect 10 0 7 0;
-#X connect 11 0 10 1;
-#X connect 12 0 10 2;
+#X text 354 311 play (tap \, don't hold);
+#X obj 170 332 im.debounce 100;
+#X text 165 281 record (hold for length of time);
+#X text 21 248 Inlets: 1 audio in 2 play 3 record;
+#X text 204 363 debounce to be safe;
+#X connect 6 0 8 0;
+#X connect 8 0 7 0;
+#X connect 9 0 14 0;
+#X connect 10 0 8 2;
+#X connect 14 0 8 1;
