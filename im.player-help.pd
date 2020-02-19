@@ -6,16 +6,26 @@
 #X text 22 219 Inlets: on/off trigger (e.g. im.sensor or im.keypress)
 ;
 #X text 22 239 Outlets: sound triggered;
-#X text 22 199 Arguments: name of the sound file \, including the extension.
-;
 #X text 22 141 Retrigger a sound file using an "on" signal (ignores
 "off"). Save the file you want to trigger in a folder \, and add the
 folder to your pd search path from the preferences menu., f 81;
 #X obj 91 287 im.sensor 1;
-#X obj 171 285 im.keypress Space;
+#X obj 171 286 im.keypress Space;
 #X obj 101 362 im.speaker;
 #X obj 100 328 im.player sn.wav;
 #X text 22 110 Charles Matthews 2020;
-#X connect 6 0 9 0;
-#X connect 7 0 9 0;
-#X connect 9 0 8 0;
+#X text 22 199 Arguments: 1 name of the sound file 2 number of voices
+(mono by default \, max 4), f 82;
+#X obj 317 366 im.speaker;
+#X obj 307 291 im.sensor 2;
+#X obj 316 332 im.player string.aif 4;
+#X obj 387 290 im.keypress m;
+#X text 408 352 4 samples at once;
+#X text 16 449 See im.player.list for random playback of a list of
+files.;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 8 0 7 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 0;
+#X connect 14 0 13 0;

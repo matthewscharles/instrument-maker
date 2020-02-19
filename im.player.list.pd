@@ -1,7 +1,7 @@
 #N canvas 0 25 798 600 10;
 #X obj 124 520 readsf~;
 #X msg 124 497 open \$1 \, 1;
-#X obj 124 551 outlet~;
+#X obj 234 563 outlet~;
 #X obj 126 93 change;
 #X obj 126 73 snapshot~;
 #X obj 221 16 bang~;
@@ -23,7 +23,7 @@
 #X msg 124 227 1;
 #X floatatom 123 310 5 0 0 0 - - -;
 #X obj 124 359 list trim;
-#X obj 123 333 list append;
+#X obj 123 333 list append, f 21;
 #X obj 181 259 loadbang;
 #X obj 180 281 f \$2;
 #X obj 180 302 + 1;
@@ -34,12 +34,16 @@
 #X msg 274 498 open \$1 \, 1;
 #X obj 350 520 readsf~;
 #X msg 350 497 open \$1 \, 1;
-#X floatatom 218 341 5 0 0 0 - - -;
 #X obj 126 454 symbol;
-#X obj 124 194 t b a a, f 18;
 #X obj 199 451 symbol;
 #X obj 276 447 symbol;
-#X obj 348 456 symbol;
+#X obj 350 450 symbol;
+#X obj 124 194 t b a, f 21;
+#X text 453 384 could expand this to more voices..any reason not to?
+;
+#X text 454 401 what about buffers instead?;
+#X text 364 47 could we put this into the main im.player object and
+just detect the .txt extension to route it?;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 6 0;
@@ -48,7 +52,7 @@
 #X connect 6 0 12 0;
 #X connect 7 0 8 0;
 #X connect 8 0 4 0;
-#X connect 10 0 37 0;
+#X connect 10 0 39 0;
 #X connect 12 0 10 0;
 #X connect 13 0 16 0;
 #X connect 14 0 15 0;
@@ -67,20 +71,19 @@
 #X connect 25 0 26 0;
 #X connect 26 0 27 0;
 #X connect 27 0 20 1;
-#X connect 27 0 35 0;
-#X connect 28 0 36 0;
-#X connect 28 1 38 0;
-#X connect 28 2 39 0;
-#X connect 28 3 40 0;
+#X connect 28 0 35 0;
+#X connect 28 1 36 0;
+#X connect 28 2 37 0;
+#X connect 28 3 38 0;
 #X connect 29 0 2 0;
 #X connect 30 0 29 0;
 #X connect 31 0 2 0;
 #X connect 32 0 31 0;
 #X connect 33 0 2 0;
 #X connect 34 0 33 0;
-#X connect 36 0 1 0;
-#X connect 37 0 21 0;
-#X connect 37 1 24 1;
-#X connect 38 0 30 0;
-#X connect 39 0 32 0;
-#X connect 40 0 34 0;
+#X connect 35 0 1 0;
+#X connect 36 0 30 0;
+#X connect 37 0 32 0;
+#X connect 38 0 34 0;
+#X connect 39 0 21 0;
+#X connect 39 1 24 1;
