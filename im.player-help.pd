@@ -1,31 +1,34 @@
-#N canvas 186 87 546 478 10;
+#N canvas 390 146 546 478 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.player 20 22 0 30 -1 -196864
 0;
-#X text 22 219 Inlets: on/off trigger (e.g. im.sensor or im.keypress)
-;
 #X text 22 239 Outlets: sound triggered;
 #X text 22 141 Retrigger a sound file using an "on" signal (ignores
 "off"). Save the file you want to trigger in a folder \, and add the
 folder to your pd search path from the preferences menu., f 81;
-#X obj 91 287 im.sensor 1;
-#X obj 171 286 im.keypress Space;
-#X obj 101 362 im.speaker;
-#X obj 100 328 im.player sn.wav;
+#X obj 44 287 im.sensor 1;
+#X obj 124 286 im.keypress Space;
+#X obj 54 362 im.speaker;
+#X obj 53 328 im.player sn.wav;
 #X text 22 110 Charles Matthews 2020;
 #X text 22 199 Arguments: 1 name of the sound file 2 number of voices
 (mono by default \, max 4), f 82;
-#X obj 317 366 im.speaker;
-#X obj 307 291 im.sensor 2;
-#X obj 316 332 im.player string.aif 4;
-#X obj 387 290 im.keypress m;
-#X text 408 352 4 samples at once;
+#X obj 257 392 im.speaker;
+#X obj 247 288 im.sensor 2;
+#X obj 256 358 im.player string.aif 4;
+#X obj 327 287 im.keypress m;
+#X text 348 378 4 samples at once;
 #X text 16 449 See im.player.list for random playback of a list of
 files.;
-#X connect 5 0 8 0;
-#X connect 6 0 8 0;
-#X connect 8 0 7 0;
-#X connect 12 0 13 0;
-#X connect 13 0 11 0;
-#X connect 14 0 13 0;
+#X obj 385 308 im.keypress n;
+#X text 397 330 second inlet stops;
+#X text 22 219 Inlets: 1 on trigger (e.g. im.sensor or im.keypress)
+2 off trigger, f 77;
+#X connect 4 0 7 0;
+#X connect 5 0 7 0;
+#X connect 7 0 6 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 13 0 12 0;
+#X connect 16 0 12 1;
