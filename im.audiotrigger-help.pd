@@ -18,9 +18,9 @@
 #X text 16 142 Sends out a very brief trigger based on audio input.
 Currently set to a high threshold to respond. Experimental!, f 81
 ;
-#X text 105 217 1 audio monitored to create trigger;
+#X text 105 217 1) audio monitored to create trigger;
 #X text 105 195 none, f 64;
-#X text 106 241 1 trigger output (1 to 0 over 10ms);
+#X text 106 241 1) trigger output (1 to 0 over 10ms);
 #X obj 91 271 im.microphone;
 #X obj 91 292 im.audiotrigger;
 #X obj 92 316 im.step 8;

@@ -12,7 +12,7 @@ folder to your pd search path from the preferences menu., f 81;
 #X obj 54 362 im.speaker;
 #X obj 53 328 im.player sn.wav;
 #X text 22 110 Charles Matthews 2020;
-#X text 22 199 Arguments: 1 name of the sound file 2 number of voices
+#X text 22 199 Arguments: 1) name of the sound file 2) number of voices
 (mono by default \, max 4), f 82;
 #X obj 257 392 im.speaker;
 #X obj 247 288 im.sensor 2;

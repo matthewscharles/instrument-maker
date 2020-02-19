@@ -15,11 +15,11 @@
 0;
 #X obj 183 327 im.sensor 1;
 #X obj 180 477 noteout;
-#X text 105 195 1 velocity (optional), f 64;
+#X text 105 195 1) velocity (optional), f 64;
 #X text 16 157 Velocity is set to a static value (127 by default).
 , f 81;
-#X text 105 217 1 velocity (on/off) input;
-#X text 106 241 1 midi velocity;
+#X text 105 217 1) velocity (on/off) input;
+#X text 106 241 1) midi velocity;
 #X obj 94 350 im.midivelocity;
 #X msg 97 422 64 \$1;
 #X obj 370 325 im.sensor 1;

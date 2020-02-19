@@ -35,16 +35,16 @@
 #X obj 86 424 makenote 127 500;
 #X obj 325 411 im.midinote 127;
 #X obj 435 398 im.sensor 1;
-#X text 105 195 1 velocity (optional), f 64;
+#X text 105 195 1) velocity (optional), f 64;
 #X text 16 157 Velocity is set to a static value (127 by default).
 , f 81;
-#X text 105 217 1 pitch input 2 velocity (on/off) input;
+#X text 105 217 1) pitch input 2) velocity (on/off) input;
 #X text 310 490 Version 2: take on/off from the same sensor triggering
 the sequence., f 34;
 #X text 74 487 Version 1: use makenote to generate a velocity/note
 off. Useful if generating a scale from a continuous sensor., f 29
 ;
-#X text 106 241 1 midi pitch value 2 midi velocity;
+#X text 106 241 1) midi pitch value 2) midi velocity;
 #X connect 2 0 11 0;
 #X connect 3 0 11 0;
 #X connect 11 0 12 0;

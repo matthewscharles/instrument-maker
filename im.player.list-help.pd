@@ -23,7 +23,6 @@
 #X text 16 394 There is no limit to the number of files you can include
 in the .txt file. End each line with a semicolon (see plist.txt as
 an example \, but best not to write over it!), f 81;
-#X text 106 241 audio from the file triggered;
 #X text 15 437 In this version the files are played randomly \, but
 other methods like round-robin should be possible in the future.,
 f 81;
@@ -32,11 +31,12 @@ f 81;
 and use this as the argument., f 81;
 #X obj 296 289 im.keypress z;
 #X text 305 310 second inlet stops;
-#X text 105 195 1 txt file for playlist 2 number of voices (mono by
-default), f 64;
-#X text 105 218 1 on trigger (e.g. im.sensor or im.keypress) 2 off
+#X text 105 195 1) txt file for playlist 2) number of voices (mono
+by default), f 64;
+#X text 105 218 1) on trigger (e.g. im.sensor or im.keypress) 2) off
 trigger;
+#X text 106 241 1) audio from the file triggered;
 #X connect 2 0 6 0;
 #X connect 3 0 6 0;
 #X connect 6 0 4 0;
-#X connect 18 0 6 1;
+#X connect 17 0 6 1;

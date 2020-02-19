@@ -21,7 +21,7 @@ next time \, just yet, f 80;
 #X text 354 311 play (tap \, don't hold);
 #X obj 170 332 im.debounce 100;
 #X text 165 281 record (hold for length of time);
-#X text 21 248 Inlets: 1 audio in 2 play 3 record;
+#X text 21 248 Inlets: 1) audio in 2) play 3) record;
 #X text 204 363 debounce to be safe;
 #X connect 6 0 8 0;
 #X connect 8 0 7 0;

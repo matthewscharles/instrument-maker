@@ -19,7 +19,7 @@
 #X text 16 142 Wait a certain amount of time (in milliseconds) before
 allowing a second trigger through. Useful in combination with audiotrigger
 or keypress \, certain switches on im.sensor.., f 81;
-#X text 105 195 1 time in milliseconds, f 64;
+#X text 105 195 1) time in milliseconds, f 64;
 #X obj 93 318 im.debounce 10;
 #X obj 93 339 im.player string.aif;
 #X obj 315 283 im.sensor 1;
@@ -28,8 +28,8 @@ or keypress \, certain switches on im.sensor.., f 81;
 #X obj 317 358 im.debounce 100;
 #X obj 395 283 im.keypress x;
 #X text 386 324 experiment with higher numbers, f 20;
-#X text 105 217 1 trigger from a sensor or keypress;
-#X text 106 241 1 processed trigger;
+#X text 105 217 1) trigger from a sensor or keypress;
+#X text 106 241 1) processed trigger;
 #X connect 2 0 13 0;
 #X connect 3 0 13 0;
 #X connect 13 0 14 0;
