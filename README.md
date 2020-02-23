@@ -6,18 +6,7 @@ An accompanying set of communication symbols can be found [here](https://instrum
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
-Introductory document (work in progress): <https://instrumentmaker.org/documentation/manual/learning-pd-through-im.html>
-
-For anyone interested in trying the desktop/Raspberry Pi demo:
-
-- clone the repo to a local folder
-- add the instrument-maker folder to the search path in Pure Data
-- look for im-current-objects.pd in the learning-examples folder
-- right-click on the objects found here to open help files.  make sure you press ctrl-E to enter edit mode!
-
-![list of current objects](documentation/current-objects-pd.png)
-
-
+[**Introductory document (work in progress)**](https://github.com/matthewscharles/instrument-maker) 
 
 ---
 
@@ -47,5 +36,24 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 <!--![A Bela mini device with shield attached: these feature white connectors to accomodate plug-in sensors, and metallic circles with crocodile clips](documentation/dmlab-im.jpg)-->
 
+----
+
+For anyone interested in trying the desktop/Raspberry Pi demo:
+
+- clone the repo to a local folder: `git clone` 
+
+- add the instrument-maker folder to the search path in Pure Data
+
+  ![](/Users/cm/Documents/GitHub/instrument-maker/documentation/add-path.png)
+
+  ![](/Users/cm/Documents/GitHub/instrument-maker/documentation/add-path2.png)
+
+- look for im-current-objects.pd in the learning-examples folder
+
+- right-click on the objects found here to open help files.  make sure you press ctrl-E to enter edit mode!
+
+![list of current objects](/Users/cm/Documents/GitHub/instrument-maker/documentation/current-objects-pd.png)
 
 
+
+Keep up to date by typing `git pull` within the folder in terminal.
