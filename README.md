@@ -38,21 +38,21 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 ----
 
-For anyone interested in trying the desktop/Raspberry Pi demo:
+We are currently focusing on Raspberry Pi/desktop but will be updating with instructions for Bela again soon (including the new IDE).  For anyone interested in trying the demo:
 
 - clone the repo to a local folder: `git clone` 
 
 - add the instrument-maker folder to the search path in Pure Data
 
-  ![](/Users/cm/Documents/GitHub/instrument-maker/documentation/add-path.png)
+  ![](documentation/add-path.png)
 
-  ![](/Users/cm/Documents/GitHub/instrument-maker/documentation/add-path2.png)
+  ![](documentation/add-path2.png)
 
 - look for im-current-objects.pd in the learning-examples folder
 
 - right-click on the objects found here to open help files.  make sure you press ctrl-E to enter edit mode!
 
-![list of current objects](/Users/cm/Documents/GitHub/instrument-maker/documentation/current-objects-pd.png)
+![list of current objects](documentation/current-objects-pd.png)
 
 
 
