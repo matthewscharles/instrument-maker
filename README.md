@@ -40,7 +40,7 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 We are currently focusing on Raspberry Pi/desktop but will be updating with instructions for Bela again soon (including the new IDE).  For anyone interested in trying the demo:
 
-- clone the repo to a local folder: `git clone` 
+- clone the repo to a local folder: `git clone https://github.com/matthewscharles/instrument-maker `
 
 - add the instrument-maker folder to the search path in Pure Data
 
