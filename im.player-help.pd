@@ -1,34 +1,45 @@
-#N canvas 390 146 546 478 10;
+#N canvas 132 69 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.player 20 22 0 30 -1 -196864
 0;
-#X text 22 239 Outlets: sound triggered;
-#X text 22 141 Retrigger a sound file using an "on" signal (ignores
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 12 440 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Retrigger a sound file using an "on" signal (ignores
 "off"). Save the file you want to trigger in a folder \, and add the
 folder to your pd search path from the preferences menu., f 81;
-#X obj 44 287 im.sensor 1;
-#X obj 124 286 im.keypress Space;
-#X obj 54 362 im.speaker;
-#X obj 53 328 im.player sn.wav;
-#X text 22 110 Charles Matthews 2020;
-#X text 22 199 Arguments: 1) name of the sound file 2) number of voices
-(mono by default \, max 4), f 82;
-#X obj 257 392 im.speaker;
-#X obj 247 288 im.sensor 2;
-#X obj 256 358 im.player string.aif 4;
-#X obj 327 287 im.keypress m;
-#X text 348 378 4 samples at once;
-#X text 16 449 See im.player.list for random playback of a list of
-files.;
-#X obj 385 308 im.keypress n;
-#X text 397 330 second inlet stops;
-#X text 22 219 Inlets: 1 on trigger (e.g. im.sensor or im.keypress)
-2 off trigger, f 77;
-#X connect 4 0 7 0;
-#X connect 5 0 7 0;
-#X connect 7 0 6 0;
-#X connect 11 0 12 0;
-#X connect 12 0 10 0;
-#X connect 13 0 12 0;
-#X connect 16 0 12 1;
+#X text 105 195 1) file name 2) number of voices (mono by default \,
+max 4), f 64;
+#X text 105 217 1) on trigger (e.g. im.sensor or im.keypress) 2) off
+trigger;
+#X text 106 241 1) sound triggered;
+#X obj 19 327 im.sensor 1;
+#X obj 99 326 im.keypress Space;
+#X obj 29 389 im.speaker;
+#X obj 28 356 im.player sn.wav;
+#X obj 261 386 im.speaker;
+#X obj 244 309 im.sensor 2;
+#X obj 260 352 im.player string.aif 4;
+#X obj 329 307 im.keypress m;
+#X text 338 383 4 samples at once;
+#X obj 387 328 im.keypress n;
+#X text 402 345 second inlet stops;
+#X text 20 443 See im.player.list for random playback of a list of
+files., f 81;
+#X connect 13 0 16 0;
+#X connect 14 0 16 0;
+#X connect 16 0 15 0;
+#X connect 18 0 19 0;
+#X connect 19 0 17 0;
+#X connect 20 0 19 0;
+#X connect 22 0 19 1;
