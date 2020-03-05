@@ -38,9 +38,17 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 ----
 
+# Current demo setup
+
 We are currently focusing on Raspberry Pi/desktop but will be updating with instructions for Bela again soon (including the new IDE).  For anyone interested in trying the demo:
 
-- clone the repo to a local folder: `git clone https://github.com/matthewscharles/instrument-maker `
+- Clone the repo to a local folder by opening a terminal: 
+
+  - `git clone https://github.com/matthewscharles/instrument-maker`
+
+- Install [Pure Data](http://puredata.info/downloads)
+
+  - On a Mac, you may need to right-click on the downloaded application to run it.
 
 - add the instrument-maker folder to the search path in Pure Data
 
