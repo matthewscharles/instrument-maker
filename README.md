@@ -45,6 +45,7 @@ We are currently focusing on Raspberry Pi/desktop but will be updating with inst
 - Clone the repo to a local folder by opening a terminal: 
 
   - `git clone https://github.com/matthewscharles/instrument-maker`
+  - On a Mac, you might be required to download developer tools. Note: there is no need to install Xcode.
 
 - Install [Pure Data](http://puredata.info/downloads)
 
