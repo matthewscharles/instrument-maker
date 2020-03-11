@@ -6,7 +6,9 @@ An accompanying set of communication symbols can be found [here](https://instrum
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
-[**Introductory document (work in progress)**](https://github.com/matthewscharles/instrument-maker) 
+[**Introductory document (work in progress)**](documentation/manual/learning-pd-through-im.md) 
+
+[**GitHub repo**](https://github.com/matthewscharles/instrument-maker/documentation/manual/learning-pd-through-im.md) 
 
 ---
 
@@ -42,10 +44,15 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 We are currently focusing on Raspberry Pi/desktop but will be updating with instructions for Bela again soon (including the new IDE).  For anyone interested in trying the demo:
 
-- Clone the repo to a local folder by opening a terminal: 
 
+
+Recommended: clone this repo using GitHub
+
+- Clone the repo to a local folder by opening a terminal: 
   - `git clone https://github.com/matthewscharles/instrument-maker`
   - On a Mac, you might be required to download developer tools. Note: there is no need to install Xcode.
+
+Alternatively, click the green icon at
 
 - Install [Pure Data](http://puredata.info/downloads)
 
