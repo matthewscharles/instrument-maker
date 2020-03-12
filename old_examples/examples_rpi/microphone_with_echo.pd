@@ -1,8 +1,0 @@
-#N canvas 114 60 450 300 10;
-#X obj 89 91 im.microphone;
-#X obj 89 153 im.fader;
-#X obj 134 118 im.electrode 1;
-#X obj 89 184 im.output;
-#X connect 0 0 1 0;
-#X connect 1 0 3 0;
-#X connect 2 0 1 1;
