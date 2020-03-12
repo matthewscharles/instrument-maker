@@ -1,8 +1,8 @@
 # Instrument Maker
 
-This is an open source framework for digital instrument building with sensors, with improving access in mind. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
+Instrument Maker is an open source framework for digital instrument building with sensors. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
 
-The code is developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/) and more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  Many thanks to [Roybn Steward](https://www.robynsteward.com/music) and [Dave Darch](http://alittlelearning.org/) for testing the code in workshops and helping generate documentation.
+The code is developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/), and more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  Many thanks to [Roybn Steward](https://www.robynsteward.com/music) and [Dave Darch](http://alittlelearning.org/) for testing the code in workshops and helping generate documentation.
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
@@ -30,9 +30,9 @@ The current code is not ready for public consumption (see the technical notes be
 
 ## How does it work?
 
-The main resource is an Instrument Maker library for [Pure Data](http://puredata.info/). 
+The main resource is an library of objects for [Pure Data](http://puredata.info/). 
 
-Create objects with the `im.` prefix to access building blocks: e.g. inputs, outputs, tuning systems, processors, and synthesisers. Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device connected.  
+Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device connected.  
 
 Using Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
