@@ -10,25 +10,29 @@ An accompanying set of communication symbols can be found [here](https://instrum
 
 [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/documentation/manual/learning-pd-through-im.md) 
 
+Distributed under the terms of the **GNU Public license version 3** (for now).
+
 ---
 
 Read about the philosophy behind this framework at the Bela.io blog: <https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/>
 
-This document in itself is a work in progress, and an invitation to conversation.  [**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
+This document in itself is a work in progress, and an invitation to conversation.  
 
-Distributed under the terms of the **GNU Public license version 3** (for now  / not sure how appropriate to this project / need to read up on this).
+[**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
 
 ![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](documentation/im-sensors.png)
 
 ## Disclaimer
 
-Instrument Maker is one of my first public repos, and will definitely be messy for a little while. I'm relatively new to Open Source culture - please call me out and/or help me understand if you disagree with anything on here.  Same goes for Disability and accessibility issues. 
+Instrument Maker is one of my first public repos, and will definitely be messy for a little while. I'm relatively new to Open Source culture - please help me understand if you disagree with anything on here.  Same goes for Disability and accessibility issues. 
 
 About the code: the current version is not ready for public consumption (see the technical notes below); please feel free to explore the code, and download and try out the abstractions if you are familiar with Pure Data..but I recommend waiting a little while until everything's more coherent.
 
 ## How does it work?
 
-To program: within Pure Data (pictured below), create objects with the `im.` prefix to access building blocks: e.h. inputs, outputs, tuning systems, and synthesisers. Upload to Bela, or Raspberry Pi with an Arduino-type device connected.  
+The main resource is an Instrument Maker library for [Pure Data](http://puredata.info/). 
+
+Create objects with the `im.` prefix to access building blocks: e.g. inputs, outputs, tuning systems, processors, and synthesisers. Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device connected.  
 
 Using Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
@@ -42,31 +46,33 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 # Current demo setup
 
-We are currently focusing on Raspberry Pi/desktop but will be updating with instructions for Bela again soon (including the new IDE).  For anyone interested in trying the demo:
+*Deken release coming soon.*
 
+We are currently focusing on Raspberry Pi/desktop setups, but will be updating with instructions for Bela again soon (including the new IDE). 
 
+For anyone interested in trying the demo:
 
-Recommended: clone this repo using GitHub
+**Recommended: clone this repo**
 
 - Clone the repo to a local folder by opening a terminal: 
   - `git clone https://github.com/matthewscharles/instrument-maker`
-  - On a Mac, you might be required to download developer tools. Note: there is no need to install Xcode.
+  - *On a Mac, you might be required to download developer tools. Note: there is no need to install Xcode.*
 
-Alternatively, click the green icon at
+Alternatively, click the green Clone or Download icon at the top of the [GitHub repo](https://github.com/matthewscharles/instrument-maker) to download a zip file.  If doing so, you will need to download updates manually in the future.
 
 - Install [Pure Data](http://puredata.info/downloads)
 
   - On a Mac, you may need to right-click on the downloaded application to run it.
 
-- add the instrument-maker folder to the search path in Pure Data
+- Add the instrument-maker folder to the search path in Pure Data: click new, and browse to the folder you cloned to.
 
   ![](documentation/add-path.png)
 
   ![](documentation/add-path2.png)
 
-- look for im-current-objects.pd in the learning-examples folder
+- Look for im-current-objects.pd in the learning-examples folder
 
-- right-click on the objects found here to open help files.  make sure you press ctrl-E to enter edit mode!
+- Right-click on the objects found here to open help files.  Make sure you press ctrl-E to enter edit mode!
 
 ![list of current objects](documentation/current-objects-pd.png)
 
