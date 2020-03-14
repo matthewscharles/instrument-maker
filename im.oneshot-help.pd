@@ -1,30 +1,43 @@
-#N canvas 186 87 546 478 10;
+#N canvas 132 69 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.oneshot 20 22 0 30 -1 -196864
 0;
-#X text 21 268 Outlets: none;
 #X text 22 110 Charles Matthews 2020;
-#X text 22 140 Record like im.looper \, but play as a oneshot sample.
-, f 80;
-#X text 21 228 Arguments: name of audio file;
-#X obj 65 308 im.microphone;
-#X obj 59 413 im.speaker, f 11;
-#X obj 59 387 im.oneshot test.wav, f 50;
-#X obj 171 304 im.keypress a;
-#X obj 356 336 im.keypress s;
-#X text 20 158 Sounds are saved with the name you give them \, so that
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 10 441 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 12 134 Record like im.looper \, but play as a oneshot sample.
+, f 81;
+#X text 12 152 Sounds are saved with the name you give them \, so that
 you can come back to load them in a future session*. Make sure you
 copy them before you record over them though!, f 80;
-#X text 24 445 *work in progress. samples not guaranteed to store for
-next time \, just yet, f 80;
-#X text 354 311 play (tap \, don't hold);
-#X obj 170 332 im.debounce 100;
-#X text 165 281 record (hold for length of time);
-#X text 21 248 Inlets: 1) audio in 2) play 3) record;
-#X text 204 363 debounce to be safe;
-#X connect 6 0 8 0;
-#X connect 8 0 7 0;
-#X connect 9 0 14 0;
-#X connect 10 0 8 2;
-#X connect 14 0 8 1;
+#X text 18 443 *work in progress. samples not guaranteed to store for
+next time \, just yet, f 81;
+#X text 18 459 there may be issues with saving samples to a git folder..stay
+tuned for updates., f 81;
+#X text 105 195 1) name of audio file, f 64;
+#X text 105 217 1) audio input 2) record control 3) play control;
+#X text 106 241 none;
+#X obj 42 344 im.microphone;
+#X obj 42 399 im.speaker, f 11;
+#X obj 42 373 im.oneshot test.wav, f 50;
+#X obj 190 304 im.keypress a;
+#X obj 339 346 im.keypress s;
+#X text 337 325 play (tap \, don't hold);
+#X obj 190 327 im.debounce 100;
+#X text 202 344 sometimes keys retrigger, f 15;
+#X text 188 273 record (hold the key for the length of time you want
+to record), f 37;
+#X connect 15 0 17 0;
+#X connect 17 0 16 0;
+#X connect 18 0 21 0;
+#X connect 19 0 17 2;
+#X connect 21 0 17 1;

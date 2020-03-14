@@ -1,32 +1,44 @@
-#N canvas 186 87 546 478 10;
+#N canvas 754 42 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.distort 20 22 0 30 -1 -196864
 0;
-#X text 22 110 Charles Matthews 2019;
-#X text 22 190 Arguments: none;
-#X text 22 210 Inlets: signal to process;
-#X text 22 230 Outlets: processed signal;
-#X text 22 140 Apply some crude distortion to a signal. There are no
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 12 433 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 105 195 none, f 64;
+#X text 105 217 1) signal to process;
+#X text 106 241 1) processed signal;
+#X obj 243 319 im.distort;
+#X obj 243 345 im.fader, f 12;
+#X obj 245 392 im.speaker;
+#X obj 44 352 im.fader;
+#X obj 43 377 im.speaker;
+#X obj 89 328 im.keypress Up;
+#X obj 312 318 im.keypress Down;
+#X obj 43 298 im.sinewave C 6;
+#X obj 243 297 im.sinewave C 6;
+#X obj 244 372 im.volume 200%;
+#X text 12 270 Use the up and down keys to compare sine waves with
+and without distortion., f 79;
+#X text 16 437 Note: the distorted signal sometimes sounds a bit quieter
+\, but we can add volume further down the chain., f 81;
+#X text 16 142 Apply some crude distortion to a signal. There are no
 controls yet., f 81;
-#X obj 316 332 im.distort;
-#X obj 317 365 im.fader;
-#X obj 316 423 im.speaker;
-#X obj 124 364 im.fader;
-#X obj 123 389 im.speaker;
-#X obj 169 331 im.keypress Up;
-#X obj 387 331 im.keypress Down;
-#X obj 123 310 im.sinewave C 6;
-#X obj 317 311 im.sinewave C 6;
-#X obj 318 392 im.volume 200%;
-#X text 20 260 Use the up and down keys to compare this sine wave with
-and without distortion. Note: the distorted signal sometimes sounds
-a bit quieter \, but we can add volume later., f 79;
-#X connect 7 0 8 0;
-#X connect 8 0 16 0;
-#X connect 10 0 11 0;
-#X connect 12 0 10 1;
-#X connect 13 0 8 1;
-#X connect 14 0 10 0;
-#X connect 15 0 7 0;
-#X connect 16 0 9 0;
+#X connect 12 0 13 0;
+#X connect 13 0 21 0;
+#X connect 15 0 16 0;
+#X connect 17 0 15 1;
+#X connect 18 0 13 1;
+#X connect 19 0 15 0;
+#X connect 20 0 12 0;
+#X connect 21 0 14 0;

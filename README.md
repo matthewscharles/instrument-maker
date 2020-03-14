@@ -1,16 +1,12 @@
-# Instrument Maker
-
-Instrument Maker is an open source framework for digital instrument building with sensors. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
+**Instrument Maker** is an open source framework for digital instrument building with sensors. For [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
 
 The code is developed by [Charles Matthews](http://ardisson.net/), with workshops currently in development in collaboration with [Gift Tshuma](http://www.utchoir.com/), and more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  Many thanks to [Roybn Steward](https://www.robynsteward.com/music) and [Dave Darch](http://alittlelearning.org/) for testing the code in workshops and helping generate documentation.
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
-[**Introductory document**](documentation/manual/learning-pd-through-im.md) (work in progress)
-
-[**GitHub repo**](https://github.com/matthewscharles/instrument-maker/documentation/manual/learning-pd-through-im.md) 
-
-**[Education Makers version](https://github.com/educationmakers/instrument-maker)** (developing materials in an education technology context)
+- [**Introductory document**](documentation/manual/learning-pd-through-im.md) (work in progress)
+- [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/documentation/manual/learning-pd-through-im.md) 
+- **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (developing materials in an education technology context)
 
 Distributed under the terms of the **GNU Public license version 3** (for now).
 

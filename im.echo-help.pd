@@ -1,33 +1,47 @@
-#N canvas 186 87 546 478 10;
+#N canvas 661 49 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.echo 20 22 0 30 -1 -196864
 0;
-#X text 22 110 Charles Matthews 2019;
-#X obj 122 317 im.echo 1000 50%;
-#X obj 100 290 im.player sn.wav;
-#X obj 100 267 im.keypress Space;
-#X obj 100 340 im.output;
-#X text 22 140 Echo unit with feedback. This echo is completely "wet"
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 12 445 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Echo unit with feedback. This echo is completely "wet"
 \, so it's best used as a parallel (send) effect., f 81;
-#X obj 326 299 im.sensor 1 1000;
-#X obj 307 323 im.echo 0 50%;
-#X obj 287 252 im.keypress Up;
-#X obj 287 275 im.player string.aif;
-#X obj 288 349 im.output;
-#X text 359 347 use an external sensor to set the delay time., f 24
+#X text 105 195 1) delay time in milliseconds 2) feedback amount as
+a percentage, f 64;
+#X text 105 217 1) 1 signal input 2) delay time 3) feedback amount
+(0-1 \, careful!), f 67;
+#X text 106 241 1) processed signal;
+#X text 16 447 For now \, signals received in the the delay time and
+feedback inlets add to the values indicated as arguments \, rather
+than replacing them., f 81;
+#X obj 97 357 im.echo 1000 50%;
+#X obj 75 330 im.player sn.wav;
+#X obj 75 307 im.keypress Space;
+#X obj 75 380 im.output;
+#X obj 301 339 im.sensor 1 1000;
+#X obj 282 363 im.echo 0 50%;
+#X obj 262 292 im.keypress Up;
+#X obj 262 315 im.player string.aif;
+#X obj 263 389 im.output;
+#X text 334 387 use an external sensor to set the delay time., f 24
 ;
-#X text 22 190 Arguments: 1 delay time in milliseconds 2 feedback amount
-as a percentage, f 77;
-#X text 22 210 Inlets: 1 signal input 2 delay time (added to original
-time) \, feedback amount (0-1 \, careful with this!), f 81;
-#X text 22 241 Outlets: processed signal;
-#X connect 3 0 6 0;
-#X connect 4 0 3 0;
-#X connect 4 0 6 0;
-#X connect 5 0 4 0;
-#X connect 8 0 9 1;
-#X connect 9 0 12 0;
-#X connect 10 0 11 0;
-#X connect 11 0 9 0;
-#X connect 11 0 12 0;
+#X connect 14 0 17 0;
+#X connect 15 0 14 0;
+#X connect 15 0 17 0;
+#X connect 16 0 15 0;
+#X connect 18 0 19 1;
+#X connect 19 0 22 0;
+#X connect 20 0 21 0;
+#X connect 21 0 19 0;
+#X connect 21 0 22 0;
