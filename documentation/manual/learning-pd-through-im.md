@@ -2,9 +2,7 @@
 
 Charles Matthews 2020
 
-Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](http://blurringtheboundaries.org/)), and with thanks to countless others who have been involved in some way.  For now, you know who you are…(thank you)...
-
-[TOC]
+Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](http://blurringtheboundaries.org/)), and with thanks to many others who have been involved in some way. 
 
 # Disclaimer and development info
 
@@ -40,26 +38,32 @@ Pure Data code can be applied in a variety of music making contexts, including [
 
 ## What is Instrument Maker?
 
-Instrument Maker is a toolkit designed for making music quickly with sensors.  This includes a library for Pure Data: a set of objects that have been designed as an introduction to audio coding. 
+Instrument Maker is a toolkit designed for making music quickly with sensors.  This includes a library for Pure Data: a set of "objects" intended as an introduction to audio coding. 
 
-The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
+The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should gain a basic idea of how dataflow programming works, while fulfilling the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
-Here's an image comparing a patch made with the Instrument Maker library, with objects that come with Pure Data "out of the box".  Both patches perform the same function:
+<!--Here's an image comparing a patch made with the Instrument Maker library, with objects that come with Pure Data by default.  Both patches perform the same function:-->
 
-![example-comparison](example-comparison.png)
+<!--![example-comparison](example-comparison.png)-->
 
 Instrument Maker objects can be used alongside regular Pure Data objects, so that the transition to usual Pure Data objects can take place gradually. In the future, there will be a section dedicated to this toward the end of this document.  
 
-By itself, the Instrument Maker library is intended to be used purely in the "back end" of a program, separating the graphical interface from the code.  This idea might be counter intuitive to experienced PD users and teachers!
+By itself, the Instrument Maker library is intended to be used in the "back end" of a program, separating the graphical interface from the code.  This idea might be counter intuitive to experienced PD users and teachers!
 
 There are also Instrument Maker boards available to simplify the hardware construction process in a similar manner.  If you're reading this document, you probably have one of these boards. Alongside these resources, we hope to add other functionality to address the absence of screenreader support, switch access to to the software etc.
+
+## Help files and object list
+
+Each object has an associated "help file", which can be accessed by right-clicking and selecting `help`.  The help files contain functioning examples which can be modified, copied, and pasted into your own project.
+
+To find a list of objets with their basic functions, look for `im-current-objects.pd` in the `learning-examples` folder.
 
 # Hardware resources
 
 At present, the Instrument Maker code functions best with the following items:
 
 - [Bela](https://bela.io/) 
-- [Raspberry Pi](https://www.raspberrypi.org/), connected to [Arduino](http://arduino.cc/) (best support with Leonardo, [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/), or other 32u4 based board for [native USB MIDI](https://www.arduino.cc/en/Tutorial/MidiDevice)) or [Micro:Bit](https://microbit.org/) (resources currently in development)
+- [Raspberry Pi](https://www.raspberrypi.org/), connected to [Arduino](http://arduino.cc/) (best support with Leonardo, [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/), or other 32U4-based boards that support [native USB MIDI](https://www.arduino.cc/en/Tutorial/MidiDevice)) or [Micro:Bit](https://microbit.org/) (resources currently in development)
 
 Although these hardware resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
 
@@ -82,19 +86,19 @@ Each object has a **name**, **arguments**, **inlets**, and **outlets**:
 
 ## Object name
 
-The objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **im.**
+The objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **`im.`**
 
 ## Object arguments
 
-Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. For example, having named an `im.echo` object, we can also set its time (how short or long the echo is), and the amount of feedback (affecting how many times the echo repeats). 
+Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. 
 
-Arguments in Pure Data are written after the name of the object, and separated with spaces.
+For example, having named an `im.echo` object, we can also set its time (how short or long the echo is), and the amount of feedback (affecting how many times the echo repeats). 
 
-Each argument affects a different parameter.  The arguments must be written in the correct order.
+Arguments in Pure Data are written after the name of the object, and separated with spaces.  Each argument affects a different parameter.  The arguments must be written in a specific order, as documented in the help files.
 
 ### Comparison with other languages
 
-Unlike more contemporary languages such as Swift, the names of arguments are not written down, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
+Unlike more contemporary languages such as Swift, the names of arguments are not included in the code or display, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
 
 `name(argument, argument)`
 
@@ -124,7 +128,7 @@ A convention: the
 
 This tutorial assumes you are running Pd v0.49 upward on a Raspberry Pi.  
 
-*Mac users should change `ctrl` to the `CMD` key.*
+*Mac users should change references to `ctrl` to the `CMD` key.*
 
 ## Creating and connecting objects 
 
@@ -140,9 +144,9 @@ Click on the background (anywhere outside the object) to finish the box.
 
 #### Troubleshooting
 
-If there is a problem with the object, the box will appear with a dotted outline.  There are a few likely reasons for this:
+If there is a problem with the object, the box will appear with a dotted outline.  There are a few  possible reasons for this happening:
 
-- there is no object with the name you used (make sure the Instrument Maker library is installed, and that you have spelled it correctly)
+- there is no object with the name you used — make sure the Instrument Maker library is installed, and that you have spelled it the object name correctly
 - there are capital letters somewhere in the object name — almost all object names are lower case
 - there are spaces missing between the object name and arguments
 
@@ -183,6 +187,8 @@ Join the microphone and speaker with a cable: click and drag from the outlet on 
 ![example-microphone](example-microphone.png)
 
 ### Adding an effect
+
+Insert an effect into the signal path, like so:
 
 ![example-microphone-echo](example-microphone-echo.png)
 
