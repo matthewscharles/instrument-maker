@@ -2,17 +2,23 @@
 
 Charles Matthews 2020
 
-Incorporating contributions from Robyn Steward, Houda Jawhar, Ann-Louise Davidson (#MilieuxMake), Gift Tshuma (Blurring the Boundaries), and with thanks to countless others.  For now, you know who you are…(thank you)...
+Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](http://blurringtheboundaries.org/)), and with thanks to countless others who have been involved in some way.  For now, you know who you are…(thank you)...
 
-# Disclaimer and important info
+[TOC]
 
-The Instrument Maker library is very much a work in progress and a labour of love — so please don't be surprised if things change around! 
+# Disclaimer and development info
 
-Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  Since you're reading this, chances are you have one the Instrument Maker kits — you might also find this documentation useful: <https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md>
+The Instrument Maker library is very much work in progress and a labour of love — so please don't be surprised if things change around! 
 
-If you have any issues with the software, including requests for clarity or additions to this documentation, please use the issues forum: <https://github.com/matthewscharles/instrument-maker/issues>.
+Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  
 
-This manual is currently presented a raw MarkDown document.  As a result, the images vary wildly in size and quality, as does the general layout.  Please bear with this for now!   [Experimental  documentation/help files](https://instrumentmaker.org/im-reference/) generated automatically from JSON is also in progress, but will take time to finish up.
+Since you're reading this, chances are you have one the Instrument Maker kits — you might also find [this documentation](https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md) useful.
+
+A glossary of terms used is available [here](glossary.md).
+
+If you have any issues with the software, including requests for clarity or additions to this documentation, please use the [issues forum](https://github.com/matthewscharles/instrument-maker/issues).
+
+This manual is currently presented a raw [MarkDown](https://www.markdownguide.org/) document.  As a result, the images vary in size and quality, as does the general layout. 
 
 # Introduction
 
@@ -21,9 +27,9 @@ This manual is currently presented a raw MarkDown document.  As a result, the im
 [Pure Data](http://puredata.info/) (PD for short) is a free, open source [dataflow](https://en.wikipedia.org/wiki/Dataflow_programming) programming language. 
 
 - Create and connect graphic objects on-screen, rather than writing lines of text code.
-- Pure Data is friendly to many musicians because it can feel similar to connecting instruments and effect pedals.
+- Pure Data is friendly to many musicians because it can feel similar to making physical connections between instruments and effect pedals.
   - By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
-  - Sometimes this way of organising information can lead to a more playful approach.
+  - Sometimes this way of organising information can lead to a more playful approach, and affords connections between objects that weren't intended by the creator - just like a lot of commercial music software.
 
 
 ### Why use Pure Data?
@@ -38,7 +44,7 @@ Instrument Maker is a toolkit designed for making music quickly with sensors.  T
 
 The core aim is to enable beginners to make a wide range of sounds in a musical context, within a matter of minutes. The user should receive a basic idea of how dataflow programming works, but fulfil the goal of making sound with some commonly accepted musical qualities (e.g fitting to the notes of a scale) as soon as possible.  It is then up to the individual to decide whether they wish to dig deeper into the programming itself.
 
-Here's an image comparing the Instrument Maker library with objects that come with Pure Data "out of the box".  Both patches perform the same function:
+Here's an image comparing a patch made with the Instrument Maker library, with objects that come with Pure Data "out of the box".  Both patches perform the same function:
 
 ![example-comparison](example-comparison.png)
 
@@ -61,7 +67,11 @@ Therefore, it's safe to assume that any external connections mentioned below (ap
 
 ## Operating without the Instrument Maker hardware
 
-*Example Arduino code coming soon — link to end of document.*
+The easiest way to try some Instrument Maker code without any of the specially designed kit (but retaining the separation between hardware and software) is to use a MaKey MaKey, which sends keystrokes by default.
+
+Try the help files for the `im.keypress` and `im.makeymakey` objects to see this in action.
+
+We are working on support for quick access to Arduino through [Firmata](https://www.arduino.cc/en/reference/firmata) (something like [Pduino](https://puredata.info/downloads/pduino)) .
 
 
 # Anatomy of a Pure Data object
@@ -107,6 +117,8 @@ In general, the left-most inlet is the most important — this is where the prim
 Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
 
 *Note: since the Instrument Maker library is a work in progress, some of the inlets and outlets don't have an obvious function — they've been left in for testing purposes or for future features.  For example, the scale object only really handles information in its main inlet and outlet.*
+
+A convention: the 
 
 # First steps in Pure Data 
 
@@ -182,52 +194,50 @@ Connect the echo as a send effect:make a second cable from the im.microphone obj
 
 Depending on interest of the user, the following are recommended starting points for using Instrument Maker:
 
-- **"Theremin style"**![example-theremin1](example-theremin1.png)
+## **"Theremin style"**![example-theremin1](example-theremin1.png)
 
-  ![example-theremin1](example-theremin2.png)
+![example-theremin1](example-theremin2.png)
 
-- **Envelope follower**
+## **Envelope follower**
 
-  ![example-envelope-follower](example-envelope-follower.png)
+![example-envelope-follower](example-envelope-follower.png)
 
-- **Pitch tracker**
+## **Pitch tracker**
 
-  ![example-pitch-tracker](example-pitch-tracker.png)
+![example-pitch-tracker](example-pitch-tracker.png)
 
-- **Loop pedal**
+## **Loop pedal**
 
-  ![example-looper](example-looper.png)
+![example-looper](example-looper.png)
 
-# Key im objects
+# <!--Key im objects-->
 
-Placeholder — work in progress!
+<!--Placeholder — work in progress!-->
 
-## im.sensor
+## <!--im.sensor-->
 
-***No inlet***
+<!--***No inlet***-->
 
-**Outlet:** sensor reading
+<!--**Outlet:** sensor reading-->
 
-**Arguments:**
+<!--**Arguments:**-->
 
-1. the name or number of the input to read from
-2. multiplier
+1. <!--the name or number of the input to read from-->
+2. <!--multiplier-->
 
-The multiplier can be used to set how many notes are played (when combined with im.scale)
+<!--The multiplier can be used to set how many notes are played (when combined with im.scale)-->
 
-## im.speaker
+## <!--im.speaker-->
 
-**Inlet:** the signal to go to the speaker
+<!--**Inlet:** the signal to go to the speaker-->
 
-**Outlet:** no outlet
+<!--**Outlet:** no outlet-->
 
-***No arguments***
+<!--***No arguments***-->
 
-No 
+<!--No--> 
 
 # Key concepts
-
-Placeholder — work in progress!
 
 ## Signal flow
 
@@ -263,17 +273,15 @@ Other examples include:
 - bowing a string instrument while changing pitch on its neck
 - scratching a record on a turntable while changing volume with the crossfader 
 
-
-
-*Placeholder: flute example*
+*<!--Placeholder: flute example-->*
 
 # Making the transition from Instrument Maker
-
-Placeholder — work in progress!
 
 ## Pure Data
 
 So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`
+
+Examples to add:
 
 - Sequencer
 - Stereo with dac~
@@ -281,99 +289,13 @@ So far, the objects we have been using from the Instrument Maker library have al
 
 ## Arduino and physical circuits
 
-- Voltage divider circuit
-
-# Glossary
-
-The following rough definitions are simplified and adapted to context.
-
-- **Abstraction** — a Pure Data patch that has been saved and loaded as an object.
-- **Amplitude** — the strength of a signal (often equivalent to volume)
-- **Arduino** — a circuit board computer that can be programmed to receive sensor data, control actuators, and  can be embedded in devices.  Arduino boards are designed for education, e.g. not to catch fire if you accidentally create a short circuit.
-- **Arduino** — a type of open source hardware board with inputs and outputs that can be connected to a computer (also refers to the accompanying software and the company that makes it).
-- **Aux** — another word for a send effect.
-- **Bela** — a type of open source hardware board, with inputs and outputs, that can run Pure Data with very low latency.
-- **Chain** — a series of objects or processes, connected one after the other.  
-- **Chord** — a combination of pitched sounds.
-- **Circuit** — a phsyical path through which electricity passes, connecting various components.
-- **Controller** — a physical device that affects parameters of sound, e.g. on a computer or synthesiser, but does not produce sound itself.
-- **Crossfade** — to change the amplitude of two signals in inverse proportion to each other (i.e. one moves up when the other is moved down).
-- **Dataflow** — a style of programming that uses the visual metaphor of a signal flow chart to connect blocks of code together.
-- **Distortion** — a kind of squashing of a sound, which often makes it appear louder, and perhaps rougher in quality.
-- **Dry (signal)** — a signal without an effect (in contrast to wet, leading to description of "dry/wet" balance). 
-- **Echo** — an effect based on the repetition of a sound, often more than once if the sound is fed back onto itself.
-- **Effect** — something that changes the quality of a sound, e.g. echo, reverb, or distortion
-- **Electrode** — a conductive material that serves as an entry or exit point for electricity in a circuit — in this context, the twelve touch points on a Touch Board.
-- **Envelope** — a set of instructions that change something over time: for example, the volume of a sound fading in and out.
-- **Envelope follower** — a process that measures the volume of a sound, and uses this information to generates changes in another parameter.
-- **Fade** — to bring volume (or another parameter) up or down
-- **Fader** — a control that turns something up and down, most commonly found in the volume controls for each channel on a mixing desk. 
-- **Feedback** — placing a sound back onto itself, like holding a microphone to a speaker into which it is plugged.
-- **Frequency** — how fast something repeats — higher frequencies are perceived as pitches, while lower frequencies are perceived as rhythmic movements.
-- **Filter** — a process that removes certain qualities of a sound (e.g. high or low frequencies).
-- **FM synthesis** — a type of synthesis that uses frequency modulation to create new textures.
-- **Granular synthesis** — a technique used to create textures by slicing sounds into small pieces, repeating and recombining them.
-- **Hz** — a unit of measurement for frequencies: cycles per second. 
-- **Initialisation argument —** the situation found in Pd, in which arguments do not change on screen despite changes via the inlet.
-- **Inlet** — the part of an object that takes data in, sitting at the top of the object.  Different types of objects have different numbers of inlets — some have none!
-- **Insert effect** — a way of adding effects by cutting directly into the signal, replacing the original "dry" sound.
-- **Interval** — the distance between two points — in musical programming, we often need to think of intervals in terms of rhythm (how long between two events, perhaps as a whole note, quarter note etc.) or in terms of pitch (how many notes fit between two notes in a scale).
-- **Key (musical)** — see scale.
-- **Latency** — the amount of time it takes to process a sound (e.g. the time it takes for a sound to be triggered when a button is pushed).  Latency changes depending on how fast or efficient a computer is at handling audio.
-- **Loop** — a repeated sound or pattern
-- **Looper** — a device or object that records a live sound and plays it back repeatedly (often to provide a background texture). 
-- **LFO** **(Low Frequency Oscillator)** — an oscillator with a frequency so slow/low that it is perceived more in terms of rhythm than pitch, usually used to modulate parameters of other sounds.
-- **Major** **(scale)** — a common scale (the same as the ionan mode).
-- **Milliseconds (ms)** — a unit of time most commonly used in processing: a thousandth of a second.
-- **Minor** — a common scale (the same as the aeolian mode, kind of..)
-- **MIDI** — Musical Instrument Digital Interface: a convention used to send instructions from one synthesier or software program to another (e.g. turning notes on and off), without sending the sound itself.
-- **Mixer** — a device used to blend sounds by changing their individual volumes or tone, usually using sets of faders or dials
-- **Mode** **(musical)** — a scale that starts on a different key to the usual root note, so that intervals have different weighting. Common modes — included in the IM library — are:
-  - ionian (major)
-  - dorian
-  - phrygian
-  - lydian
-  - mixolydian
-  - aeolian
-  - locrian
-- **Object** — a block of code represented as a box 
-- **Octave** — an interval of twice a given frequency or pitch.
-- **Oscillator** — something that moves back and forth to produce a regular wave
-- **Outlet** — the part of an object that sends data out, sitting at the bottom of the object.  Different types of objects have different numbers of outlets — some have none!
-- **Native USB MIDI** — a quality of a device that enables it to appear as an instrument input on the computer without another program needed to mediate the connection.
-- **Noise** — a sound without a clear sense of pitch.
-- **Parameter** — something that can be measured and/or altered to express the quality of a sound or process
-- **Physical modelling** — a type of synthesis in which real-world acoustic qualities of a sound or instrument are mimicked using combinations of electronic processes
-- **Patch** — a program written in Pure Data.
-- **Pitch** — how "low" or "high" a sound is, usually associated with frequency.
-- **Pitch tracker** — a process that measures the pitch of an input and sends this data to other parameters (e.g. the pitch of another sound).
-- **Plugin** — a smaller piece of software that is added on to expand a music program (for example, adding a certain instrument or effect). Plugins often work with many different pieces of software. 
-- **Reverb** — short for *reverberation*: the reflections of an acoustic space (often simulated digitally), which can give sounds longer tails proportional to the size of the room. 
-- **Resistor** — a component that causes resistance in a circuit and thus lowers the voltage at a given point.
-- **Root (note)** — the first note of a scale
-- **Sample** — a recorded sound
-- **Sampler** — a device that records and/or plays sound 
-- **Sawtooth (wave)** — a wave shaped like a saw — unfiltered, this produces a buzzing sound or vibration
-- **Send effect** — an effect that takes a copy of a sound, leaving the original sound intact (see aux send).  This could be described as the objects being chained in parallel, rather than in series.
-- **Sensor** — a material that measures something in its surroundings (e.g. light, sound, temperature), which can be transferred to the computer by reading its voltage.
-- **Signal flow** — the path that an audio signal takes from its input (e.g. 
-- **Sine (wave)** — a "pure" tone: air moves like semicircles.  This produces a smooth sound like a flute or recorder. 
-- **Speaker** — a device that converts electronic signals into sound waves, usually by pushing a cone back and forth to make the air around it vibrate.
-- **Sub-patch** — a patch within a patch — it's possible to create your own objects with inlets and outlets, consisting of Pure Data code.
-- **Scale (musical)** — a set of notes (e.g. major, minor, blues).
-- **Theremin** — an electronic instrument which changes its pitch and volume, depending on how close the player's hands are.
-- **Touch Board** — a type of Arduino board (made by Bare Conductive), which enables easy capacitive sensing
-- **Triad** —a chord consisting of three notes.
-- **Wet (signal)** -- a sound with an effect (in contrast to dry, without the effect). 
-- **White noise** — a sound presenting all frequencies at equal loudness. 
-- **Velocity** — the force with which a note is played (usually linked to the loudness)
-- **Vibrotactile** — something that transmits vibrations through touch
-- **Volume** — a measure of how loud and/or intense a sound is.
-- **Voltage divider** — a circuit used to measure the voltage by taking a reading between two resistors.
+- Insert voltage divider circuit here
 
 # References/learning resources
 
-Please note that it may be confusing to jump back and forth between this documentation and these other resources — a transition document is currently under development.
+Please note that due to some specific features and workflows within IM, it may be confusing to jump back and forth between the documentation and these other resources. 
+
+A transition document is currently under development.
 
 - [Programming electronic music in Pd](http://www.pd-tutorial.com/) (Johannes Kreidler)
 - [Designing Sound](https://mitpress.mit.edu/books/designing-sound) (Andy Farnell) — tutorial PDF [here](http://aspress.co.uk/ds/pdf/pd_intro.pdf)
@@ -381,14 +303,17 @@ Please note that it may be confusing to jump back and forth between this documen
 
 # Notes for experienced PD users
 
-Objects in the Instrument Maker library are based on audio connections — at present, there aren't really any traditional messages in use.
+Instrument Maker objects are created in Pd Vanilla for maximum compatibility — they are all abstractions, and free to open and explore!  Hopefully there will be better documentation within the patches soon.
 
-The im.sensor inputs are actually MIDI CC inputs converted to audio!  This is intended to create continuity between working with the Raspberry Pi and Bela (which presents sensor inputs as audio).
+Objects in the Instrument Maker library all use audio connections — at present, there aren't really any traditional "control" messages in use.
 
 There are only two elements available: objects and cables.  This reinforces a deliberate separation of interface and code. Users are not encouraged to use GUI objects (including messages) in the initial stages, which might feel counter-intuitive to some people!
 
 This also means that we can stay in edit mode 100% of the time..avoiding opening the abstractions by accident.
 
-Instrument Maker objects are created in Vanilla for maximum compatibility — they are all abstractions!
+The inputs described here are roughly equivalent to "pins" on an Arduino or Bela board.
 
-Input is roughly equivalent to "pin" on an Arduino or Bela board.
+The im.sensor objects are actually MIDI CC inputs converted to audio with a range 0-1!  This is intended to create continuity between working with Bela (which presents sensor inputs as audio) and platforms like the Raspberry Pi.
+
+
+
