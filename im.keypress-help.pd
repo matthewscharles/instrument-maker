@@ -1,58 +1,73 @@
-#N canvas 245 23 566 630 10;
+#N canvas 27 57 562 646 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.keypress 20 22 0 30 -1 -196864
 0;
 #X text 22 110 Charles Matthews 2020;
-#X text 22 210 Inlets: none;
-#X obj 139 390 im.speaker;
-#X obj 31 320 im.fader;
-#X text 19 598 im.keypress is the same as im.keystroke;
-#X obj 49 288 im.keypress a;
-#X obj 168 288 im.keypress b;
-#X obj 270 288 im.keypress c;
-#X obj 427 300 im.keypress d;
-#X text 22 190 Arguments: letter key to monitor, f 77;
-#X text 22 230 Outlets: on/off signal (0-1);
-#X obj 143 338 im.fader;
-#X obj 253 337 im.fader;
-#X obj 382 330 im.fader;
-#X obj 31 263 im.pulsewave A 3;
-#X obj 142 262 im.pulsewave B 3;
-#X obj 251 262 im.pulsewave C 3;
-#X obj 381 262 im.pulsewave D 3;
-#X obj 34 483 im.player sn.wav;
-#X obj 35 454 im.keypress Up;
-#X obj 34 514 im.speaker;
-#X obj 170 515 im.speaker;
-#X obj 171 455 im.keypress Space;
-#X obj 170 484 im.player string.aif;
-#X obj 336 514 im.speaker;
-#X text 28 418 Capitalise the first letter of Up \, Down \, Left \,
-Right \, Space \, Return, f 81;
-#X obj 337 462 im.keypress Return;
-#X obj 336 491 im.player rush.aif;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 11 547 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
 #X text 22 140 Hold keys down to play certain sounds. Watch out - on
-a computer keyboard \, it doesn't always work to hold them down together.
-If you find that certain notes "hang" \, try pressing the relevant
-key again., f 80;
-#X text 34 554 im.player does not pay attention to when the key is
-released., f 72;
-#X connect 5 0 4 0;
-#X connect 7 0 5 1;
-#X connect 8 0 13 1;
-#X connect 9 0 14 1;
-#X connect 10 0 15 1;
-#X connect 13 0 4 0;
-#X connect 14 0 4 0;
-#X connect 15 0 4 0;
-#X connect 16 0 5 0;
-#X connect 17 0 13 0;
-#X connect 18 0 14 0;
-#X connect 19 0 15 0;
-#X connect 20 0 22 0;
-#X connect 21 0 20 0;
-#X connect 24 0 25 0;
-#X connect 25 0 23 0;
-#X connect 28 0 29 0;
-#X connect 29 0 26 0;
+a computer keyboard \, it doesn't always work to hold more than one
+key down together. If you find that certain notes "hang" \, try pressing
+the relevant key again., f 80;
+#X text 105 196 1) letter of the key to monitor, f 64;
+#X text 105 217 none;
+#X text 106 241 "on/off" signal (1 and 0 respectively);
+#X text 19 549 im.keypress is the same as im.keystroke, f 81;
+#X obj 153 354 im.speaker;
+#X obj 14 321 im.fader;
+#X obj 58 298 im.keypress a;
+#X obj 197 298 im.keypress b;
+#X obj 328 293 im.keypress c;
+#X obj 464 285 im.keypress d;
+#X obj 152 321 im.fader;
+#X obj 284 318 im.fader;
+#X obj 419 315 im.fader;
+#X obj 14 278 im.pulsewave A 3;
+#X obj 151 278 im.pulsewave B 3;
+#X obj 284 273 im.pulsewave C 3;
+#X obj 418 263 im.pulsewave D 3;
+#X obj 21 435 im.player sn.wav;
+#X obj 20 414 im.keypress Up;
+#X obj 21 456 im.speaker;
+#X obj 158 455 im.speaker;
+#X obj 159 411 im.keypress Space;
+#X obj 159 433 im.player string.aif;
+#X obj 323 450 im.speaker;
+#X obj 322 407 im.keypress Return;
+#X obj 322 428 im.player rush.aif;
+#X text 18 509 im.player plays its sound to the end when triggered
+\, so does not pay attention to when the key is released., f 80;
+#X text 18 567 im.makeymakey handles the keys found on the MaKeyMaKey
+in a convenient package., f 81;
+#X text 18 480 Access the cursor keys (useful for a MaKeyMaKey): capitalise
+the first letter of Up \, Down \, Left \, Right \, Space \, Return
+, f 80;
+#X text 19 386 Some quick sample players using im.player:;
+#X connect 15 0 14 0;
+#X connect 16 0 15 1;
+#X connect 17 0 20 1;
+#X connect 18 0 21 1;
+#X connect 19 0 22 1;
+#X connect 20 0 14 0;
+#X connect 21 0 14 0;
+#X connect 22 0 14 0;
+#X connect 23 0 15 0;
+#X connect 24 0 20 0;
+#X connect 25 0 21 0;
+#X connect 26 0 22 0;
+#X connect 27 0 29 0;
+#X connect 28 0 27 0;
+#X connect 31 0 32 0;
+#X connect 32 0 30 0;
+#X connect 34 0 35 0;
+#X connect 35 0 33 0;

@@ -1,4 +1,4 @@
-#N canvas 521 199 759 513 10;
+#N canvas 216 136 940 593 10;
 #X obj 50 341 phasor~;
 #X obj 256 265 timer;
 #X msg 155 168 stop;
@@ -36,8 +36,8 @@
 #X obj 315 193 sel 0;
 #X text 360 195 set phase to 0 when we reset;
 #X msg 315 214 0;
-#X obj 51 454 *~;
-#X obj 51 495 outlet~;
+#X obj 50 518 *~;
+#X obj 50 559 outlet~;
 #X text 81 455 because we don't want to keep sending out the last sample
 ;
 #X text 368 335 max sample time 60s;
@@ -60,7 +60,21 @@
 #X obj 255 331 /~;
 #X obj 321 40 expr~ $v1 > 0.1;
 #X obj 159 40 expr~ $v1 > 0.1;
+#X obj 665 149 \$1;
+#X text 363 413 if added 1 then disable loop and disable stop;
+#X obj 663 116 loadbang;
+#X obj 292 387 bang~;
+#X obj 248 435 snapshot~;
+#X obj 252 482 > 0.99;
+#X obj 248 414 spigot;
+#X obj 252 503 change;
+#X obj 252 524 sel 1;
+#X msg 252 545 0;
+#X obj 463 477 expr 1 - $f1;
+#X obj 64 486 expr~ $v1 || $v2;
+#X obj 463 506 sig~;
 #X connect 0 0 40 0;
+#X connect 0 0 61 0;
 #X connect 1 0 8 0;
 #X connect 2 0 21 0;
 #X connect 3 0 6 0;
@@ -116,5 +130,18 @@
 #X connect 54 0 23 1;
 #X connect 55 0 29 0;
 #X connect 55 0 27 1;
-#X connect 55 0 35 1;
+#X connect 55 0 68 0;
 #X connect 56 0 3 0;
+#X connect 57 0 63 1;
+#X connect 57 0 69 0;
+#X connect 59 0 57 0;
+#X connect 60 0 63 0;
+#X connect 61 0 62 0;
+#X connect 62 0 64 0;
+#X connect 63 0 61 0;
+#X connect 64 0 65 0;
+#X connect 65 0 66 0;
+#X connect 66 0 32 0;
+#X connect 67 0 69 0;
+#X connect 68 0 35 1;
+#X connect 69 0 68 1;
