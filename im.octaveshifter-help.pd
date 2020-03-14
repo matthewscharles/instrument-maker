@@ -1,0 +1,36 @@
+#N canvas 686 89 525 493 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.octaveshifter 20 22 0 30
+-1 -196864 0;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 125 416 im.speaker;
+#X obj 125 287 im.microphone;
+#X obj 125 312 im.pitchtracker;
+#X obj 125 366 im.pulsewave;
+#X obj 125 390 im.fader, f 25;
+#X obj 272 365 im.keypress a;
+#X text 105 217 1) note signal to shift;
+#X text 105 195 1) number of octaves to shift (negative numbers transpose
+down), f 64;
+#X text 106 241 1) note signal to send to an oscillator;
+#X obj 125 339 im.octaveshifter -2;
+#X text 257 288 Hold down the a key to hear/feel some lower octaves
+from the pitches sung into the microphone., f 27;
+#X text 17 142 Tranpose a pitch-based signal by an octave. Good for
+creating vibration signals from aural sound., f 81;
+#X connect 9 0 10 0;
+#X connect 10 0 17 0;
+#X connect 11 0 12 0;
+#X connect 12 0 8 0;
+#X connect 13 0 12 1;
+#X connect 17 0 11 0;
