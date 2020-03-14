@@ -1,31 +1,40 @@
-#N canvas 102 59 546 478 10;
+#N canvas 692 183 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.sensor 20 22 0 30 -1 -196864
 0;
 #X text 22 110 Charles Matthews 2020;
-#X text 22 210 Inlets: none;
-#X obj 30 425 im.speaker;
-#X obj 30 404 im.fader;
-#X obj 30 283 im.noise;
-#X obj 86 354 im.sensor 1;
-#X text 22 140 Take a sensor reading and output as a value from 0 -
-1 Use the second argument to set the range of the sensor., f 81;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Take a sensor reading and output as a value from 0 -
+1 This range can be scaled up using the second inlet., f 81;
+#X text 105 195 1) input number 2) multiplier, f 64;
+#X text 105 217 none;
+#X text 106 241 1) sensor information as audio control signal;
+#X obj 30 401 im.speaker;
+#X obj 30 380 im.fader, f 10;
+#X obj 31 355 im.noise;
+#X obj 87 355 im.sensor 1;
 #X obj 207 426 im.speaker;
-#X obj 207 405 im.fader;
-#X obj 207 305 im.scale E lydian 3;
-#X obj 263 355 im.sensor 3;
-#X obj 207 326 im.sawtooth;
-#X obj 207 284 im.sensor 2 7;
-#X text 331 276 Use the second argument to choose how many pitches
-to trigger \, when combined with scale., f 36;
-#X text 22 190 Arguments: 1 input number 2 multiplier, f 77;
-#X text 22 230 Outlets: sensor information;
-#X connect 5 0 4 0;
-#X connect 6 0 5 0;
-#X connect 7 0 5 1;
-#X connect 10 0 9 0;
-#X connect 11 0 13 0;
-#X connect 12 0 10 1;
-#X connect 13 0 10 0;
-#X connect 14 0 11 0;
+#X obj 207 405 im.fader, f 14;
+#X obj 207 362 im.scale E lydian 3;
+#X obj 285 383 im.sensor 3;
+#X obj 207 383 im.sawtooth;
+#X obj 207 341 im.sensor 2 7;
+#X text 295 323 When combined with scale \, use the second argument
+to choose how many pitches to trigger., f 29;
+#X connect 13 0 12 0;
+#X connect 14 0 13 0;
+#X connect 15 0 13 1;
+#X connect 17 0 16 0;
+#X connect 18 0 20 0;
+#X connect 19 0 17 1;
+#X connect 20 0 17 0;
+#X connect 21 0 18 0;

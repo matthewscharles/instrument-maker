@@ -1,18 +1,33 @@
-#N canvas 512 76 546 478 10;
+#N canvas 118 99 524 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.electrode 20 22 0 30 -1 -196864
 0;
 #X text 22 110 Charles Matthews 2020;
-#X text 22 210 Inlets: none;
-#X obj 30 425 im.speaker;
-#X obj 30 404 im.fader;
-#X obj 30 283 im.whitenoise;
-#X text 22 140 Not currently in use! im.electrode will be updated to
-work with the Bare Conductive Touch Board soon., f 80;
-#X obj 75 321 im.electrode 1;
-#X text 22 190 Arguments: number of electrode to use, f 77;
-#X text 22 230 Outlets: control signal (0-1);
-#X connect 5 0 4 0;
-#X connect 6 0 5 0;
-#X connect 8 0 5 1;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 8 446 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 This was originally a temporary object created for workshop
+use. The electrodes on the Bare Conductive Touch Board are available
+if the board is programmed using the midi_interface_generic sketch
+in their built-in examples., f 81;
+#X text 16 448 More specific applications coming soon., f 81;
+#X text 105 217 none;
+#X text 105 195 1) the number of the electrode to use (count from 1
+\, not 0), f 64;
+#X text 106 241 1) control signal (0-1);
+#X obj 185 378 im.speaker;
+#X obj 185 357 im.fader;
+#X obj 185 310 im.whitenoise;
+#X obj 230 332 im.electrode 1;
+#X connect 15 0 14 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 1;
