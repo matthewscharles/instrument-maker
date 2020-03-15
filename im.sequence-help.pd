@@ -1,4 +1,4 @@
-#N canvas 116 113 525 493 10;
+#N canvas 116 113 538 538 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.sequence 20 22 0 30 -1 -196864
@@ -24,11 +24,6 @@
 #X obj 247 361 im.sequence 0 1 4 3 4 5 2 7;
 #X text 105 195 1-8) numbers to output for each corresponding step
 , f 64;
-#X text 105 217 1) audio signal from 0-1 (automatically scaled to the
-8 steps), f 63;
-#X text 16 142 Play a sequence of notes as specified in the arguemnts.
-Use [im.step 8] to convert sensor values into a clock for im.sequence.
-, f 81;
 #X text 106 241 1) sequence as audio control signal;
 #X obj 247 336 im.step 8;
 #X obj 28 308 im.lfo slow saw;
@@ -37,14 +32,23 @@ Use [im.step 8] to convert sensor values into a clock for im.sequence.
 #X text 24 286 Press a to hear a slow sequence;
 #X text 246 281 Press s to step through a sequence note by note.,
 f 34;
+#X obj 15 452 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Play a sequence of notes as specified in the arguemnts.
+Use [im.step 8] to convert sensor values into a clock for im.sequence
+\, or try an LFO object to sequence automatically., f 81;
+#X text 20 459 Experimental feature: record and play back sequences
+- documentation coming soon., f 81;
+#X text 105 217 1) audio signal from 0-1 2) signal to record 3) trigger
+to record, f 67;
 #X connect 8 0 9 0;
 #X connect 10 0 11 0;
-#X connect 12 0 21 0;
+#X connect 12 0 19 0;
 #X connect 13 0 8 0;
 #X connect 14 0 10 0;
 #X connect 15 0 13 0;
 #X connect 16 0 14 0;
-#X connect 21 0 16 0;
-#X connect 22 0 23 0;
-#X connect 23 0 15 0;
-#X connect 24 0 23 1;
+#X connect 19 0 16 0;
+#X connect 20 0 21 0;
+#X connect 21 0 15 0;
+#X connect 22 0 21 1;

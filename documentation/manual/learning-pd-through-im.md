@@ -273,7 +273,7 @@ The main difference in these examples can be found in percussion instruments (li
 
 All of these interactions can be approximated through a combination of sensors; the controls can even be shared to create a collaborative instrument that must be played by two people (one person taking pitch, the other taking volume/intensity.  
 
-Other examples include:
+Other examples along these lines include:
 
 - "pitch and velocity pairs" in MIDI instruments
 - bowing a string instrument while changing pitch on its neck
@@ -287,11 +287,11 @@ Other examples include:
 
 So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`
 
-Examples to add:
+<!--Examples to add:-->
 
-- Sequencer
-- Stereo with dac~
-- MIDI control
+- <!--Sequencer-->
+- <!--Stereo with dac~-->
+- <!--MIDI control-->
 
 ## Arduino and physical circuits
 
