@@ -290,8 +290,12 @@ So far, the objects we have been using from the Instrument Maker library have al
 <!--Examples to add:-->
 
 - <!--Sequencer-->
+
 - <!--Stereo with dac~-->
+
 - <!--MIDI control-->
+
+  ### Installing external objects
 
 ## Arduino and physical circuits
 

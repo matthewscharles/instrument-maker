@@ -1,0 +1,7 @@
+#N canvas 614 96 572 227 10;
+#X obj 30 66 send~ \$1;
+#X obj 30 34 inlet~;
+#X text 94 36 tried value \, but not possible to define by passing
+variable through the subpatch arguments;
+#X text 92 68 for now \, using send~ and receive~;
+#X connect 1 0 0 0;
