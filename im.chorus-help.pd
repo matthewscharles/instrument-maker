@@ -13,7 +13,6 @@
 #X text 21 171 comment, f 81;
 #X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
 0;
-#X text 16 142 An extreme chorus effect., f 81;
 #X text 105 194 none, f 64;
 #X text 105 217 1) signal to process;
 #X text 106 241 2) processed signal;
@@ -24,7 +23,8 @@
 #X obj 103 296 im.keypress Space;
 #X text 147 330 Hold down the space bar to hear some chorus on the
 microphone. Beware of feedback!, f 32;
+#X text 16 142 An extreme chorus-style effect., f 81;
+#X connect 11 0 12 0;
 #X connect 12 0 13 0;
 #X connect 13 0 14 0;
-#X connect 14 0 15 0;
-#X connect 16 0 13 1;
+#X connect 15 0 12 1;
