@@ -1,4 +1,4 @@
-#N canvas 189 30 786 665 10;
+#N canvas 58 33 786 665 10;
 #X obj 13 39 cnv 15 400 160 empty empty inputs 25 15 0 30 -203904 -66577
 0;
 #X obj 19 112 im.sensor;
@@ -13,7 +13,7 @@
 #X obj 20 300 im.sawtooth;
 #X obj 12 446 cnv 15 400 180 empty empty signal_processors 25 15 0
 20 -261234 -66577 0;
-#X obj 420 467 cnv 15 300 100 empty empty outputs 25 15 0 30 -203904
+#X obj 420 467 cnv 15 300 100 empty empty outputs 25 15 0 30 -232576
 -66577 0;
 #X obj 435 531 im.speaker;
 #X obj 435 506 im.output;
@@ -23,12 +23,12 @@
 #X text 431 273 im.triads currently unavailable;
 #X obj 419 62 cnv 15 350 100 empty empty audio_triggers 25 15 0 20
 -204800 -66577 0;
-#X obj 422 95 im.envelopefollower;
+#X obj 423 95 im.envelopefollower;
 #X obj 423 118 im.pitchtracker;
 #X obj 423 140 im.audiotrigger;
 #X obj 20 479 im.echo;
-#X obj 20 500 im.distort;
-#X obj 20 525 im.chorus;
+#X obj 19 502 im.distort;
+#X obj 19 524 im.chorus;
 #X obj 19 547 im.fader;
 #X obj 18 569 im.volume;
 #X obj 18 597 im.filter;
@@ -73,7 +73,7 @@ f 50;
 #X text 500 507 a mono output;
 #X text 503 531 same as im.output;
 #X text 70 479 a feedback echo;
-#X text 90 499 simple distortion/overdrive;
+#X text 90 502 simple distortion/overdrive;
 #X text 84 524 wobbly chorus effect;
 #X text 72 546 change volume or intensity from a sensor;
 #X text 161 570 same as im.fader;
