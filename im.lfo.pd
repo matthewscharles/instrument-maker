@@ -1,4 +1,4 @@
-#N canvas 514 123 720 563 10;
+#N canvas -1409 -130 819 563 10;
 #X obj 64 189 osc~;
 #X obj 66 376 *~, f 16;
 #X obj 66 423 outlet~;
@@ -32,6 +32,10 @@
 #X obj 267 48 list store \$2;
 #X obj 158 328 +~ 1;
 #X obj 267 69 sel sine square sawtooth saw 0 pulse, f 48;
+#X obj 634 112 bang~;
+#X obj 598 147 snapshot~;
+#X obj 600 170 change;
+#X obj 598 67 inlet~ resetPhase;
 #X connect 0 0 5 0;
 #X connect 1 0 2 0;
 #X connect 3 0 24 0;
@@ -78,3 +82,10 @@
 #X connect 32 3 8 0;
 #X connect 32 4 6 0;
 #X connect 32 5 7 0;
+#X connect 33 0 34 0;
+#X connect 34 0 35 0;
+#X connect 35 0 14 1;
+#X connect 35 0 16 1;
+#X connect 35 0 9 1;
+#X connect 35 0 0 1;
+#X connect 36 0 34 0;
