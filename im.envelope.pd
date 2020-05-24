@@ -12,6 +12,8 @@
 #X obj 167 183 pack 0 \$2;
 #X obj 37 264 outlet~;
 #X text 104 98 debounce?;
+#X text 180 68 inlet~ attack time;
+#X text 331 67 inlet~ release time;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
