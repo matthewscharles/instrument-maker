@@ -1,0 +1,6 @@
+#N canvas 0 23 450 300 12;
+#X obj 37 103 im.tunedperc;
+#X obj 36 74 inlet~;
+#X obj 37 131 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
