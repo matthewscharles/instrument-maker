@@ -1,4 +1,4 @@
-#N canvas 636 111 525 493 10;
+#N canvas 2702 123 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.step 20 22 0 30 -1 -196864
@@ -15,28 +15,31 @@
 #X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
 0;
 #X text 106 241 divisions based on the number input;
-#X text 16 142 Use im.step 8 with im.sequence., f 81;
-#X obj 86 309 im.keypress a;
-#X obj 86 333 im.step 8;
-#X obj 86 403 im.tunedperc;
-#X obj 86 424 im.speaker;
-#X obj 284 404 im.tunedperc;
-#X obj 284 425 im.speaker;
-#X obj 284 336 im.step 8 random;
-#X obj 284 312 im.keypress s;
-#X text 400 339 added random arg;
+#X obj 30 289 im.keypress a;
+#X obj 30 313 im.step 8;
+#X obj 30 383 im.tunedperc;
+#X obj 30 404 im.speaker;
+#X obj 228 384 im.tunedperc;
+#X obj 228 405 im.speaker;
+#X obj 228 316 im.step 8 random;
+#X obj 228 292 im.keypress s;
+#X text 344 319 added random arg;
 #X text 105 195 1) number of steps 2) random (optional), f 64;
-#X obj 86 382 im.scale C dorian 5;
-#X obj 284 383 im.scale C dorian 5;
-#X obj 86 358 im.sequence 0 1 4 3 4 5 2 7;
-#X obj 284 361 im.sequence 0 1 4 3 4 5 2 7;
-#X connect 11 0 12 0;
-#X connect 12 0 23 0;
-#X connect 13 0 14 0;
-#X connect 15 0 16 0;
-#X connect 17 0 24 0;
-#X connect 18 0 17 0;
-#X connect 21 0 13 0;
-#X connect 22 0 15 0;
+#X obj 30 362 im.scale C dorian 5;
+#X obj 228 363 im.scale C dorian 5;
+#X obj 30 338 im.sequence 0 1 4 3 4 5 2 7;
+#X obj 228 341 im.sequence 0 1 4 3 4 5 2 7;
+#X text 14 134 Use im.step to step through the values of im.sequence.
+To step through all values \, the first argument of im.step must match
+the total number of steps in im.sequence. If fewer steps are given
+then only a subset will be triggered., f 81;
+#X connect 10 0 11 0;
+#X connect 11 0 22 0;
+#X connect 12 0 13 0;
+#X connect 14 0 15 0;
+#X connect 16 0 23 0;
+#X connect 17 0 16 0;
+#X connect 20 0 12 0;
+#X connect 21 0 14 0;
+#X connect 22 0 20 0;
 #X connect 23 0 21 0;
-#X connect 24 0 22 0;
