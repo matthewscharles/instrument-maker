@@ -29,14 +29,14 @@ but should be used to change volume \, filter \, pitch \, etc., f
 #X obj 431 264 im.keypress m;
 #X obj 279 289 im.lfo fast sine;
 #X obj 123 311 im.lfo slow sawtooth;
-#X text 105 195 1) speed (slow or fast) 2) wave (sawtooth \, square
-\, sine), f 64;
 #X text 106 241 1) lfo output (0-1 by default);
 #X text 378 316 adjust this value for vibrato amount, f 18;
 #X text 315 449 better example coming soon!;
 #X obj 279 318 im.fader 75%;
 #X text 105 217 1) rate 2) intensity 3) reset phase;
 #X text 384 290 resets the lfo;
+#X text 105 195 1) speed (slow \, medium \, fast) 2) wave (sawtooth
+\, square \, sine), f 64;
 #X connect 2 0 14 1;
 #X connect 11 0 12 0;
 #X connect 12 0 14 0;
@@ -45,6 +45,6 @@ but should be used to change volume \, filter \, pitch \, etc., f
 #X connect 17 0 16 0;
 #X connect 18 0 16 1;
 #X connect 18 0 19 2;
-#X connect 19 0 25 0;
+#X connect 19 0 24 0;
 #X connect 20 0 12 1;
-#X connect 25 0 17 0;
+#X connect 24 0 17 0;

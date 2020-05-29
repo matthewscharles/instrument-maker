@@ -1,4 +1,4 @@
-#N canvas 755 121 525 493 10;
+#N canvas 581 94 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.acid 20 22 0 30 -1 -196864
@@ -16,21 +16,26 @@
 #X text 16 142 Acid synth with inputs for filter. Work in progress:
 doesn't work as expected right now., f 81;
 #X text 105 195 none, f 64;
-#X text 105 217 1) pitch from im.scale 2) resonance 3) pwm (message)
-;
 #X text 106 241 1) sound;
 #X obj 89 453 im.speaker;
-#X obj 86 298 im.sensor 1 7;
-#X obj 89 403 im.acid, f 39;
-#X obj 166 354 im.lfo slow sine;
-#X obj 248 266 im.lfo slow saw;
+#X obj 91 418 im.acid, f 39;
+#X obj 168 357 im.lfo slow sine;
 #X obj 85 333 im.scale F lydian 3;
-#X obj 248 301 im.multiply 14;
-#X obj 167 379 im.multiply 50%;
-#X connect 13 0 17 0;
+#X obj 86 287 im.multiply 14;
+#X obj 86 310 im.fader;
+#X obj 85 266 im.lfo slow saw;
+#X obj 189 287 im.keypress Space;
+#X obj 273 356 im.lfo medium sine;
+#X text 105 217 1) pitch from im.scale 2) cutoff (0-1) 3) resonance
+4) pwm;
+#X obj 320 385 im.lfo slow sine;
+#X connect 12 0 11 0;
+#X connect 13 0 12 1;
 #X connect 14 0 12 0;
-#X connect 15 0 19 0;
-#X connect 16 0 18 0;
-#X connect 17 0 14 0;
-#X connect 18 0 17 0;
-#X connect 19 0 14 1;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
+#X connect 17 0 15 0;
+#X connect 18 0 16 1;
+#X connect 18 0 17 2;
+#X connect 19 0 12 2;
+#X connect 21 0 12 3;
