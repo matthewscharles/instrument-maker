@@ -2,10 +2,10 @@
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
-- [**Introductory document**](documentation/manual/learning-pd-through-im.md) (work in progress)
+- [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
-- **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context)
 - [**Instrument Maker Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
+- **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute).
 
 Distributed under the terms of the **GNU Public license version 3**.
 
@@ -41,13 +41,16 @@ Using Bela, choosing a setup should be a case of dragging and dropping into a br
 
 # Current demo setup
 
-We are currently focusing on Raspberry Pi/desktop setups, but will be updating with instructions for Bela again soon (including the new IDE).  *Deken release coming soon.*
+*Deken release coming soon.*
+
+We are currently focusing on Raspberry Pi/desktop setups, but will be updating with instructions for Bela again soon (including the new IDE).  
 
 **Recommended: clone this repo**
 
 - Clone the repo to a local folder by opening a terminal:
   - `git clone https://github.com/matthewscharles/instrument-maker`
-  - *On a Mac, you might be required to download developer tools. Note: there is no need to install Xcode.*
+  - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
+  - Keep up to date by periodically typing `git pull` within the folder in terminal.
 
 Alternatively, click the green Clone or Download icon at the top of the [GitHub repo](https://github.com/matthewscharles/instrument-maker) to download a zip file.  If doing so, you will need to download updates manually in the future.
 
@@ -63,8 +66,6 @@ Alternatively, click the green Clone or Download icon at the top of the [GitHub 
 
 - Look for im-current-objects.pd in the learning-examples folder
 
-- Right-click on the objects found here to open help files.  Make sure you press `ctrl`-E to enter edit mode before clicking on any boxes!
+- Right-click on the objects found here to open help files.  Make sure you press `ctrl-E` to enter edit mode before clicking on any boxes!
 
 ![a list of current objects](readme-images/current-objects-pd.png)
-
-Keep up to date by typing `git pull` within the folder in terminal.
