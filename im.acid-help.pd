@@ -1,24 +1,27 @@
-#N canvas 186 87 546 478 10;
+#N canvas 755 121 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.acid 20 22 0 30 -1 -196864
 0;
-#X text 22 110 Charles Matthews 2019;
-#X text 22 190 Arguments: none;
-#X text 22 210 Inlets: pitch from im.scale;
-#X text 22 230 Outlets: sounds;
-#X obj 119 408 im.speaker;
-#X obj 118 282 im.sensor 1 7;
-#X obj 119 358 im.acid, f 39;
-#X obj 254 305 im.lfo slow sine;
-#X obj 278 221 im.lfo fast saw;
-#X obj 278 256 im.multiply 7;
-#X obj 119 313 im.scale F lydian 5;
-#X text 22 140 Acid synth with inputs for filter. Work in progress:
+#X obj 91 287 im.sensor 1;
+#X obj 171 287 im.keypress Space;
+#X obj 91 362 im.speaker;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 8 392 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 394 -, f 81;
+#X text 16 142 Acid synth with inputs for filter. Work in progress:
 doesn't work as expected right now., f 81;
-#X connect 7 0 12 0;
-#X connect 8 0 6 0;
-#X connect 9 0 8 1;
-#X connect 10 0 11 0;
-#X connect 11 0 12 0;
-#X connect 12 0 8 0;
+#X text 105 195 none, f 64;
+#X text 105 217 1) pitch from im.scale 2) resonance 3) pwm (message)
+;
+#X text 106 241 1) sound;
