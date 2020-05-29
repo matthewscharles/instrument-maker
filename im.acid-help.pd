@@ -15,21 +15,27 @@
 0;
 #X text 105 195 none, f 64;
 #X text 106 241 1) sound;
-#X obj 89 453 im.speaker;
-#X obj 91 418 im.acid, f 39;
-#X obj 168 357 im.lfo slow sine;
+#X obj 84 397 im.speaker;
+#X obj 85 375 im.acid, f 55;
+#X obj 193 353 im.lfo slow sine;
 #X obj 85 333 im.scale F lydian 3;
 #X obj 86 287 im.multiply 14;
 #X obj 86 310 im.fader;
 #X obj 85 266 im.lfo slow saw;
 #X obj 282 270 im.keypress Space;
-#X obj 273 356 im.lfo medium sine;
+#X obj 303 342 im.lfo medium sine;
 #X text 105 217 1) pitch from im.scale 2) cutoff (0-1) 3) resonance
 4) pwm;
-#X obj 320 385 im.lfo slow sine;
+#X obj 411 354 im.lfo slow sine;
 #X text 16 142 Acid synth with inputs for filter. Attach controls (range
 of 0-1) for cutoff \, resonance \, and pwm., f 81;
 #X obj 282 308 im.toggle;
+#X obj 111 446 im.helpfile;
+#X obj 13 420 cnv 15 500 50 empty empty Also_see: 25 10 0 13 -262130
+-66577 0;
+#X msg 111 424 im.fizzy;
+#X msg 180 423 im.scale;
+#X msg 252 423 im.lfo;
 #X connect 11 0 10 0;
 #X connect 12 0 11 1;
 #X connect 13 0 11 0;
@@ -40,3 +46,6 @@ of 0-1) for cutoff \, resonance \, and pwm., f 81;
 #X connect 18 0 11 2;
 #X connect 20 0 11 3;
 #X connect 22 0 15 1;
+#X connect 25 0 23 0;
+#X connect 26 0 23 0;
+#X connect 27 0 23 0;
