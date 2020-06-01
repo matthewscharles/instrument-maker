@@ -19,7 +19,7 @@ Read about the philosophy behind this framework at the [Bela.io blog](https://bl
 
 [**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
 
-![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](readme-images/im-sensors.png)
+![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](documentation/readme-images/im-sensors.png)
 
 ## Disclaimer
 
@@ -35,7 +35,7 @@ Having downloaded the library, create and connect building blocks in the form of
 
 Using Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
 
-![A screenshot of the Instrument Maker objects in Pure Data: a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](readme-images/im-scale.png)
+![A screenshot of the Instrument Maker objects in Pure Data: a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
 
 ----
 
@@ -63,12 +63,12 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
 - Add the instrument-maker folder to the search path in Pure Data: click new, and browse to the folder you cloned to.
 
-  ![](readme-images/add-path.png)
+  ![](documentation/readme-images/add-path.png)
 
-  ![](readme-images/add-path2.png)
+  ![](documentation/readme-images/add-path2.png)
 
-- Look for \_current-objects.pd in the main folder
+- Look for \_im-current-objects.pd in the main folder
 
 - Right-click on the objects found here to open help files.  Make sure you press `ctrl-E` to enter edit mode before clicking on any boxes!
 
-![a list of current objects](readme-images/current-objects-pd.png)
+![a list of current objects](documentation/readme-images/current-objects-pd.png)
