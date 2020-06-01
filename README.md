@@ -12,7 +12,7 @@ Distributed under the terms of the **GNU Public license version 3**.
 
 The code is developed by [Charles Matthews](http://ardisson.net/), initially through workshops in collaboration with [Gift Tshuma](http://www.utchoir.com/), and with more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  
 
-Thanks to [Roybn Steward](https://www.robynsteward.com/music), [http://www.educationmakers.ca/](Education Makers), and [Dave Darch](http://alittlelearning.org/) (and many more) for testing the code and helping generate documentation.
+Thanks to [Roybn Steward](https://www.robynsteward.com/music), [Education Makers](http://www.educationmakers.ca/), and [Dave Darch](http://alittlelearning.org/) (+ many more) for testing the code and helping generate documentation.
 
 ---
 
