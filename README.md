@@ -1,7 +1,7 @@
-**Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
+**Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on embedded computers such as [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
-
+Key pages:
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
@@ -18,6 +18,7 @@ Thanks to [Roybn Steward](https://www.robynsteward.com/music), [Education Makers
 
 Read about the philosophy behind this framework at the [Bela.io blog](https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/).
 
+---
 
 ![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](documentation/readme-images/im-sensors.png)
 
