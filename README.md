@@ -1,11 +1,11 @@
-**Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  An accompanying set of communication symbols can be found [here](https://instrumentmaker.org/instrument-maker-symbols).
+**Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on [Bela](http://bela.io) / [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
-- [**Instrument Maker Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
-- **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute).
+- [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
+<!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
 
 Distributed under the terms of the **GNU Public license version 3**.
 
@@ -52,7 +52,10 @@ We are currently focusing on Raspberry Pi/desktop setups, but will be updating w
   - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
   - Keep up to date by periodically typing `git pull` within the folder in terminal.
 
-Alternatively, click the green Clone or Download icon at the top of the [GitHub repo](https://github.com/matthewscharles/instrument-maker) to download a zip file.  If doing so, you will need to download updates manually in the future.
+**Direct download**
+Click the green Clone or Download icon at the top of the [GitHub repo](https://github.com/matthewscharles/instrument-maker) to download a zip file.  If doing so, you will need to download updates manually in the future.
+
+**Installation**
 
 - Install [Pure Data](http://puredata.info/downloads)
 
@@ -64,7 +67,7 @@ Alternatively, click the green Clone or Download icon at the top of the [GitHub 
 
   ![](readme-images/add-path2.png)
 
-- Look for im-current-objects.pd in the learning-examples folder
+- Look for \_current-objects.pd in the main folder
 
 - Right-click on the objects found here to open help files.  Make sure you press `ctrl-E` to enter edit mode before clicking on any boxes!
 
