@@ -20,15 +20,7 @@ Read about the philosophy behind this framework at the [Bela.io blog](https://bl
 
 ---
 
-![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](documentation/readme-images/im-sensors.png)
-
----
-
-## Disclaimer
-
-Instrument Maker is one of my first public repos, and will definitely be messy for a while.
-
-Please feel free to explore, and download and try out the abstractions if you are already familiar with Pure Data..but I recommend waiting a little while until everything's more coherent.
+![The key ingredients of the instrument maker framework are sensors, musical scales, effects, and code.](documentation/readme-images/im-sensors.png)
 
 ---
 
