@@ -5,19 +5,19 @@
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
+- [**Wiki: further information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
 <!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
 
 Distributed under the terms of the **GNU Public license version 3**.
 
 The code is developed by [Charles Matthews](http://ardisson.net/), initially through workshops in collaboration with [Gift Tshuma](http://www.utchoir.com/), and with more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  
 
-Many thanks to [Roybn Steward](https://www.robynsteward.com/music) and [Dave Darch](http://alittlelearning.org/) for testing the code in workshops and helping generate documentation.
+Thanks to [Roybn Steward](https://www.robynsteward.com/music), [http://www.educationmakers.ca/](Education Makers), and [Dave Darch](http://alittlelearning.org/) (and many more) for testing the code and helping generate documentation.
 
 ---
 
 Read about the philosophy behind this framework at the [Bela.io blog](https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/).
 
-[**Please access the wiki for more information and development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
 
 ![A diagram illustrating different aspects of the instrument maker framework: sensors, scales, effects, and code.](documentation/readme-images/im-sensors.png)
 
@@ -29,11 +29,11 @@ Please feel free to explore, and download and try out the abstractions if you ar
 
 ## How does it work?
 
-The main resource is an library of objects for [Pure Data](http://puredata.info/).
+The main Instrument Maker resource is a library of objects for [Pure Data](http://puredata.info/).
 
 Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device connected.  
 
-Using Bela, choosing a setup should be a case of dragging and dropping into a browser; the Pure Data files can exist as templates or presets, no need to edit or look at the code unless desired.
+Using Bela, choosing a setup should be a case of dragging and dropping into a browser. The Pure Data files can exist as templates or presets; no need to edit or look at the code, unless desired.
 
 ![A screenshot of the Instrument Maker objects in Pure Data: a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
 
