@@ -247,7 +247,7 @@ at present no need to mess about with generating this dynamically)
 #X msg 295 451 0;
 #X obj 225 571 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 349 563 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 349 563 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 315 668 list tosymbol;
 #X obj 61 132 t a b b, f 54;
@@ -399,7 +399,13 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X text 311 246 (placed left for order);
 #X obj 473 563 +~;
 #X obj 474 536 clip~ 0 0.99;
-#X obj 825 527 inlet~ feedback;
+#X obj 737 472 inlet~ feedback;
+#X obj 813 524 inlet~ clear;
+#X obj 812 547 im.snapshot;
+#X obj 812 568 > 0.1;
+#X obj 809 614 sel 1;
+#X obj 810 591 change;
+#X msg 809 635 clear;
 #X connect 1 0 0 0;
 #X connect 1 0 56 0;
 #X connect 3 0 1 0;
@@ -447,3 +453,9 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X connect 60 0 12 1;
 #X connect 61 0 60 0;
 #X connect 62 0 60 1;
+#X connect 63 0 64 0;
+#X connect 64 0 65 0;
+#X connect 65 0 67 0;
+#X connect 66 0 68 0;
+#X connect 67 0 66 0;
+#X connect 68 0 2 0;
