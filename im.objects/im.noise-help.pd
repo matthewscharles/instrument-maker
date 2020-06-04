@@ -1,4 +1,4 @@
-#N canvas 619 52 525 493 10;
+#N canvas 121 61 738 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.noise 20 22 0 30 -1 -196864
@@ -27,7 +27,27 @@
 #X obj 86 337 im.sensor 1;
 #X text 188 299 Hold down the space bar on your computer or connect
 sensor 1 to hear some white noise., f 51;
+#X obj 519 9 cnv 15 200 410 empty empty notes 8 12 0 20 -261682 -66577
+0;
+#X obj 538 340 im.help;
+#X text 617 198 interactions;
+#X text 530 40 related objects;
+#X msg 551 89 im.sawtooth;
+#X msg 593 307 im.envelope;
+#X text 637 257 shaping;
+#X msg 538 65 im.squarewave;
+#X msg 576 286 im.fader;
+#X msg 561 117 im.sinewave;
+#X msg 565 199 im.sah;
+#X msg 569 259 im.filter;
 #X connect 15 0 14 0;
 #X connect 16 0 15 1;
 #X connect 17 0 15 0;
 #X connect 18 0 15 1;
+#X connect 24 0 21 0;
+#X connect 25 0 21 0;
+#X connect 27 0 21 0;
+#X connect 28 0 21 0;
+#X connect 29 0 21 0;
+#X connect 30 0 21 0;
+#X connect 31 0 21 0;
