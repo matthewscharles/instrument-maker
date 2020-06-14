@@ -58,11 +58,11 @@
 #X obj 157 -79 inlet~ fwd pitch;
 #X obj 299 -19 inlet~ fwd velocity;
 #X obj 408 10 / 127;
-#X text 482 -3 default to max velocity until signal received;
+#X text 475 189 default to max velocity until signal received;
 #X obj 299 41 snapshot~;
 #X obj 321 14 bang~;
 #X obj 274 66 change;
-#X text 481 -29 first attempt: take midi velocity as a message;
+#X text 474 163 first attempt: take midi velocity as a message;
 #N canvas 808 101 450 300 pencon 0;
 #X obj 79 168 osc~;
 #X obj 79 189 *~ 0.2;
@@ -129,8 +129,12 @@
 #X obj 183 100 loadbang;
 #X msg 187 124 1;
 #X floatatom 244 -37 5 0 0 0 - - -;
-#X obj 234 130 / 127;
-#X text 482 23 problem: switch between 0-1 and 0-127?;
+#X text 473 260 problem: switch between 0-1 and 0-127?;
+#X text 472 283 if velocity above 1 received \, set scale;
+#X obj 276 185 > 1;
+#X obj 274 215 sel 1;
+#X obj 234 130 / 1;
+#X msg 279 254 127;
 #X connect 1 0 6 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
@@ -171,7 +175,8 @@
 #X connect 29 0 31 0;
 #X connect 30 0 29 0;
 #X connect 31 0 35 0;
-#X connect 31 0 41 0;
+#X connect 31 0 43 0;
+#X connect 31 0 45 0;
 #X connect 33 0 0 0;
 #X connect 34 0 0 0;
 #X connect 35 0 37 1;
@@ -179,4 +184,7 @@
 #X connect 37 0 36 0;
 #X connect 38 0 39 0;
 #X connect 39 0 35 0;
-#X connect 41 0 6 1;
+#X connect 43 0 44 0;
+#X connect 44 0 46 0;
+#X connect 45 0 6 1;
+#X connect 46 0 45 1;
