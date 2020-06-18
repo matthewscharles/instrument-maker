@@ -18,7 +18,6 @@
 #X text 16 142 Change volume with a percentage \, or using an input
 in the right-hand side., f 81;
 #X text 105 195 1) volume as percentage, f 64;
-#X text 105 217 1) 1 audio signal 2) volume change (0-1);
 #X text 106 241 1) processed signal;
 #X text 15 266 im.fader acts as a volume control for audio \, but can
 also be used to boost other types of signals., f 81;
@@ -27,11 +26,13 @@ f 81;
 #X obj 98 312 im.noise;
 #X obj 98 377 im.speaker;
 #X obj 98 333 im.volume 50%;
-#X obj 242 304 im.sensor 1;
-#X obj 295 325 im.keypress Space;
+#X obj 251 299 im.sensor 1, f 12;
+#X obj 274 325 im.keypress Space;
 #X obj 98 354 im.fader, f 26;
-#X connect 15 0 17 0;
-#X connect 17 0 20 0;
-#X connect 18 0 20 1;
-#X connect 19 0 20 1;
-#X connect 20 0 16 0;
+#X text 105 217 1) 1 audio signal 2) volume change (0-1) or larger
+range;
+#X connect 14 0 16 0;
+#X connect 16 0 19 0;
+#X connect 17 0 19 1;
+#X connect 18 0 19 1;
+#X connect 19 0 15 0;

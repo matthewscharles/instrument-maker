@@ -1,4 +1,4 @@
-#N canvas 692 183 525 493 10;
+#N canvas 415 81 742 483 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.sensor 20 22 0 30 -1 -196864
@@ -13,28 +13,43 @@
 #X text 21 171 comment, f 81;
 #X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
 0;
-#X text 16 142 Take a sensor reading and output as a value from 0 -
-1 This range can be scaled up using the second inlet., f 81;
 #X text 105 195 1) input number 2) multiplier, f 64;
 #X text 105 217 none;
 #X text 106 241 1) sensor information as audio control signal;
-#X obj 30 401 im.speaker;
-#X obj 30 380 im.fader, f 10;
-#X obj 31 355 im.noise;
-#X obj 87 355 im.sensor 1;
-#X obj 207 426 im.speaker;
-#X obj 207 405 im.fader, f 14;
-#X obj 207 362 im.scale E lydian 3;
-#X obj 285 383 im.sensor 3;
-#X obj 207 383 im.sawtooth;
-#X obj 207 341 im.sensor 2 7;
-#X text 295 323 When combined with scale \, use the second argument
+#X obj 27 351 im.speaker;
+#X obj 27 330 im.fader, f 10;
+#X obj 28 305 im.noise;
+#X obj 84 305 im.sensor 1;
+#X obj 219 391 im.speaker;
+#X obj 219 370 im.fader, f 14;
+#X obj 219 327 im.scale E lydian 3;
+#X obj 297 348 im.sensor 3;
+#X obj 219 348 im.sawtooth;
+#X obj 219 306 im.sensor 2 7;
+#X text 307 288 When combined with scale \, use the second argument
 to choose how many pitches to trigger., f 29;
+#X text 16 142 Take a sensor reading and output as a value from 0 -
+1 This range can be expanded using the second argument -- state the
+number of intervals you would like to trigger., f 81;
+#X obj 519 9 cnv 15 200 410 empty empty notes 8 12 0 20 -261682 -66577
+0;
+#X obj 538 340 im.help;
+#X text 530 40 related objects;
+#X msg 575 182 im.scale;
+#X msg 592 206 im.flip;
+#X msg 538 65 im.microphone;
+#X msg 551 90 im.speaker;
+#X msg 560 155 im.fader;
+#X connect 12 0 11 0;
 #X connect 13 0 12 0;
-#X connect 14 0 13 0;
-#X connect 15 0 13 1;
-#X connect 17 0 16 0;
-#X connect 18 0 20 0;
-#X connect 19 0 17 1;
+#X connect 14 0 12 1;
+#X connect 16 0 15 0;
+#X connect 17 0 19 0;
+#X connect 18 0 16 1;
+#X connect 19 0 16 0;
 #X connect 20 0 17 0;
-#X connect 21 0 18 0;
+#X connect 26 0 24 0;
+#X connect 27 0 24 0;
+#X connect 28 0 24 0;
+#X connect 29 0 24 0;
+#X connect 30 0 24 0;
