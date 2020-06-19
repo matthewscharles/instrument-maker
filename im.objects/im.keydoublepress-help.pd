@@ -1,0 +1,56 @@
+#N canvas -1339 156 569 644 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.keydoublepress 20 22 0 30
+-1 -196864 0;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 11 547 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 105 217 none;
+#X text 106 241 "on/off" signal (1 and 0 respectively);
+#X obj 214 354 im.speaker;
+#X obj 14 321 im.fader;
+#X obj 214 321 im.fader;
+#X obj 14 278 im.pulsewave A 3;
+#X obj 214 278 im.pulsewave B 3;
+#X obj 21 456 im.speaker;
+#X obj 190 457 im.speaker;
+#X text 18 509 im.player plays its sound to the end when triggered
+\, so does not pay attention to when the key is released., f 80;
+#X text 18 480 Access the cursor keys (useful for a MaKeyMaKey): capitalise
+the first letter of Up \, Down \, Left \, Right \, Space \, Return
+, f 80;
+#X text 19 386 Some quick sample players using im.player:;
+#X obj 21 435 im.player ../sounds/sn.wav;
+#X obj 190 435 im.player ../sounds/string.aif;
+#X text 22 140 Double-press a ley to trigger an event. Watch out -
+on a computer keyboard \, it doesn't always work to hold more than
+one key down together. If you find that certain notes "hang" \, try
+pressing the relevant key again., f 80;
+#X text 105 196 1) key letter monitor \, 2) time to register a second
+press (ms), f 64;
+#X text 19 549 comment, f 81;
+#X text 18 567 comment, f 81;
+#X obj 58 298 im.keydoublepress a 500;
+#X obj 259 298 im.keydoublepress b 500;
+#X obj 20 414 im.keydoublepress Up 500;
+#X obj 190 413 im.keydoublepress Space 500;
+#X connect 12 0 11 0;
+#X connect 13 0 11 0;
+#X connect 14 0 12 0;
+#X connect 15 0 13 0;
+#X connect 21 0 16 0;
+#X connect 22 0 17 0;
+#X connect 27 0 12 1;
+#X connect 28 0 13 1;
+#X connect 29 0 21 0;
+#X connect 30 0 22 0;
