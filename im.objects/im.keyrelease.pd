@@ -1,13 +1,13 @@
-#N canvas -1319 87 803 675 10;
-#X obj 80 32 keyname;
-#X obj 127 82 sel \$1;
-#X msg 127 147 1;
-#X msg 80 149 0;
-#X obj 80 108 t b f;
-#X obj 47 180 spigot;
-#X obj 80 82 change;
-#X obj 47 204 sig~;
-#X obj 47 225 outlet~;
+#N canvas -1065 229 803 675 10;
+#X obj 79 32 keyname;
+#X obj 126 82 sel \$1;
+#X msg 126 147 1;
+#X msg 79 149 0;
+#X obj 79 107 t b f;
+#X obj 46 180 spigot;
+#X obj 79 82 change;
+#X obj 46 204 sig~;
+#X obj 46 225 outlet~;
 #X obj 245 18 list store \$1;
 #X obj 212 83 spigot;
 #X obj 245 -2 loadbang;
@@ -15,6 +15,7 @@
 1;
 #X obj 212 106 sel space;
 #X obj 245 42 sel space;
+#X obj 46 149 != 1;
 #X connect 0 0 6 0;
 #X connect 0 1 1 0;
 #X connect 0 1 10 0;
@@ -22,7 +23,7 @@
 #X connect 2 0 5 1;
 #X connect 3 0 5 1;
 #X connect 4 0 3 0;
-#X connect 4 1 5 0;
+#X connect 4 1 15 0;
 #X connect 5 0 7 0;
 #X connect 6 0 4 0;
 #X connect 7 0 8 0;
@@ -32,3 +33,4 @@
 #X connect 12 0 10 1;
 #X connect 13 0 2 0;
 #X connect 14 0 12 0;
+#X connect 15 0 5 0;
