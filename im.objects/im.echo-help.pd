@@ -28,14 +28,16 @@ than replacing them., f 81;
 #X obj 75 307 im.keypress Space;
 #X obj 75 380 im.output;
 #X obj 301 339 im.sensor 1 1000;
-#X obj 282 363 im.echo 0 50%;
+#X obj 281 384 im.echo 0 50%;
 #X obj 262 292 im.keypress Up;
 #X obj 262 315 im.player string.aif;
-#X obj 263 389 im.output;
-#X text 334 387 use an external sensor to set the delay time., f 24
+#X obj 262 410 im.output;
+#X text 333 408 use an external sensor to set the delay time., f 24
 ;
 #X text 105 217 1) 1 signal input 2) delay time 3) feedback amount
 (0-1) 4) clear, f 67;
+#X obj 417 339 im.keypress z;
+#X text 384 370 clear the feedback;
 #X connect 13 0 16 0;
 #X connect 14 0 16 0;
 #X connect 14 0 13 0;
@@ -45,3 +47,4 @@ than replacing them., f 81;
 #X connect 19 0 20 0;
 #X connect 20 0 21 0;
 #X connect 20 0 18 0;
+#X connect 24 0 18 3;

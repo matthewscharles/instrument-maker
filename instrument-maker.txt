@@ -1,0 +1,7 @@
+im.sensor convert a midi input to a signal value
+im.scale  quantise input values to an equal tempered scale/mode
+im.input
+im.linein
+im.electrode
+im.keypress
+im.makeymakey
