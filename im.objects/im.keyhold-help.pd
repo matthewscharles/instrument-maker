@@ -1,8 +1,8 @@
-#N canvas -904 23 569 644 10;
+#N canvas -1169 28 569 644 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
-#X obj 22 60 cnv 15 478 40 empty empty im.keypresshold 20 22 0 30 -1
--196864 0;
+#X obj 23 60 cnv 15 478 40 empty empty im.keyhold 20 22 0 30 -1 -196864
+0;
 #X text 22 110 Alex Lucas 2020;
 #X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
 -66577 0;
@@ -10,7 +10,6 @@
 -66577 0;
 #X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
 -66577 0;
-
 #X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
 0;
 #X obj 11 547 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
@@ -38,19 +37,19 @@ one key down together. If you find that certain notes "hang" \, try
 pressing the relevant key again., f 80;
 #X text 105 196 1) letter of the key to monitor 2) hold time in milliseconds
 , f 64;
-#X text 19 549, f 81;
-#X text 18 567, f 81;
-#X obj 59 299 im.keypresshold a 500;
-#X obj 246 296 im.keypresshold b 500;
-#X obj 21 414 im.keypresshold Up 1000;
-#X obj 190 413 im.keypresshold Space 1000;
-#X connect 12 0 11 0;
+#X text 19 549 comment, f 81;
+#X text 18 567 comment, f 81;
+#X obj 59 299 im.keyhold a 500;
+#X obj 246 296 im.keyhold b 500;
+#X obj 21 414 im.keyhold Up 1000;
+#X obj 190 413 im.keyhold Space 1000;
+#X connect 11 0 10 0;
+#X connect 12 0 10 0;
 #X connect 13 0 11 0;
 #X connect 14 0 12 0;
-#X connect 15 0 13 0;
+#X connect 20 0 15 0;
 #X connect 21 0 16 0;
-#X connect 22 0 17 0;
+#X connect 26 0 11 1;
 #X connect 27 0 12 1;
-#X connect 28 0 13 1;
+#X connect 28 0 20 0;
 #X connect 29 0 21 0;
-#X connect 30 0 22 0;
