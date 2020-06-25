@@ -1,4 +1,4 @@
-#N canvas 10 89 525 493 10;
+#N canvas -843 121 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.lfo 20 22 0 30 -1 -196864
@@ -33,10 +33,10 @@ but should be used to change volume \, filter \, pitch \, etc., f
 #X text 378 316 adjust this value for vibrato amount, f 18;
 #X text 315 449 better example coming soon!;
 #X obj 279 318 im.fader 75%;
-#X text 105 217 1) rate 2) intensity 3) reset phase;
 #X text 384 290 resets the lfo;
 #X text 105 195 1) speed (slow \, medium \, fast) 2) wave (sawtooth
 \, square \, sine), f 64;
+#X text 105 217 1) rate (Hz) 2) intensity 3) reset phase;
 #X connect 2 0 14 1;
 #X connect 11 0 12 0;
 #X connect 12 0 14 0;
