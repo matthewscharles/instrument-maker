@@ -1,4 +1,4 @@
-#N canvas -1042 30 1175 1005 10;
+#N canvas -1175 30 1175 1005 10;
 #X obj 356 -5 keyname;
 #X obj 403 20 sel \$1;
 #X msg 403 97 1;
@@ -39,7 +39,7 @@
 -1 -1;
 #X text 12 96 arguments: \$1 = key \, \$2 = double press window time
 ms;
-#X obj 264 427 sel \$1;
+#X obj 264 427 sel \$2;
 #X connect 0 0 6 0;
 #X connect 0 1 1 0;
 #X connect 1 0 2 0;
