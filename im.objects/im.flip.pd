@@ -8,7 +8,7 @@
 #X msg 424 330 \; \$1 color 16;
 #X obj 424 298 symbol \$0-canvas;
 #X obj 319 182 im.snapshot;
-#X obj 63 203 cnv 14 74 14 empty \$0-canvas im.flip 2 7 0 12 -24198
+#X obj 62 203 cnv 13 75 14 empty \$0-canvas im.flip 2 7 0 12 -24198
 -1 0;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;

@@ -1,4 +1,4 @@
-#N canvas -1732 56 1596 881 10;
+#N canvas -1860 340 1596 881 10;
 #X obj 78 54 symbol \$1;
 #X obj 78 23 loadbang;
 #X obj 78 79 list fromsymbol;

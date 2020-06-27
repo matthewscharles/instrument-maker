@@ -1,10 +1,10 @@
-#N canvas 132 69 525 493 10;
+#N canvas -1448 302 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.snapshot 20 22 0 30 -1 -196864
 0;
-#X obj 91 287 im.sensor 1;
-#X obj 170 286 im.keypress Space;
+#X obj 92 284 im.sensor 1;
+#X obj 170 284 im.keypress Space;
 #X text 22 110 Charles Matthews 2020;
 #X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
 -66577 0;
@@ -20,12 +20,12 @@
 #X text 16 142 Convert a signal from an im object into a message to
 interface with regular Pd objects., f 81;
 #X text 105 195 1) change (optional), f 64;
-#X text 15 437, f 81;
+#X text 15 437 comment, f 81;
 #X text 16 394 Use the change argument to send the message only when
 the signal has changed. Otherwise \, the message will be sent out at
 audio rate (usually 44100 times per second)., f 81;
 #X obj 92 315 im.snapshot change;
-#X floatatom 92 336 5 0 0 0 - - -;
+#X floatatom 92 345 5 0 0 0 - - -;
 #X text 105 217 1) signal;
 #X text 106 241 1) message;
 #X connect 2 0 15 0;

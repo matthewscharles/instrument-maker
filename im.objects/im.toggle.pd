@@ -1,4 +1,4 @@
-#N canvas -841 183 803 724 10;
+#N canvas -1262 115 965 788 10;
 #X obj 176 9 inlet~;
 #X obj 177 235 outlet~;
 #X obj 177 106 snapshot~;
@@ -8,8 +8,8 @@
 #X obj 177 148 sel 1;
 #X obj 177 171 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 177 208 sig~;
-#X obj 63 203 cnv 14 74 14 empty \$0-canvas im.toggle 2 7 0 12 -262144
+#X obj 177 207 sig~;
+#X obj 62 203 cnv 13 75 14 empty \$0-canvas im.toggle 2 7 0 12 -262144
 -1 0;
 #X obj 238 206 sel 0 1;
 #X obj 238 289 symbol \$0-canvas;
