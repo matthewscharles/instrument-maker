@@ -1,0 +1,96 @@
+#N canvas -1854 45 862 795 10;
+#X obj 12 39 cnv 15 800 160 empty empty inputs 25 15 0 20 -203904 -66577
+0;
+#X obj 19 120 im.sensor;
+#X obj 19 80 im.microphone;
+#X obj 19 100 im.linein;
+#X obj 19 140 im.electrode;
+#X obj 13 202 cnv 15 400 130 empty empty basic_sound_sources 25 15
+0 20 -204786 -66577 0;
+#X obj 20 238 im.noise;
+#X obj 20 258 im.sinewave;
+#X obj 20 278 im.sawtooth;
+#X obj 12 448 cnv 15 400 156 empty empty signal_processors 25 15 0
+20 -261234 -66577 0;
+#X obj 12 607 cnv 15 400 133 empty empty outputs 25 15 0 20 -232576
+-66577 0;
+#X obj 20 645 im.speaker;
+#X obj 416 335 cnv 15 396 110 empty empty note_generators 25 15 0 20
+-261682 -66577 0;
+#X obj 425 369 im.scale;
+#X obj 416 448 cnv 15 396 100 empty empty audio_triggers 25 15 0 20
+-204800 -66577 0;
+#X obj 425 480 im.envelopefollower;
+#X obj 425 500 im.pitchtracker;
+#X obj 425 520 im.audiotrigger;
+#X obj 20 485 im.echo;
+#X obj 20 505 im.distort;
+#X obj 20 525 im.chorus;
+#X obj 20 565 im.filter;
+#X obj 416 551 cnv 15 396 190 empty empty misc_control 25 15 0 20 -262130
+-66577 0;
+#X obj 422 585 im.lfo;
+#X obj 421 645 im.debounce;
+#X obj 422 605 im.sequence;
+#X obj 422 625 im.step;
+#X obj 12 335 cnv 15 400 110 empty empty samplers 25 15 0 20 -262130
+-66577 0;
+#X obj 20 369 im.player;
+#X obj 20 389 im.oneshot;
+#X obj 20 409 im.looper;
+#X text 517 15 right-click on these objects to access help files,
+f 50;
+#X obj 19 160 im.makeymakey;
+#X text 109 100 take audio from a line in;
+#X text 109 139 requires a touch board in MIDI mode;
+#X obj 20 298 im.pulsewave;
+#X text 108 369 play a sound file;
+#X text 107 388 record and play a sound file;
+#X text 107 409 record and play a loop;
+#X text 109 80 take audio from the microphone;
+#X text 110 238 white noise generator;
+#X text 553 499 track pitch and send to an oscillator;
+#X text 554 479 mimic the intensity of an audio input;
+#X text 553 518 generate triggers from percussive sounds;
+#X text 554 646 ignore triggers in rapid succession;
+#X text 554 603 play an 8 step sequence into im.scale;
+#X text 108 484 a feedback echo;
+#X text 107 503 simple distortion/overdrive;
+#X text 108 524 wobbly chorus effect;
+#X text 108 563 a resonant lowpass filter;
+#X text 671 744 www.instrumentmaker.org;
+#X obj 416 202 cnv 15 396 130 empty empty instruments 25 15 0 20 -232576
+-66577 0;
+#X obj 425 80 im.keypress;
+#X obj 425 100 im.keydoublepress;
+#X obj 425 140 im.keyhold;
+#X obj 425 120 im.keyrelease;
+#X obj 425 239 im.acid;
+#X obj 425 259 im.fizzy;
+#X obj 425 279 im.tunedperc;
+#X obj 425 389 im.note;
+#X obj 421 665 im.toggle;
+#X obj 421 689 im.flip;
+#X text 553 80 read key presses;
+#X text 547 120 read a key release;
+#X text 553 140 read a press and hold of a key;
+#X text 554 100 read a double press of a key;
+#X text 554 236 tb-303 emulation;
+#X text 548 278 synthesised gong;
+#X text 554 258 Juno-esque mono synthesiser;
+#X text 553 368 trigger degrees of a scale;
+#X text 553 389 trigger a specific note;
+#X obj 20 545 im.volume;
+#X text 107 543 change the volume of a signal;
+#X text 109 159 a set of makey makey keypresses;
+#X text 109 120 read dedicated im board sensors;
+#X text 109 257 sine wave generator;
+#X text 109 277 sawtooth wave generator;
+#X text 109 297 pulse wave generator;
+#X text 108 644 output an audio signal;
+#X text 554 583 a low frequency oscillator;
+#X text 554 625 generate steps for im.sequence;
+#X text 553 668 toggle a trigger signal;
+#X text 553 691 invert a trigger signal;
+#X obj 421 713 im.snapshot;
+#X text 553 715 view a control signal;
