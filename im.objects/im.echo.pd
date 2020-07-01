@@ -1,4 +1,4 @@
-#N canvas 446 111 1280 606 10;
+#N canvas 446 111 1280 606;
 #X obj 224 666 outlet~;
 #X obj 224 641 vd~ \$0-imecho;
 #X obj 82 189 delwrite~ \$0-imecho 10000;
@@ -464,3 +464,4 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X connect 68 1 70 0;
 #X connect 69 0 66 0;
 #X connect 70 0 69 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

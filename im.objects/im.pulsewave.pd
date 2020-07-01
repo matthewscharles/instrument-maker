@@ -1,4 +1,4 @@
-#N canvas 82 69 1119 661 10;
+#N canvas 82 69 1119 661;
 #X obj 94 609 outlet~;
 #X obj 94 517 phasor~;
 #X obj 94 554 expr~ $v1 > $v2;
@@ -106,3 +106,4 @@
 #X connect 20 2 13 0;
 #X connect 21 0 15 0;
 #X connect 22 0 6 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

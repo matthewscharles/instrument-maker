@@ -1,4 +1,4 @@
-#N canvas 492 225 450 300 10;
+#N canvas 492 225 450 300;
 #X obj 104 43 inlet~;
 #X obj 103 264 outlet~;
 #X obj 105 140 snapshot~;
@@ -17,3 +17,4 @@
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 8 0 1 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

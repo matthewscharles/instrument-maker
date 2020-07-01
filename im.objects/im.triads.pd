@@ -1,4 +1,4 @@
-#N canvas 348 32 932 683 10;
+#N canvas 348 32 932 683;
 #X obj 421 585 change;
 #X obj 421 606 outlet;
 #X obj 489 296 %, f 7;
@@ -173,3 +173,4 @@ once scala integration is stable \; for now \, let's make do with mtof
 #X connect 73 0 71 0;
 #X connect 74 0 72 0;
 #X connect 75 0 32 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

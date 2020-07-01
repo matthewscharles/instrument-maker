@@ -1,4 +1,4 @@
-#N canvas 517 74 631 704 10;
+#N canvas 517 74 631 704;
 #X obj 130 539 outlet~;
 #X floatatom 124 310 5 0 0 0 - - -;
 #X obj 124 284 tabread \$1;
@@ -240,3 +240,4 @@ number;
 #X connect 59 0 0 0;
 #X connect 61 0 6 0;
 #X connect 61 1 6 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

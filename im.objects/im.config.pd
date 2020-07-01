@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 10;
+#N canvas 0 23 450 300;
 #X obj 169 88 list store \$1;
 #X obj 169 109 sel im-board;
 #X obj 169 222 s im-range;
@@ -13,3 +13,4 @@
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
 #X connect 6 0 2 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

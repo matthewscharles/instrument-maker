@@ -1,4 +1,4 @@
-#N canvas 517 53 680 419 10;
+#N canvas 517 53 680 419;
 #X obj 19 154 inlet~ input;
 #X obj 19 199 outlet~ output;
 #X obj 19 177 im.multiply \$1;
@@ -14,3 +14,4 @@ instructions on use., f 74;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

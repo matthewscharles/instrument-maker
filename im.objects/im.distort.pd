@@ -1,4 +1,4 @@
-#N canvas 62 198 450 300 10;
+#N canvas 62 198 450 300;
 #X obj 176 229 outlet~;
 #X obj 176 163 lop~ 4000;
 #X obj 175 132 clip~ -0.025 0.025;
@@ -16,3 +16,4 @@
 #X connect 6 0 2 0;
 #X connect 7 0 6 0;
 #X connect 8 0 4 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

@@ -1,4 +1,4 @@
-#N canvas 73 181 475 393 10;
+#N canvas 73 181 475 393;
 #X obj 38 20 inlet~;
 #X obj 99 25 bang~;
 #X obj 37 52 snapshot~;
@@ -25,3 +25,4 @@
 #X connect 7 0 11 0;
 #X connect 9 0 7 0;
 #X connect 10 0 7 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

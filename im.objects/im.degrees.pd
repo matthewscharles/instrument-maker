@@ -1,4 +1,4 @@
-#N canvas 217 150 411 489 10;
+#N canvas 217 150 411 489;
 #X obj 52 103 t a a, f 10;
 #X obj 109 128 list length;
 #X obj 50 178 list split;
@@ -36,3 +36,4 @@
 #X connect 14 0 15 0;
 #X connect 16 0 6 1;
 #X connect 17 0 10 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

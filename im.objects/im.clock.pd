@@ -1,4 +1,4 @@
-#N canvas 830 90 450 300 10;
+#N canvas 830 90 450 300;
 #X obj 21 194 phasor~ \$1;
 #X obj 128 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -38,3 +38,4 @@
 #X connect 15 0 16 0;
 #X connect 16 0 0 0;
 #X connect 17 0 16 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

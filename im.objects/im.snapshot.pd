@@ -1,4 +1,4 @@
-#N canvas -1390 -109 450 300 10;
+#N canvas -1390 -109 450 300;
 #X obj 121 70 inlet~ signal;
 #X obj 120 138 snapshot~;
 #X obj 143 106 bang~;
@@ -37,3 +37,4 @@
 #X connect 11 0 4 0;
 #X connect 13 0 12 0;
 #X connect 16 0 7 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

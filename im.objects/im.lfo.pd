@@ -1,4 +1,4 @@
-#N canvas -1409 -130 819 563 10;
+#N canvas -1409 -130 819 563;
 #X obj 64 189 osc~;
 #X obj 66 376 *~, f 16;
 #X obj 66 423 outlet~;
@@ -92,3 +92,4 @@
 #X connect 35 0 24 1;
 #X connect 36 0 24 1;
 #X connect 37 0 24 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

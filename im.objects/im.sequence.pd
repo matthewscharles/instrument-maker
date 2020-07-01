@@ -1,4 +1,4 @@
-#N canvas 700 170 800 646 10;
+#N canvas 700 170 800 646;
 #X obj 156 232 loadbang;
 #X obj 5 698 outlet~;
 #X obj 4 559 *~ 8;
@@ -75,3 +75,4 @@ by default;
 #X connect 35 0 4 0;
 #X connect 35 1 27 0;
 #X connect 35 2 8 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

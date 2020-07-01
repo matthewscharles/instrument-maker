@@ -1,4 +1,4 @@
-#N canvas 216 136 940 593 10;
+#N canvas 216 136 940 593;
 #X obj 50 341 phasor~;
 #X obj 256 265 timer;
 #X msg 155 168 stop;
@@ -145,3 +145,4 @@
 #X connect 67 0 69 0;
 #X connect 68 0 35 1;
 #X connect 69 0 68 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

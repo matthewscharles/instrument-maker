@@ -1,4 +1,4 @@
-#N canvas 0 23 749 487 10;
+#N canvas 0 23 749 487;
 #X obj 129 22 inlet~;
 #X obj 129 43 im.snapshot change;
 #X obj 138 166 f;
@@ -44,3 +44,4 @@
 #X connect 15 0 7 0;
 #X connect 16 0 10 0;
 #X connect 17 0 6 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

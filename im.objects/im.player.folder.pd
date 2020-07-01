@@ -1,4 +1,4 @@
-#N canvas 42 150 450 300 10;
+#N canvas 42 150 450 300;
 #X obj 124 211 readsf~;
 #X obj 123 160 list store \$1;
 #X msg 124 184 open \$1 \, 1;
@@ -23,3 +23,4 @@
 #X connect 9 0 0 0;
 #X connect 10 0 0 0;
 #X connect 11 0 5 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

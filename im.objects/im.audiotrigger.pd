@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 10;
+#N canvas 0 23 450 300;
 #X obj 167 127 bonk~;
 #X msg 224 106 thresh 2 20;
 #X obj 224 84 loadbang;
@@ -18,3 +18,4 @@
 #X connect 5 0 6 0;
 #X connect 6 0 3 0;
 #X connect 8 0 0 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

@@ -1,4 +1,4 @@
-#N canvas 0 23 946 494 10;
+#N canvas 0 23 946 494;
 #X text 49 10 w a s d f g up down left right;
 #X text 285 12 leftclick rightclick;
 #X text 243 9 space;
@@ -17,3 +17,4 @@
 #X connect 5 0 10 0;
 #X connect 6 0 11 0;
 #X connect 7 0 12 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

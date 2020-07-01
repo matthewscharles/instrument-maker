@@ -1,4 +1,4 @@
-#N canvas 494 166 932 683 10;
+#N canvas 494 166 932 683;
 #X obj 71 583 pack f f;
 #X obj 71 610 line~;
 #X floatatom 117 558 5 0 0 0 - - -;
@@ -61,3 +61,4 @@ F# 6 \; Gb 6 \; G 7 \; Ab 8 \; G# 8 \; A 9 \; Bb 10 \; A# 10 \; B 11
 #X connect 24 2 20 0;
 #X connect 26 0 17 0;
 #X connect 28 0 0 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

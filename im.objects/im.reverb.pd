@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 10;
+#N canvas 0 23 450 300;
 #X obj 145 103 inlet~;
 #X obj 212 3 loadbang;
 #X obj 258 217 loadbang;
@@ -21,3 +21,4 @@
 #X connect 9 0 8 0;
 #X connect 9 1 6 0;
 #X connect 10 0 5 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

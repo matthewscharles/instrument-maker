@@ -1,4 +1,4 @@
-#N canvas 717 77 636 625 10;
+#N canvas 717 77 636 625;
 #X obj 86 222 timer;
 #X obj 96 116 snapshot~;
 #X obj 142 90 bang~;
@@ -21,3 +21,4 @@
 #X connect 6 0 8 0;
 #X connect 7 0 6 0;
 #X connect 9 0 1 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

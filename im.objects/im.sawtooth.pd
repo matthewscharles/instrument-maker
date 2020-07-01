@@ -1,4 +1,4 @@
-#N canvas 82 267 798 511 10;
+#N canvas 82 267 798 511;
 #X obj 46 411 outlet~;
 #X obj 46 388 *~ 0.2;
 #X obj 46 363 phasor~;
@@ -110,3 +110,4 @@ adding - I do this in another abstraction (echo?);
 #X connect 25 2 13 0;
 #X connect 26 0 15 0;
 #X connect 27 0 6 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

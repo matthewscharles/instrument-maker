@@ -1,4 +1,4 @@
-#N canvas 328 405 803 675 10;
+#N canvas 328 405 803 675;
 #X obj 79 32 keyname;
 #X msg 79 149 0;
 #X obj 79 107 t b f;
@@ -83,3 +83,4 @@
 #X connect 8 0 10 1;
 #X connect 9 0 8 0;
 #X connect 10 0 3 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

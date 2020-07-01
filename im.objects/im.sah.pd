@@ -1,4 +1,4 @@
-#N canvas 368 261 450 300 10;
+#N canvas 368 261 450 300;
 #X obj 123 165 samphold~;
 #X obj 122 98 inlet~;
 #X obj 172 97 inlet~;
@@ -6,3 +6,4 @@
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

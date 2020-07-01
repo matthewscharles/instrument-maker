@@ -1,4 +1,4 @@
-#N canvas 247 141 450 300 10;
+#N canvas 247 141 450 300;
 #X obj 295 80 inlet~ l-r(0-1);
 #X obj 130 148 outlet~ L;
 #X obj 295 148 outlet~ R;
@@ -11,3 +11,4 @@ would do this;
 #X connect 3 0 5 0;
 #X connect 5 0 1 0;
 #X connect 5 1 2 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

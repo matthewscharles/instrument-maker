@@ -1,4 +1,4 @@
-#N canvas -1021 -348 795 631 10;
+#N canvas -1021 -348 795 631;
 #X obj 55 110 change;
 #X obj 55 90 snapshot~;
 #X obj 150 33 bang~;
@@ -114,3 +114,4 @@
 #X connect 45 0 31 0;
 #X connect 46 0 17 0;
 #X connect 47 0 6 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

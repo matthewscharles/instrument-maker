@@ -1,4 +1,4 @@
-#N canvas 0 23 450 300 10;
+#N canvas 0 23 450 300;
 #X obj 150 121 inlet~;
 #X obj 151 175 outlet~;
 #X text 213 177 could replace with table reference;
@@ -9,3 +9,4 @@
 #X connect 3 0 5 1;
 #X connect 4 0 5 1;
 #X connect 5 0 1 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

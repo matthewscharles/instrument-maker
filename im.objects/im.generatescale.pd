@@ -1,4 +1,4 @@
-#N canvas 380 89 638 656 10;
+#N canvas 380 89 638 656;
 #X text 108 191 T T S T T T S;
 #X obj 111 495 +;
 #X obj 140 495 i;
@@ -75,3 +75,4 @@ locrian, f 63;
 #X connect 29 0 17 0;
 #X connect 30 0 25 0;
 #X connect 31 0 25 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

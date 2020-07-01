@@ -1,4 +1,4 @@
-#N canvas 0 25 798 600 10;
+#N canvas 0 25 798 600;
 #X obj 124 520 readsf~;
 #X msg 124 497 open \$1 \, 1;
 #X obj 234 563 outlet~;
@@ -104,3 +104,4 @@ just detect the .txt extension to route it?;
 #X connect 47 0 43 0;
 #X connect 48 0 45 0;
 #X connect 49 0 48 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

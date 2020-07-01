@@ -49,3 +49,4 @@ a speaker), f 27;
 #X connect 22 0 14 0;
 #X connect 23 0 25 0;
 #X connect 24 0 25 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

@@ -1,4 +1,4 @@
-#N canvas 0 205 1280 549 10;
+#N canvas 0 205 1280 549;
 #X obj 27 234 sig~ 1;
 #X obj 25 318 -~, f 8;
 #X obj 72 634 outlet~;
@@ -405,3 +405,4 @@ handle the digital inputs properly later;
 #X connect 108 1 109 0;
 #X connect 109 0 0 0;
 #X coords 0 549 1 548 89 39 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

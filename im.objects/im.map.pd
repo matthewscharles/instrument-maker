@@ -1,4 +1,4 @@
-#N canvas 125 82 450 300 10;
+#N canvas 125 82 450 300;
 #X floatatom 21 152 5 0 0 0 - - -;
 #X floatatom 22 226 5 0 0 0 - - -;
 #X floatatom 88 150 5 0 0 0 - - -;
@@ -40,3 +40,4 @@
 #X connect 15 3 9 0;
 #X connect 16 0 0 0;
 #X connect 18 0 1 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

@@ -1,4 +1,4 @@
-#N canvas 175 180 450 300 10;
+#N canvas 175 180 450 300;
 #X floatatom 29 63 5 0 0 0 - - -;
 #X floatatom 194 61 5 0 0 0 - - -;
 #X obj 29 37 sigmund~ -hop 4096 pitch env;
@@ -19,3 +19,4 @@
 #X connect 6 0 5 1;
 #X connect 7 0 2 0;
 #X connect 9 1 5 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

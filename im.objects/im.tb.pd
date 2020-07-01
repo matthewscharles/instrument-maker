@@ -1,4 +1,4 @@
-#N canvas 469 255 452 453 10;
+#N canvas 469 255 452 453;
 #X obj 52 67 ctlin;
 #X floatatom 61 115 5 0 0 0 - - -;
 #X floatatom 97 116 5 0 0 0 - - -;
@@ -33,3 +33,4 @@ the MIDI Interface Generic sketch);
 #X connect 12 0 14 0;
 #X connect 13 0 12 0;
 #X connect 15 0 10 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

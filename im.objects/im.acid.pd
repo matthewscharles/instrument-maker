@@ -1,4 +1,4 @@
-#N canvas 74 73 740 652 10;
+#N canvas 74 73 740 652;
 #X floatatom 146 102 5 0 0 0 - - -;
 #X obj 146 76 tabread \$1;
 #X obj 146 48 + 29;
@@ -108,3 +108,4 @@
 #X connect 49 0 22 1;
 #X connect 50 0 49 0;
 #X connect 51 0 50 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

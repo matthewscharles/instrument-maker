@@ -1,4 +1,4 @@
-#N canvas 760 337 450 300 12;
+#N canvas 760 337 450 300;
 #X obj 56 62 metro 1000;
 #X obj 56 36 loadbang;
 #X msg 56 86 1;
@@ -6,3 +6,4 @@
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

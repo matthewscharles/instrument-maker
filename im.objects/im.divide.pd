@@ -1,4 +1,4 @@
-#N canvas 301 88 979 478 10;
+#N canvas 301 88 979 478;
 #X obj 105 344 *~;
 #X obj 105 370 outlet~;
 #X obj 233 82 route float;
@@ -418,3 +418,4 @@ im-fromOSC \, obj 11 70 route list \, obj 11 70 route \$1 \, connect
 #X connect 43 0 0 1;
 #X connect 43 0 6 0;
 #X connect 44 0 0 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

@@ -587,3 +587,4 @@ at present no need to mess about with generating this dynamically)
 #X connect 108 0 4 1;
 #X connect 108 0 105 0;
 #X coords 0 -1 1 1 15 15 1 0 800;
+#X coords 0 -1 1 1 15 15 1 0 800;
