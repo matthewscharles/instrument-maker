@@ -1,4 +1,4 @@
-#N canvas -1698 -450 990 787 10;
+#N canvas -1698 -450 990 787;
 #X obj 177 88 snapshot~;
 #X obj 187 63 bang~;
 #X obj 177 39 expr~ $v1 > 0.1;
