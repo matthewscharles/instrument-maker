@@ -18,20 +18,18 @@
 0;
 #X obj 8 392 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
 0;
-#X text 16 142 Temporary notes: This is meant to be an AR (attack-release)
-envelope generator with rudimentary sustain. At present \, it generates
-the attack on receiving a positive signal \, and release on zero.,
-f 81;
 #X text 105 195 1) attack time in ms 2) release time in ms, f 64;
 #X text 105 217 1) gate signal;
 #X text 106 241 1) envelope signal;
 #X obj 20 287 im.noise;
 #X obj 21 335 im.fader;
-#X text 15 437, f 81;
 #X text 16 394 This needs a bit more thought!, f 81;
 #X obj 89 309 im.envelope 100 1000;
-#X connect 2 0 20 0;
-#X connect 3 0 20 0;
-#X connect 16 0 17 0;
-#X connect 17 0 4 0;
-#X connect 20 0 17 1;
+#X text 16 142 Temporary notes: This is meant to be an AHR (attack-hold-release)
+envelope generator. At present \, it generates the attack on receiving
+a positive signal \, and release on zero., f 81;
+#X connect 2 0 18 0;
+#X connect 3 0 18 0;
+#X connect 15 0 16 0;
+#X connect 16 0 4 0;
+#X connect 18 0 16 1;

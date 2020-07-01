@@ -1,7 +1,0 @@
-#N canvas 331 234 450 300 10;
-#X obj 108 49 inlet~;
-#X obj 108 70 *~ \$1;
-#X obj 108 91 outlet~;
-#X text 177 27 quick fix for a workshop;
-#X connect 0 0 1 0;
-#X connect 1 0 2 0;

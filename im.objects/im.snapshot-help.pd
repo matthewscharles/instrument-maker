@@ -17,10 +17,7 @@
 0;
 #X obj 8 392 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
 0;
-#X text 16 142 Convert a signal from an im object into a message to
-interface with regular Pd objects., f 81;
 #X text 105 195 1) change (optional), f 64;
-#X text 15 437, f 81;
 #X text 16 394 Use the change argument to send the message only when
 the signal has changed. Otherwise \, the message will be sent out at
 audio rate (usually 44100 times per second)., f 81;
@@ -28,6 +25,9 @@ audio rate (usually 44100 times per second)., f 81;
 #X floatatom 92 336 5 0 0 0 - - -;
 #X text 105 217 1) signal;
 #X text 106 241 1) message;
-#X connect 2 0 15 0;
-#X connect 3 0 15 0;
-#X connect 15 0 16 0;
+#X text 16 142 Convert a signal from an im object into a message to
+interface with regular Pd objects. Use this with Pd's number box to
+observe signals within the patch., f 81;
+#X connect 2 0 13 0;
+#X connect 3 0 13 0;
+#X connect 13 0 14 0;
