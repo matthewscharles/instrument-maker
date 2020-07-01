@@ -21,7 +21,7 @@ allowing a second trigger through. Useful in combination with audiotrigger
 or keypress \, certain switches on im.sensor.., f 81;
 #X text 105 195 1) time in milliseconds, f 64;
 #X obj 91 318 im.debounce 10;
-#X obj 91 339 im.player string.aif;
+#X obj 91 339 im.player sounds/string.aif;
 #X obj 315 283 im.sensor 1;
 #X obj 317 402 im.speaker;
 #X obj 317 379 im.player sounds/sn.wav;
