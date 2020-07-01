@@ -17,7 +17,6 @@
 #X obj 101 336 makefilename %f;
 #X floatatom 101 366 5 0 0 0 - - -;
 #X obj 78 267 == 186;
-#X obj 239 171 print from;
 #X obj 50 386 / 3600;
 #X text 94 389 not correct \, but works for now;
 #X connect 0 0 2 0;
@@ -26,15 +25,14 @@
 #X connect 2 0 6 0;
 #X connect 2 1 4 0;
 #X connect 3 0 0 0;
-#X connect 3 0 17 0;
 #X connect 4 0 16 0;
 #X connect 5 0 2 1;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 7 0 14 0;
 #X connect 8 0 9 0;
-#X connect 9 0 18 0;
+#X connect 9 0 17 0;
 #X connect 11 0 3 0;
 #X connect 14 0 15 0;
 #X connect 16 0 6 1;
-#X connect 18 0 10 0;
+#X connect 17 0 10 0;

@@ -1,0 +1,8 @@
+#N canvas 760 337 450 300 12;
+#X obj 56 62 metro 1000;
+#X obj 56 36 loadbang;
+#X msg 56 86 1;
+#X obj 56 110 s noKey;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
