@@ -24,13 +24,13 @@ a percentage, f 64;
 feedback inlets add to the values indicated as arguments \, rather
 than replacing them., f 81;
 #X obj 97 357 im.echo 1000 50%;
-#X obj 75 330 im.player sn.wav;
+#X obj 75 330 im.player sounds/sn.wav;
 #X obj 75 307 im.keypress Space;
 #X obj 75 380 im.output;
 #X obj 301 339 im.sensor 1 1000;
 #X obj 281 384 im.echo 0 50%;
 #X obj 262 292 im.keypress Up;
-#X obj 262 315 im.player string.aif;
+#X obj 262 315 im.player sounds/string.aif;
 #X obj 262 410 im.output;
 #X text 333 408 use an external sensor to set the delay time., f 24
 ;

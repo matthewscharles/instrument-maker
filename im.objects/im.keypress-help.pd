@@ -50,9 +50,9 @@ in a convenient package., f 81;
 the first letter of Up \, Down \, Left \, Right \, Space \, Return
 , f 80;
 #X text 19 386 Some quick sample players using im.player:;
-#X obj 21 435 im.player ../sounds/sn.wav;
-#X obj 190 435 im.player ../sounds/string.aif;
-#X obj 383 435 im.player ../sounds/rush.aif;
+#X obj 21 435 im.player sounds/sn.wav;
+#X obj 190 435 im.player sounds/string.aif;
+#X obj 383 435 im.player sounds/rush.aif;
 #X connect 15 0 14 0;
 #X connect 16 0 15 1;
 #X connect 17 0 20 1;

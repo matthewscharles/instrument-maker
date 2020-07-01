@@ -1,4 +1,5 @@
 #N canvas 0 23 871 722 10;
+#X declare ../sounds;
 #X obj 270 515 writesf~;
 #X obj 316 482 im.linein 1;
 #X obj 27 502 im.output;
@@ -52,6 +53,8 @@
 #X obj 103 541 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 673 452 paintrect 0 0 1 1 1 0 1 1;
+#X obj 548 87 declare ../sounds;
+#X text 595 426 this is from mobmuplat..remove;
 #X connect 1 0 0 0;
 #X connect 3 0 2 0;
 #X connect 3 1 41 0;

@@ -20,9 +20,9 @@
 #X obj 55 331 im.speaker;
 #X obj 55 428 im.speaker;
 #X obj 307 378 im.speaker;
-#X obj 55 310 im.player ../sounds/sn.wav;
-#X obj 55 406 im.player ../sounds/string.aif;
-#X obj 307 356 im.player ../sounds/rush.aif;
+#X obj 55 310 im.player sounds/sn.wav;
+#X obj 55 406 im.player sounds/string.aif;
+#X obj 307 356 im.player sounds/rush.aif;
 #X obj 55 289 im.keyrelease Up;
 #X obj 55 384 im.keyrelease Space;
 #X obj 307 335 im.keyrelease Return;

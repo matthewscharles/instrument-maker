@@ -17,14 +17,14 @@
 #X obj 142 262 im.pulsewave B 3;
 #X obj 251 262 im.pulsewave C 3;
 #X obj 381 262 im.pulsewave D 3;
-#X obj 34 483 im.player sn.wav;
+#X obj 34 483 im.player sounds/sn.wav;
 #X obj 34 514 im.speaker;
 #X obj 170 515 im.speaker;
-#X obj 170 484 im.player string.aif;
+#X obj 170 484 im.player sounds/string.aif;
 #X obj 336 514 im.speaker;
 #X text 28 418 Capitalise the first letter of Up \, Down \, Left \,
 Right \, Space \, Return, f 81;
-#X obj 336 491 im.player rush.aif;
+#X obj 336 491 im.player sounds/rush.aif;
 #X text 22 140 Hold keys down to play certain sounds. Watch out - on
 a computer keyboard \, it doesn't always work to hold them down together.
 If you find that certain notes "hang" \, try pressing the relevant

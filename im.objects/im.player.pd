@@ -1,4 +1,5 @@
-#N canvas 0 23 556 661 10;
+#N canvas 0 23 706 661 10;
+#X declare -path ../sounds/;
 #X obj 123 160 list store \$1;
 #X obj 127 93 change;
 #X obj 120 73 snapshot~;
@@ -41,6 +42,7 @@
 #X obj 125 119 abs;
 #X text 210 79 this is a temporary fix for sequencing rather than trigger
 ;
+#X obj 536 377 declare -path ../sounds/;
 #X connect 0 0 30 0;
 #X connect 1 0 39 0;
 #X connect 2 0 1 0;

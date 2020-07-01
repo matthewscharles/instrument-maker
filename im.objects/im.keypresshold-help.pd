@@ -30,8 +30,8 @@
 the first letter of Up \, Down \, Left \, Right \, Space \, Return
 , f 80;
 #X text 19 386 Some quick sample players using im.player:;
-#X obj 21 435 im.player ../sounds/sn.wav;
-#X obj 190 435 im.player ../sounds/string.aif;
+#X obj 21 435 im.player sounds/sn.wav;
+#X obj 190 435 im.player sounds/string.aif;
 #X text 22 140 Press and hold a key to trigger an event. Watch out
 - on a computer keyboard \, it doesn't always work to hold more than
 one key down together. If you find that certain notes "hang" \, try

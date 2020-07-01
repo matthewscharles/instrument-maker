@@ -26,7 +26,7 @@ trigger;
 #X obj 19 327 im.sensor 1;
 #X obj 99 326 im.keypress Space;
 #X obj 29 389 im.speaker;
-#X obj 28 356 im.player sn.wav;
+#X obj 28 356 im.player sounds/sn.wav;
 #X obj 261 386 im.speaker;
 #X obj 244 309 im.sensor 2;
 #X obj 260 352 im.player string.aif 4;
