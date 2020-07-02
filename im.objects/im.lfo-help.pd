@@ -1,4 +1,4 @@
-#N canvas 10 89 525 493 10;
+#N canvas 544 138 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.lfo 20 22 0 30 -1 -196864
@@ -21,30 +21,28 @@ but should be used to change volume \, filter \, pitch \, etc., f
 81;
 #X obj 21 310 im.sawtooth C 4;
 #X obj 21 339 im.filter, f 28;
-#X text 15 461 Still quite experimental...;
 #X obj 21 392 im.fader;
-#X obj 317 425 im.speaker;
-#X obj 317 400 im.fader, f 20;
-#X obj 280 344 im.sawtooth C 4;
-#X obj 431 264 im.keypress m;
-#X obj 279 289 im.lfo fast sine;
+#X obj 260 461 im.speaker;
+#X obj 260 436 im.fader, f 31;
+#X obj 259 357 im.sawtooth C 4;
+#X obj 391 285 im.keypress m;
+#X obj 259 307 im.lfo fast sine;
 #X obj 123 311 im.lfo slow sawtooth;
 #X text 106 241 1) lfo output (0-1 by default);
-#X text 378 316 adjust this value for vibrato amount, f 18;
-#X text 315 449 better example coming soon!;
-#X obj 279 318 im.fader 75%;
-#X text 105 217 1) rate 2) intensity 3) reset phase;
-#X text 384 290 resets the lfo;
+#X text 340 325 adjust this value for vibrato amount, f 18;
+#X obj 258 331 im.fader 75%;
+#X text 388 264 resets the lfo;
 #X text 105 195 1) speed (slow \, medium \, fast) 2) wave (sawtooth
 \, square \, sine), f 64;
-#X connect 2 0 14 1;
+#X text 105 217 1) rate (Hz) 2) intensity 3) reset phase;
+#X connect 2 0 13 1;
 #X connect 11 0 12 0;
-#X connect 12 0 14 0;
-#X connect 14 0 3 0;
+#X connect 12 0 13 0;
+#X connect 13 0 3 0;
+#X connect 15 0 14 0;
 #X connect 16 0 15 0;
-#X connect 17 0 16 0;
-#X connect 18 0 16 1;
-#X connect 18 0 19 2;
-#X connect 19 0 24 0;
-#X connect 20 0 12 1;
-#X connect 24 0 17 0;
+#X connect 17 0 15 1;
+#X connect 17 0 18 2;
+#X connect 18 0 22 0;
+#X connect 19 0 12 1;
+#X connect 22 0 16 0;

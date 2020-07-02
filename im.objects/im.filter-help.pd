@@ -1,4 +1,4 @@
-#N canvas 609 68 525 493 10;
+#N canvas 439 59 525 493 10;
 #X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
 -4032 -66577 0;
 #X obj 22 60 cnv 15 478 40 empty empty im.filter 20 22 0 30 -1 -196864
@@ -15,9 +15,6 @@
 0;
 #X text 16 142 Resonant lowpass filter., f 81;
 #X text 105 195 none, f 64;
-#X text 105 217 1) signal to filter 2) filter cutoff 3) filter resonance
-;
-#X text 106 241 1) noise signal;
 #X obj 32 445 im.speaker;
 #X obj 85 360 im.keypress Space;
 #X obj 32 304 im.noise;
@@ -28,12 +25,15 @@
 #X obj 245 300 im.lfo slow sawtooth;
 #X text 136 283 cutoff;
 #X text 243 283 resonance;
-#X text 206 375 Press space to hear some filtered white noise.;
+#X text 206 387 Press space to hear some filtered white noise.;
 #X text 256 317 Replace these LFOs with sensor inputs;
-#X connect 13 0 17 1;
-#X connect 14 0 15 0;
-#X connect 15 0 17 0;
-#X connect 16 0 17 1;
-#X connect 17 0 12 0;
-#X connect 18 0 15 1;
-#X connect 19 0 15 2;
+#X text 105 217 1) signal to filter 2) cutoff (0-1) 3) resonance (0-1)
+;
+#X text 106 241 1) filtered signal;
+#X connect 11 0 15 1;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 15 1;
+#X connect 15 0 10 0;
+#X connect 16 0 13 1;
+#X connect 17 0 13 2;
