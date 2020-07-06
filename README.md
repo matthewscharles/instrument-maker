@@ -36,11 +36,11 @@ Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device conn
 
 ----
 
-# Current demo setup
+# Installation
 
-***Deken release coming soon!***
+***This is for our current demo setup for desktops/RPi- Deken release and instructions for Bela coming soon!***
 
-We are currently focusing on Raspberry Pi/desktop setups, but will be updating with instructions for Bela again soon.  
+We recommend using [Patchbox OS](https://blokas.io/patchbox-os/) for Raspberry Pi.
 
 ## **Recommended: clone this repo**
 
