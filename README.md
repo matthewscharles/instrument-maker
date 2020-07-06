@@ -6,7 +6,7 @@ Key pages:
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
 - [**Wiki: development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
-<!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
+  <!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
 
 Distributed under the terms of the **GNU Public license version 3**.
 
@@ -46,7 +46,7 @@ We recommend using [Patchbox OS](https://blokas.io/patchbox-os/) for Raspberry P
 
 - Clone the repo to a local folder by opening a terminal:
   - `git clone https://github.com/matthewscharles/instrument-maker`
-  - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
+    - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
   - Keep up to date by periodically typing `git pull` within the folder in terminal.
 
 ## **Alternative: direct download**
@@ -59,14 +59,18 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
   - *On a Mac, you may need to right-click on the downloaded application to open it.*
 
-- Add the instrument-maker folder to the search path in Pure Data: click new, and browse to the folder you cloned to.
+- Add the instrument-maker folder to the search path in Pure Data: 
+
+  - from the `pd` menu (next to `file`), choose `preferences` > `path`
+  - click `new` 
+  - browse to the folder you cloned to.
 
   ![](documentation/readme-images/add-path.png)
 
   ![](documentation/readme-images/add-path2.png)
 
-- Find a list of objects by opening `_im-current-objects.pd` from the main folder
+- Find a list of objects by opening `_im-object-overview.pd` from the main folder
 
-- Right-click on the objects found here to open help files.  Make sure you press `ctrl-E` to enter edit mode before clicking on any boxes!
+- Right-click on the objects found here to open help files. 
 
 ![a list of current objects](documentation/readme-images/current-objects-pd.png)
