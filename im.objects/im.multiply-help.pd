@@ -1,0 +1,52 @@
+#N canvas 44 34 525 536 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.multiply 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 8 465 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 106 241 1) processed signal;
+#X text 16 142 Multiply a signal by another signal or number \, either
+with an argument or with another signal in the right-hand-side., f
+81;
+#X text 105 195 1) number to mulitply by (also accepts a percentage)
+, f 64;
+#X text 105 217 1) 1 audio signal 2) amount to multiply by;
+#X text 16 467 im.multiply can be used to amplify different signals
+\, and is the same as im.fader and im.volume, f 81;
+#X obj 25 337 im.scale C major 4;
+#X obj 25 392 im.multiply;
+#X obj 115 360 im.keypress Space;
+#X obj 25 420 im.speaker;
+#X obj 38 361 im.sensor 2;
+#X obj 24 269 im.sensor 1;
+#X text 206 275 This combination of im.sensor and im.multiply is the
+same as:, f 49;
+#X obj 284 289 im.sensor 1 7;
+#X obj 24 311 im.multiply 7;
+#X obj 276 316 im.microphone;
+#X obj 366 318 im.sinewave C 4;
+#X obj 275 340 im.multiply;
+#X text 346 338 Instant dalek (connect the output of im.multiply to
+a speaker), f 27;
+#X text 102 392 im.multiply can be used like im.volume or im.fader
+, f 26;
+#X connect 14 0 15 0;
+#X connect 15 0 17 0;
+#X connect 16 0 15 1;
+#X connect 18 0 15 1;
+#X connect 19 0 22 0;
+#X connect 22 0 14 0;
+#X connect 23 0 25 0;
+#X connect 24 0 25 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

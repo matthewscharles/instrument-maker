@@ -1,0 +1,50 @@
+#N canvas 605 48 525 493 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.echo 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 12 445 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Echo unit with feedback. This echo is completely "wet"
+\, so it's best used as a parallel (send) effect., f 81;
+#X text 105 195 1) delay time in milliseconds 2) feedback amount as
+a percentage, f 64;
+#X text 106 241 1) processed signal;
+#X text 16 447 For now \, signals received in the the delay time and
+feedback inlets add to the values indicated as arguments \, rather
+than replacing them., f 81;
+#X obj 97 357 im.echo 1000 50%;
+#X obj 75 330 im.player sounds/sn.wav;
+#X obj 75 307 im.keypress Space;
+#X obj 75 380 im.output;
+#X obj 301 339 im.sensor 1 1000;
+#X obj 281 384 im.echo 0 50%;
+#X obj 262 292 im.keypress Up;
+#X obj 262 315 im.player sounds/string.aif;
+#X obj 262 410 im.output;
+#X text 333 408 use an external sensor to set the delay time., f 24
+;
+#X text 105 217 1) 1 signal input 2) delay time 3) feedback amount
+(0-1) 4) clear, f 67;
+#X obj 417 339 im.keypress z;
+#X text 384 370 clear the feedback;
+#X connect 13 0 16 0;
+#X connect 14 0 16 0;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
+#X connect 17 0 18 1;
+#X connect 18 0 21 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 20 0 18 0;
+#X connect 24 0 18 3;

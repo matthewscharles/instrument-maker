@@ -1,0 +1,35 @@
+#N canvas 534 88 525 493 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.envelope 20 22 0 30 -1 -196864
+0;
+#X obj 89 287 im.sensor 1;
+#X obj 171 287 im.keypress Space;
+#X obj 20 367 im.speaker;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 8 392 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 105 195 1) attack time in ms 2) release time in ms, f 64;
+#X text 105 217 1) gate signal;
+#X text 106 241 1) envelope signal;
+#X obj 20 287 im.noise;
+#X obj 21 335 im.fader;
+#X text 16 394 This needs a bit more thought!, f 81;
+#X obj 89 309 im.envelope 100 1000;
+#X text 16 142 Temporary notes: This is meant to be an AHR (attack-hold-release)
+envelope generator. At present \, it generates the attack on receiving
+a positive signal \, and release on zero., f 81;
+#X connect 2 0 18 0;
+#X connect 3 0 18 0;
+#X connect 15 0 16 0;
+#X connect 16 0 4 0;
+#X connect 18 0 16 1;

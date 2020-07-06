@@ -6,7 +6,7 @@ Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/mu
 
 # Disclaimer and development info
 
-The Instrument Maker library is very much work in progress and a labour of love — so please don't be surprised if things change around! 
+The Instrument Maker library is very much work in progress and a labour of love — so please don't be surprised if things change! 
 
 Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  
 

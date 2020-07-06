@@ -1,0 +1,26 @@
+#N canvas 132 69 525 493 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.nokeys 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 105 195 none, f 64;
+#X text 105 217 none;
+#X text 106 241 none;
+#X text 16 142 Include im.nokeys in a patch to disable all key triggers
+in help files., f 81;
+#X obj 68 327 im.nokeys;
+#X text 150 321 Try loading the help file for im.keypress \; it should
+not make any sound until you close this window.;
+#X obj 238 384 im.help;
+#X msg 238 360 im.keypress;
+#X connect 15 0 14 0;

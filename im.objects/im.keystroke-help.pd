@@ -1,0 +1,58 @@
+#N canvas 245 23 566 630;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.keystroke 20 22 0 30 -1 -196864
+0;
+#X text 22 110 Charles Matthews 2020;
+#X text 22 210 Inlets: none;
+#X obj 139 390 im.speaker;
+#X obj 31 320 im.fader;
+#X text 19 598 im.keypress is the same as im.keystroke;
+#X text 22 190 Arguments: letter key to monitor, f 77;
+#X text 22 230 Outlets: on/off signal (0-1);
+#X obj 143 338 im.fader;
+#X obj 253 337 im.fader;
+#X obj 382 330 im.fader;
+#X obj 31 263 im.pulsewave A 3;
+#X obj 142 262 im.pulsewave B 3;
+#X obj 251 262 im.pulsewave C 3;
+#X obj 381 262 im.pulsewave D 3;
+#X obj 34 483 im.player sounds/sn.wav;
+#X obj 34 514 im.speaker;
+#X obj 170 515 im.speaker;
+#X obj 170 484 im.player sounds/string.aif;
+#X obj 336 514 im.speaker;
+#X text 28 418 Capitalise the first letter of Up \, Down \, Left \,
+Right \, Space \, Return, f 81;
+#X obj 336 491 im.player sounds/rush.aif;
+#X text 22 140 Hold keys down to play certain sounds. Watch out - on
+a computer keyboard \, it doesn't always work to hold them down together.
+If you find that certain notes "hang" \, try pressing the relevant
+key again., f 80;
+#X text 34 554 im.player does not pay attention to when the key is
+released., f 72;
+#X obj 35 454 im.keystroke Up;
+#X obj 171 455 im.keystroke Space;
+#X obj 337 462 im.keystroke Return;
+#X obj 49 288 im.keystroke a;
+#X obj 154 288 im.keystroke b;
+#X obj 270 288 im.keystroke c;
+#X obj 427 301 im.keystroke d;
+#X connect 5 0 4 0;
+#X connect 9 0 4 0;
+#X connect 10 0 4 0;
+#X connect 11 0 4 0;
+#X connect 12 0 5 0;
+#X connect 13 0 9 0;
+#X connect 14 0 10 0;
+#X connect 15 0 11 0;
+#X connect 16 0 17 0;
+#X connect 19 0 18 0;
+#X connect 22 0 20 0;
+#X connect 25 0 16 0;
+#X connect 26 0 19 0;
+#X connect 27 0 22 0;
+#X connect 28 0 5 1;
+#X connect 29 0 9 1;
+#X connect 30 0 10 1;
+#X connect 31 0 11 1;

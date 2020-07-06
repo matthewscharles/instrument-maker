@@ -1,0 +1,40 @@
+#N canvas 297 246 525 493 10;
+#X obj 11 10 cnv 15 500 120 empty empty instrument_maker 10 22 0 40
+-4032 -66577 0;
+#X obj 22 60 cnv 15 478 40 empty empty im.debounce 20 22 0 30 -1 -196864
+0;
+#X obj 91 287 im.sensor 1;
+#X obj 171 287 im.keypress Space;
+#X obj 91 362 im.speaker;
+#X text 22 110 Charles Matthews 2020;
+#X obj 11 192 cnv 15 500 20 empty empty Arguments: 10 10 0 13 -203904
+-66577 0;
+#X obj 11 215 cnv 15 500 20 empty empty Inlets: 34 10 0 13 -204800
+-66577 0;
+#X obj 11 239 cnv 15 500 20 empty empty Outlets: 25 10 0 13 -204786
+-66577 0;
+#X text 21 171 comment, f 81;
+#X obj 11 135 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 16 142 Wait a certain amount of time (in milliseconds) before
+allowing a second trigger through. Useful in combination with audiotrigger
+or keypress \, certain switches on im.sensor.., f 81;
+#X text 105 195 1) time in milliseconds, f 64;
+#X obj 91 318 im.debounce 10;
+#X obj 91 339 im.player sounds/string.aif;
+#X obj 315 283 im.sensor 1;
+#X obj 317 402 im.speaker;
+#X obj 317 379 im.player sounds/sn.wav;
+#X obj 317 358 im.debounce 100;
+#X obj 395 283 im.keypress x;
+#X text 386 324 experiment with higher numbers, f 20;
+#X text 105 217 1) trigger from a sensor or keypress;
+#X text 106 241 1) processed trigger;
+#X connect 2 0 13 0;
+#X connect 3 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 0 4 0;
+#X connect 15 0 18 0;
+#X connect 17 0 16 0;
+#X connect 18 0 17 0;
+#X connect 19 0 18 0;
