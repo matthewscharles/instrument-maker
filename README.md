@@ -77,7 +77,3 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
 ![a list of current objects](documentation/readme-images/current-objects-pd.png)
 
-<details>
-<summary>  <img src = documentation/readme-images/add-path.png></summary>
-Testing
-</details>
