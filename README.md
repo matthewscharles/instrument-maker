@@ -1,7 +1,9 @@
 **Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on embedded computers such as [Bela](http://bela.io) or [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
-Key pages:
+
+# Key pages:
+
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
@@ -24,7 +26,7 @@ Read about the philosophy behind this framework on the [Bela.io blog](https://bl
 
 ---
 
-## How does it work?
+# How does it work?
 
 Although Instrument Maker was designed as a complete workshop package, the main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.
 
@@ -38,16 +40,16 @@ Upload this code to Bela, or use a Raspberry Pi with an Arduino-type device conn
 
 # Installation
 
-***This is for our current demo setup for desktops/RPi- Deken release and instructions for Bela coming soon!***
+*This is for our current demo setup for desktops/RPi. Deken release and instructions for Bela coming soon!*
 
 We recommend using [Patchbox OS](https://blokas.io/patchbox-os/) for Raspberry Pi.
 
 ## **Recommended: clone this repo**
 
-- Clone the repo to a local folder by opening a terminal:
-  - `git clone https://github.com/matthewscharles/instrument-maker`
-    - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
-  - Keep up to date by periodically typing `git pull` within the folder in terminal.
+Clone the repo to a local folder using terminal:
+- `git clone https://github.com/matthewscharles/instrument-maker`
+  - *On a Mac, you might be required to download developer tools. There is no need to install Xcode if prompted.*
+- Keep up to date by periodically typing `git pull` within the folder in terminal.
 
 ## **Alternative: direct download**
 
@@ -74,3 +76,8 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 - Right-click on the objects found here to open help files. 
 
 ![a list of current objects](documentation/readme-images/current-objects-pd.png)
+
+<details>
+<summary>Collapse test</summary>
+Testing
+</details>
