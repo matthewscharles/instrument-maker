@@ -12,7 +12,7 @@
 
 Distributed under the terms of the **GNU Public license version 3**.
 
-The core code was developed by [Charles Matthews](http://ardisson.net/), initially through workshops in collaboration with [Gift Tshuma](http://www.utchoir.com/), and with more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  
+The core code was developed by [Charles Matthews](http://ardisson.net/), as a way to develop collaborative workshops with [Gift Tshuma](http://www.utchoir.com/), with more in the pipeline through our project [Blurring the Boundaries](http://www.blurringtheboundaries.org/).  
 
 <!--Thanks to [Roybn Steward](https://www.robynsteward.com/music), [Education Makers](http://www.educationmakers.ca/), and [Dave Darch](http://alittlelearning.org/) (+ many more) for testing the code and helping generate documentation.-->
 
@@ -29,6 +29,8 @@ Read about the philosophy behind this framework on the [Bela.io blog](https://bl
 # How does it work?
 
 Although Instrument Maker was designed as a complete workshop package, the main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.
+
+Instrument Maker code is designed to complement the existing Pure Data objects
 
 Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. 
 
