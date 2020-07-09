@@ -1,5 +1,7 @@
 **Instrument Maker** is an open source framework for digital instrument building with sensors, for [Pure Data](http://puredata.info/) running on embedded computers such as [Bela](http://bela.io) or [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
 
+Massive overhaul in progress -- watch this space.
+
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
 # Key pages:
