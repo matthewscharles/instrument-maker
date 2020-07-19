@@ -241,10 +241,10 @@ at present no need to mess about with generating this dynamically)
 #X obj 315 647 list append;
 #X obj 377 622 list;
 #X obj 225 530 expr $f1 \; 1 - $f1, f 22;
-#X obj 224 505 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 224 505 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 295 451 0;
-#X obj 225 571 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 225 571 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 349 563 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -264,7 +264,7 @@ at present no need to mess about with generating this dynamically)
 #X msg 60 58 get \$1 1;
 #X obj 196 392 t f f;
 #X obj 59 167 route float;
-#X obj 99 512 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 99 512 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 123 407 t b b b;
 #X msg 252 291 0;
@@ -376,9 +376,7 @@ g♭ 6 \; g 7 \; Ab 8 \; A♭ 8 \; G# 8 \; G♯ 8 \; ab 8 \; a♭ 8
 10 \; A# 10 \; A♯ 10 \; a# 10 \; a♯ 10 \; B 11 \; b 11 \;;
 #X obj 620 -208 * 12;
 #X obj 425 195 +, f 33;
-#X obj 424 69 text search \$0-notes;
 #X obj 406 227 sig~;
-#X obj 424 95 text get \$0-notes 1;
 #N canvas 0 196 581 582 hz 0;
 #X obj 182 141 list length;
 #X obj 123 193 list split;
@@ -478,7 +476,7 @@ g♭ 6 \; g 7 \; Ab 8 \; A♭ 8 \; G# 8 \; G♯ 8 \; ab 8 \; a♭ 8
 #X obj 180 514 +~ 0.1;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
-#X connect 3 0 64 0;
+#X connect 3 0 62 0;
 #X connect 4 0 0 0;
 #X connect 5 0 1 0;
 #X connect 6 0 7 0;
@@ -503,45 +501,43 @@ g♭ 6 \; g 7 \; Ab 8 \; A♭ 8 \; G# 8 \; G♯ 8 \; ab 8 \; a♭ 8
 #X connect 29 2 16 0;
 #X connect 29 3 30 0;
 #X connect 30 0 31 0;
-#X connect 33 0 48 0;
-#X connect 34 0 36 0;
-#X connect 35 0 37 0;
-#X connect 36 0 5 0;
-#X connect 37 0 34 0;
-#X connect 38 1 39 0;
-#X connect 38 2 42 0;
-#X connect 39 0 36 0;
-#X connect 40 0 43 0;
-#X connect 41 0 34 0;
-#X connect 42 0 40 0;
-#X connect 43 0 41 0;
-#X connect 44 0 39 0;
-#X connect 44 1 49 0;
+#X connect 33 0 46 0;
+#X connect 34 0 35 0;
+#X connect 35 0 5 0;
+#X connect 36 1 37 0;
+#X connect 36 2 40 0;
+#X connect 37 0 35 0;
+#X connect 38 0 41 0;
+#X connect 39 0 34 0;
+#X connect 40 0 38 0;
+#X connect 41 0 39 0;
+#X connect 42 0 37 0;
+#X connect 42 1 47 0;
+#X connect 43 0 42 0;
+#X connect 44 0 33 0;
 #X connect 45 0 44 0;
-#X connect 46 0 33 0;
-#X connect 47 0 46 0;
-#X connect 48 0 42 0;
-#X connect 48 1 34 1;
-#X connect 49 0 39 0;
+#X connect 46 0 40 0;
+#X connect 46 1 34 1;
+#X connect 47 0 37 0;
+#X connect 47 0 48 0;
+#X connect 47 1 40 0;
 #X connect 49 0 50 0;
-#X connect 49 1 42 0;
+#X connect 49 1 51 0;
+#X connect 49 1 53 0;
+#X connect 49 1 54 0;
+#X connect 49 1 55 0;
+#X connect 50 0 4 1;
 #X connect 51 0 52 0;
-#X connect 51 1 53 0;
-#X connect 51 1 55 0;
-#X connect 51 1 56 0;
-#X connect 51 1 57 0;
-#X connect 52 0 4 1;
-#X connect 53 0 54 0;
-#X connect 54 0 52 0;
-#X connect 55 0 52 0;
-#X connect 56 0 52 0;
-#X connect 57 0 52 0;
-#X connect 58 0 51 0;
-#X connect 59 0 60 0;
-#X connect 59 1 62 0;
-#X connect 60 0 64 0;
-#X connect 61 0 59 0;
-#X connect 62 0 63 0;
-#X connect 63 0 60 0;
-#X connect 64 0 2 1;
+#X connect 52 0 50 0;
+#X connect 53 0 50 0;
+#X connect 54 0 50 0;
+#X connect 55 0 50 0;
+#X connect 56 0 49 0;
+#X connect 57 0 58 0;
+#X connect 57 1 60 0;
+#X connect 58 0 62 0;
+#X connect 59 0 57 0;
+#X connect 60 0 61 0;
+#X connect 61 0 58 0;
+#X connect 62 0 2 1;
 #X coords 0 -1 1 1 15 15 1 0 800;

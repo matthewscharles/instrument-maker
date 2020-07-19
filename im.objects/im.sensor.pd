@@ -24,7 +24,7 @@
 #X msg 312 245 8;
 #X text 136 71 don't need to check channel..for now;
 #X obj 65 816 hsl 103 8 0 127 0 0 \$0-interact \$0-display empty -2
--8 0 10 -204786 -258113 -1 0 0;
+-8 0 10 -204786 -258113 -1 11500 0;
 #X obj 88 344 s \$0-display;
 #X obj 90 365 r \$0-interact;
 #X msg 88 323 set \$1;
