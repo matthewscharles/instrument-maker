@@ -1,4 +1,4 @@
-#N canvas 301 305 554 196;
+#N canvas 0 23 680 411 12;
 #X msg 77 93 get \$1 1;
 #X obj 77 117 list store \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9;
 #X obj 77 19 inlet~;
@@ -9,6 +9,8 @@
 #X obj 77 141 outlet;
 #X text 132 142 do we need to convert back to audio? no \, bc some
 output will be symbols.;
+#X text 195 24 replace this with table readout!!;
+#X text 205 34 it's essentially im.sequence;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
 #X connect 2 0 3 0;

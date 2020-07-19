@@ -1,0 +1,21 @@
+#N canvas 415 81 742 483 10;
+#X obj 18 81 im.speaker;
+#X obj 18 60 im.fader, f 10;
+#X obj 18 24 im.noise;
+#X obj 75 24 im.sensor 1;
+#X obj 16 260 im.speaker;
+#X obj 16 239 im.fader, f 14;
+#X obj 17 182 im.scale E lydian 3;
+#X obj 95 203 im.sensor 3;
+#X obj 17 213 im.sawtooth;
+#X obj 17 150 im.sensor 2 7;
+#X text 144 140 When combined with scale \, use the second argument
+to choose how many pitches to trigger., f 29;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;
+#X connect 5 0 4 0;
+#X connect 6 0 8 0;
+#X connect 7 0 5 1;
+#X connect 8 0 5 0;
+#X connect 9 0 6 0;

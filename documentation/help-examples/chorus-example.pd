@@ -1,0 +1,12 @@
+#N canvas 136 336 558 266 12;
+#X obj 47 26 im.microphone;
+#X obj 47 76 im.fader;
+#X obj 47 104 im.chorus;
+#X obj 47 135 im.speaker;
+#X obj 99 50 im.keypress Space;
+#X text 139 96 Hold down the space bar to hear some chorus on the microphone.
+Beware of feedback!, f 32;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 1 1;

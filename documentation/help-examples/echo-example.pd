@@ -1,0 +1,24 @@
+#N canvas 384 155 871 561 12;
+#X obj 42 179 im.echo 1000 50%;
+#X obj 22 135 im.player sounds/sn.wav;
+#X obj 22 40 im.keypress Space;
+#X obj 22 220 im.output;
+#X obj 276 149 im.sensor 1 1000;
+#X obj 237 40 im.keypress Up;
+#X obj 237 116 im.player sounds/string.aif;
+#X obj 237 227 im.output;
+#X text 269 69 use an external sensor to set the delay time., f 24
+;
+#X obj 404 149 im.keypress z;
+#X text 397 176 clear the feedback;
+#X obj 279 194 im.echo 100 50%;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 4 0 11 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 0 11 0;
+#X connect 9 0 11 3;
+#X connect 11 0 7 0;

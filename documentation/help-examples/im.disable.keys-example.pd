@@ -1,0 +1,4 @@
+#N canvas 577 67 525 493 10;
+#X obj 25 20 im.nokeys;
+#X text 107 14 Try loading the help file for im.keypress \; it should
+not make any sound until you close this window.;

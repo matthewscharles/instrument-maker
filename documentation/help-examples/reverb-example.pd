@@ -1,0 +1,25 @@
+#N canvas 543 83 525 493 10;
+#X obj 73 14 im.sensor 1;
+#X obj 8 94 im.speaker;
+#X obj 8 62 im.reverb short;
+#X obj 8 17 im.noise;
+#X obj 8 38 im.fader;
+#X obj 207 93 im.speaker;
+#X obj 206 11 im.noise;
+#X obj 206 35 im.fader;
+#X obj 272 11 im.sensor 2;
+#X obj 206 68 im.reverb long;
+#X text 10 116 Compare short and long reverb times with the z and x
+keys.;
+#X obj 273 37 im.keypress x;
+#X obj 74 36 im.keypress z;
+#X connect 0 0 4 1;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 1;
+#X connect 9 0 5 0;
+#X connect 11 0 7 1;
+#X connect 12 0 4 1;

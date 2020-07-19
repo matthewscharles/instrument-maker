@@ -1,0 +1,29 @@
+#N canvas 44 34 525 536 10;
+#X obj 4 350 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 12 352 im.multiply can be used to amplify different signals
+\, and is the same as im.fader and im.volume, f 81;
+#X obj 19 35 im.scale C major 4;
+#X obj 19 90 im.multiply;
+#X obj 109 58 im.keypress Space;
+#X obj 19 118 im.speaker;
+#X obj 32 59 im.sensor 2;
+#X text 4 212 This combination of im.sensor and im.multiply is the
+same as:, f 49;
+#X obj 82 226 im.sensor 1 7;
+#X obj 18 9 im.multiply 7;
+#X obj 74 253 im.microphone;
+#X obj 164 255 im.sinewave C 4;
+#X obj 73 277 im.multiply;
+#X text 105 298 Instant dalek (connect the output of im.multiply to
+a speaker), f 27;
+#X text 96 90 im.multiply can be used like im.volume or im.fader,
+f 26;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 1;
+#X connect 6 0 3 1;
+#X connect 9 0 2 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

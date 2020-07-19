@@ -1,12 +1,12 @@
-#N canvas 494 166 932 683;
+#N canvas 0 23 868 643 12;
 #X obj 71 583 pack f f;
 #X obj 71 610 line~;
 #X floatatom 117 558 5 0 0 0 - - -;
 #X obj 71 636 outlet~;
 #X obj 88 14 loadbang;
 #X text 153 558 glide time;
-#X obj 302 248 inlet;
-#X obj 303 301 * 12;
+#X obj 352 247 inlet;
+#X obj 353 300 * 12;
 #X text 464 55 accept frequency \; check type (float \, symbol?) add
 lower case options?;
 #X obj 99 96 inlet;
@@ -18,14 +18,10 @@ once scala integration is stable \; for now \, let's make do with mtof
 ;
 #X text 463 110 we could run through the chars here and add an option
 for octaves defined within the symbol argument :);
-#X obj 303 277 list store \$2;
+#X obj 353 276 list store \$2;
 #X obj 73 251 route float, f 17;
 #X obj 174 382 +, f 22;
 #X obj 99 119 route midi;
-#X obj 523 509 text define -k nToI;
-#A set C 0 \; C# 1 \; Db 1 \; D 2 \; D# 3 \; Eb 3 \; E 4 \; F 5 \;
-F# 6 \; Gb 6 \; G 7 \; Ab 8 \; G# 8 \; A 9 \; Bb 10 \; A# 10 \; B 11
-\;;
 #X msg 319 70 read im.nToI.txt;
 #X obj 319 96 text define \$0-notes;
 #X obj 172 299 text search \$0-notes;
@@ -37,10 +33,22 @@ F# 6 \; Gb 6 \; G 7 \; Ab 8 \; G# 8 \; A 9 \; Bb 10 \; A# 10 \; B 11
 #X text 173 214 Hz filter here;
 #X obj 47 350 ftom;
 #X text 0 264 let's assume a float = Hz for now;
+#X obj 523 509 text define -k \$0-nToI;
+#A set C 0 \; c 0 \; C# 1 \; C♯ 1 \; c# 1 \; c♯ 1 \; Db 1 \; D♭
+1 \; D 2 \; db 1 \; d♭ 1 \; d 2 \; D# 3 \; D♯ 3 \; d# 3 \; d♯
+3 \; Eb 3 \; E♭ 3 \; eb 3 \; e♭ 3 \; E 4 \; e 4 \; F 5 \; f 5 \;
+F# 6 \; F♯ 6 \; f# 6 \; f♯ 6 \; Gb 6 \; G♭ 6 \; G 7 \; gb 6 \;
+g♭ 6 \; g 7 \; Ab 8 \; A♭ 8 \; G# 8 \; G♯ 8 \; ab 8 \; a♭ 8
+\; g# 8 \; g♯ 8 \; A 9 \; a 9 \; Bb 10 \; B♭ 10 \; bb 10 \; b♭
+10 \; A# 10 \; A♯ 10 \; a# 10 \; a♯ 10 \; B 11 \; b 11 \;;
+#X obj 295 178 print search;
+#X obj 195 368 print output;
+#X obj 223 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 0 1;
-#X connect 4 0 24 0;
+#X connect 4 0 23 0;
 #X connect 6 0 15 0;
 #X connect 7 0 17 1;
 #X connect 9 0 18 0;
@@ -49,16 +57,19 @@ F# 6 \; Gb 6 \; G 7 \; Ab 8 \; G# 8 \; A 9 \; Bb 10 \; A# 10 \; B 11
 #X connect 12 0 10 0;
 #X connect 12 1 10 1;
 #X connect 15 0 7 0;
-#X connect 16 0 28 0;
-#X connect 16 1 22 0;
+#X connect 16 0 27 0;
+#X connect 16 1 21 0;
+#X connect 16 1 30 0;
 #X connect 17 0 0 0;
 #X connect 18 0 0 0;
 #X connect 18 1 11 0;
-#X connect 20 0 21 0;
-#X connect 22 0 26 0;
-#X connect 24 0 10 0;
-#X connect 24 1 15 0;
-#X connect 24 2 20 0;
-#X connect 26 0 17 0;
-#X connect 28 0 0 0;
+#X connect 19 0 20 0;
+#X connect 21 0 25 0;
+#X connect 23 0 10 0;
+#X connect 23 1 15 0;
+#X connect 23 2 19 0;
+#X connect 25 0 17 0;
+#X connect 25 0 31 0;
+#X connect 27 0 0 0;
+#X connect 32 0 10 0;
 #X coords 0 -1 1 1 15 15 1 0 800;

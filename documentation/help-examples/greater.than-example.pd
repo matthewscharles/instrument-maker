@@ -1,0 +1,11 @@
+#N canvas 0 23 450 300 12;
+#X obj 20 104 im.speaker;
+#X obj 108 17 im.sensor 1;
+#X obj 18 44 im.noise;
+#X obj 20 82 im.fader, f 13;
+#X obj 108 48 im.greaterthan 0.5;
+#X text 137 69 Is the reading from sensor 1 above half way?;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 1;

@@ -1,4 +1,4 @@
-#N canvas 668 107 612 547 10;
+#N canvas 459 95 612 547 10;
 #X obj 104 128 list length;
 #X obj 50 178 list split;
 #X obj 52 79 list fromsymbol;
@@ -9,24 +9,22 @@
 #X floatatom 47 389 5 0 0 0 - - -;
 #X obj 106 475 makefilename %f;
 #X floatatom 106 505 5 0 0 0 - - -;
-#X obj 227 157 list store \$1;
-#X obj 227 205 list fromsymbol;
-#X floatatom 254 282 5 0 0 0 - - -;
-#X obj 227 135 loadbang;
+#X obj 228 111 list store \$1;
+#X obj 228 159 list fromsymbol;
+#X floatatom 255 236 5 0 0 0 - - -;
+#X obj 228 89 loadbang;
 #X obj 52 100 t a a, f 9;
-#X obj 227 230 t a a;
-#X obj 254 255 list length;
+#X obj 228 184 t a a;
+#X obj 255 209 list length;
 #X obj 78 273 list.compare;
 #X obj 47 423 outlet stripped;
 #X text 151 423 only output the stripped value if the unit matches
 ;
-#X obj 52 3 inlet value to check and strip;
-#X text 150 438 only output the stripped value if the unit matches
-;
-#X obj 227 182 symbol;
-#X obj 52 47 route float;
-#X obj 51 25 symbol;
-#X obj 129 312 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj -11 8 inlet value to check and strip;
+#X obj 228 136 symbol;
+#X obj -11 52 route float;
+#X obj -11 30 symbol;
+#X obj 129 312 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X connect 0 0 3 0;
 #X connect 1 0 4 0;
@@ -39,7 +37,7 @@
 #X connect 7 0 8 0;
 #X connect 7 0 18 0;
 #X connect 8 0 9 0;
-#X connect 10 0 22 0;
+#X connect 10 0 21 0;
 #X connect 11 0 15 0;
 #X connect 12 0 3 1;
 #X connect 13 0 10 0;
@@ -49,9 +47,9 @@
 #X connect 15 1 16 0;
 #X connect 16 0 12 0;
 #X connect 17 0 4 1;
-#X connect 17 0 25 0;
-#X connect 20 0 24 0;
-#X connect 22 0 11 0;
-#X connect 23 1 2 0;
-#X connect 24 0 23 0;
+#X connect 17 0 24 0;
+#X connect 20 0 23 0;
+#X connect 21 0 11 0;
+#X connect 22 1 2 0;
+#X connect 23 0 22 0;
 #X coords 0 -1 1 1 15 15 1 0 800;

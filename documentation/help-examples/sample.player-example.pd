@@ -1,0 +1,25 @@
+#N canvas 132 69 525 493 10;
+#X obj 2 141 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 16 17 im.sensor 1;
+#X obj 132 17 im.keypress Space;
+#X obj 19 90 im.speaker;
+#X obj 18 57 im.player sounds/sn.wav;
+#X obj 21 311 im.speaker;
+#X obj 19 194 im.sensor 2;
+#X obj 89 232 im.keypress m;
+#X text 98 308 4 samples at once;
+#X obj 219 243 im.keypress n;
+#X text 169 213 second inlet stops;
+#X text 10 144 See im.player.list for random playback of a list of
+files., f 81;
+#X obj 20 277 im.player sounds/string.aif 4;
+#X text 124 76 triggers when sensor goes over 0 or space is pressed
+;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 6 0 12 0;
+#X connect 7 0 12 0;
+#X connect 9 0 12 1;
+#X connect 12 0 5 0;

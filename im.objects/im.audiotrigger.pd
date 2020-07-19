@@ -1,12 +1,12 @@
-#N canvas 0 23 450 300;
+#N canvas 0 23 450 300 12;
 #X obj 167 127 bonk~;
 #X msg 224 106 thresh 2 20;
 #X obj 224 84 loadbang;
-#X obj 167 184 sig~;
+#X obj 167 214 sig~;
 #X msg 167 161 1;
 #X obj 207 160 delay 10;
 #X msg 206 181 0;
-#X obj 167 207 outlet~;
+#X obj 167 239 outlet~;
 #X obj 166 84 inlet~;
 #X text 119 38 experimental - threshold set high!;
 #X connect 0 0 4 0;

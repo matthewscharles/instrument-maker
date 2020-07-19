@@ -1,0 +1,8 @@
+#N canvas 136 336 558 266 12;
+#X obj 33 36 im.keypress Space;
+#X obj 33 100 im.snapshot;
+#X floatatom 33 129 5 0 0 0 - - -;
+#X obj 33 73 im.add 1;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;

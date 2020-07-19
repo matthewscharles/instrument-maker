@@ -1,0 +1,20 @@
+#N canvas 119 206 525 493 10;
+#X obj 11 10 im.sensor 1;
+#X obj 132 9 im.keypress Space;
+#X obj 11 98 im.speaker;
+#X obj 11 64 im.player.list plist.txt 4;
+#X text 28 80 max polyphony is 4 in this version;
+#X obj 7 126 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 15 128 There is no limit to the number of files you can include
+in the .txt file. End each line with a semicolon (see plist.txt as
+an example \, but best not to write over it!), f 81;
+#X text 14 171 In this version the files are played randomly \, but
+other methods like round-robin should be possible in the future.,
+f 81;
+#X obj 255 9 im.keypress z;
+#X text 256 34 second inlet stops;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
+#X connect 8 0 3 1;

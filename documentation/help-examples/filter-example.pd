@@ -1,0 +1,22 @@
+#N canvas 163 238 871 561 12;
+#X obj 22 181 im.speaker;
+#X obj 81 96 im.keypress Space;
+#X obj 22 40 im.noise;
+#X obj 102 124 im.sensor 1 0.5;
+#X obj 22 154 im.volume;
+#X obj 272 34 im.lfo slow sawtooth;
+#X text 126 19 cutoff;
+#X text 270 17 resonance;
+#X obj 22 70 im.filter 200Hz 0, f 36;
+#X obj 136 39 im.lfo 0.5Hz sine;
+#X text 218 124 Press space or connect a sensor to hear some filtered
+white noise.;
+#X text 122 2 Replace these LFOs with sensor inputs for live control.
+;
+#X connect 1 0 4 1;
+#X connect 2 0 8 0;
+#X connect 3 0 4 1;
+#X connect 4 0 0 0;
+#X connect 5 0 8 2;
+#X connect 8 0 4 0;
+#X connect 9 0 8 1;

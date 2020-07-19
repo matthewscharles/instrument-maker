@@ -1,0 +1,6 @@
+#N canvas 132 69 525 493 10;
+#X obj 10 8 im.keypress Space;
+#X obj 10 38 im.retrigger 100;
+#X obj 10 62 im.snapshot;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;

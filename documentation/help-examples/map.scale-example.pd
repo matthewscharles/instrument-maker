@@ -1,0 +1,32 @@
+#N canvas 307 100 546 538 10;
+#X text 301 55 Scales/modes available:;
+#X text 430 80 major;
+#X text 430 169 minor;
+#X text 356 81 ionian;
+#X text 355 100 dorian;
+#X text 355 117 phrygian;
+#X text 354 135 lydian;
+#X text 354 150 mixolydian;
+#X text 354 166 aeolian;
+#X text 355 182 locrian;
+#X obj 41 44 im.scale C major 5;
+#X obj 41 65 im.pulsewave;
+#X obj 42 149 im.output;
+#X obj 42 126 im.fader;
+#X obj 75 97 im.sensor 2;
+#X obj 202 94 im.keypress Space;
+#X obj 41 22 im.sensor 1 7;
+#X text 154 14 Send a full octave of C major by attaching a sensor
+to the first input.;
+#X obj 15 204 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 24 205 * Both # and b characters are valid \, e.g. C# \, Db
+, f 81;
+#X obj 67 225 im.scale Bb major 5;
+#X obj 222 224 im.scale A# major 5;
+#X connect 10 0 11 0;
+#X connect 11 0 13 0;
+#X connect 13 0 12 0;
+#X connect 14 0 13 1;
+#X connect 15 0 13 1;
+#X connect 16 0 10 0;
