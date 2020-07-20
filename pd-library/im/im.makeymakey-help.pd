@@ -1,0 +1,65 @@
+#N canvas 412 37 837 561 10;
+#X floatatom 211 74 5 0 0 0 - - -;
+#X msg 250 74;
+#X text 278 75 ..;
+#X obj 565 408 cnv 15 250 140 empty empty pd_vanilla 8 14 0 18 -249791
+-66577 0;
+#X obj 565 318 cnv 15 250 80 empty empty web 8 14 0 18 -245757 -66577
+0;
+#X obj 564 10 cnv 15 250 300 empty empty related 8 14 0 18 -241659
+-66577 0;
+#X obj 11 265 cnv 15 545 50 empty empty empty 10 10 0 15 -258042 -131073
+0;
+#X obj 11 315 cnv 15 545 50 empty empty empty 10 10 0 15 -258043 -131073
+0;
+#X obj 11 365 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 414 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 464 cnv 15 545 40 empty empty empty 10 10 0 15 -257983 -131073
+0;
+#X obj 11 505 cnv 15 545 20 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 526 cnv 15 545 12 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 41 cnv 15 545 30 empty empty empty 5 18 0 25 -253376 -66577
+0;
+#X obj 11 72 cnv 15 545 30 empty empty empty 5 18 0 25 -249023 -66577
+0;
+#X obj 11 103 cnv 15 545 30 empty empty empty 5 18 0 25 -244604 -66577
+0;
+#X obj 11 10 cnv 15 545 30 empty empty instrumentmaker.org 5 18 0 25
+-261824 -66577 0;
+#X obj 15 47 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 108 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 61 cnv 15 523 47 empty empty makey.makey 10 25 0 30 -1 -16777216 0;#X obj 15 108 cnv 15 100 20 empty empty control 10 10 0 13 -257985 -1 0;#X text 409 18 Charles Matthews 2020;#X text 487 28 0.1.1a.1;#X obj 11 135 cnv 15 545 50 empty empty empty 10 10 0 13 -262130 -655361 0;#X text 16 142 A collection of im.key.press objects: all the crocodile clip points on a MaKeyMaKey board in a convenient package (one outlet per key)., f 81;#X obj 11 192 cnv 15 545 20 empty empty Arguments: 10 10 0 13 -203904 -1 0;#X text 105 195 1) none , f 70;#X obj 11 215 cnv 15 545 20 empty empty Inlets: 34 10 0 13 -204800 -1 0;#X text 105 217 1) none , f 70;#X obj 11 239 cnv 15 545 20 empty empty Outlets: 25 10 0 13 -204786 -1 0;#X text 105 241 1) up 2) down 3) left 4) right 5) space (all off/on signals 0-1) , f 70;#X obj 11 265 cnv 15 545 20 empty empty Examples 10 11 0 15 -261682 -1 0;#X obj 570 360 im.help.link https://makeymakey.com;#X obj 570 450 keyname;#X obj 570 475 key;#X obj 570 500 keyup;#X obj 570 525 select;#X obj 20 523 im.speaker ;
+#X obj 59 270 im.makeymakey, f 75 ;
+#X obj 19 393 im.fader ;
+#X obj 129 406 im.fader ;
+#X obj 128 354 im.sinewave G 6 ;
+#X obj 241 378 im.fader ;
+#X obj 242 352 im.sinewave Eb 6 ;
+#X obj 372 378 im.fader ;
+#X obj 418 444 im.fader ;
+#X obj 372 352 im.sinewave Bb 6 ;
+#X obj 17 360 im.sinewave C 6 ;
+#X obj 418 418 im.sinewave Db 7 ;
+#X text 43 292 Up ;
+#X text 150 290 Down ;
+#X text 266 290 Left ;
+#X text 380 290 Right ;
+#X text 480 290 Space ;
+#X connect 38 0 39 1 ;
+#X connect 38 1 40 1 ;
+#X connect 38 2 42 1 ;
+#X connect 38 3 44 1 ;
+#X connect 38 4 45 1 ;
+#X connect 39 0 37 0 ;
+#X connect 40 0 37 0 ;
+#X connect 41 0 40 0 ;
+#X connect 42 0 37 0 ;
+#X connect 43 0 42 0 ;
+#X connect 44 0 37 0 ;
+#X connect 45 0 37 0 ;
+#X connect 46 0 44 0 ;
+#X connect 47 0 39 0 ;
+#X connect 48 0 45 0 ;
+ ;

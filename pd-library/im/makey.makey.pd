@@ -1,0 +1,21 @@
+#N canvas 226 361 868 644;
+#X text 49 10 w a s d f g up down left right; 
+#X text 285 12 leftclick rightclick; 
+#X text 243 9 space; 
+#X obj 58 98 im.keypress Up; 
+#X obj 164 98 im.keypress Down; 
+#X obj 279 97 im.keypress Left; 
+#X obj 389 96 im.keypress Right; 
+#X obj 510 94 im.keypress Space; 
+#X obj 58 130 outlet~; 
+#X obj 165 130 outlet~; 
+#X obj 281 131 outlet~; 
+#X obj 388 131 outlet~; 
+#X obj 510 132 outlet~; 
+#X connect 3 0 8 0; 
+#X connect 4 0 9 0; 
+#X connect 5 0 10 0; 
+#X connect 6 0 11 0; 
+#X connect 7 0 12 0; 
+#X coords 0 -1 1 1 15 15 1 0 800; 
+ 

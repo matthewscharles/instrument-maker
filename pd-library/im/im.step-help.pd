@@ -1,0 +1,56 @@
+#N canvas 412 37 837 561 10;
+#X floatatom 211 74 5 0 0 0 - - -;
+#X msg 250 74;
+#X text 278 75 ..;
+#X obj 565 408 cnv 15 250 140 empty empty pd_vanilla 8 14 0 18 -249791
+-66577 0;
+#X obj 565 318 cnv 15 250 80 empty empty web 8 14 0 18 -245757 -66577
+0;
+#X obj 564 10 cnv 15 250 300 empty empty related 8 14 0 18 -241659
+-66577 0;
+#X obj 11 265 cnv 15 545 50 empty empty empty 10 10 0 15 -258042 -131073
+0;
+#X obj 11 315 cnv 15 545 50 empty empty empty 10 10 0 15 -258043 -131073
+0;
+#X obj 11 365 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 414 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 464 cnv 15 545 40 empty empty empty 10 10 0 15 -257983 -131073
+0;
+#X obj 11 505 cnv 15 545 20 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 526 cnv 15 545 12 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 41 cnv 15 545 30 empty empty empty 5 18 0 25 -253376 -66577
+0;
+#X obj 11 72 cnv 15 545 30 empty empty empty 5 18 0 25 -249023 -66577
+0;
+#X obj 11 103 cnv 15 545 30 empty empty empty 5 18 0 25 -244604 -66577
+0;
+#X obj 11 10 cnv 15 545 30 empty empty instrumentmaker.org 5 18 0 25
+-261824 -66577 0;
+#X obj 15 47 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 108 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 61 cnv 15 523 47 empty empty trigger.step 10 25 0 30 -1 -16777216 0;#X obj 15 47 cnv 15 100 20 empty empty control 10 10 0 13 -257985 -1 0;#X obj 15 108 cnv 15 100 20 empty empty control 10 10 0 13 -257985 -1 0;#X text 409 18 Charles Matthews 2020;#X text 487 28 0.1.1a.1;#X obj 11 135 cnv 15 545 50 empty empty empty 10 10 0 13 -262130 -655361 0;#X text 16 142 Use im.step to step through the values of im.sequence. To step through all values: the first argument of im.step must match the total number of steps in im.sequence. If fewer steps are given then only a subset will be triggered., f 81;#X obj 11 192 cnv 15 545 20 empty empty Arguments: 10 10 0 13 -203904 -1 0;#X text 105 195 1) number of steps 2) random (optional) , f 70;#X obj 11 215 cnv 15 545 20 empty empty Inlets: 34 10 0 13 -204800 -1 0;#X text 105 217 1) on/off trigger (e.g. im.sensor or im.keypress) , f 70;#X obj 11 239 cnv 15 545 20 empty empty Outlets: 25 10 0 13 -204786 -1 0;#X text 105 241 1) divisions based on the number input , f 70;#X obj 11 265 cnv 15 545 20 empty empty Examples 10 11 0 15 -261682 -1 0;#X obj 570 360 im.help.link https://cdm.link/2017/12/quick-tip-roland-sh-01a-tr-08-trigger-work/;#X obj 570 450 bang;#X obj 570 475 +;#X obj 570 500 %;#X obj 15 275 im.keypress a ;
+#X obj 15 305 im.step 8 ;
+#X obj 15 382 im.tunedperc ;
+#X obj 15 403 im.speaker ;
+#X obj 16 544 im.tunedperc ;
+#X obj 16 565 im.speaker ;
+#X obj 16 470 im.step 8 random ;
+#X obj 16 436 im.keypress s ;
+#X text 132 473 added random arg ;
+#X obj 15 354 im.scale C dorian 5 ;
+#X obj 16 517 im.scale C dorian 5 ;
+#X obj 15 330 im.sequence 0 1 4 3 4 5 2 7 ;
+#X obj 16 495 im.sequence 0 1 4 3 4 5 2 7 ;
+#X connect 37 0 38 0 ;
+#X connect 38 0 48 0 ;
+#X connect 39 0 40 0 ;
+#X connect 41 0 42 0 ;
+#X connect 43 0 49 0 ;
+#X connect 44 0 43 0 ;
+#X connect 46 0 39 0 ;
+#X connect 47 0 41 0 ;
+#X connect 48 0 46 0 ;
+#X connect 49 0 47 0 ;
+ ;
