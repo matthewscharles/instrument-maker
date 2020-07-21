@@ -1,78 +1,78 @@
-<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='800'><image x="26.599999999999998" y="87.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='61.599999999999994' y='97.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='97.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='114.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='66' y='113' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
-<rect width='58.5' height='20' x='61.599999999999994' y='72' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='72' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='114.6' y='72' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='89' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='66' y='88' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
-<image x="26.599999999999998" y="18.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/noise.svg" /><rect width='58.5' height='20' x='61.599999999999994' y='28.799999999999997' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='28.799999999999997' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='61.599999999999994' y='45.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='66' y='44' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.noise </text>
-<image x="95" y="18.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='130' y='28.799999999999997' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='130' y='45.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='135' y='44' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 1 </text>
-<image x="24.2" y="311.59999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='59.2' y='321.59999999999997' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='321.59999999999997' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='338.59999999999997' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='64' y='337' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
-<rect width='58.5' height='20' x='59.2' y='296.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='296.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='112.2' y='296.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='313.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='64' y='312' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
-<image x="25.4" y="208.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/scale.svg" /><rect width='130' height='20' x='60.4' y='218.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='60.4' y='218.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='60.4' y='235.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='65' y='234' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.scale E lydian 3 </text>
-<image x="128.6" y="238.39999999999998" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='163.6' y='248.39999999999998' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='163.6' y='265.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='168' y='264' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 3 </text>
-<image x="24.2" y="248" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sawtooth.svg" /><rect width='78' height='20' x='59.2' y='258' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='258' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='59.2' y='275' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='64' y='274' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sawtooth </text>
-<image x="25.4" y="170" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='91' height='20' x='60.4' y='180' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='60.4' y='197' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='65' y='196' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 2 7 </text>
-<image x="29" y="399.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='182' height='20' x='64' y='409.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='426.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='69' y='425' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor input:A0 range:12 </text>
-<image x="29" y="478.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fizzy.svg" /><rect width='58.5' height='20' x='64' y='488.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='488.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='117' y='488.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='505.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='69' y='504' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fizzy </text>
-<image x="29" y="444.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/scale.svg" /><rect width='123.5' height='20' x='64' y='454.8' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='454.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='471.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='69' y='470' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.scale c minor 5 </text>
-<image x="115.39999999999999" y="477.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='182' height='20' x='150.39999999999998' y='487.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='150.39999999999998' y='504.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='155' y='503' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor input:A0 range:2- </text>
-<image x="29" y="525.1999999999999" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/filter.svg" /><rect width='143' height='20' x='64' y='535.1999999999999' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='535.1999999999999' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='130' y='535.1999999999999' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='201' y='535.1999999999999' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='552.1999999999999' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='69' y='551' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.filter resonance:1 </text>
-<image x="29" y="552.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='64' y='562.8' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='562.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='5' height='2' x='64' y='579.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
-<text x='69' y='578' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
-<line x1="64.6" y1="92" x2="64.6" y2="97.2" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="64.6" y1="48.8" x2="64.6" y2="72" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="133" y1="48.8" x2="117.6" y2="72" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="62.2" y1="316.4" x2="62.2" y2="321.59999999999997" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="63.4" y1="238.4" x2="62.2" y2="258" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="166.6" y1="268.4" x2="115.2" y2="296.4" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="62.2" y1="278" x2="62.2" y2="296.4" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="63.4" y1="200" x2="63.4" y2="218.4" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="67" y1="429.2" x2="67" y2="454.8" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="67" y1="508.4" x2="67" y2="535.1999999999999" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="67" y1="474.8" x2="67" y2="488.4" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="153.39999999999998" y1="507.2" x2="205" y2="535.1999999999999" style="stroke:rgb(0,0,0);stroke-width:1" />
-<line x1="67" y1="555.1999999999999" x2="67" y2="562.8" style="stroke:rgb(0,0,0);stroke-width:1" />
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='500' height='500'><image x="26.599999999999998" y="87.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='61.599999999999994' y='97.2' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='97.2' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='115.2' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='66' y='113' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
+<rect width='58.5' height='20' x='61.599999999999994' y='72' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='72' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='111.6' y='72' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='90' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='66' y='88' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text></a>
+<image x="26.599999999999998" y="18.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/noise.svg" /><rect width='58.5' height='20' x='61.599999999999994' y='28.799999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='28.799999999999997' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='61.599999999999994' y='46.8' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='66' y='44' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.noise </text></a>
+<image x="95" y="18.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='130' y='28.799999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='130' y='46.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='135' y='44' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 1 </text></a>
+<image x="24.2" y="311.59999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='59.2' y='321.59999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='321.59999999999997' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='339.59999999999997' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='64' y='337' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
+<rect width='58.5' height='20' x='59.2' y='296.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='296.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='109.2' y='296.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='314.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='64' y='312' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text></a>
+<image x="25.4" y="208.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/scale.svg" /><rect width='130' height='20' x='60.4' y='218.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='60.4' y='218.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='60.4' y='236.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='65' y='234' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.scale E lydian 3 </text></a>
+<image x="128.6" y="238.39999999999998" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='163.6' y='248.39999999999998' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='163.6' y='266.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='168' y='264' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 3 </text></a>
+<image x="24.2" y="248" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sawtooth.svg" /><rect width='78' height='20' x='59.2' y='258' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='258' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='59.2' y='276' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='64' y='274' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sawtooth </text></a>
+<image x="25.4" y="170" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='91' height='20' x='60.4' y='180' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='60.4' y='198' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='65' y='196' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 2 7 </text></a>
+<image x="29" y="399.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='182' height='20' x='64' y='409.2' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='427.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='69' y='425' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor input:A0 range:12 </text></a>
+<image x="29" y="478.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fizzy.svg" /><rect width='58.5' height='20' x='64' y='488.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='488.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='114' y='488.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='506.4' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='69' y='504' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fizzy </text></a>
+<image x="29" y="444.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/scale.svg" /><rect width='123.5' height='20' x='64' y='454.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='454.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='472.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='69' y='470' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.scale c minor 5 </text></a>
+<image x="115.39999999999999" y="477.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='182' height='20' x='150.39999999999998' y='487.2' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='150.39999999999998' y='505.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='155' y='503' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor input:A0 range:2- </text></a>
+<image x="29" y="525.1999999999999" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/filter.svg" /><rect width='143' height='20' x='64' y='535.1999999999999' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='535.1999999999999' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='127' y='535.1999999999999' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='198' y='535.1999999999999' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='553.1999999999999' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='69' y='551' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.filter resonance:1 </text></a>
+<image x="29" y="552.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='64' y='562.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='562.8' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='8' height='2' x='64' y='580.8' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<a href='http://instrumentmaker.org/'><text x='69' y='578' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
+<line x1="64.6" y1="92" x2="64.6" y2="97.2" style="stroke:black;stroke-width:2" />
+<line x1="64.6" y1="48.8" x2="64.6" y2="72" style="stroke:black;stroke-width:2" />
+<line x1="133" y1="48.8" x2="117.6" y2="72" style="stroke:black;stroke-width:2" />
+<line x1="62.2" y1="316.4" x2="62.2" y2="321.59999999999997" style="stroke:black;stroke-width:2" />
+<line x1="63.4" y1="238.4" x2="62.2" y2="258" style="stroke:black;stroke-width:2" />
+<line x1="166.6" y1="268.4" x2="115.2" y2="296.4" style="stroke:black;stroke-width:2" />
+<line x1="62.2" y1="278" x2="62.2" y2="296.4" style="stroke:black;stroke-width:2" />
+<line x1="63.4" y1="200" x2="63.4" y2="218.4" style="stroke:black;stroke-width:2" />
+<line x1="67" y1="429.2" x2="67" y2="454.8" style="stroke:black;stroke-width:2" />
+<line x1="67" y1="508.4" x2="67" y2="535.1999999999999" style="stroke:black;stroke-width:2" />
+<line x1="67" y1="474.8" x2="67" y2="488.4" style="stroke:black;stroke-width:2" />
+<line x1="153.39999999999998" y1="507.2" x2="205" y2="535.1999999999999" style="stroke:black;stroke-width:2" />
+<line x1="67" y1="555.1999999999999" x2="67" y2="562.8" style="stroke:black;stroke-width:2" />
 </svg>
