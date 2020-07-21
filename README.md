@@ -17,17 +17,17 @@
 
 Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  Its parameters have been chosen to reflect the options usually requested in music workshop settings: 
 
-![](http://instrumentmaker.org/documentation/thumbnails/scale.png)**quickly assignable musical scales/keys** 
+<img src= http://instrumentmaker.org/documentation/thumbnails/scale.png width=40 height = 40> **quickly assignable musical scales/keys** 
 
-![](http://instrumentmaker.org/documentation/thumbnails/white_notes.png)**flexibility around root notes and available ranges of notes**
+<img src= http://instrumentmaker.org/documentation/thumbnails/black_notes.png width=40 height = 40> **flexibility around root notes and available ranges of notes**
 
-![](http://instrumentmaker.org/documentation/thumbnails/chords.png)**chords** 
+<img src= http://instrumentmaker.org/documentation/thumbnails/chords.png width=40 height = 40> **chords** 
 
-![](http://instrumentmaker.org/documentation/thumbnails/looper.png)**sampling and live looping**
+<img src= http://instrumentmaker.org/documentation/thumbnails/looper.png width=40 height = 40> **sampling and live looping**
 
-![](http://instrumentmaker.org/documentation/thumbnails/sensor.png)**input from a range of interfaces such as distance sensors and switches**
+<img src= http://instrumentmaker.org/documentation/thumbnails/sensor.png width=40 height = 40> **input from a range of interfaces such as distance sensors and switches**
 
-The resources are designed in such a way that switch interfaces are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
+The resources are designed in such a way that switches are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
 
 
 ## How does it work?
@@ -36,9 +36,9 @@ Although Instrument Maker was designed as a complete workshop package including 
 
 Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. 
 
-Upload this code to [Bela](http://bela.io/), or use a Raspberry Pi or laptop with an Arduino-type MIDI device connected.  
-
 ![The Instrument Maker objects in Pure Data sit on a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
+
+Upload the resulting code to [Bela](http://bela.io/), or use a Raspberry Pi or laptop with an Arduino-type MIDI device connected.  
 
 The software library is also great for live patching!
 
