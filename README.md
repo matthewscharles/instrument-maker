@@ -85,7 +85,7 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
   ![](documentation/readme-images/add-path.png)
 
-- Find a list of objects by opening `_im-object-overview.pd` from the main folder
+- Find a list of objects by opening `_im-object-overview.pd` from the main folder and/or consult the [im-reference](http://instrumentmaker.org/documentation/im-reference) website. 
 
 - Right-click on the objects found here to open help files.  This is a convention from Pure Data and similar languages - most help files contain editable examples!
 
