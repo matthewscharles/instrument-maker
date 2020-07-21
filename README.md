@@ -24,13 +24,15 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 The resources are designed in such a way that switch interfaces are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
 
 
+
+
 ## How does it work?
 
 Although Instrument Maker was designed as a complete workshop package including hardware, the main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.  We are currently looking for users to test and use the code before returning to a more integrated approach.
 
 Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. 
 
-Upload this code to Bela, or use a Raspberry Pi or laptop with an Arduino-type device connected.  
+Upload this code to [Bela](http://bela.io/), or use a Raspberry Pi or laptop with an Arduino-type MIDI device connected.  
 
 ![The Instrument Maker objects in Pure Data sit on a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
 
