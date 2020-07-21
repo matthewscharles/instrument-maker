@@ -20,10 +20,6 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 - sampling 
 - input from a range of interfaces such as distance sensors and switches
 
-The software library is also great for live patching!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## How does it work?
 
@@ -35,6 +31,9 @@ Upload this code to Bela, or use a Raspberry Pi or laptop with an Arduino-type d
 
 ![The Instrument Maker objects in Pure Data sit on a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
 
+The software library is also great for live patching!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ----
 
 # Installation
