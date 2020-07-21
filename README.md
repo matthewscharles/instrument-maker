@@ -4,11 +4,12 @@
 
 # Key pages:
 
+- [**IM-reference**](documentation/im-reference/index.html) complete list of active objects
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
 - [**Wiki: development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
-<!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
+  <!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
 
 # About Instrument Maker
 
