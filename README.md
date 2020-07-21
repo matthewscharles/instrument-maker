@@ -115,9 +115,9 @@ Distributed under the terms of the **[GNU Public license version 3](https://www.
 
 ## **Nothing about us without us**
 
-Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community, and we look forward to opening it up to a more inclusive approach.  
+Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community as disabled and/or neurodivergent people, and we look forward to opening it up to a more inclusive approach as our priorities are addressed.  
 
-All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need more collaborative spaces.
+All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need to establish more collaborative spaces.
 
 The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
 
