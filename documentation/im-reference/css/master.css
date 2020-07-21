@@ -35,16 +35,16 @@ body {
       }
 #demo {
     background: #CEB934;
-    background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-    background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-    background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: -webkit-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+    background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+    background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
     }
 
 .card {
     background: #CEB934;
-    background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-    background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-    background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
+    background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
+    background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+    background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
     border: 2px solid;
     padding: 5px;
     }
@@ -57,7 +57,7 @@ table {
 }
 h1 {
     background: #CEB934;
-    background: -webkit-linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
-    background: -o-linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
-    background: linear-gradient(#CEB934 0%, #B0C59A 79%,  #A2A488 100%);
+    background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #e0df8a 100%);
+    background: -o-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
+    background: linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
     }
