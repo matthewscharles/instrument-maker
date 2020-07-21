@@ -115,9 +115,9 @@ Distributed under the terms of the **[GNU Public license version 3](https://www.
 
 ## **Nothing about us without us**
 
-Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community as disabled and/or neurodivergent people, and we look forward to opening it up to a more inclusive approach as our priorities are addressed.  
+Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community as disabled and/or neurodivergent artists, and are opening up a more inclusive approach as our priorities are addressed.  Everyone is welcome to use and contribute to these resouces!
 
-All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need to establish more collaborative spaces.
+All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need to establish more collaborative spaces.  This project is a practical approach to that problem.
 
 The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
 
@@ -141,7 +141,7 @@ Throughout this site you will encounter graphics playing on the classic "AAC" ae
 
 ---
 
-## How does this differ from regular Pd?
+## How does the software differ from regular Pd?
 
 Our focus has so far on a separation between graphical interface and interactions - there are no on-screen objects that act as sliders or buttons, as we encourage users to work toward physical outcomes.  Of course, this decision in itself represents more access barriers, but we're working back toward something a bit more integrated.
 
