@@ -20,45 +20,7 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 - sampling 
 - input from a range of interfaces such as distance sensors and switches
 
-## Access
 
-This work is ongoing - open source, and open process as far as we can make it.
-
-We have developed hardware and web interfaces, but in the interest of some solid testing, our attention is on the underlying software library for now.  With time, the code itself should be a useful educational resource.
-
-Much of this text will be written in shorthand and we recognise that this will be excluding to many people, but our goal is still to demystify and bring in the access longer term.
-
-As we begin revisiting the web elements we also hope to start re-engaging with screen reader access and other often overlooked interfaces in this field..but we are not attempting to deliver a blanket solution by any means.
-
-Distributed under the terms of the **[GNU Public license version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)**.
-
-## **Nothing about us without us**
-
-Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community, and we look forward to opening it up to a more inclusive approach.  
-
-All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need more collaborative spaces.
-
-The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
-
-We are also grateful for support from various organisations and inviduals - thanks page coming soon.  If you want to collaborate and/or can think of a way of helping us move forward, please get in touch.
-
-Follow our collective project [Blurring the Boundaries](http://www.blurringtheboundaries.org/) for news of future events.  
-
-## **"Accessible" does not always mean "easier"!**
-
-This is not an attempt to make the process easier in a way that detracts from artistic integrity, nor is it an attempt to force independence! Rather, our intention is to establish options for more people to engage with the creation of music technology from more accessible starting points.  Access is different for everyone, but the barriers that we can remove often overlap.
-
----
-
-Read more about the philosophy behind this framework on the [Bela.io blog](https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/).
-
----
-
-Throughout this site you will encounter graphics playing on the classic "AAC" aesthetic often found in classrooms..find out more about this project here: [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
-
-![The key ingredients of the instrument maker framework include sensors, musical scales, effects, and code.](documentation/readme-images/im-sensors.png)
-
----
 
 ## How does it work?
 
@@ -127,6 +89,54 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 ![a list of current objects](documentation/readme-images/current-objects-pd.png)
 
 
+### MaKey MaKey
+This should be plug and play: use the im.keypress and im.makeymakey objects to experiment!
+
+### Touch Board
+Use a Bare Conductive Touch Board set to generic_midi_controller. This will connect to im.electrode and im.tb
+
+### MIDI controllers
+Set your MIDI controller to CC 0-7 on channel 1. This should work with im.sensor in the same way as our custom boards.
+
+## Some notes on access
+
+This work is ongoing - open source, and open process as far as we can make it.
+
+We have developed hardware and web interfaces, but in the interest of some solid testing, our attention is on the underlying software library for now.  With time, the code itself should be a useful educational resource.
+
+Much of this text will be written in shorthand and we recognise that this will be excluding to many people, but our goal is still to demystify and bring in the access longer term.
+
+As we begin revisiting the web elements we also hope to start re-engaging with screen reader access and other often overlooked interfaces in this field..but we are not attempting to deliver a blanket solution by any means.
+
+Distributed under the terms of the **[GNU Public license version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)**.
+
+## **Nothing about us without us**
+
+Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community, and we look forward to opening it up to a more inclusive approach.  
+
+All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need more collaborative spaces.
+
+The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
+
+We are also grateful for support from various organisations and inviduals - thanks page coming soon.  If you want to collaborate and/or can think of a way of helping us move forward, please get in touch.
+
+Follow our collective project [Blurring the Boundaries](http://www.blurringtheboundaries.org/) for news of future events.  
+
+## **"Accessible" does not always mean "easier"!**
+
+This is not an attempt to make the process easier in a way that detracts from artistic integrity, nor is it an attempt to force independence! Rather, our intention is to establish options for more people to engage with the creation of music technology from more accessible starting points.  Access is different for everyone, but the barriers that we can remove often overlap.
+
+---
+
+Read more about the philosophy behind this framework on the [Bela.io blog](https://blog.bela.io/2019/08/20/towards-disabled-artist-led-music-technology-charles-matthews/).
+
+---
+
+Throughout this site you will encounter graphics playing on the classic "AAC" aesthetic often found in classrooms..find out more about this project here: [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
+
+![The key ingredients of the instrument maker framework include sensors, musical scales, effects, and code.](documentation/readme-images/im-sensors.png)
+
+---
 
 ## How does this differ from regular Pd?
 
