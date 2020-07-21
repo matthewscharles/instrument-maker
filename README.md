@@ -4,7 +4,9 @@
 
 # Key pages:
 
-- [**IM-reference**](documentation/im-reference/index.html): **complete list of active objects** with experimental diagrams generated from the help patches (some examples may be messy).
+*Scroll down for project information and basic installation instructions.*
+
+- [**IM-reference**](documentation/im-reference/index.html): **a complete list of active objects** with experimental diagrams generated from the help patches (some examples may be messy).
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
@@ -24,8 +26,6 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 The resources are designed in such a way that switch interfaces are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
 
 
-
-
 ## How does it work?
 
 Although Instrument Maker was designed as a complete workshop package including hardware, the main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.  We are currently looking for users to test and use the code before returning to a more integrated approach.
@@ -43,7 +43,7 @@ The software library is also great for live patching!
 
 # Installation
 
-***This is for our current demo setup for desktops/RPi. Deken release coming soon!***
+***This is for our current demo setup for desktops/RPi. Deken release coming soon!  Some experience and/or time investment is required for these installations while we compile better instructions.***
 
 We recommend using [Patchbox OS](https://blokas.io/patchbox-os/) for Raspberry Pi installations - once installed, follow the instructions below.
 
@@ -97,10 +97,18 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
 
 ### MaKey MaKey
-This should be plug and play: use the im.keypress and im.makeymakey objects to experiment!
+The [MaKey MaKey](https://makeymakey.com/) is an interface enabling physical interface building through crocodile clip connections and conductive materials.
+
+Using the MaKey MaKey should be plug and play: use the im.keypress and im.makeymakey objects to experiment!
 
 ### Touch Board
-Use a Bare Conductive Touch Board set to generic_midi_controller. This will connect to im.electrode and im.tb
+Use a [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/) set to `generic_midi_controller` and load the Touch Board as a MIDI interface in Pure Data. The sensors will appear as continuous controls via `im.electrode`and `im.tb`.
+
+### Bela
+
+[Bela](https://bela.io/) is an environment including hardware for low-latency sensor interactions, and was part of the inspiration for this framework (particularly a continuity between switch and continuous control).
+
+See the installation notes below for details on how to use it — this is currently untested!
 
 ### MIDI controllers
 Set your MIDI controller to CC 0-7 on channel 1. This should work with im.sensor in the same way as our custom boards.
