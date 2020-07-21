@@ -20,6 +20,9 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 - sampling 
 - input from a range of interfaces such as distance sensors and switches
 
+The software library is also great for live patching!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## How does it work?
