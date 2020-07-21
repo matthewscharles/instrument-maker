@@ -1,0 +1,30 @@
+<svg version='1.1' baseProfile='full' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='800' height='800'>
+
+<rect width='252' height='25' x='76' y='0' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='84' y='16'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='187' y='2' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='195' y='18'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='109' y='4' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='117' y='20'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='120' y='6' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='128' y='22'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='162' y='8' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='170' y='24'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='206' y='10' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='214' y='26'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='51' y='12' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='59' y='28'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='180' y='14' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='188' y='30'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='44' y='16' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='52' y='32'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='63' y='18' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='71' y='34'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='191' y='20' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='199' y='36'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<rect width='252' height='25' x='6' y='22' style='fill:beige;stroke:black;stroke-width:3;fill-opacity:0.8;stroke-opacity:0.9'/>
+<text x='14' y='38'   style="font-family: Helvetica, sans-serif; font-weight: bold; font-style: normal" >im.envelope.generator</text>
+<image x="120" y="120" width="100" height="100" xlink:href="../../instrument-maker-symbols/EN/abstract.svg" />
+
+
+</svg>
