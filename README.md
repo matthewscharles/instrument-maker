@@ -17,11 +17,15 @@
 
 Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  Its parameters have been chosen to reflect the options usually requested in music workshop settings: 
 
-- quickly assignable musical scales/keys 
-- flexibility around root notes and available ranges of notes
-- chords 
-- sampling 
-- input from a range of interfaces such as distance sensors and switches
+![](http://instrumentmaker.org/documentation/thumbnails/scale.png)**quickly assignable musical scales/keys** 
+
+![](http://instrumentmaker.org/documentation/thumbnails/white_notes.png)**flexibility around root notes and available ranges of notes**
+
+![](http://instrumentmaker.org/documentation/thumbnails/chords.png)**chords** 
+
+![](http://instrumentmaker.org/documentation/thumbnails/looper.png)**sampling and live looping**
+
+![](http://instrumentmaker.org/documentation/thumbnails/sensor.png)**input from a range of interfaces such as distance sensors and switches**
 
 The resources are designed in such a way that switch interfaces are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
 
