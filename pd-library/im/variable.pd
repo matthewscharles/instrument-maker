@@ -1,0 +1,21 @@
+#N canvas 226 361 868 644;
+#X obj 207 157 v \$1; 
+#X obj 175 24 inlet~; 
+#X obj 175 68 snapshot~; 
+#X obj 230 23 bang~; 
+#X obj 176 184 v \$1; 
+#X obj 207 129 + \$2; 
+#X obj 175 101 t b f; 
+#X obj 176 246 sig~; 
+#X obj 176 270 outlet~; 
+#X obj 176 212 change; 
+#X connect 1 0 2 0; 
+#X connect 2 0 6 0; 
+#X connect 3 0 2 0; 
+#X connect 4 0 9 0; 
+#X connect 5 0 0 0; 
+#X connect 6 0 4 0; 
+#X connect 6 1 5 0; 
+#X connect 7 0 8 0; 
+#X connect 9 0 7 0; 
+ 

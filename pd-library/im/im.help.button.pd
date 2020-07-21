@@ -1,0 +1,11 @@
+#N canvas 431 429 450 300 12;
+#X obj 261 54 r \$0-help;
+#X obj 261 136 im.help;
+#X obj 107 108 bng 15 250 50 0 \$0-help empty \$1 22 8 0 15 -262144
+-1 -1;
+#X obj 261 82 list store \$1;
+#X obj 261 109 route symbol;
+#X connect 0 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X coords 0 -1 1 1 220 30 2 100 100;

@@ -1,0 +1,48 @@
+#N canvas 246 190 871 561 12;
+#X obj 11 184 im.speaker;
+#X obj 11 133 im.scale F lydian 4;
+#X obj 11 70 im.sensor 1 7;
+#X obj 123 94 im.fader;
+#X text 70 157 velocity is optional;
+#X obj 12 364 im.speaker;
+#X obj 11 328 im.fizzy trigger:velocity;
+#X obj 11 159 im.fizzy;
+#X obj 158 299 im.keypress f;
+#X obj 268 69 im.keypress q;
+#X obj 10 298 im.set C 3;
+#X obj 123 68 im.lfo slow saw 12;
+#X text 11 24 Use a sensor or press the q key to trigger notes;
+#X obj 16 601 im.speaker;
+#X obj 162 541 im.keypress g;
+#X obj 14 468 im.lfo slow sine 12;
+#X obj 15 565 im.fizzy trigger:velocity;
+#X obj 14 492 im.scale G# major 3;
+#X text 11 6 --------------------------------------------------------------------
+, f 68;
+#X text 12 40 --------------------------------------------------------------------
+, f 68;
+#X text 7 229 --------------------------------------------------------------------
+, f 68;
+#X text 8 263 --------------------------------------------------------------------
+, f 68;
+#X text 8 414 --------------------------------------------------------------------
+, f 68;
+#X text 9 448 --------------------------------------------------------------------
+, f 68;
+#X text 11 431 Use trigger:velocity for sample + hold style interaction
+;
+#X text 10 246 Use trigger:velocity to only start notes when velocity
+is received, f 69;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 0 0;
+#X connect 8 0 6 1;
+#X connect 9 0 3 1;
+#X connect 10 0 6 0;
+#X connect 11 0 3 0;
+#X connect 14 0 16 1;
+#X connect 15 0 17 0;
+#X connect 16 0 13 0;
+#X connect 17 0 16 0;

@@ -1,0 +1,12 @@
+#N canvas 313 161 871 561 12;
+#X obj 17 15 im.noise;
+#X obj 17 90 im.speaker;
+#X obj 17 36 im.volume 50%;
+#X obj 170 12 im.sensor 1, f 12;
+#X obj 193 38 im.keypress Space;
+#X obj 17 67 im.fader, f 26;
+#X connect 0 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 1;
+#X connect 5 0 1 0;

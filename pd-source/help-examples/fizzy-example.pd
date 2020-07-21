@@ -1,0 +1,19 @@
+#N canvas 163 217 871 561 12;
+#X obj 16 164 im.speaker;
+#X obj 16 86 im.scale F lydian 4;
+#X obj 16 32 im.sensor 1 7;
+#X obj 16 128 im.fizzy;
+#X obj 172 96 im.lfo 2Hz saw;
+#X obj 115 59 im.fader;
+#X text 208 112 velocity is optional;
+#X obj 114 32 im.lfo slow sine 12;
+#X obj 263 34 im.keypress e;
+#X text 10 11 Bit of a strange demo for not-so-boring note generation!
+;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 1;
+#X connect 5 0 1 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 1;

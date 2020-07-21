@@ -1,0 +1,14 @@
+#N canvas 0 23 450 300 12;
+#X obj 9 103 im.speaker;
+#X obj 9 82 im.fader;
+#X text 94 98 Beware of feedback!;
+#X obj 60 50 im.keypress Space;
+#X obj 9 16 im.linein 1;
+#X text 91 18 left channel;
+#X obj 199 17 im.linein 2;
+#X text 283 17 right channel;
+#X text 95 79 Hold down the space bar on your computer to hear the
+input.;
+#X connect 1 0 0 0;
+#X connect 3 0 1 1;
+#X connect 4 0 1 0;

@@ -1,0 +1,12 @@
+#N canvas 529 231 741 516 10;
+#X obj 16 164 im.speaker;
+#X obj 16 143 im.fader;
+#X obj 61 60 im.keypress Space;
+#X obj 72 93 im.sensor 1;
+#X text 130 1 Hold down the space bar on your computer or connect sensor
+1 to hear a pulse wave at pitch A (octave 2)., f 32;
+#X obj 16 22 im.squarewave A 2;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 5 0 1 0;

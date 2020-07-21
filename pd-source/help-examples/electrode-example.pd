@@ -1,0 +1,8 @@
+#N canvas 384 155 871 561 12;
+#X obj 22 126 im.speaker;
+#X obj 22 84 im.fader;
+#X obj 22 22 im.whitenoise;
+#X obj 75 44 im.electrode 1;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;

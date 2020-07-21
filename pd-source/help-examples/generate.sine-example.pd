@@ -1,0 +1,29 @@
+#N canvas 132 69 729 493 10;
+#X obj 18 151 im.speaker;
+#X obj 18 130 im.fader;
+#X obj 63 85 im.keypress Space;
+#X obj 74 105 im.sensor 1;
+#X obj 17 60 im.sinewave A 5;
+#X text 14 7 Hold down the space bar on your computer or connect sensor
+1 to hear a sine wave at pitch A (octave 5)., f 32;
+#X obj 13 376 im.speaker;
+#X obj 13 355 im.fader;
+#X obj 13 311 im.scale C major 4;
+#X obj 13 333 im.sinewave;
+#X obj 13 266 im.lfo slow sawtooth;
+#X obj 13 289 im.multiply 8;
+#X obj 91 339 im.sensor 2;
+#X obj 91 362 im.keypress Up;
+#X text 10 218 Hold down the 'Up' key or connect sensor 2 to hear a
+sine wave ascending through the C major scale., f 26;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 4 0 1 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 7 0;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 12 0 7 1;
+#X connect 13 0 7 1;

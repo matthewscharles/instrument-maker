@@ -1,0 +1,11 @@
+#N canvas 431 429 450 300 12;
+#X obj 103 162 r \$0-help;
+#X obj 107 108 bng 15 250 50 0 \$0-help empty information 22 8 0 15
+-262130 -1 -1;
+#X obj 103 190 list store \$1;
+#X obj 103 274 pdcontrol;
+#X msg 111 243 browse \$1;
+#X connect 0 0 2 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X coords 0 -1 1 1 220 30 2 100 100;

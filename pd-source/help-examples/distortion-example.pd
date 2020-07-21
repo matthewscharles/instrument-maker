@@ -1,0 +1,24 @@
+#N canvas 136 336 558 266 12;
+#X obj 250 103 im.distort;
+#X obj 250 137 im.fader, f 12;
+#X obj 251 197 im.speaker;
+#X obj 29 147 im.fader;
+#X obj 28 172 im.speaker;
+#X obj 82 120 im.keypress Up;
+#X obj 331 110 im.keypress Down;
+#X obj 28 93 im.sinewave C 6;
+#X obj 250 57 im.sinewave C 6;
+#X obj 251 164 im.volume 200%;
+#X text 11 15 Use the up and down keys to compare sine waves with and
+without distortion., f 79;
+#X obj 316 79 im.keypress Right;
+#X text 440 59 hold down right to increase distortion, f 16;
+#X connect 0 0 1 0;
+#X connect 1 0 9 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 1;
+#X connect 6 0 1 1;
+#X connect 7 0 3 0;
+#X connect 8 0 0 0;
+#X connect 9 0 2 0;
+#X connect 11 0 0 1;

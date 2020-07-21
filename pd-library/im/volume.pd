@@ -1,0 +1,18 @@
+#N canvas 226 361 868 644;
+#X obj 19 169 inlet~ input; 
+#X obj 19 214 outlet~ output; 
+#X obj 19 192 im.multiply \$1; 
+#X obj 122 169 inlet~ multiply; 
+#X text 16 136 im.volume is a wrapper for im.multiply; 
+#X obj 11 10 cnv 15 630 120 empty empty instrument_maker 10 22 0 40 
+-204800 -4160 0; 
+#X obj 22 60 cnv 15 604 40 empty empty im.volume 20 22 0 30 -1 -196864 
+0; 
+#X text 16 109 Charles Matthews 2020; 
+#X text 183 108 This is the source code. See the help file for instructions. 
+, f 74; 
+#X connect 0 0 2 0; 
+#X connect 2 0 1 0; 
+#X connect 3 0 2 1; 
+#X coords 0 -1 1 1 15 15 1 0 800; 
+ 

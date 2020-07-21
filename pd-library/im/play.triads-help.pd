@@ -1,0 +1,87 @@
+#N canvas 412 37 837 561 10;
+#X floatatom 211 74 5 0 0 0 - - -;
+#X msg 250 74;
+#X text 278 75 ..;
+#X obj 565 408 cnv 15 250 140 empty empty pd_vanilla 8 14 0 18 -249791
+-66577 0;
+#X obj 565 318 cnv 15 250 80 empty empty web 8 14 0 18 -245757 -66577
+0;
+#X obj 564 10 cnv 15 250 300 empty empty related 8 14 0 18 -241659
+-66577 0;
+#X obj 11 265 cnv 15 545 50 empty empty empty 10 10 0 15 -258042 -131073
+0;
+#X obj 11 315 cnv 15 545 50 empty empty empty 10 10 0 15 -258043 -131073
+0;
+#X obj 11 365 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 414 cnv 15 545 50 empty empty empty 10 10 0 15 -257981 -131073
+0;
+#X obj 11 464 cnv 15 545 40 empty empty empty 10 10 0 15 -257983 -131073
+0;
+#X obj 11 505 cnv 15 545 20 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 526 cnv 15 545 12 empty empty empty 10 10 0 15 -262144 -131073
+0;
+#X obj 11 41 cnv 15 545 30 empty empty empty 5 18 0 25 -253376 -66577
+0;
+#X obj 11 72 cnv 15 545 30 empty empty empty 5 18 0 25 -249023 -66577
+0;
+#X obj 11 103 cnv 15 545 30 empty empty empty 5 18 0 25 -244604 -66577
+0;
+#X obj 11 10 cnv 15 545 30 empty empty instrumentmaker.org 5 18 0 25
+-261824 -66577 0;
+#X obj 15 47 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 108 cnv 15 523 20 empty empty empty 10 10 0 13 -1 -99865 -196864;#X obj 15 61 cnv 15 523 47 empty empty play.triads 10 25 0 30 -1 -16777216 0;#X obj 15 47 cnv 15 100 20 empty empty control 10 10 0 13 -257985 -1 0;#X obj 15 108 cnv 15 100 20 empty empty control 10 10 0 13 -257985 -1 0;#X text 409 18 Charles Matthews 2020;#X text 487 28 0.1.1a.1;#X obj 11 135 cnv 15 545 50 empty empty empty 10 10 0 13 -262130 -655361 0;#X text 16 142 , f 81;#X obj 11 192 cnv 15 545 20 empty empty Arguments: 10 10 0 13 -203904 -1 0;#X text 105 195 1) Use intervals e.g. I II IV , f 70;#X obj 11 215 cnv 15 545 20 empty empty Inlets: 34 10 0 13 -204800 -1 0;#X text 105 217 none, f 70;#X obj 11 239 cnv 15 545 20 empty empty Outlets: 25 10 0 13 -204786 -1 0;#X text 105 241 none, f 70;#X obj 11 265 cnv 15 545 20 empty empty Examples 10 11 0 15 -261682 -1 0;#X obj 570 450 text;#X obj 570 475 array;#X obj 20 401 im.tunedperc ;
+#X obj 123 468 im.speaker ;
+#X obj 123 401 im.tunedperc ;
+#X obj 227 402 im.tunedperc ;
+#X obj 20 307 im.sensor 1 4 ;
+#X obj 20 350 im.triads Bb major 5 II V I IV ;
+#X obj 25 910 im.speaker ;
+#X obj 25 604 im.keypress a ;
+#X obj 161 604 im.keypress s ;
+#X obj 295 604 im.keypress d ;
+#X obj 25 858 im.fader ;
+#X obj 130 861 im.fader ;
+#X obj 231 862 im.fader ;
+#X obj 423 780 im.echo 200 ;
+#X obj 373 827 im.echo 400 ;
+#X text 17 279 Play chords straight from a sensor ;
+#X obj 25 657 im.switches zero:on ;
+#X text 430 804 delay second notes ;
+#X obj 476 636 im.sensor 2 ;
+#X text 22 550 Play chords \, Kellycaster-style (this example is bowed
+with a sensor input). By starting from zero \, we have access to five
+chords. ;
+#X obj 421 603 im.keypress f ;
+#X obj 25 809 im.hollow ;
+#X obj 127 809 im.hollow ;
+#X obj 231 810 im.hollow ;
+#X obj 24 685 ~/Documents/GitHub/instrument-maker/im.objects/im.triads
+A# minor 6 II V I III VI ;
+#X connect 35 0 36 0 ;
+#X connect 37 0 36 0 ;
+#X connect 38 0 36 0 ;
+#X connect 39 0 40 0 ;
+#X connect 40 0 35 0 ;
+#X connect 40 1 37 0 ;
+#X connect 40 2 38 0 ;
+#X connect 42 0 51 0 ;
+#X connect 43 0 51 1 ;
+#X connect 44 0 51 2 ;
+#X connect 45 0 41 0 ;
+#X connect 46 0 41 0 ;
+#X connect 47 0 41 0 ;
+#X connect 48 0 46 1 ;
+#X connect 49 0 47 1 ;
+#X connect 51 0 59 0 ;
+#X connect 53 0 45 1 ;
+#X connect 53 0 48 0 ;
+#X connect 53 0 49 0 ;
+#X connect 55 0 51 3 ;
+#X connect 56 0 45 0 ;
+#X connect 57 0 46 0 ;
+#X connect 58 0 47 0 ;
+#X connect 59 0 56 0 ;
+#X connect 59 1 57 0 ;
+#X connect 59 2 58 0 ;
+ ;

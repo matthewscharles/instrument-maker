@@ -1,0 +1,18 @@
+#N canvas 44 34 525 459 10;
+#X obj 6 142 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 12 14 Two ways of using im.volume: to put the volume down by
+50% \, and to control via a sensor or keypress.;
+#X text 6 142 im.volume can be used to amplify different signals \,
+and is the same as im.fader and im.multiply., f 81;
+#X obj 39 48 im.noise;
+#X obj 38 120 im.speaker;
+#X obj 39 69 im.volume 50%;
+#X obj 39 95 im.volume, f 26;
+#X obj 183 45 im.sensor 1;
+#X obj 321 46 im.keypress Space;
+#X connect 3 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 7 0 6 1;
+#X connect 8 0 6 1;
