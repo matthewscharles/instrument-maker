@@ -1,0 +1,3 @@
+sounds/string.aif;
+sounds/rush.aif;
+sounds/sn.wav;

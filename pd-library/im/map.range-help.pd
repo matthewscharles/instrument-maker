@@ -1,0 +1,11 @@
+#N canvas 133 42 878 561 10;
+#X obj 11 10 cnv 15 545 120 empty empty instrumentmaker.org 10 22 0
+30 -204800 -66577 0;
+#X obj 564 10 cnv 15 290 300 empty empty related 10 18 0 18 -261682
+-66577 0;
+#X obj 565 408 cnv 15 290 140 empty empty pd_vanilla 10 18 0 18 -249791
+-66577 0;
+#X obj 565 318 cnv 15 290 80 empty empty web 10 18 0 18 -237562 -66577
+0;
+#X obj 22 60 cnv 15 523 40 empty empty map.range 10 22 0 30 -1 -16777216 0;#X text 22 110 Charles Matthews 2020;#X obj 11 135 cnv 15 545 50 empty empty empty 10 10 0 13 -262130 -655361 0;#X text 16 142 , f 81;#X obj 11 192 cnv 15 545 20 empty empty Arguments: 10 10 0 13 -203904 -655361 0;#X text 105 195 none, f 81;#X obj 11 215 cnv 15 545 20 empty empty Inlets: 34 10 0 13 -204800 -655361 0;#X text 105 217 none, f 81;#X obj 11 239 cnv 15 545 20 empty empty Outlets: 25 10 0 13 -204786 -655361 0;#X text 105 241 none, f 81;#X obj 11 265 cnv 15 545 20 empty empty Examples--------------------------------------------------- 10 10 0 15 -261682 -655361 0;#X obj 570 360 im.help.link https://en.wikipedia.org/wiki/Linear_map#:~:text=In%20mathematics%2C%20a%20linear%20map,of%20addition%20and%20scalar%20multiplication.;#X obj 570 450 *~;#X obj 570 475 -~;#X obj 570 500 +~;#X obj 570 525 /~;#X text 16 321 Help file missing. ;
+ ;

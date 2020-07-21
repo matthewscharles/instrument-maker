@@ -1,0 +1,17 @@
+#N canvas 621 122 525 493 10;
+#X obj 83 29 im.keypress Space;
+#X obj 23 115 im.speaker;
+#X obj 15 137 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X obj 23 85 im.volume;
+#X obj 23 15 im.noise;
+#X obj 83 62 im.smooth 1000 100;
+#X text 22 138 For experienced users: im.smooth is designed to function
+like rampsmooth~ in max or cyclone \, but can also be used like line.
+This object still needs some work \; unlike rampsmooth~ \, at present
+\, a change in direction completely overrides the previous trajectory.
+, f 81;
+#X connect 0 0 5 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 1;

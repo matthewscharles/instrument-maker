@@ -1,0 +1,29 @@
+#N canvas 66 24 721 538 10;
+#X obj 13 157 im.speaker;
+#X obj 13 136 im.fader;
+#X obj 58 96 im.keypress Space;
+#X obj 92 117 im.sensor 1;
+#X obj 13 15 im.sawtooth A 5;
+#X text 25 40 Hold down the space bar on your computer or connect sensor
+1 to hear a sawtooth at pitch A (octave 5)., f 32;
+#X obj 20 429 im.speaker;
+#X obj 20 408 im.fader;
+#X obj 20 285 im.scale C major 4;
+#X obj 20 240 im.lfo slow sawtooth;
+#X obj 20 263 im.multiply 8;
+#X obj 176 383 im.sensor 2;
+#X obj 51 382 im.keypress Up;
+#X obj 20 307 im.sawtooth;
+#X text 41 328 hold down the 'Up' key or connect sensor 2 to hear a
+sawtooth ascending through the C major scale., f 26;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 4 0 1 0;
+#X connect 7 0 6 0;
+#X connect 8 0 13 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 11 0 7 1;
+#X connect 12 0 7 1;
+#X connect 13 0 7 0;

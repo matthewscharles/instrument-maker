@@ -1,0 +1,35 @@
+#N canvas 66 81 546 536 10;
+#X obj 14 136 im.tunedperc;
+#X obj 14 157 im.speaker;
+#X obj 15 374 im.tunedperc;
+#X obj 15 395 im.speaker;
+#X obj 15 266 im.keypress s;
+#X obj 14 115 im.scale C dorian 5;
+#X obj 15 353 im.scale C dorian 5;
+#X obj 14 91 im.sequence 0 1 4 3 4 5 2 7;
+#X obj 15 331 im.sequence 0 1 4 3 4 5 2 7;
+#X obj 15 290 im.step 8;
+#X obj 14 27 im.lfo slow saw;
+#X obj 14 53 im.fader, f 19;
+#X obj 125 27 im.keypress a;
+#X text 10 5 Press a to hear a slow sequence;
+#X text 14 235 Press s to step through a sequence note by note., f
+34;
+#X obj 16 179 cnv 15 500 50 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 21 186 Experimental feature: record and play back sequences
+- documentation coming soon., f 81;
+#X msg 102 291 set 1 1 1 1 2 2 2 2;
+#X text 102 307 experimental feature;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 4 0 9 0;
+#X connect 5 0 0 0;
+#X connect 6 0 2 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 11 1;
+#X connect 17 0 8 0;

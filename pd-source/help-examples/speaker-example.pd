@@ -1,0 +1,10 @@
+#N canvas 4 69 525 493 10;
+#X obj 15 97 im.speaker;
+#X obj 15 14 im.microphone;
+#X obj 16 63 im.fader;
+#X obj 61 34 im.keypress Space;
+#X text 184 38 Press the space bar to send a microphone signal to the
+speaker., f 31;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 1;

@@ -1,0 +1,12 @@
+#N canvas 619 52 525 493 10;
+#X obj 11 144 im.speaker;
+#X obj 11 123 im.fader;
+#X obj 56 40 im.keypress Space;
+#X obj 67 73 im.sensor 1;
+#X text 170 18 Hold down the space bar on your computer or connect
+sensor 1 to hear some white noise., f 24;
+#X obj 11 18 im.whitenoise;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 5 0 1 0;

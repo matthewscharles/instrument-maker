@@ -1,0 +1,36 @@
+#N canvas 313 161 871 561 12;
+#X obj 17 153 im.speaker;
+#X obj 127 35 im.microphone;
+#X obj 17 123 im.fader, f 25;
+#X obj 188 97 im.keypress Space;
+#X obj 127 63 im.envelopefollower;
+#X text 269 32 Hold down the space bar and blow into the microphone
+to change the volume of white noise., f 36;
+#X obj 16 33 im.whitenoise;
+#X obj 17 93 im.fader, f 16;
+#X obj 24 517 im.speaker;
+#X obj 24 363 im.microphone;
+#X obj 24 489 im.fader, f 25;
+#X obj 24 394 im.envelopefollower;
+#X obj 195 464 im.keypress Up;
+#X obj 24 418 im.multiply 16;
+#X obj 24 440 im.scale C dorian 5;
+#X obj 24 463 im.pulsewave;
+#X text 190 352 Hold down the 'up' key and blow into the microphone
+to hear pitches change., f 31;
+#X text 21 322 Envelope follower controlling a musical scale;
+#X text 12 7 Envelope follower controlling the volume of white noise
+;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 1;
+#X connect 4 0 7 1;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X connect 9 0 11 0;
+#X connect 10 0 8 0;
+#X connect 11 0 13 0;
+#X connect 12 0 10 1;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 10 0;

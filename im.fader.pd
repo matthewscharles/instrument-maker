@@ -1,9 +1,0 @@
-#N canvas 107 381 450 300 10;
-#X obj 17 40 inlet~ input;
-#X obj 17 85 outlet~ output;
-#X obj 17 61 im.multiply \$1;
-#X obj 98 40 inlet~ multiply;
-#X text 16 13 im.fader becomes a wrapper for im.multiply;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
-#X connect 3 0 2 1;

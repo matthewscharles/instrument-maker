@@ -1,0 +1,14 @@
+#N canvas 0 23 450 300 10;
+#X obj 295 80 inlet~ l-r(0-1);
+#X obj 130 148 outlet~ L;
+#X obj 295 148 outlet~ R;
+#X obj 130 80 inlet~ signal;
+#X text 33 34 first attempt \; trying to guess how a normal person
+would do this;
+#X obj 130 108 expr~ $v1 * cos($v2 * 1.57) \; $v1 * sin($v2 * 1.57)
+;
+#X connect 0 0 5 1;
+#X connect 3 0 5 0;
+#X connect 5 0 1 0;
+#X connect 5 1 2 0;
+#X coords 0 -1 1 1 15 15 1 0 800;

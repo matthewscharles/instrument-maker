@@ -1,0 +1,29 @@
+#N canvas 686 89 525 493 10;
+#X obj 11 112 im.speaker;
+#X obj 11 10 im.microphone;
+#X obj 11 35 im.pitchtracker;
+#X obj 11 62 im.pulsewave;
+#X obj 11 86 im.fader, f 16;
+#X obj 104 60 im.keypress Space;
+#X text 119 19 Sing notes in the the microphone \, and press space
+at the same time to hear them back., f 45;
+#X obj 11 311 im.speaker;
+#X obj 11 182 im.microphone;
+#X obj 11 207 im.pitchtracker;
+#X obj 11 261 im.pulsewave;
+#X obj 11 285 im.fader, f 25;
+#X obj 158 260 im.keypress a;
+#X obj 11 234 im.add 3;
+#X text 79 228 Hold down the a key to hear some crude harmony., f
+27;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 1;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 11 1;
+#X connect 13 0 10 0;

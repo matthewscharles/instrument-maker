@@ -1,0 +1,22 @@
+#N canvas 132 69 525 493 10;
+#X obj 13 196 cnv 15 500 40 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 21 198 *work in progress. samples not guaranteed to store for
+next time \, just yet, f 81;
+#X text 21 214 there may be issues with saving samples to a git folder..stay
+tuned for updates., f 81;
+#X obj 17 93 im.microphone;
+#X obj 17 144 im.speaker, f 11;
+#X obj 17 118 im.oneshot test.wav, f 50;
+#X obj 165 40 im.keypress a;
+#X obj 314 86 im.keypress s;
+#X text 312 65 play (tap \, don't hold);
+#X obj 165 72 im.debounce 100;
+#X text 177 89 sometimes keys retrigger, f 15;
+#X text 163 9 record (hold the key for the length of time you want
+to record), f 37;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 9 0;
+#X connect 7 0 5 2;
+#X connect 9 0 5 1;

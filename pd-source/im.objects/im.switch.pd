@@ -1,0 +1,16 @@
+#N canvas 0 23 450 300;
+#X obj 120 184 *~;
+#X obj 187 185 *~;
+#X obj 114 58 inlet~ signal;
+#X obj 203 92 inlet~ selector;
+#X obj 71 252 outlet~ option1;
+#X obj 190 251 outlet~ option2;
+#X obj 203 127 expr~ $v1 > 0.1 \; 1 - ($v1 > 0.1);
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 6 0;
+#X connect 6 0 0 1;
+#X connect 6 1 1 1;
+#X coords 0 -1 1 1 15 15 1 0 800;

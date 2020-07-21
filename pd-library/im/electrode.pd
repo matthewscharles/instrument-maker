@@ -1,0 +1,48 @@
+#N canvas 226 361 868 644;
+#X obj 52 67 ctlin; 
+#X floatatom 61 115 5 0 0 0 - - -; 
+#X floatatom 97 116 5 0 0 0 - - -; 
+#X text 5 12 This is a quick and dirty addition for a workshop! Assumes 
+you are using the Touch Board in Tin Foil Theremin mode (or otherwise 
+the MIDI Interface Generic sketch); 
+#X msg 22 142 \$2 \$1; 
+#X obj 22 117 pack; 
+#X text 134 116 don't need to check channel; 
+#X obj 22 185 route; 
+#X obj 96 131 loadbang; 
+#X obj 96 177 \$1; 
+#X floatatom 22 260 5 0 0 0 - - -; 
+#X obj 96 198 + 101; 
+#X obj 22 379 line~; 
+#X msg 22 356 \$1 10; 
+#X obj 22 401 outlet~; 
+#X obj 22 217 / 127; 
+#X text 137 201 count from 1 because this is im; 
+#X obj 124 223 \$2; 
+#X obj 124 243 sel 0; 
+#X msg 124 265 1; 
+#X obj 96 154 t b b; 
+#X obj 22 324 *; 
+#X connect 0 0 5 0; 
+#X connect 0 1 1 0; 
+#X connect 0 1 5 1; 
+#X connect 0 2 2 0; 
+#X connect 4 0 7 0; 
+#X connect 5 0 4 0; 
+#X connect 7 0 15 0; 
+#X connect 8 0 20 0; 
+#X connect 9 0 11 0; 
+#X connect 10 0 21 0; 
+#X connect 11 0 7 1; 
+#X connect 12 0 14 0; 
+#X connect 13 0 12 0; 
+#X connect 15 0 10 0; 
+#X connect 17 0 18 0; 
+#X connect 18 0 19 0; 
+#X connect 18 1 21 1; 
+#X connect 19 0 21 1; 
+#X connect 20 0 9 0; 
+#X connect 20 1 17 0; 
+#X connect 21 0 13 0; 
+#X coords 0 -1 1 1 15 15 1 0 800; 
+ 

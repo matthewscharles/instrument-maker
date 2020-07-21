@@ -1,0 +1,15 @@
+#N canvas 0 23 654 535 12;
+#X obj 16 117 im.speaker;
+#X obj 16 50 im.microphone;
+#X obj 16 85 im.looper, f 57;
+#X obj 124 44 im.keypress q;
+#X obj 240 44 im.keypress w;
+#X text 121 5 Press q to record \, w to play back;
+#X obj 354 62 im.add 1;
+#X obj 354 30 im.sensor 1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 6 0 2 3;
+#X connect 7 0 6 0;

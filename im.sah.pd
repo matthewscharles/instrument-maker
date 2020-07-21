@@ -1,8 +1,0 @@
-#N canvas 368 261 450 300 10;
-#X obj 123 165 samphold~;
-#X obj 122 98 inlet~;
-#X obj 172 97 inlet~;
-#X obj 123 200 outlet~;
-#X connect 0 0 3 0;
-#X connect 1 0 0 0;
-#X connect 2 0 0 1;

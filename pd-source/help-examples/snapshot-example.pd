@@ -1,0 +1,13 @@
+#N canvas 76 141 525 493 10;
+#X obj 89 17 im.sensor 1;
+#X obj 209 16 im.keypress Space;
+#X obj 9 123 cnv 15 500 80 empty empty empty 25 10 0 13 -262130 -66577
+0;
+#X text 13 127 Use the change argument to send the message only when
+the signal has changed. Otherwise \, the message will be sent out at
+audio rate (usually 44100 times per second)., f 81;
+#X obj 89 48 im.snapshot change;
+#X floatatom 89 78 5 0 0 0 - - -;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 4 0 5 0;

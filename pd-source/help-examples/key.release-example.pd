@@ -1,0 +1,16 @@
+#N canvas 0 23 450 300 12;
+#X obj 6 53 im.speaker;
+#X obj 6 150 im.speaker;
+#X obj 258 100 im.speaker;
+#X obj 6 32 im.player sounds/sn.wav;
+#X obj 6 128 im.player sounds/string.aif;
+#X obj 258 78 im.player sounds/rush.aif;
+#X obj 6 11 im.keyrelease Up;
+#X obj 6 106 im.keyrelease Space;
+#X obj 258 57 im.keyrelease Return;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 0;
+#X connect 7 0 4 0;
+#X connect 8 0 5 0;

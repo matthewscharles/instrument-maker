@@ -1,0 +1,11 @@
+#N canvas 451 128 525 493 10;
+#X obj 136 90 im.speaker;
+#X obj 134 7 im.sensor 1;
+#X obj 136 69 im.fizzy trigger:velocity;
+#X obj 136 48 im.note Cb4 1 retrigger;
+#X obj 13 10 im.keypress a;
+#X text 134 32 sensor input is currently unresponsive;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 4 0 3 0;
