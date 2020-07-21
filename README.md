@@ -21,6 +21,8 @@ Instrument Maker is a tool for rapidly creating what is often described as acces
 - sampling 
 - input from a range of interfaces such as distance sensors and switches
 
+The resources are designed in such a way that switch interfaces are interchangeable with continuous controllers such as light sensors, giving more flexibility to adapt during play.
+
 
 ## How does it work?
 
