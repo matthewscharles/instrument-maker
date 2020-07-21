@@ -4,7 +4,7 @@
 
 # Key pages:
 
-- [**IM-reference**](documentation/im-reference/index.html) complete list of active objects
+- [**IM-reference**](documentation/im-reference/index.html): **complete list of active objects**
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
