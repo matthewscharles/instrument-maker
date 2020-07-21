@@ -1,38 +1,37 @@
 <svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='500'><rect width='221' height='20' x='188.79999999999998' y='176.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='188.79999999999998' y='176.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="148.79999999999998" y="166.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/echo.svg" /><rect width='8' height='2' x='188.79999999999998' y='176.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='188.79999999999998' y='194.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.hesitate-reference.html'><text x='193' y='192' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.hesitate minimum:0 maximum:100 </text></a>
 <rect width='240.5' height='20' x='300.4' y='223.2' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='300.4' y='223.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="260.4" y="213.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/echo.svg" /><rect width='8' height='2' x='300.4' y='223.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='300.4' y='241.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.hesitate-reference.html'><text x='305' y='239' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.hesitate minimum:100 maximum: 200 </text></a>
 <rect width='84.5' height='20' x='76' y='278.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='76' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="36" y="268.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/gong.svg" /><rect width='8' height='2' x='76' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='110' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='152' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='76' y='296.4' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.tunedperc-reference.html'><text x='81' y='294' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text></a>
 <rect width='84.5' height='20' x='188.79999999999998' y='278.4' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='188.79999999999998' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="148.79999999999998" y="268.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/gong.svg" /><rect width='8' height='2' x='188.79999999999998' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='222.79999999999998' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='264.79999999999995' y='278.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='188.79999999999998' y='296.4' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.tunedperc-reference.html'><text x='193' y='294' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text></a>
 <rect width='84.5' height='20' x='304' y='279.59999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='304' y='279.59999999999997' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="264" y="269.59999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/gong.svg" /><rect width='8' height='2' x='304' y='279.59999999999997' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='338' y='279.59999999999997' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='380' y='279.59999999999997' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='304' y='297.59999999999997' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.tunedperc-reference.html'><text x='309' y='295' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text></a>
-<image x="159.79999999999998" y="347.59999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='194.79999999999998' y='357.59999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='194.79999999999998' y='357.59999999999997' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='194.79999999999998' y='375.59999999999997' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='71.5' height='20' x='194.79999999999998' y='357.59999999999997' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="154.79999999999998" y="347.59999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='8' height='2' x='194.79999999999998' y='357.59999999999997' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.speaker-reference.html'><text x='199' y='373' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
-<image x="39.8" y="66.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='91' height='20' x='74.8' y='76.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='74.8' y='94.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='91' height='20' x='74.8' y='76.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="34.8" y="66.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='8' height='2' x='74.8' y='94.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <a href='http://instrumentmaker.org/documentation/im-reference/im.sensor-reference.html'><text x='79' y='92' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 4 3 </text></a>
 <rect width='182' height='20' x='76' y='141.6' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<rect width='8' height='2' x='76' y='141.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<image x="36" y="131.6" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/chords.svg" /><rect width='8' height='2' x='76' y='141.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='76' y='159.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='159' y='159.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='250' y='159.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
