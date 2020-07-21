@@ -1,15 +1,15 @@
-<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='500' height='500'><image x="45.8" y="24.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/press_key.svg" /><rect width='117' height='20' x='80.8' y='34.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='500'><image x="45.8" y="24.799999999999997" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/press_key.svg" /><rect width='117' height='20' x='80.8' y='34.8' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='80.8' y='52.8' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='85' y='50' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress Space </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.keypress-reference.html'><text x='85' y='50' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress Space </text></a>
 <rect width='78' height='20' x='80.8' y='105.6' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='80.8' y='105.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='80.8' y='123.6' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='85' y='121' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.snapshot </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.snapshot-reference.html'><text x='85' y='121' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.snapshot </text></a>
 <rect width='78' height='20' x='80.8' y='73.2' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='80.8' y='73.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='150.8' y='73.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='80.8' y='91.2' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='85' y='89' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.divide 2 </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.divide-reference.html'><text x='85' y='89' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.divide 2 </text></a>
 <line x1="83.8" y1="54.8" x2="83.8" y2="73.2" style="stroke:black;stroke-width:2" />
 <line x1="83.8" y1="125.6" x2="43" y2="0" style="stroke:black;stroke-width:2" />
 <line x1="83.8" y1="93.2" x2="83.8" y2="105.6" style="stroke:black;stroke-width:2" />

@@ -1,27 +1,27 @@
-<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='500' height='500'><image x="25.4" y="8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/noise.svg" /><rect width='58.5' height='20' x='60.4' y='18' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='500'><image x="25.4" y="8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/noise.svg" /><rect width='58.5' height='20' x='60.4' y='18' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='18' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='36' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='65' y='34' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.noise </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.noise-reference.html'><text x='65' y='34' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.noise </text></a>
 <image x="25.4" y="98" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='60.4' y='108' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='108' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='126' style='fill:black;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='65' y='124' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.speaker-reference.html'><text x='65' y='124' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text></a>
 <image x="25.4" y="33.199999999999996" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/volume.svg" /><rect width='91' height='20' x='60.4' y='43.199999999999996' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='43.199999999999996' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='143.4' y='43.199999999999996' style='fill:green;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='61.199999999999996' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='65' y='59' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.volume 50% </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.volume-reference.html'><text x='65' y='59' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.volume 50% </text></a>
 <image x="209" y="4.399999999999999" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='244' y='14.399999999999999' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='244' y='32.4' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='249' y='30' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 1 </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.sensor-reference.html'><text x='249' y='30' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 1 </text></a>
 <image x="236.6" y="35.6" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/press_key.svg" /><rect width='117' height='20' x='271.6' y='45.6' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='271.6' y='63.6' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='276' y='61' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress Space </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.keypress-reference.html'><text x='276' y='61' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress Space </text></a>
 <rect width='58.5' height='20' x='60.4' y='80.39999999999999' style='fill:beige;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='80.39999999999999' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='110.4' y='80.39999999999999' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
 <rect width='8' height='2' x='60.4' y='98.39999999999999' style='fill:yellow;stroke:black;stroke-width:1;fill-opacity:0.8;stroke-opacity:1'/>
-<a href='http://instrumentmaker.org/'><text x='65' y='96' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text></a>
+<a href='http://instrumentmaker.org/documentation/im-reference/im.fader-reference.html'><text x='65' y='96' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text></a>
 <line x1="63.4" y1="38" x2="63.4" y2="43.199999999999996" style="stroke:black;stroke-width:2" />
 <line x1="63.4" y1="63.199999999999996" x2="63.4" y2="80.39999999999999" style="stroke:black;stroke-width:2" />
 <line x1="247" y1="34.4" x2="116.4" y2="80.39999999999999" style="stroke:black;stroke-width:2" />
