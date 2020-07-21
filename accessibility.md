@@ -17,3 +17,4 @@ The tab key does not work on the Mac OS on-screen keyboard — click anywhere ou
 - **tab**: complete the object (note: this doesn't work on the mac on-screen keyboard)
 
 * **cmd-enter**: complete the object and create another object below
+* **cmd-k:** select two objects to make the most logical connection

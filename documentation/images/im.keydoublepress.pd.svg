@@ -1,0 +1,65 @@
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='800'><image x="20.6" y="96.8" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='55.6' y='106.8' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='106.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='123.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='122' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<image x="20.6" y="68" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='55.6' y='78' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='78' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='108.6' y='78' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='95' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='94' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<image x="260.6" y="68" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='295.6' y='78' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='78' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='348.6' y='78' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='95' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='300' y='94' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<rect width='110.5' height='20' x='55.6' y='26.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='26.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='160.6' y='26.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='43.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='42' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.pulsewave A 3 </text>
+<rect width='110.5' height='20' x='295.6' y='26.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='26.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='400.6' y='26.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='43.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='300' y='42' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.pulsewave B 3 </text>
+<image x="20.6" y="231.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='55.6' y='241.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='241.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='258.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='257' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<image x="231.79999999999998" y="231.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='266.79999999999995' y='241.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.79999999999995' y='241.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.79999999999995' y='258.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='271' y='257' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<rect width='156' height='20' x='55.6' y='216' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='216' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='206.6' y='216' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='233' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='232' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.player sounds/sn.wav </text>
+<rect width='182' height='20' x='266.79999999999995' y='214.79999999999998' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.79999999999995' y='214.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='443.79999999999995' y='214.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.79999999999995' y='231.79999999999998' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='271' y='230' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.player sounds/string.aif </text>
+<rect width='156' height='20' x='348.4' y='51.6' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='348.4' y='68.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='353' y='67' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keydoublepress a 500 </text>
+<rect width='156' height='20' x='55.6' y='188.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='55.6' y='205.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='60' y='204' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keydoublepress b 500 </text>
+<rect width='162.5' height='20' x='266.79999999999995' y='186' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.79999999999995' y='203' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='271' y='202' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keydoublepress Up 500 </text>
+<image x="260.6" y="95.6" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='295.6' y='105.6' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='105.6' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='295.6' y='122.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='300' y='121' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<line x1="58.6" y1="98" x2="58.6" y2="106.8" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="298.6" y1="98" x2="298.6" y2="105.6" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="58.6" y1="46.4" x2="58.6" y2="78" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="298.6" y1="46.4" x2="298.6" y2="78" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="58.6" y1="236" x2="58.6" y2="241.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="269.79999999999995" y1="234.79999999999998" x2="269.79999999999995" y2="241.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="351.4" y1="71.6" x2="351.6" y2="78" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="58.6" y1="208.4" x2="58.6" y2="216" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="269.79999999999995" y1="206" x2="269.79999999999995" y2="214.79999999999998" style="stroke:rgb(0,0,0);stroke-width:1" />
+</svg>

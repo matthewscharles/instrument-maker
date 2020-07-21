@@ -1,0 +1,28 @@
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='800'><image x="75.8" y="57.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/noise.svg" /><rect width='58.5' height='20' x='110.8' y='67.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='110.8' y='67.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='110.8' y='84.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='115' y='83' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.noise </text>
+<image x="75.8" y="86" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='110.8' y='96' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='110.8' y='96' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='163.8' y='96' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='110.8' y='113' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='115' y='112' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<rect width='91' height='20' x='206.79999999999998' y='67.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='206.79999999999998' y='84.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='211' y='83' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress a </text>
+<image x="78.2" y="189.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='113.2' y='199.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='113.2' y='199.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='113.2' y='216.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='118' y='215' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<rect width='156' height='20' x='113.2' y='170.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='113.2' y='170.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='160.2' y='170.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='212.2' y='170.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='264.2' y='170.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='113.2' y='187.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='118' y='186' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.flanger 1Hz 200% 20% </text>
+<line x1="113.8" y1="87.2" x2="113.8" y2="96" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="113.8" y1="116" x2="116.2" y2="170.4" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="209.79999999999998" y1="87.2" x2="166.8" y2="96" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="116.2" y1="190.4" x2="116.2" y2="199.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+</svg>

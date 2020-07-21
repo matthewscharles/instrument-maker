@@ -1,0 +1,134 @@
+<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='800'><rect width='84.5' height='20' x='64' y='190.79999999999998' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='64' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='101' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='143' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='64' y='207.79999999999998' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='69' y='206' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text>
+<image x="152.6" y="261.2" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='187.6' y='271.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='187.6' y='271.2' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='187.6' y='288.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='192' y='287' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<rect width='84.5' height='20' x='187.6' y='190.79999999999998' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='187.6' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='224.6' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='266.6' y='190.79999999999998' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='187.6' y='207.79999999999998' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='192' y='206' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text>
+<rect width='84.5' height='20' x='312.4' y='192' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='312.4' y='192' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='349.4' y='192' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='391.4' y='192' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='312.4' y='209' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='317' y='208' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.tunedperc </text>
+<image x="29" y="68" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='91' height='20' x='64' y='78' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='64' y='95' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='69' y='94' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 1 4 </text>
+<rect width='201.5' height='20' x='64' y='129.6' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='64' y='129.6' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='64' y='146.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='159' y='146.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='259' y='146.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='69' y='145' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.triads Bb major 5 II V I IV </text>
+<image x="35" y="770" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/speaker.svg" /><rect width='71.5' height='20' x='70' y='780' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='780' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='797' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='75' y='796' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.speaker </text>
+<rect width='91' height='20' x='70' y='470.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='487.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='75' y='486' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress a </text>
+<rect width='91' height='20' x='233.2' y='470.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='233.2' y='487.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='238' y='486' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress s </text>
+<rect width='91' height='20' x='394' y='470.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='394' y='487.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='399' y='486' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress d </text>
+<image x="35" y="707.6" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='70' y='717.6' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='717.6' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='123' y='717.6' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='734.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='75' y='733' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<image x="161" y="711.1999999999999" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='196' y='721.1999999999999' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='196' y='721.1999999999999' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='249' y='721.1999999999999' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='196' y='738.1999999999999' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='201' y='737' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<image x="282.2" y="712.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/fader.svg" /><rect width='58.5' height='20' x='317.2' y='722.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='317.2' y='722.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='370.2' y='722.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='317.2' y='739.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='322' y='738' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.fader </text>
+<image x="512.5999999999999" y="614" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/echo.svg" /><rect width='78' height='20' x='547.5999999999999' y='624' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='547.5999999999999' y='624' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='568.5999999999999' y='624' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='594.5999999999999' y='624' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='620.5999999999999' y='624' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='547.5999999999999' y='641' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='552' y='640' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.echo 200 </text>
+<image x="452.59999999999997" y="670.4" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/echo.svg" /><rect width='78' height='20' x='487.59999999999997' y='680.4' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='487.59999999999997' y='680.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='508.5999999999999' y='680.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='534.5999999999999' y='680.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='560.5999999999999' y='680.4' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='487.59999999999997' y='697.4' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='492' y='696' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.echo 400 </text>
+<rect width='130' height='20' x='70' y='534' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='534' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='108' y='534' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='151' y='534' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='194' y='534' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='551' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='75' y='550' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.switches zero:on </text>
+<image x="576.1999999999999" y="498.79999999999995" width="35" height="35" xlink:href="../../instrument-maker-symbols/EN/sensor.svg" /><rect width='78' height='20' x='611.1999999999999' y='508.79999999999995' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='611.1999999999999' y='525.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='616' y='524' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.sensor 2 </text>
+<rect width='91' height='20' x='545.2' y='469.2' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='545.2' y='486.2' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='550' y='485' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.keypress f </text>
+<rect width='65' height='20' x='70' y='658.8' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='658.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='130' y='658.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='70' y='675.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='75' y='674' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.hollow </text>
+<rect width='65' height='20' x='192.4' y='658.8' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='192.4' y='658.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='252.39999999999998' y='658.8' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='192.4' y='675.8' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='197' y='674' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.hollow </text>
+<rect width='65' height='20' x='317.2' y='660' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='317.2' y='660' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='377.2' y='660' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='317.2' y='677' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='322' y='676' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.hollow </text>
+<rect width='227.5' height='20' x='68.8' y='567.6' style='fill:beige;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='68.8' y='567.6' style='fill:black;stroke:black;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='68.8' y='584.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='176.8' y='584.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<rect width='5' height='2' x='289.8' y='584.6' style='fill:red;stroke:red;stroke-width:2;fill-opacity:0.8;stroke-opacity:1'/>
+<text x='73' y='583' style="font-family: Helvetica, sans-serif; font-size: 12; font-weight: bold; font-style: normal" >im.triads A# minor 6 II V I III VI </text>
+<line x1="67" y1="210.79999999999998" x2="190.6" y2="271.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="190.6" y1="210.79999999999998" x2="190.6" y2="271.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="315.4" y1="212" x2="190.6" y2="271.2" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="67" y1="98" x2="67" y2="129.6" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="67" y1="149.6" x2="67" y2="190.79999999999998" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="263" y1="149.6" x2="190.6" y2="190.79999999999998" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="464" y1="149.6" x2="315.4" y2="192" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="73" y1="490.4" x2="73" y2="534" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="236.2" y1="490.4" x2="198" y2="534" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="397" y1="490.4" x2="328" y2="534" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="73" y1="737.6" x2="73" y2="780" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="199" y1="741.1999999999999" x2="73" y2="780" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="320.2" y1="742.4" x2="73" y2="780" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="550.5999999999999" y1="644" x2="252" y2="721.1999999999999" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="490.59999999999997" y1="700.4" x2="373.2" y2="722.4" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="73" y1="554" x2="71.8" y2="567.6" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="614.1999999999999" y1="528.8" x2="126" y2="717.6" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="614.1999999999999" y1="528.8" x2="550.5999999999999" y2="624" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="614.1999999999999" y1="528.8" x2="490.59999999999997" y2="680.4" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="548.2" y1="489.2" x2="458" y2="534" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="73" y1="678.8" x2="73" y2="717.6" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="195.4" y1="678.8" x2="199" y2="721.1999999999999" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="320.2" y1="680" x2="320.2" y2="722.4" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="71.8" y1="587.6" x2="73" y2="658.8" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="293.8" y1="587.6" x2="195.4" y2="658.8" style="stroke:rgb(0,0,0);stroke-width:1" />
+<line x1="520.8" y1="587.6" x2="320.2" y2="660" style="stroke:rgb(0,0,0);stroke-width:1" />
+</svg>
