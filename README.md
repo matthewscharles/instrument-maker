@@ -15,17 +15,19 @@
 
 # About Instrument Maker
 
-Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  Its parameters have been chosen to reflect the options usually requested in music workshop settings: 
+Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  
 
-<img src= http://instrumentmaker.org/documentation/thumbnails/scale.png width=40 height = 40> **quickly assignable musical scales/keys** 
+Amongst other things, this is a quick way to develop features often requested in music workshop settings: 
 
-<img src= http://instrumentmaker.org/documentation/thumbnails/black_notes.png width=40 height = 40> **flexibility around root notes and available ranges of notes**
+<img src= http://instrumentmaker.org/documentation/thumbnails/scale.png width=40 height = 40 valign=middle> **quickly assignable musical scales/keys** 
 
-<img src= http://instrumentmaker.org/documentation/thumbnails/chords.png width=40 height = 40> **chords** 
+<img src= http://instrumentmaker.org/documentation/thumbnails/black_notes.png width=40 height = 40 valign=middle> **flexibility around root notes and available ranges of notes**
 
-<img src= http://instrumentmaker.org/documentation/thumbnails/looper.png width=40 height = 40> **sampling and live looping**
+<img src= http://instrumentmaker.org/documentation/thumbnails/chords.png width=40 height = 40 valign=middle> **chords** 
 
-<img src= http://instrumentmaker.org/documentation/thumbnails/sensor.png width=40 height = 40> **input from a range of interfaces e.g.  switches and distance sensors**
+<img src= http://instrumentmaker.org/documentation/thumbnails/looper.png width=40 height = 40 valign=middle> **sampling and live looping**
+
+<img src= http://instrumentmaker.org/documentation/thumbnails/sensor.png width=40 height = 40 valign=middle> **input from a range of interfaces e.g.  switches and distance sensors**
 
 The resources are designed in such a way that switches are interchangeable with continuous controllers such as light, distance and pressure sensors, giving more flexibility to adapt during play.
 
