@@ -1,42 +1,55 @@
-**Instrument Maker** is a collection of open source resources for digital instrument building with sensors, featuring a library for running [Pure Data](http://puredata.info/) on embedded computers such as [Bela](http://bela.io) or [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
+**Instrument Maker** is an open source framework for digital instrument building with sensors, featuring a library for running [Pure Data](http://puredata.info/) on embedded computers such as [Bela](http://bela.io) or [Raspberry Pi](https://www.raspberrypi.org/) + [Arduino](https://www.arduino.cc/).  
 
 <!--Some rough documentation is being generated here: <https://instrumentmaker.org/im-reference/>.-->
 
 # Key pages:
 
+*Scroll down for project information and basic installation instructions.*
+
+- [**IM-reference**](documentation/im-reference/index.html): **a complete list of active objects** with experimental diagrams generated from the help patches (some examples may be messy).
 - [**Learning Pd through Instrument Maker**](documentation/manual/learning-pd-through-im.md) (work in progress)
 - [**GitHub repo**](https://github.com/matthewscharles/instrument-maker/)
 - [**Instrument Maker Communication Symbols**](https://instrumentmaker.org/instrument-maker-symbols/)
 - [**Wiki: development notes.**](https://github.com/matthewscharles/instrument-maker/wiki)  
+  <!-- - **[Education Makers version](https://github.com/educationmakers/instrument-maker)** (development in an education technology context with Milieux Institute). -->
 
 # About Instrument Maker
 
-Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  Its parameters have been chosen to reflect the options usually requested in music workshop settings: 
+Instrument Maker is a tool for rapidly creating what is often described as accessible music technology (AMT), by using established programming languages and affordable hardware to create standalone instruments.  
 
-- quickly assignable musical scales/keys 
-- flexibility around root notes and available ranges of notes
-- chords 
-- sampling 
-- input from a range of interfaces such as distance sensors and switches
+Amongst other things, this is a quick way to develop features often requested in music workshop settings: 
 
+<img src= http://instrumentmaker.org/documentation/thumbnails/scale.png width=40 height = 40 valign=middle> **quickly assignable musical scales/keys** 
+
+<img src= http://instrumentmaker.org/documentation/thumbnails/black_notes.png width=40 height = 40 valign=middle> **flexibility around root notes and available ranges of notes**
+
+<img src= http://instrumentmaker.org/documentation/thumbnails/chords.png width=40 height = 40 valign=middle> **chords** 
+
+<img src= http://instrumentmaker.org/documentation/thumbnails/looper.png width=40 height = 40 valign=middle> **sampling and live looping**
+
+<img src= http://instrumentmaker.org/documentation/thumbnails/sensor.png width=40 height = 40 valign=middle> **input from a range of interfaces e.g.  switches and distance sensors**
+
+The resources are designed in such a way that switches are interchangeable with continuous controllers such as light, distance and pressure sensors, giving more flexibility to adapt during play.
 
 
 ## How does it work?
 
-Instrument Maker was conceived as a complete workshop package including hardware. 
-The main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.
+Although Instrument Maker was designed as a complete workshop package including hardware, the main resource is a library of objects for [Pure Data](http://puredata.info/) that can be used independently.  We are currently looking for users to test and use the code before returning to a more integrated approach.
 
 Having downloaded the library, create and connect building blocks in the form of obects with the `im.` prefix: e.g. inputs, outputs, tuning systems, processors, and synthesisers. 
 
-Upload this code to Bela, or use a Raspberry Pi or laptop with an Arduino-type device connected.  
-
 ![The Instrument Maker objects in Pure Data sit on a white screen, featuring minimal outlined boxes with black connecting lines. The boxes are labelled: input, scale, sinewave, volume, and they are connected to further boxes labelled echo and output. The lines are drawn from the top, through each of the boxes in various inlets and outlets, into a box labelled output.](documentation/readme-images/im-scale.png)
 
+Upload the resulting code to [Bela](http://bela.io/), or use a Raspberry Pi or laptop with an Arduino-type MIDI device connected.  
+
+The software library is also great for live patching!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ----
 
 # Installation
 
-***This is for our current demo setup for desktops/RPi. Deken release coming soon!***
+***This is for our current demo setup for desktops/RPi. Deken release coming soon!  Some experience and/or time investment is required for these installations while we compile better instructions.***
 
 We recommend using [Patchbox OS](https://blokas.io/patchbox-os/) for Raspberry Pi installations - once installed, follow the instructions below.
 
@@ -47,8 +60,7 @@ https://github.com/matthewscharles/instrument-maker/releases
 
 <details>
 <summary>- Optional Bela download</summary>
-The stripped-down Bela release is meant to function alongside the main library. Install the im folder as usual, and upload this folder with your _main patch to try it on the hardware.
-This is currently untested, and may be CPU intensive!  Use im.sensor with the argument input:A0 (A1, A2, etc.) to access the analog inputs. 
+The stripped-down Bela release is meant to function alongside the main library. Install the im folder as usual, and upload this folder with your _main patch to try it on the hardware. This is currently untested, and may be CPU intensive!  Use im.sensor with the argument input:A0 (A1, A2, etc.) to access the analog inputs. 
 </details>
 
 ### **Alternative: clone this repo**
@@ -79,7 +91,7 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
   ![](documentation/readme-images/add-path.png)
 
-- Find a list of objects by opening `_im-object-overview.pd` from the main folder
+- Find a list of objects by opening `_im-object-overview.pd` from the main folder and/or consult the [im-reference](http://instrumentmaker.org/documentation/im-reference) website. 
 
 - Right-click on the objects found here to open help files.  This is a convention from Pure Data and similar languages - most help files contain editable examples!
 
@@ -91,18 +103,29 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
 
 ### MaKey MaKey
-This should be plug and play: use the im.keypress and im.makeymakey objects to experiment!
+The [MaKey MaKey](https://makeymakey.com/) is an interface enabling physical interface building through crocodile clip connections and conductive materials.
+
+Using the MaKey MaKey should be plug and play: use the im.keypress and im.makeymakey objects to experiment!
 
 ### Touch Board
-Use a Bare Conductive Touch Board set to generic_midi_controller. This will connect to im.electrode and im.tb
+Use a [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/) set to `generic_midi_controller` and load the Touch Board as a MIDI interface in Pure Data. The sensors will appear as continuous controls via `im.electrode`and `im.tb`.
+
+### Bela
+
+[Bela](https://bela.io/) is an environment including hardware for low-latency sensor interactions, and was part of the inspiration for this framework (particularly a continuity between switch and continuous control).
+
+See the installation notes below for details on how to use it — this is currently untested!
 
 ### MIDI controllers
-Set your MIDI controller to CC 0-7 on channel 1. 
-This should work with im.sensor in the same way as our custom boards.
+Set your MIDI controller to CC 0-7 on channel 1. This should work with im.sensor in the same way as our custom boards.
 
 ## Some notes on access
 
-We have developed hardware and web interfaces, but in the interest of some solid testing, our attention is on the core software library using PD for now.  
+This work is ongoing - open source, and open process as far as we can make it.
+
+We have developed hardware and web interfaces, but in the interest of some solid testing, our attention is on the underlying software library for now.  With time, the code itself should be a useful educational resource.
+
+Much of this text will be written in shorthand and we recognise that this will be excluding to many people, but our goal is still to demystify and bring in the access longer term.
 
 As we begin revisiting the web elements we also hope to start re-engaging with screen reader access and other often overlooked interfaces in this field..but we are not attempting to deliver a blanket solution by any means.
 
@@ -110,11 +133,13 @@ Distributed under the terms of the **[GNU Public license version 3](https://www.
 
 ## **Nothing about us without us**
 
-Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community, and we look forward to opening it up to a more inclusive approach.  
+Through this framework, we hope to ensure more people have direct access to the act of coding and customisation.  This is a tool made by and for our community as disabled and/or neurodivergent artists, and are opening up a more inclusive approach as our priorities are addressed.  Everyone is welcome to use and contribute to these resouces!
 
-All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need more collaborative spaces.
+All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  Many barriers exist around exclusive language and assumed knowledge. This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need to establish more collaborative spaces.  This project is a practical approach to that issue.
 
-The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" 
+The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
+
+We are also grateful for support from various organisations and inviduals - thanks page coming soon.  If you want to collaborate and/or can think of a way of helping us move forward, please get in touch.
 
 Follow our collective project [Blurring the Boundaries](http://www.blurringtheboundaries.org/) for news of future events.  
 
@@ -134,7 +159,7 @@ Throughout this site you will encounter graphics playing on the classic "AAC" ae
 
 ---
 
-## How do the objects differ from regular Pd?
+## How does the software differ from regular Pd?
 
 Our focus has so far on a separation between graphical interface and interactions - there are no on-screen objects that act as sliders or buttons, as we encourage users to work toward physical outcomes.  Of course, this decision in itself represents more access barriers, but we're working back toward something a bit more integrated.
 
@@ -146,13 +171,12 @@ All Instrument Maker objects run at audio rate, and we have deliberately omitted
 
 ### Why the im. prefix?
 
-We wanted to avoid obscure names that might clash with existing Pd objects.  
+We wanted to avoid obscure names that might clash with existing Pd objects (thus pushing us into obscure IKEA-style naming conventions, but in our latest version we are starting to move toward plainer names.  
 
-By installing the IM folder within Pd's built-in search path, it's still possible to create `im/sensor` etc. with a slash instead of a dot.
+Some colleagues have noted that the im prefix is useful to indicate objects used separately as a beginner library.  By installing the IM folder within Pd's built-in search path, it's still possible to create `im/sensor` etc. with a slash instead of a dot.
 
 <details><summary>Note: Instrument Maker is 100% Pd Vanilla. </summary>
-All of our objects are based on recombinations of the core Pd objects rather than C code, and so should work on platforms based on libPd (such as Bela and Mobile Music Platform) without the need for any external libraries.  
-This also means that the back end should provide a field day for people learning to patch in more depth in Pd — but the legibility at this level is a longer term project!!</details>
+All of our objects are based on recombinations of the core Pd objects rather than C code, and so should work on libPd based platforms such as Bela without the need for any external libraries.  This also means that the back end should provide a field day for people learning to patch in more depth in Pd — but the legibility at this level is a longer term project!!</details>
 
 
 
