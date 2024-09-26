@@ -42,9 +42,9 @@ Having downloaded the library, create and connect building blocks in the form of
 
 Upload the resulting code to [Bela](http://bela.io/), or use a Raspberry Pi or laptop with an Arduino-type MIDI device connected.  
 
-The software library is also great for live patching!
+<!-- The software library is also great for live patching!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IH1tZlbT3rA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 ----
 
 # Installation
