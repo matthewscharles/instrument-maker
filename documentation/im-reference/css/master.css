@@ -61,3 +61,13 @@ h1 {
     background: -o-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
     background: linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
     }
+
+ svg[width="800"][height="500"]{
+        transform: scale(2);
+        transform-origin: 0 0;
+        padding-bottom:100px;
+    }
+    
+    svg[width="800"][height="500"] text{
+        font-size:8px!important;
+    }   
