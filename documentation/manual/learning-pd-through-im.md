@@ -26,8 +26,8 @@ This manual is currently presented a raw [MarkDown](https://www.markdownguide.or
 
 - Create and connect graphic objects on-screen, rather than writing lines of text code.
 - Pure Data is friendly to many musicians because it can feel similar to making physical connections between instruments and effect pedals.
-  - By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
-  - Sometimes this way of organising information can lead to a more playful approach, and affords connections between objects that weren't intended by the creator - just like a lot of commercial music software.
+- By changing the order in which the pedals (or objects) are connected, we can change the sound produced.
+- Sometimes this way of organising information can lead to a more playful approach, and affords connections between objects that weren't intended by the creator - as is the case with a lot of commercial music software.
 
 
 ### Why use Pure Data?
@@ -62,7 +62,7 @@ To find a list of objets with their basic functions, look for `im-current-object
 
 At present, the Instrument Maker code functions best with the following items:
 
-- [Bela](https://bela.io/) 
+- [Bela Platform](https://bela.io/), which allows Pd patches to be uploaded via a web interface.
 - [Raspberry Pi](https://www.raspberrypi.org/), connected to [Arduino](http://arduino.cc/) (best support with Leonardo, [Bare Conductive Touch Board](https://www.bareconductive.com/shop/touch-board/), or other 32U4-based boards that support [native USB MIDI](https://www.arduino.cc/en/Tutorial/MidiDevice)) or [Micro:Bit](https://microbit.org/) (resources currently in development)
 
 Although these hardware resources can be used to control motors, lights, and other outputs, at present the Instrument Maker library is designed to work one way: to convert sensor information into audio signals (whether you prefer to think of this as vibration, sound, or music). 
@@ -121,8 +121,6 @@ In general, the left-most inlet is the most important — this is where the prim
 Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
 
 *Note: since the Instrument Maker library is a work in progress, some of the inlets and outlets don't have an obvious function — they've been left in for testing purposes or for future features.  For example, the scale object only really handles information in its main inlet and outlet.*
-
-A convention: the 
 
 # First steps in Pure Data 
 
@@ -216,33 +214,6 @@ Depending on interest of the user, the following are recommended starting points
 
 ![example-looper](example-looper.png)
 
-# <!--Key im objects-->
-
-<!--Placeholder — work in progress!-->
-
-## <!--im.sensor-->
-
-<!--***No inlet***-->
-
-<!--**Outlet:** sensor reading-->
-
-<!--**Arguments:**-->
-
-1. <!--the name or number of the input to read from-->
-2. <!--multiplier-->
-
-<!--The multiplier can be used to set how many notes are played (when combined with im.scale)-->
-
-## <!--im.speaker-->
-
-<!--**Inlet:** the signal to go to the speaker-->
-
-<!--**Outlet:** no outlet-->
-
-<!--***No arguments***-->
-
-<!--No--> 
-
 # Key concepts
 
 ## Signal flow
@@ -279,27 +250,11 @@ Other examples along these lines include:
 - bowing a string instrument while changing pitch on its neck
 - scratching a record on a turntable while changing volume with the crossfader 
 
-*<!--Placeholder: flute example-->*
-
 # Making the transition from Instrument Maker
 
 ## Pure Data
 
-So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`
-
-<!--Examples to add:-->
-
-- <!--Sequencer-->
-
-- <!--Stereo with dac~-->
-
-- <!--MIDI control-->
-
-  ### Installing external objects
-
-## Arduino and physical circuits
-
-- Insert voltage divider circuit here
+So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`.
 
 # References/learning resources
 
