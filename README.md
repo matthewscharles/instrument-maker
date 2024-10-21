@@ -89,7 +89,7 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
 - Add the folder to the preferences.
 
-  ![](documentation/readme-images/add-path.png)
+  ![The PD menu highlighted on a Mac OS screen, showing preferences, then path. The PD search window shows /users/cm/Library/Pd/im](documentation/readme-images/add-path.png)
 
 - Find a list of objects by opening `_im-object-overview.pd` from the main folder and/or consult the [im-reference](http://instrumentmaker.org/documentation/im-reference) website. 
 
@@ -97,7 +97,7 @@ Click the green Clone or Download icon at the top of the [GitHub repo](https://g
 
   - Within the help files, you will find information on the relevant arguments, inlets, and outlets, related objects both within the library and in established approaches, whether the object expects or sends audio or control-type signals, and some basic examples to be copied and pasted.
 
-  ![](documentation/readme-images/help-example.png)
+  ![A brightly coloured window shows generate.sine, with a control input and audio output, and an example of a sinewave connected to a fader with a space bar and sensor input. along the right hand side are related items included squarewave, sawtooth, noise, and scale.](documentation/readme-images/help-example.png)
 
 ![a list of current objects](documentation/readme-images/current-objects-pd.png)
 
@@ -121,11 +121,7 @@ Set your MIDI controller to CC 0-7 on channel 1. This should work with im.sensor
 
 ## Some notes on access
 
-This work is ongoing - open source, and open process as far as we can make it.
-
 We have developed hardware and web interfaces, but in the interest of some solid testing, our attention is on the underlying software library for now.  With time, the code itself should be a useful educational resource.
-
-Much of this text will be written in shorthand and we recognise that this will be excluding to many people, but our goal is still to demystify and bring in the access longer term.
 
 As we begin revisiting the web elements we also hope to start re-engaging with screen reader access and other often overlooked interfaces in this field..but we are not attempting to deliver a blanket solution by any means.
 
@@ -137,11 +133,11 @@ Through this framework, we hope to ensure more people have direct access to the 
 
 All too often in instrument development settings such as hackathons, it is assumed that the setup of a new instrument will be the domain of a specialist separate from a musician as an end user.  Many barriers exist around exclusive language and assumed knowledge. This can maintain a divide between specialists without lived experience of disability creating resources for disabled people.  We need to establish more collaborative spaces.  This project is a practical approach to that issue.
 
-The project was established by  [Charles Matthews](http://ardisson.net/),  [Gift Tshuma](http://www.utchoir.com/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
+The project was established by [Charles Matthews](https://github.com/matthewscharles),  [Gift Tshuma](https://www.blurringtheboundaries.org/), and [Roybn Steward](https://www.robynsteward.com/music), starting from Gift's question: "can you give me a Pure Data demo lasting one minute, if it's supposted to be such an accessible way into building instruments?" (we're getting there).
 
 We are also grateful for support from various organisations and inviduals - thanks page coming soon.  If you want to collaborate and/or can think of a way of helping us move forward, please get in touch.
 
-Follow our collective project [Blurring the Boundaries](http://www.blurringtheboundaries.org/) for news of future events.  
+Follow our collective project [Blurring the Boundaries](https://www.blurringtheboundaries.org/) for news of future events.  
 
 ## **"Accessible" does not always mean "easier"!**
 
