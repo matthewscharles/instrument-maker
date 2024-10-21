@@ -6,17 +6,13 @@ Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/mu
 
 ## Disclaimer and development info
 
-The Instrument Maker library is very much work in progress and a labour of love — so please don't be surprised if things change! 
-
 Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  
 
 If you have one the Instrument Maker kits distributed by [Blurring the Boundaries](https://blurringtheboundaries.org/) in 2020, you might also find [this documentation](https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md) useful.
 
-A glossary of terms used is available [here](glossary.md).
+A glossary of terms is available [here](glossary.md).
 
 If you have any issues with the software, including requests for clarity or additions to this documentation, please use the [issues forum](https://github.com/matthewscharles/instrument-maker/issues).
-
-This manual is currently presented a raw [MarkDown](https://www.markdownguide.org/) document.  As a result, the images vary in size and quality, as does the general layout. 
 
 ## Introduction
 
@@ -90,7 +86,7 @@ The objects must have a name, which determine their function. Objects from the I
 
 ### Object arguments
 
-Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. 
+Arguments are usually numbers (or occasionally words) that provide the object with more details on how to operate. 
 
 For example, having named an `im.echo` object, we can also set its time (how short or long the echo is), and the amount of feedback (affecting how many times the echo repeats). 
 
@@ -112,15 +108,13 @@ Therefore, more concretely: `sensor 1 12` would be equivalent to `sensor(1, 12)`
 
 Information flows one way in Pure Data: downwards. Inlets can only be connected to outlets -- an inlet can not be connected to another inlet. When clicking and dragging to create connections, the connection must always be started from the outlet.
 
-<!--- parentheses example --->
-
 Not all objects have the same numbers of inlets or outlets. Furthermore, some might only have an inlet or an outlet.  For example, the im.speaker object only has an inlet, because the output takes place in the physical world.
 
 In general, the left-most inlet is the most important — this is where the primary signal to process should be sent through.  Other inlets 
 
 Multiple objects can be connected to each other -- so, for example, a single sensor input can be used to control several sounds or parameters. 
 
-*Note: since the Instrument Maker library is a work in progress, some of the inlets and outlets don't have an obvious function — they've been left in for testing purposes or for future features.  For example, the scale object only really handles information in its main inlet and outlet.*
+*Note: since the Instrument Maker library is a work in progress, you might find that some inlets and outlets don't do anything.  For example, the scale object only really handles information in its main inlet and outlet.  If in doubt, check the documentation!*
 
 ## First steps in Pure Data 
 
@@ -145,7 +139,7 @@ Click on the background (anywhere outside the object) to finish the box.
 If there is a problem with the object, the box will appear with a dotted outline.  There are a few  possible reasons for this happening:
 
 - there is no object with the name you used — make sure the Instrument Maker library is installed, and that you have spelled it the object name correctly
-- there are capital letters somewhere in the object name — almost all object names are lower case
+- there are capital letters somewhere in the object name —- almost all object names are supposed to be written in lower case
 - there are spaces missing between the object name and arguments
 
 #### Editing an object
@@ -196,7 +190,7 @@ Connect the echo as a send effect:make a second cable from the im.microphone obj
 
 ## Examples
 
-Depending on interest of the user, the following are recommended starting points for using Instrument Maker:
+The following are recommended starting points for using Instrument Maker:
 
 ### **"Theremin style"**![example-theremin1](example-theremin1.png)
 
@@ -220,7 +214,7 @@ Depending on interest of the user, the following are recommended starting points
 
 The order in which objects are connected affects their sound and/or behaviour. 
 
-Unlike a physical circuit, the information flows in a linear fashion from the top to the bottom of the screen, and does not need to return to its start point.
+Unlike a physical circuit which requires connections to loop back to their starting point, the information flows in a linear fashion from the top to the bottom of the screen.
 
 #### Effects: inserts and sends
 
@@ -235,8 +229,6 @@ A "send" (also known as an auxiliary or aux send) involves a signal being duplic
 Interactions with live instruments can often be divided up into controlling **pitch** and **intensity/loudness**.  These two parameters make a good starting point when designing an electronic instrument.  For example:
 
 ![example-instruments](example-instruments.png)
-
-
 
 The main difference in these examples can be found in percussion instruments (like the gamelan example above, or playing a piano-style keyboard): in these cases, each note is a fixed in a specific place, and so the player changes the volume by striking it.
 
