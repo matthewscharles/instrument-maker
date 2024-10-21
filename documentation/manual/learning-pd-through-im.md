@@ -2,7 +2,7 @@
 
 Charles Matthews 2020
 
-Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](http://blurringtheboundaries.org/)), and with thanks to many others who have been involved in some way. 
+Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](https://blurringtheboundaries.org/)), and with thanks to many others who have been involved in some way. 
 
 # Disclaimer and development info
 
@@ -10,7 +10,7 @@ The Instrument Maker library is very much work in progress and a labour of love 
 
 Make sure you have the most recent version of this document from [instrumentmaker.org](instrumentmaker.org), and update the software regularly by pulling from GitHub.  
 
-Since you're reading this, chances are you have one the Instrument Maker kits — you might also find [this documentation](https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md) useful.
+If you have one the Instrument Maker kits distributed by [Blurring the Boundaries](https://blurringtheboundaries.org/) in 2020, you might also find [this documentation](https://github.com/matthewscharles/instrument-maker/blob/master/documentation/manual/imkits.md) useful.
 
 A glossary of terms used is available [here](glossary.md).
 
