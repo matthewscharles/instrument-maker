@@ -1,10 +1,10 @@
-**Draft manual: Learning PD with Instrument Maker** 
+# Draft manual: Learning PD with Instrument Maker
 
-Charles Matthews 2020
+**Charles Matthews 2020**
 
 Incorporating contributions from [Robyn Steward](https://www.robynsteward.com/music), Houda Jawhar, Ann-Louise Davidson ([Education Makers](http://www.educationmakers.ca/)/[#MilieuxMake](http://www.educationmakers.ca/makerspace/)), [Dave Darch](https://alittlelearning.org/), Gift Tshuma ([Blurring the Boundaries](https://blurringtheboundaries.org/)), and with thanks to many others who have been involved in some way. 
 
-# Disclaimer and development info
+## Disclaimer and development info
 
 The Instrument Maker library is very much work in progress and a labour of love — so please don't be surprised if things change! 
 
@@ -18,9 +18,9 @@ If you have any issues with the software, including requests for clarity or addi
 
 This manual is currently presented a raw [MarkDown](https://www.markdownguide.org/) document.  As a result, the images vary in size and quality, as does the general layout. 
 
-# Introduction
+## Introduction
 
-## What is PD (Pure Data)?
+### What is PD (Pure Data)?
 
 [Pure Data](http://puredata.info/) (PD for short) is a free, open source [dataflow](https://en.wikipedia.org/wiki/Dataflow_programming) programming language. 
 
@@ -30,13 +30,13 @@ This manual is currently presented a raw [MarkDown](https://www.markdownguide.or
 - Sometimes this way of organising information can lead to a more playful approach, and affords connections between objects that weren't intended by the creator - as is the case with a lot of commercial music software.
 
 
-### Why use Pure Data?
+#### Why use Pure Data?
 
 Pure Data is free and open source, meaning that members of the community can edit the code and create their own versions of the software.
 
 Pure Data code can be applied in a variety of music making contexts, including [the web](https://github.com/sebpiq/WebPd), [audio apps for Android and iOS](http://danieliglesia.com/mobmuplat/), and running on embedded computers like the [Raspberry Pi](https://puredata.info/docs/raspberry-pi) and [Bela](http://bela.io/).
 
-## What is Instrument Maker?
+### What is Instrument Maker?
 
 Instrument Maker is a toolkit designed for making music quickly with sensors.  This includes a library for Pure Data: a set of "objects" intended as an introduction to audio coding. 
 
@@ -52,13 +52,13 @@ By itself, the Instrument Maker library is intended to be used in the "back end"
 
 There are also Instrument Maker boards available to simplify the hardware construction process in a similar manner.  If you're reading this document, you probably have one of these boards. Alongside these resources, we hope to add other functionality to address the absence of screenreader support, switch access to to the software etc.
 
-## Help files and object list
+### Help files and object list
 
 Each object has an associated "help file", which can be accessed by right-clicking and selecting `help`.  The help files contain functioning examples which can be modified, copied, and pasted into your own project.
 
 To find a list of objets with their basic functions, look for `im-current-objects.pd` in the `learning-examples` folder.
 
-# Hardware resources
+## Hardware resources
 
 At present, the Instrument Maker code functions best with the following items:
 
@@ -69,7 +69,7 @@ Although these hardware resources can be used to control motors, lights, and oth
 
 Therefore, it's safe to assume that any external connections mentioned below (apart from microphones and speakers) are sensor inputs. 
 
-## Operating without the Instrument Maker hardware
+### Operating without the Instrument Maker hardware
 
 The easiest way to try some Instrument Maker code without any of the specially designed kit (but retaining the separation between hardware and software) is to use a MaKey MaKey, which sends keystrokes by default.
 
@@ -78,17 +78,17 @@ Try the help files for the `im.keypress` and `im.makeymakey` objects to see this
 We are working on support for quick access to Arduino through [Firmata](https://www.arduino.cc/en/reference/firmata) (something like [Pduino](https://puredata.info/downloads/pduino)) .
 
 
-# Anatomy of a Pure Data object
+## Anatomy of a Pure Data object
 
 Each object has a **name**, **arguments**, **inlets**, and **outlets**:
 
 ![example-anatomy](example-anatomy.png)
 
-## Object name
+### Object name
 
 The objects must have a name, which determine their function. Objects from the Instrument Maker library start with the letters **`im.`**
 
-## Object arguments
+### Object arguments
 
 Arguments are numbers (or occasionally words) that provide the object with more details on how to operate. 
 
@@ -96,7 +96,7 @@ For example, having named an `im.echo` object, we can also set its time (how sho
 
 Arguments in Pure Data are written after the name of the object, and separated with spaces.  Each argument affects a different parameter.  The arguments must be written in a specific order, as documented in the help files.
 
-### Comparison with other languages
+#### Comparison with other languages
 
 Unlike more contemporary languages such as Swift, the names of arguments are not included in the code or display, meaning that the user must remember what each argument does (and the order in which they need to be written), or consult a reference (once it has been written properly..I know..).  For people that have worked with other (text-based) programming languages, it might be useful to picture an object and its arguments like this: 
 
@@ -106,7 +106,7 @@ Therefore, more concretely: `sensor 1 12` would be equivalent to `sensor(1, 12)`
 
 `scale C major 3` would be equivalent to `scale(C, major, 3)` — *process the incoming signal as a scale with root note C, using a major key, starting at octave number 3*.
 
-## Inlets and outlets
+### Inlets and outlets
 
 <a name="inlets+outlets"></a>
 
@@ -122,15 +122,15 @@ Multiple objects can be connected to each other -- so, for example, a single sen
 
 *Note: since the Instrument Maker library is a work in progress, some of the inlets and outlets don't have an obvious function — they've been left in for testing purposes or for future features.  For example, the scale object only really handles information in its main inlet and outlet.*
 
-# First steps in Pure Data 
+## First steps in Pure Data 
 
 This tutorial assumes you are running Pd v0.49 upward on a Raspberry Pi.  
 
 *Mac users should change references to `ctrl` to the `CMD` key.*
 
-## Creating and connecting objects 
+### Creating and connecting objects 
 
-### Creating an object
+#### Creating an object
 
 Press **`ctrl`** and **`1`** on the computer keyboard, or go to the **`put`** menu at the top of the window and choose **`object`**.
 
@@ -148,7 +148,7 @@ If there is a problem with the object, the box will appear with a dotted outline
 - there are capital letters somewhere in the object name — almost all object names are lower case
 - there are spaces missing between the object name and arguments
 
-### Editing an object
+#### Editing an object
 
 Click on the object to place the text cursor, and type your changes in.  Click outside the object to close the box.
 
@@ -156,7 +156,7 @@ Resize the object by moving the mouse pointer over the object's right-hand borde
 
 Move objects by dragging on them with the mouse (don't click on them first — the software will think that you are trying to edit the text!).  
 
-### Connecting objects
+#### Connecting objects
 
 Click and hold the mouse cursor over an outlet to start the connection. As you move the mouse over the outlet, the pointer should turn into a circle.
 
@@ -164,7 +164,7 @@ Keep holding the mouse button down while you drag onto the inlet of a second obj
 
 ![connections](connections.png)
 
-### Shortcuts and tips
+#### Shortcuts and tips
 
 Instead of clicking on the background, press **`ctrl`** and **`1`** while the box is still highlighted to create another object — the next object will be connected automatically.
 
@@ -174,7 +174,7 @@ Move the objects around to make space for your objects on screen — try not to 
 
 ![example-tidy](example-tidy.png)
 
-## Basics: connecting a microphone
+### Basics: connecting a microphone
 
 Create a microphone object (`im.microphone`)
 
@@ -184,7 +184,7 @@ Join the microphone and speaker with a cable: click and drag from the outlet on 
 
 ![example-microphone](example-microphone.png)
 
-### Adding an effect
+#### Adding an effect
 
 Insert an effect into the signal path, like so:
 
@@ -194,35 +194,35 @@ Create an `im.echo` object, with delay time in milliseconds and feedback amount.
 
 Connect the echo as a send effect:make a second cable from the im.microphone object, and connect it to the input of the echo (the left side).  Connect the output of the echo directly to the speaker.
 
-# Examples
+## Examples
 
 Depending on interest of the user, the following are recommended starting points for using Instrument Maker:
 
-## **"Theremin style"**![example-theremin1](example-theremin1.png)
+### **"Theremin style"**![example-theremin1](example-theremin1.png)
 
 ![example-theremin1](example-theremin2.png)
 
-## **Envelope follower**
+### **Envelope follower**
 
 ![example-envelope-follower](example-envelope-follower.png)
 
-## **Pitch tracker**
+### **Pitch tracker**
 
 ![example-pitch-tracker](example-pitch-tracker.png)
 
-## **Loop pedal**
+### **Loop pedal**
 
 ![example-looper](example-looper.png)
 
-# Key concepts
+## Key concepts
 
-## Signal flow
+### Signal flow
 
 The order in which objects are connected affects their sound and/or behaviour. 
 
 Unlike a physical circuit, the information flows in a linear fashion from the top to the bottom of the screen, and does not need to return to its start point.
 
-### Effects: inserts and sends
+#### Effects: inserts and sends
 
 Effects can be thought of as being inserted in series or parallel with their original sound.
 
@@ -230,7 +230,7 @@ An "insert" replaces a signal with its effected version ("in series").
 
 A "send" (also known as an auxiliary or aux send) involves a signal being duplicated, with an effect applied ("in parallel"). 
 
-## Instrument elements
+### Instrument elements
 
 Interactions with live instruments can often be divided up into controlling **pitch** and **intensity/loudness**.  These two parameters make a good starting point when designing an electronic instrument.  For example:
 
@@ -250,13 +250,13 @@ Other examples along these lines include:
 - bowing a string instrument while changing pitch on its neck
 - scratching a record on a turntable while changing volume with the crossfader 
 
-# Making the transition from Instrument Maker
+## Making the transition from Instrument Maker
 
-## Pure Data
+### Pure Data
 
 So far, the objects we have been using from the Instrument Maker library have all worked with audio signals.  In more general practice, Pure Data makes distinctions between messages and signals — and the name of the objects using audio signals are marked with a tilde: `~`.
 
-# References/learning resources
+## References/learning resources
 
 Please note that due to some specific features and workflows within IM, it may be confusing to jump back and forth between the documentation and these other resources. 
 
@@ -266,7 +266,7 @@ A transition document is currently under development.
 - [Designing Sound](https://mitpress.mit.edu/books/designing-sound) (Andy Farnell) — tutorial PDF [here](http://aspress.co.uk/ds/pdf/pd_intro.pdf)
 - [Pure Data and Bela](https://blog.bela.io/2019/03/06/pure-data-and-bela/) (Robert Jack)
 
-# Notes for experienced PD users
+## Notes for experienced PD users
 
 Instrument Maker objects are created in Pd Vanilla for maximum compatibility — they are all abstractions, and free to open and explore!  Hopefully there will be better documentation within the patches soon.
 
