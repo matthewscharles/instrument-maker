@@ -1,63 +1,77 @@
 body {
-      background-color: #CEB934;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      letter-spacing: 2px;
-      word-spacing: 2px;
-      color: #000000;
-      font-weight: normal;
-      text-decoration: none;
-      font-style: normal;
-      font-variant: normal;
-      text-transform: none;
-      }
+  background-color: #ceb934;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
 #fieldName {
+  font-weight: bold;
+}
 
-      font-weight: bold;
-
-      }
 #footer {
-      background-color: #CEB934;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      letter-spacing: 2px;
-      word-spacing: 2px;
-      color: #000000;
-      font-weight: normal;
-      text-decoration: none;
-      font-style: normal;
-      font-variant: normal;
-      text-transform: none;
-      background: #CEB934;
-      background: -webkit-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-      background: -o-linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-      background: linear-gradient(#CEB934 0%, #A2A488 79%, #B0C59A 100%);
-      }
+  background-color: #ceb934;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #ceb934;
+  background: -webkit-linear-gradient(#ceb934 0%, #a2a488 79%, #b0c59a 100%);
+  background: -o-linear-gradient(#ceb934 0%, #a2a488 79%, #b0c59a 100%);
+  background: linear-gradient(#ceb934 0%, #a2a488 79%, #b0c59a 100%);
+}
+
 #demo {
-    background: #CEB934;
-    background: -webkit-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
-    background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
-    background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
-    }
+  background: #ceb934;
+  background: -webkit-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+  background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+  background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+}
 
 .card {
-    background: #CEB934;
-    background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
-    background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
-    background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
-    border: 2px solid;
-    padding: 5px;
-    }
-.caption {
-    font-size: 15px;
-    text-align: center;
-    }
-table {
-    border-spacing:30px;
+  background: #ceb934;
+  background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
+  background: -o-linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+  background: linear-gradient(#fffff0 0%, #f3f3d3 79%, #f0efc7 100%);
+  border: 2px solid;
+  padding: 5px;
 }
+
+.caption {
+  font-size: 15px;
+  text-align: center;
+}
+
+table {
+  border-spacing: 30px;
+}
+
 h1 {
-    background: #CEB934;
-    background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #e0df8a 100%);
-    background: -o-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
-    background: linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
-    }
+  background: #ceb934;
+  background: -webkit-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #e0df8a 100%);
+  background: -o-linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
+  background: linear-gradient(#eae9ae 0%, #f3f3d3 79%, #f0efc7 100%);
+}
+
+svg[width="800"][height="500"] {
+  transform: scale(2);
+  transform-origin: 0 0;
+  padding-bottom: 100px;
+}
+
+svg[width="800"][height="500"] text {
+  font-size: 8px !important;
+}
